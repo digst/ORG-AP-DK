@@ -6,7 +6,7 @@ Et udkast til en version 1.0 af ORG-AP-DK er under udarbejdelse i tæt koordieri
 
 * Link til ORG-AP-DK v.0.9  https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer
 * Link til ORG-AP-DK v.1.0  https://github.com/digst/ORG-AP-DK/tree/main/releases/v.1.0 (under udarbejdelse)
-* 
+
 <!--
 * Link til ORG-AP-DK v.1.0  https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/ (under udarbejdelse)
 -->
