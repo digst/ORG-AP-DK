@@ -147,7 +147,7 @@ p.italic{font-style: italic!important;}
 <pre class="metadata">
 Title: ORG-AP-DK 1.0.0
 Status: LD
-URL: https://github.com/ORG-AP-DK
+URL: https://github.com/digst/ORG-AP-DK
 Editor Term: Udgiver, Udgivere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Abstract: 'ORG-AP-DK 1.0.0' .
