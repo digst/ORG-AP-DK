@@ -1,1 +1,1 @@
-# Udkast til ORG-AP-DK v.1.0 (UNDER UDARBEJDELSE)
+# Udkast til ORG-AP-DK v.1.0
