@@ -11,7 +11,6 @@ Et udkast til en version 1.0 af ORG-AP-DK er under udarbejdelse i tæt koordieri
 * Link til ORG-AP-DK v.1.0  https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/ (under udarbejdelse)
 -->
 
-## Baggrund
 ORG-AP-DK er baseret på internationale standarder. Særligt bidrager W3C's Organization Ontology (ORG) og Europa-Kommissionens Core Public Organization Vocabulary (CPOV) med  centrale klasser og egenskaber.
 
 * Link til CPOV (EU): https://semiceu.github.io/CPOV/releases/2.00/. 
