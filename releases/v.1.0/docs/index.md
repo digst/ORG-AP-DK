@@ -154,7 +154,7 @@ Abstract: 'ORG-AP-DK 1.0.0' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0 
-Date: 2021-09-03
+Date: 2021-09-10
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -167,11 +167,43 @@ Logo: digst...
 
 <h1>UDKAST TIL ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
 
-# H1
+#  Introduktion
+## Formål
+## Baggrund
+## Metode
+## Profilens anvendelse
 
-## H2
+#  Modellens grundlæggende struktur og omfang
 
-### H3
+#  Gældende krav og overensstemmelse
+
+#  Elementer i ORG-AP-DK
+## Klassen cpov:PublicOrganisation (offentlig organisation)  
+## Klassen org:FormalOrganization (formel organisation)  
+## Klassen org:OrganizationalUnit (organisatorisk enhed)  
+## Klassen org:Site (sted)  
+## Klassen locn:Address (adresse)  
+## Klassen schema:ContactPoint (kontaktpunkt)  
+## Klassen schema:OpeningHoursSpecification (åbningstider) 
+## Klassen schema:ImageObject (billedobjekt)   
+## Klassen org:Membership (medlemskab)  
+## Klassen org:Role (rolle)  
+## Klassen foaf:Person (person)  
+## Klassen foaf:Document (dokument) 
+## Klassen cpsv:FormalFramework (formel ramme)  
+## Klassen cpov:FoundationEvent (grundlæggelseshændelse)  
+## Klassen org:ChangeEvent (ændringshændelse)  
+...
+
+#  Vokabularer og klassifikationer
+
+#  Referencer
+
+#  Bilag
+## Eksempler 
+## UML-diagrammer
+## Namespaces
+
 
 ================
 
