@@ -184,17 +184,21 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 ## Profilens anvendelse
 
-#  Modellens grundlæggende struktur og omfang
+#  Modellens grundlæggende struktur
 
 #  Gældende krav og overensstemmelse
 
 #  Elementer i ORG-AP-DK
-## Klassen cpov:PublicOrganisation (offentlig organisation)  
+I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
+
 ## Klassen org:FormalOrganization (formel organisation)  
+## Klassen cpov:PublicOrganisation (offentlig organisation)  
 ## Klassen org:OrganizationalUnit (organisatorisk enhed)  
+
+<!--
 ## Klassen org:Site (sted)  
 ## Klassen locn:Address (adresse)  
-## Klassen schema:ContactPoint (kontaktpunkt)  
+## Klassen schema:ContactPoint (kontaktpunkt) 
 ## Klassen schema:OpeningHoursSpecification (åbningstider) 
 ## Klassen schema:ImageObject (billedobjekt)   
 ## Klassen org:Membership (medlemskab)  
@@ -210,45 +214,52 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 ## Klassen ?:OrganizationalUnitType (organisatorisk enhedstype)  
 ## Klassen ?:PublicOrganizationalUnitType (offentlig organisatorisk enhedstype)  
 ## Klassen ?:PublicAdministrativeTaskType (type af forvaltningsopgave)  
-...
+-->
 
 #  Vokabularer og klassifikationer
+<!--
 ## FormalOrganizationTypes (offentlig organisationstype)  
 ## PublicFormalOrganizationTypes (offentlig organisationstype)  
 ## OrganizationalUnitTypes (organisatorisk enhedstype)  
 ## PublicOrganizationalUnitTypes (offentlig organisatorisk enhedstype)  
 ## PublicAdministrativeTaskTypes (type af forvaltningsopgave)  
+-->
 
 #  Referencer
 
 #  Bilag
-## Eksempler 
+
 ## UML-diagrammer
+## Eksempler 
 ## Namespaces
 
+<table class="term-table">
+<thead><tr><th>prefix</th><th>namespace</th><th>model</th></tr></thead><tbody>
 
-| Præfiks | URI | Titel |
-| --- | --- |--- |
-|org 	|http://www.w3.org/ns/org# 	|Organization Ontology |
-|cpov 	|http://data.europa.eu/m8g/ 	|Core Public Organization Vocabulary |
-|foaf 	|http://xmlns.com/foaf/0.1/ 	|Friend of a Friend |
-|skos 	|http://www.w3.org/2004/02/skos/core# 	|Simple Knowledge Organization System ||
-|dct 	|http://purl.org/dc/terms/ 	|Dublin Core Metadata Terms |
-|prov 	|http://www.w3.org/ns/prov# 	|The PROV Ontology |
-|locn 	|http://www.w3.org/ns/locn#   	|Location Core Vocabulary |
-|cpsv 	|http://data.europa.eu/cv/ 	|Core Public Service Vocabulary |
-|eli 	|http://data.europa.eu/eli/ontology# 	|European Legislation Identifier |
-|schema |http://schema.org/ 	|Schema.org |
-|rdf 	|http://www.w3.org/1999/02/22-rdf-syntax-ns# 	|Resource Description Framework |
-|rdfs 	|http://www.w3.org/2000/01/rdf-schema# 	|RDF Schema |
-|owl 	|http://www.w3.org/2002/07/owl# 	|Web Ontology Language |
-|xsd 	|http://www.w3.org/2001/XMLSchema#  	|XML Schema |
-|dagi 	|https://data.gov.dk/model/profile/cvr# 	|Grunddataregistret Danmarks Administrative Geografiske Inddeling |
-|dar 	|https://data.gov.dk/model/profile/dar# 	|Adresseregisteret |
-|cvr 	|https://data.gov.dk/model/profile/dagi# 	|Virksomhedsdata i CVR   |
+ <tr><td>org </td><td>http://www.w3.org/ns/org# </td><td>Organization Ontology </td></tr>
+ <tr><td>cpov </td><td>http://data.europa.eu/m8g/ </td><td>Core Public Organization Vocabulary </td></tr>
+ <tr><td>foaf </td><td>http://xmlns.com/foaf/0.1/ </td><td>Friend of a Friend </td></tr>
+ <tr><td>skos </td><td>http://www.w3.org/2004/02/skos/core# </td><td>Simple Knowledge Organization System </td></tr>
+ <tr><td>dct </td><td>http://purl.org/dc/terms/ </td><td>Dublin Core Metadata Terms </td></tr>
+ <tr><td>prov </td><td>http://www.w3.org/ns/prov# </td><td>The PROV Ontology </td></tr>
+ <tr><td>locn </td><td>http://www.w3.org/ns/locn#   </td><td>Location Core Vocabulary </td></tr>
+ <tr><td>cpsv </td><td>http://data.europa.eu/cv/ </td><td>Core Public Service Vocabulary </td></tr>
+ <tr><td>eli </td><td>http://data.europa.eu/eli/ontology# </td><td>European Legislation Identifier </td></tr>
+ <tr><td>schema </td><td>http://schema.org/ </td><td>Schema.org </td></tr>
+ <tr><td>rdf </td><td>http://www.w3.org/1999/02/22-rdf-syntax-ns# </td><td>Resource Description Framework </td></tr>
+ <tr><td>rdfs </td><td>http://www.w3.org/2000/01/rdf-schema# </td><td>RDF Schema </td></tr>
+ <tr><td>owl </td><td>http://www.w3.org/2002/07/owl# </td><td>Web Ontology Language </td></tr>
+ <tr><td>xsd </td><td>http://www.w3.org/2001/XMLSchema#  </td><td>XML Schema </td></tr>
+ <tr><td>dagi </td><td>https://data.gov.dk/model/profile/cvr# </td><td>Grunddataregistret Danmarks Administrative Geografiske Inddeling </td></tr>
+ <tr><td>dar </td><td>https://data.gov.dk/model/profile/dar# </td><td>Adresseregisteret </td></tr>
+ <tr><td>cvr </td><td>https://data.gov.dk/model/profile/dagi# </td><td>Virksomhedsdata i CVR   </td></tr>
+ <tr><td>ovx </td><td>https://data.gov.dk/model/organization/extension# </td><td>Organization Vocabulary Extension </td></tr>
+ <tr><td>org-ap-dk </td><td>https://data.gov.dk/model/profile/organisation/</td><td>Anvendelsesprofil for organisation</td></tr>	
+</tbody></table>
 
 
 
+</table>
 
 ================
 
