@@ -1,7 +1,8 @@
+
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Udkast til ORG-AP-DK 1.0.0</title>
+  <title>ORG-AP-DK 1.0.0</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1488,7 +1489,7 @@ Possible extra rowspan handling
 	}
 </style>
   <meta content="Bikeshed version 4f053d00e, updated Tue Aug 10 14:13:32 2021 -0700" name="generator">
-  <link href="https://github.com/ORG-AP-DK" rel="canonical">
+  <link href="https://github.com/digst/ORG-AP-DK" rel="canonical">
 <style>
 @media print {
   html { margin: 0cm 2cm 2cm 0cm; font-size: 80%; }
@@ -2019,17 +2020,17 @@ dfn > a.self-link::before      { content: "#"; }
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
-   <h1>Udkast til ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-03">3 September 2021</time></span></h2>
+   <h1>UDKAST TIL ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-10">10. september 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Denne version:
-     <dd><a class="u-url" href="https://github.com/digst/ORG-AP-DK">https://github.com/ORG-AP-DK</a>
+     <dd><a class="u-url" href="https://github.com/digst/ORG-AP-DK">https://github.com/digst/ORG-AP-DK</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelse <small>(non-normative)</small>:
+     <dt>Oversættelse <small>(ikke-normativ)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2041,20 +2042,141 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="no-num no-toc no-ref" id="contents">Indholdsfortegnelse</h2>
    <ol class="toc" role="directory">
     <li>
-     <a href="#h1"><span class="secno">1</span> <span class="content">H1</span></a>
+     <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
      <ol class="toc">
-      <li>
-       <a href="#h2"><span class="secno">1.1</span> <span class="content">H2</span></a>
-       <ol class="toc">
-        <li><a href="#h3"><span class="secno">1.1.1</span> <span class="content">H3</span></a>
-       </ol>
+      <li><a href="#forml"><span class="secno">1.1</span> <span class="content">Formål</span></a>
+      <li><a href="#baggrund"><span class="secno">1.2</span> <span class="content">Baggrund</span></a>
+      <li><a href="#metode"><span class="secno">1.3</span> <span class="content">Metode</span></a>
+      <li><a href="#profilens-anvendelse"><span class="secno">1.4</span> <span class="content">Profilens anvendelse</span></a>
+     </ol>
+    <li><a href="#modellens-grundlggende-struktur"><span class="secno">2</span> <span class="content">Modellens grundlæggende struktur</span></a>
+    <li><a href="#gldende-krav-og-overensstemmelse"><span class="secno">3</span> <span class="content">Gældende krav og overensstemmelse</span></a>
+    <li>
+     <a href="#elementer-i-org-ap-dk"><span class="secno">4</span> <span class="content">Elementer i ORG-AP-DK</span></a>
+     <ol class="toc">
+      <li><a href="#klassen-orgformalorganization-formel-organisation"><span class="secno">4.1</span> <span class="content">Klassen org:FormalOrganization (formel organisation)</span></a>
+      <li><a href="#klassen-cpovpublicorganisation-offentlig-organisation"><span class="secno">4.2</span> <span class="content">Klassen cpov:PublicOrganisation (offentlig organisation)</span></a>
+      <li><a href="#klassen-orgorganizationalunit-organisatorisk-enhed"><span class="secno">4.3</span> <span class="content">Klassen org:OrganizationalUnit (organisatorisk enhed)</span></a>
+     </ol>
+    <li><a href="#vokabularer-og-klassifikationer"><span class="secno">5</span> <span class="content">Vokabularer og klassifikationer</span></a>
+    <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
+    <li>
+     <a href="#bilag"><span class="secno">7</span> <span class="content">Bilag</span></a>
+     <ol class="toc">
+      <li><a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
+      <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
+      <li><a href="#namespaces"><span class="secno">7.3</span> <span class="content">Namespaces</span></a>
      </ol>
    </ol>
   </nav>
   <main>
-   <h2 class="heading settled" data-level="1" id="h1"><span class="secno">1. </span><span class="content">H1</span><a class="self-link" href="#h1"></a></h2>
-   <h3 class="heading settled" data-level="1.1" id="h2"><span class="secno">1.1. </span><span class="content">H2</span><a class="self-link" href="#h2"></a></h3>
-   <h4 class="heading settled" data-level="1.1.1" id="h3"><span class="secno">1.1.1. </span><span class="content">H3</span><a class="self-link" href="#h3"></a></h4>
+   <h2 class="heading settled" data-level="1" id="introduktion"><span class="secno">1. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
+    Dette dokument introducerer modellering af organisationer og definerer en anvendelsesprofil baseret på internationale standarder. Anvendelsesprofilen udgør en fælles model for offentlige såvel som ikke-offentlige organisationer i en dansk administrativ og fællesoffentlig kontekst. 
+   <h3 class="heading settled" data-level="1.1" id="forml"><span class="secno">1.1. </span><span class="content">Formål</span><a class="self-link" href="#forml"></a></h3>
+    Data om organisationer, private eller offentlige, er de helt grundlæggende oplysninger om organisationers navn, struktur, placering, opgaver, mv. Disse data indgår i mange forskellige sammenhænge i offentlige løsninger. Ved at etablere en fælles standard for opbygning og udstilling af data om både private og offentlige organisationer opnås ikke blot et fælles sprog og en fælles struktur, men grundstenene sættes også for større deling og genbrug af data om organisationer. 
+   <h3 class="heading settled" data-level="1.2" id="baggrund"><span class="secno">1.2. </span><span class="content">Baggrund</span><a class="self-link" href="#baggrund"></a></h3>
+    Anvendelsesprofilen ORG-AP-DK udarbejdes i tæt koordiering og samarbejde med KL og en referencegruppe bestående af deltagere fra kommuner, regioner og statslige myndigheder som udarbejder en beskrivelse af de forretningsmæssige behov samt bagvedliggende informationsmodel. 
+   <p>Anvendelsesprofilen baseres på internationale standarder. Særligt bidrager de internationale vokabularer <a href="https://www.w3.org/TR/vocab-org/">The Organization Ontology (ORG)</a> og <a href="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100">Core Public Organisation Vocabulary (CPOV)</a> med centrale klasser og egenskaber. ORG-AP-DK er en nærmere specifikation af, hvordan de internationale modeller skal forstås og anvendes – i denne sammenhæng til modellering af data vedrørende organisationer og myndigheder i dansk fællesoffentlig kontekst.</p>
+   <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
+    Anvendelsesprofilen er oprettet i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og sammensætter således eksisterende vokabularer til en bestemt anvendelse. Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Dataverdenens modelleringsgrundlag, Resource Description Framework (RDF). En basal forståelse af RDF samt kendskab til de her profilerede vokabularer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. ORG og CPOV foreligger i danske oversættelser. Disse oversatte dokumenter udgør normative referencer for den i efterfølgende opstillede anvendelsesprofil. 
+   <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
+   <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
+   <h2 class="heading settled" data-level="3" id="gldende-krav-og-overensstemmelse"><span class="secno">3. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
+   <h2 class="heading settled" data-level="4" id="elementer-i-org-ap-dk"><span class="secno">4. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
+    I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse. 
+   <h3 class="heading settled" data-level="4.1" id="klassen-orgformalorganization-formel-organisation"><span class="secno">4.1. </span><span class="content">Klassen org:FormalOrganization (formel organisation)</span><a class="self-link" href="#klassen-orgformalorganization-formel-organisation"></a></h3>
+   <h3 class="heading settled" data-level="4.2" id="klassen-cpovpublicorganisation-offentlig-organisation"><span class="secno">4.2. </span><span class="content">Klassen cpov:PublicOrganisation (offentlig organisation)</span><a class="self-link" href="#klassen-cpovpublicorganisation-offentlig-organisation"></a></h3>
+   <h3 class="heading settled" data-level="4.3" id="klassen-orgorganizationalunit-organisatorisk-enhed"><span class="secno">4.3. </span><span class="content">Klassen org:OrganizationalUnit (organisatorisk enhed)</span><a class="self-link" href="#klassen-orgorganizationalunit-organisatorisk-enhed"></a></h3>
+   <h2 class="heading settled" data-level="5" id="vokabularer-og-klassifikationer"><span class="secno">5. </span><span class="content">Vokabularer og klassifikationer</span><a class="self-link" href="#vokabularer-og-klassifikationer"></a></h2>
+   <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
+   <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
+   <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
+   <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
+   <h3 class="heading settled" data-level="7.3" id="namespaces"><span class="secno">7.3. </span><span class="content">Namespaces</span><a class="self-link" href="#namespaces"></a></h3>
+   <table class="term-table">
+    <thead>
+     <tr>
+      <th>prefix
+      <th>namespace
+      <th>model
+    <tbody>
+     <tr>
+      <td>org 
+      <td>http://www.w3.org/ns/org# 
+      <td>Organization Ontology 
+     <tr>
+      <td>cpov 
+      <td>http://data.europa.eu/m8g/ 
+      <td>Core Public Organization Vocabulary 
+     <tr>
+      <td>foaf 
+      <td>http://xmlns.com/foaf/0.1/ 
+      <td>Friend of a Friend 
+     <tr>
+      <td>skos 
+      <td>http://www.w3.org/2004/02/skos/core# 
+      <td>Simple Knowledge Organization System 
+     <tr>
+      <td>dct 
+      <td>http://purl.org/dc/terms/ 
+      <td>Dublin Core Metadata Terms 
+     <tr>
+      <td>prov 
+      <td>http://www.w3.org/ns/prov# 
+      <td>The PROV Ontology 
+     <tr>
+      <td>locn 
+      <td>http://www.w3.org/ns/locn# 
+      <td>Location Core Vocabulary 
+     <tr>
+      <td>cpsv 
+      <td>http://data.europa.eu/cv/ 
+      <td>Core Public Service Vocabulary 
+     <tr>
+      <td>eli 
+      <td>http://data.europa.eu/eli/ontology# 
+      <td>European Legislation Identifier 
+     <tr>
+      <td>schema 
+      <td>http://schema.org/ 
+      <td>Schema.org 
+     <tr>
+      <td>rdf 
+      <td>http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+      <td>Resource Description Framework 
+     <tr>
+      <td>rdfs 
+      <td>http://www.w3.org/2000/01/rdf-schema# 
+      <td>RDF Schema 
+     <tr>
+      <td>owl 
+      <td>http://www.w3.org/2002/07/owl# 
+      <td>Web Ontology Language 
+     <tr>
+      <td>xsd 
+      <td>http://www.w3.org/2001/XMLSchema# 
+      <td>XML Schema 
+     <tr>
+      <td>dagi 
+      <td>https://data.gov.dk/model/profile/cvr# 
+      <td>Grunddataregistret Danmarks Administrative Geografiske Inddeling 
+     <tr>
+      <td>dar 
+      <td>https://data.gov.dk/model/profile/dar# 
+      <td>Adresseregisteret 
+     <tr>
+      <td>cvr 
+      <td>https://data.gov.dk/model/profile/dagi# 
+      <td>Virksomhedsdata i CVR 
+     <tr>
+      <td>ovx 
+      <td>https://data.gov.dk/model/organization/extension# 
+      <td>Organization Vocabulary Extension 
+     <tr>
+      <td>org-ap-dk 
+      <td>https://data.gov.dk/model/profile/organisation/
+      <td>Anvendelsesprofil for organisation
+   </table>
     ================ 
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
