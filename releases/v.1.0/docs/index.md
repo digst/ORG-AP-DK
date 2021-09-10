@@ -169,8 +169,19 @@ Logo: digst...
 
 #  Introduktion
 ## Formål
+Dette dokument introducerer modellering af organisationer og definerer en anvendelsesprofil baseret på internationale standarder. Anvendelsesprofilen udgør en fælles model for offentlige såvel som ikke-offentlige organisationer i en dansk administrativ og fællesoffentlig kontekst.
+
+Data om organisationer, private eller offentlige, er de helt grundlæggende oplysninger om organisationers navn, struktur, placering, opgaver, mv. Disse data indgår i mange forskellige sammenhænge i offentlige løsninger.  
+
+Ved at etablere en fælles standard for opbygning og udstilling af data om både private og offentlige organisationer opnås ikke blot et fælles sprog og en fælles struktur, men grundstenene sættes også for større deling og genbrug af data om organisationer.
+
 ## Baggrund
+De internationale vokabularer [The Organization Ontology (ORG)](https://www.w3.org/TR/vocab-org/) og [Core Public Organisation Vocabulary (CPOV)](https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100) bidrager med grundlæggende strukturer og modelelementer. Anvendelsesprofilen er en nærmere specifikation af, hvordan de internationale modeller skal forstås og anvendes – i denne sammenhæng til modellering af data vedrørende organisationer og myndigheder. 
+
+
 ## Metode
+Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begrebs- og datamodellering](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering), og sammensætter således eksisterende vokabularer til en bestemt anvendelse. Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Dataverdenens modelleringsgrundlag, Resource Description Framework (RDF). En basal forståelse af RDF samt kendskab til de her profilerede vokabularer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. ORG og CPOV foreligger i danske oversættelser. Disse oversatte dokumenter udgør normative referencer for den i efterfølgende opstillede anvendelsesprofil.
+
 ## Profilens anvendelse
 
 #  Modellens grundlæggende struktur og omfang
@@ -193,9 +204,20 @@ Logo: digst...
 ## Klassen cpsv:FormalFramework (formel ramme)  
 ## Klassen cpov:FoundationEvent (grundlæggelseshændelse)  
 ## Klassen org:ChangeEvent (ændringshændelse)  
+## Klassen dagi:AdministrativInddeling (administrativ inddeling) 
+## Klassen ?:FormalOrganizationType (offentlig organisationstype)  
+## Klassen ?:PublicFormalOrganizationType (offentlig organisationstype)  
+## Klassen ?:OrganizationalUnitType (organisatorisk enhedstype)  
+## Klassen ?:PublicOrganizationalUnitType (offentlig organisatorisk enhedstype)  
+## Klassen ?:PublicAdministrativeTaskType (type af forvaltningsopgave)  
 ...
 
 #  Vokabularer og klassifikationer
+## FormalOrganizationTypes (offentlig organisationstype)  
+## PublicFormalOrganizationTypes (offentlig organisationstype)  
+## OrganizationalUnitTypes (organisatorisk enhedstype)  
+## PublicOrganizationalUnitTypes (offentlig organisatorisk enhedstype)  
+## PublicAdministrativeTaskTypes (type af forvaltningsopgave)  
 
 #  Referencer
 
@@ -203,6 +225,29 @@ Logo: digst...
 ## Eksempler 
 ## UML-diagrammer
 ## Namespaces
+
+
+| Præfiks | URI | Titel |
+| --- | --- |--- |
+|org 	|http://www.w3.org/ns/org# 	|Organization Ontology |
+|cpov 	|http://data.europa.eu/m8g/ 	|Core Public Organization Vocabulary |
+|foaf 	|http://xmlns.com/foaf/0.1/ 	|Friend of a Friend |
+|skos 	|http://www.w3.org/2004/02/skos/core# 	|Simple Knowledge Organization System ||
+|dct 	|http://purl.org/dc/terms/ 	|Dublin Core Metadata Terms |
+|prov 	|http://www.w3.org/ns/prov# 	|The PROV Ontology |
+|locn 	|http://www.w3.org/ns/locn#   	|Location Core Vocabulary |
+|cpsv 	|http://data.europa.eu/cv/ 	|Core Public Service Vocabulary |
+|eli 	|http://data.europa.eu/eli/ontology# 	|European Legislation Identifier |
+|schema |http://schema.org/ 	|Schema.org |
+|rdf 	|http://www.w3.org/1999/02/22-rdf-syntax-ns# 	|Resource Description Framework |
+|rdfs 	|http://www.w3.org/2000/01/rdf-schema# 	|RDF Schema |
+|owl 	|http://www.w3.org/2002/07/owl# 	|Web Ontology Language |
+|xsd 	|http://www.w3.org/2001/XMLSchema#  	|XML Schema |
+|dagi 	|https://data.gov.dk/model/profile/cvr# 	|Grunddataregistret Danmarks Administrative Geografiske Inddeling |
+|dar 	|https://data.gov.dk/model/profile/dar# 	|Adresseregisteret |
+|cvr 	|https://data.gov.dk/model/profile/dagi# 	|Virksomhedsdata i CVR   |
+
+
 
 
 ================
