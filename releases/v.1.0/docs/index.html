@@ -2011,16 +2011,16 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-10">13. september 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-13">13. september 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Navneområde:
+     <dt>This version:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelser <small>(non-normativ)</small>:
+     <dt>Oversættelse <small>(non-normative)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2045,9 +2045,15 @@ dfn > a.self-link::before      { content: "#"; }
     <li>
      <a href="#elementer-i-org-ap-dk"><span class="secno">5</span> <span class="content">Elementer i ORG-AP-DK</span></a>
      <ol class="toc">
-      <li><a href="#klassen-orgformalorganization-formel-organisation"><span class="secno">5.1</span> <span class="content">Klassen org:FormalOrganization (formel organisation)</span></a>
-      <li><a href="#klassen-cpovpublicorganisation-offentlig-organisation"><span class="secno">5.2</span> <span class="content">Klassen cpov:PublicOrganisation (offentlig organisation)</span></a>
-      <li><a href="#klassen-orgorganizationalunit-organisatorisk-enhed"><span class="secno">5.3</span> <span class="content">Klassen org:OrganizationalUnit (organisatorisk enhed)</span></a>
+      <li>
+       <a href="#klassen-orgformalorganization"><span class="secno">5.1</span> <span class="content">Klassen org:FormalOrganization</span></a>
+       <ol class="toc">
+        <li><a href="#egenskab-skospreflabel"><span class="secno">5.1.1</span> <span class="content">Egenskab: skos:prefLabel</span></a>
+        <li><a href="#egenskab-skosaltlabel"><span class="secno">5.1.2</span> <span class="content">Egenskab: skos:altLabel</span></a>
+        <li><a href="#egenskab-dctdescription"><span class="secno">5.1.3</span> <span class="content">Egenskab: dct:description</span></a>
+       </ol>
+      <li><a href="#klassen-cpovpublicorganisation"><span class="secno">5.2</span> <span class="content">Klassen cpov:PublicOrganisation</span></a>
+      <li><a href="#klassen-orgorganizationalunit"><span class="secno">5.3</span> <span class="content">Klassen org:OrganizationalUnit</span></a>
      </ol>
     <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
     <li>
@@ -2078,6 +2084,10 @@ dfn > a.self-link::before      { content: "#"; }
       <th>navneområde
       <th>titel
     <tbody>
+     <tr>
+      <td>org-ap-dk 
+      <td>https://data.gov.dk/model/profile/organisation/
+      <td>Anvendelsesprofil for organisation
      <tr>
       <td>org 
       <td>http://www.w3.org/ns/org# 
@@ -2150,17 +2160,47 @@ dfn > a.self-link::before      { content: "#"; }
       <td>ovx 
       <td>https://data.gov.dk/model/organization/extension# 
       <td>Organization Vocabulary Extension 
-     <tr>
-      <td>org-ap-dk 
-      <td>https://data.gov.dk/model/profile/organisation/
-      <td>Anvendelsesprofil for organisation
    </table>
    <h2 class="heading settled" data-level="4" id="gldende-krav-og-overensstemmelse"><span class="secno">4. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
    <h2 class="heading settled" data-level="5" id="elementer-i-org-ap-dk"><span class="secno">5. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse. 
-   <h3 class="heading settled" data-level="5.1" id="klassen-orgformalorganization-formel-organisation"><span class="secno">5.1. </span><span class="content">Klassen org:FormalOrganization (formel organisation)</span><a class="self-link" href="#klassen-orgformalorganization-formel-organisation"></a></h3>
-   <h3 class="heading settled" data-level="5.2" id="klassen-cpovpublicorganisation-offentlig-organisation"><span class="secno">5.2. </span><span class="content">Klassen cpov:PublicOrganisation (offentlig organisation)</span><a class="self-link" href="#klassen-cpovpublicorganisation-offentlig-organisation"></a></h3>
-   <h3 class="heading settled" data-level="5.3" id="klassen-orgorganizationalunit-organisatorisk-enhed"><span class="secno">5.3. </span><span class="content">Klassen org:OrganizationalUnit (organisatorisk enhed)</span><a class="self-link" href="#klassen-orgorganizationalunit-organisatorisk-enhed"></a></h3>
+   <h3 class="heading settled" data-level="5.1" id="klassen-orgformalorganization"><span class="secno">5.1. </span><span class="content">Klassen org:FormalOrganization</span><a class="self-link" href="#klassen-orgformalorganization"></a></h3>
+   <p><img alt="formel organisation" src="img/FormalOrganization.png"></p>
+   <dl class="def">
+    <dt>URI
+    <dd>http://data.europa.eu/m8g/PublicOrganisation 
+    <dt>Foretrukken betegnelse (da)
+    <dd>formel organisation
+    <dt>Anvendelsesnote (da) 
+    <dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. 
+    <dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church. 
+    <dt>Underklasse af
+    <dd>http://www.w3.org/ns/org#Organization 
+    <dt>Kravniveau
+    <dd>?
+   </dl>
+   <p>Klassens egenskaber:</p>
+   <h4 class="heading settled" data-level="5.1.1" id="egenskab-skospreflabel"><span class="secno">5.1.1. </span><span class="content">Egenskab: skos:prefLabel</span><a class="self-link" href="#egenskab-skospreflabel"></a></h4>
+   <h4 class="heading settled" data-level="5.1.2" id="egenskab-skosaltlabel"><span class="secno">5.1.2. </span><span class="content">Egenskab: skos:altLabel</span><a class="self-link" href="#egenskab-skosaltlabel"></a></h4>
+   <h4 class="heading settled" data-level="5.1.3" id="egenskab-dctdescription"><span class="secno">5.1.3. </span><span class="content">Egenskab: dct:description</span><a class="self-link" href="#egenskab-dctdescription"></a></h4>
+   <h3 class="heading settled" data-level="5.2" id="klassen-cpovpublicorganisation"><span class="secno">5.2. </span><span class="content">Klassen cpov:PublicOrganisation</span><a class="self-link" href="#klassen-cpovpublicorganisation"></a></h3>
+   <p><img alt="offentlig organisation" src="img/PublicOrganisation.png"></p>
+   <dl class="def">
+    <dt>URI
+    <dd>http://data.europa.eu/m8g/PublicOrganisation 
+    <dt>Foretrukken betegnelse (da)
+    <dd>offentlig organisation
+    <dt>Anvendelsesnote (da) 
+    <dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer
+    <dt>Anvendelsesnote (en)
+    <dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. 
+    <dt>Underklasse af
+    <dd>http://www.w3.org/ns/org#Organization 
+    <dt>Kravniveau
+    <dd>?
+   </dl>
+    Klassens egenskaber: 
+   <h3 class="heading settled" data-level="5.3" id="klassen-orgorganizationalunit"><span class="secno">5.3. </span><span class="content">Klassen org:OrganizationalUnit</span><a class="self-link" href="#klassen-orgorganizationalunit"></a></h3>
    <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
