@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0 
-Date: 2021-09-10
+Date: 2021-09-13
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -194,9 +194,9 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
  <tr><td>rdfs </td><td>http://www.w3.org/2000/01/rdf-schema# </td><td>RDF Schema </td></tr>
  <tr><td>owl </td><td>http://www.w3.org/2002/07/owl# </td><td>Web Ontology Language </td></tr>
  <tr><td>xsd </td><td>http://www.w3.org/2001/XMLSchema#  </td><td>XML Schema </td></tr>
- <tr><td>dagi </td><td>https://data.gov.dk/model/profile/cvr# </td><td>Grunddatamodel for Det Centrale Virksomhedsregister Grunddataregistret Danmarks Administrative Geografiske Inddeling </td></tr>
+ <tr><td>dagi </td><td>https://data.gov.dk/model/profile/cvr# </td><td>Grunddatamodel for Det Centrale Virksomhedsregister </td></tr>
  <tr><td>dar </td><td>https://data.gov.dk/model/profile/dar# </td><td>Grunddatamodel for Danmarks Adresser  </td></tr>
- <tr><td>cvr </td><td>https://data.gov.dk/model/profile/dagi# </td><td>Grunddataregistret Danmarks Administrative Geografiske Inddeling</td></tr>
+ <tr><td>cvr </td><td>https://data.gov.dk/model/profile/dagi# </td><td>Grunddatamodel for Danmarks Administrative Geografiske Inddeling</td></tr>
  <tr><td>ovx </td><td>https://data.gov.dk/model/organization/extension# </td><td>Organization Vocabulary Extension </td></tr>
  <tr><td>org-ap-dk </td><td>https://data.gov.dk/model/profile/organisation/</td><td>Anvendelsesprofil for organisation</td></tr>	
 </tbody></table>
