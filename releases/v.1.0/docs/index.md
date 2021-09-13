@@ -43,7 +43,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 
 .term-table td{
   border-bottom: 1px solid #ccc;
-  padding: 12px 8px;
+  padding: 4px 8px;
 }
 
 .term-table tr td:first-child{
@@ -52,37 +52,27 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 }
 
 .term-table tr th:first-child{
-  width: 20%;
+  width: 10%;
 }
 
 .term-table tr th:nth-of-type(2){
-  width: 22%;
+  width: 45%;
 }
 
 .term-table tr th:nth-of-type(3){
-  width: 15%;
+  width: 45%;
 }
 
-.term-table tr th:nth-of-type(4){
-  width: 15%;
-}
 
-.term-table tr th:nth-of-type(5){
-  width: 15%;
-}
-
-.term-table tr th:nth-of-type(6){
-  width: 13%;
-}
 
 .term-table tr td:nth-of-type(2){
   font-style: italic;
 }
 
 .term-table th{
-  color: #fff;
+  color: #000;
   border: none;
-  background-color: #940027;
+  background-color: #C8C8C8;
   text-transform: capitalize;
   font-weight: 600;
   padding: 6px 8px;
@@ -183,11 +173,12 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 ## Profilens anvendelse
 
+#  Modellens grundlæggende struktur
+
+
 # Navneområder
-
-
 <table class="term-table">
-<thead><tr><th>præfiks</th><th>navnområde</th><th>model</th></tr></thead><tbody>
+<thead><tr><th>præfiks</th><th>navneområde</th><th>titel</th></tr></thead><tbody>
 
  <tr><td>org </td><td>http://www.w3.org/ns/org# </td><td>Organization Ontology </td></tr>
  <tr><td>cpov </td><td>http://data.europa.eu/m8g/ </td><td>Core Public Organization Vocabulary </td></tr>
@@ -214,8 +205,6 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 #  Gældende krav og overensstemmelse
 
-
-#  Modellens grundlæggende struktur
 
 #  Elementer i ORG-AP-DK
 I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
@@ -253,7 +242,7 @@ I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 
 ## UML-diagrammer
 ## Eksempler 
-## Klassifikationer
+
 <!--
 ## FormalOrganizationTypes (offentlig organisationstype)  
 ## PublicFormalOrganizationTypes (offentlig organisationstype)  
