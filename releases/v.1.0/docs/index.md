@@ -179,7 +179,7 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 # Navneområder
 <table class="term-table">
 <thead><tr><th>præfiks</th><th>navneområde</th><th>titel</th></tr></thead><tbody>
-
+ <tr><td>org-ap-dk </td><td>https://data.gov.dk/model/profile/organisation/</td><td>Anvendelsesprofil for organisation</td></tr>	
  <tr><td>org </td><td>http://www.w3.org/ns/org# </td><td>Organization Ontology </td></tr>
  <tr><td>cpov </td><td>http://data.europa.eu/m8g/ </td><td>Core Public Organization Vocabulary </td></tr>
  <tr><td>foaf </td><td>http://xmlns.com/foaf/0.1/ </td><td>Friend of a Friend </td></tr>
@@ -198,7 +198,6 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
  <tr><td>dar </td><td>https://data.gov.dk/model/profile/dar# </td><td>Grunddatamodel for Danmarks Adresser  </td></tr>
  <tr><td>cvr </td><td>https://data.gov.dk/model/profile/dagi# </td><td>Grunddatamodel for Danmarks Administrative Geografiske Inddeling</td></tr>
  <tr><td>ovx </td><td>https://data.gov.dk/model/organization/extension# </td><td>Organization Vocabulary Extension </td></tr>
- <tr><td>org-ap-dk </td><td>https://data.gov.dk/model/profile/organisation/</td><td>Anvendelsesprofil for organisation</td></tr>	
 </tbody></table>
 
 </table>
@@ -209,9 +208,51 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 #  Elementer i ORG-AP-DK
 I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 
-## Klassen org:FormalOrganization (formel organisation)  
-## Klassen cpov:PublicOrganisation (offentlig organisation)  
-## Klassen org:OrganizationalUnit (organisatorisk enhed)  
+## Klassen org:FormalOrganization 
+
+<img src="img/FormalOrganization.png" alt="formel organisation">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/m8g/PublicOrganisation </dd>
+<dt>Foretrukken betegnelse (da)</dt>
+<dd>formel organisation</dd>	
+<dt>Anvendelsesnote (da) </dt>
+<dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. </dt>
+<dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.  </dd>
+<dt>Underklasse af</dt>
+<dd>http://www.w3.org/ns/org#Organization </dd>
+<dt>Kravniveau</dt>
+<dd>?</dd>
+</dl>	 
+
+Klassens egenskaber:	
+
+### Egenskab: skos:prefLabel
+### Egenskab: skos:altLabel
+### Egenskab: dct:description 
+
+
+## Klassen cpov:PublicOrganisation 
+
+<img src="img/PublicOrganisation.png" alt="offentlig organisation">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/m8g/PublicOrganisation </dd>
+<dt>Foretrukken betegnelse (da)</dt>
+<dd>offentlig organisation</dd>		
+<dt>Anvendelsesnote (da) </dt>
+<dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. </dd>
+<dt>Underklasse af</dt>
+<dd>http://www.w3.org/ns/org#Organization </dd>
+<dt>Kravniveau</dt>
+<dd>?</dd>
+</dl>	 
+Klassens egenskaber:	
+
+
+## Klassen org:OrganizationalUnit
 
 <!--
 ## Klassen org:Site (sted)  
