@@ -218,6 +218,7 @@ I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 <dd>formel organisation</dd>	
 <dt>Anvendelsesnote (da) </dt>
 <dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. </dt>
+<dt>Anvendelsesnote (en) </dt>
 <dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.  </dd>
 <dt>Underklasse af</dt>
 <dd>http://www.w3.org/ns/org#Organization </dd>
