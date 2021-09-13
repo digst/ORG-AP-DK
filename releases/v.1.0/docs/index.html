@@ -1489,7 +1489,7 @@ Possible extra rowspan handling
 	}
 </style>
   <meta content="Bikeshed version e8cbf4ed2, updated Fri Sep 10 10:21:28 2021 -0700" name="generator">
-  <link href="https://github.com/digst/ORG-AP-DK" rel="canonical">
+  <link href="https://data.gov.dk/model/profile/ORG-AP-DK/" rel="canonical">
 <style>
 @media print {
   html { margin: 0cm 2cm 2cm 0cm; font-size: 80%; }
@@ -1535,7 +1535,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 
 .term-table td{
   border-bottom: 1px solid #ccc;
-  padding: 12px 8px;
+  padding: 4px 8px;
 }
 
 .term-table tr td:first-child{
@@ -1544,37 +1544,27 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 }
 
 .term-table tr th:first-child{
-  width: 20%;
+  width: 10%;
 }
 
 .term-table tr th:nth-of-type(2){
-  width: 22%;
+  width: 45%;
 }
 
 .term-table tr th:nth-of-type(3){
-  width: 15%;
+  width: 45%;
 }
 
-.term-table tr th:nth-of-type(4){
-  width: 15%;
-}
 
-.term-table tr th:nth-of-type(5){
-  width: 15%;
-}
-
-.term-table tr th:nth-of-type(6){
-  width: 13%;
-}
 
 .term-table tr td:nth-of-type(2){
   font-style: italic;
 }
 
 .term-table th{
-  color: #fff;
+  color: #000;
   border: none;
-  background-color: #940027;
+  background-color: #C8C8C8;
   text-transform: capitalize;
   font-weight: 600;
   padding: 6px 8px;
@@ -2021,16 +2011,16 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-13">13. september 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-10">13. september 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Navneområde:
-     <dd><a class="u-url" href="https://github.com/digst/ORG-AP-DK">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
+     <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelse <small>(non-normativ)</small>:
+     <dt>Oversættelser <small>(non-normativ)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2049,9 +2039,9 @@ dfn > a.self-link::before      { content: "#"; }
       <li><a href="#metode"><span class="secno">1.3</span> <span class="content">Metode</span></a>
       <li><a href="#profilens-anvendelse"><span class="secno">1.4</span> <span class="content">Profilens anvendelse</span></a>
      </ol>
-    <li><a href="#navneomrder"><span class="secno">2</span> <span class="content">Navneområder</span></a>
-    <li><a href="#gldende-krav-og-overensstemmelse"><span class="secno">3</span> <span class="content">Gældende krav og overensstemmelse</span></a>
-    <li><a href="#modellens-grundlggende-struktur"><span class="secno">4</span> <span class="content">Modellens grundlæggende struktur</span></a>
+    <li><a href="#modellens-grundlggende-struktur"><span class="secno">2</span> <span class="content">Modellens grundlæggende struktur</span></a>
+    <li><a href="#navneomrder"><span class="secno">3</span> <span class="content">Navneområder</span></a>
+    <li><a href="#gldende-krav-og-overensstemmelse"><span class="secno">4</span> <span class="content">Gældende krav og overensstemmelse</span></a>
     <li>
      <a href="#elementer-i-org-ap-dk"><span class="secno">5</span> <span class="content">Elementer i ORG-AP-DK</span></a>
      <ol class="toc">
@@ -2065,7 +2055,6 @@ dfn > a.self-link::before      { content: "#"; }
      <ol class="toc">
       <li><a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
       <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
-      <li><a href="#vokabularer-og-klassifikationer"><span class="secno">7.3</span> <span class="content">Vokabularer og klassifikationer</span></a>
      </ol>
    </ol>
   </nav>
@@ -2080,13 +2069,14 @@ dfn > a.self-link::before      { content: "#"; }
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
     Anvendelsesprofilen er oprettet i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og sammensætter således eksisterende vokabularer til en bestemt anvendelse. Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Dataverdenens modelleringsgrundlag, Resource Description Framework (RDF). En basal forståelse af RDF samt kendskab til de her profilerede vokabularer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. ORG og CPOV foreligger i danske oversættelser. Disse oversatte dokumenter udgør normative referencer for den i efterfølgende opstillede anvendelsesprofil. 
    <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
-   <h2 class="heading settled" data-level="2" id="navneomrder"><span class="secno">2. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
+   <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
+   <h2 class="heading settled" data-level="3" id="navneomrder"><span class="secno">3. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
     <thead>
      <tr>
       <th>præfiks
       <th>navneområde
-      <th>model
+      <th>titel
     <tbody>
      <tr>
       <td>org 
@@ -2165,8 +2155,7 @@ dfn > a.self-link::before      { content: "#"; }
       <td>https://data.gov.dk/model/profile/organisation/
       <td>Anvendelsesprofil for organisation
    </table>
-   <h2 class="heading settled" data-level="3" id="gldende-krav-og-overensstemmelse"><span class="secno">3. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
-   <h2 class="heading settled" data-level="4" id="modellens-grundlggende-struktur"><span class="secno">4. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
+   <h2 class="heading settled" data-level="4" id="gldende-krav-og-overensstemmelse"><span class="secno">4. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
    <h2 class="heading settled" data-level="5" id="elementer-i-org-ap-dk"><span class="secno">5. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse. 
    <h3 class="heading settled" data-level="5.1" id="klassen-orgformalorganization-formel-organisation"><span class="secno">5.1. </span><span class="content">Klassen org:FormalOrganization (formel organisation)</span><a class="self-link" href="#klassen-orgformalorganization-formel-organisation"></a></h3>
@@ -2176,7 +2165,6 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
    <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
-   <h3 class="heading settled" data-level="7.3" id="vokabularer-og-klassifikationer"><span class="secno">7.3. </span><span class="content">Vokabularer og klassifikationer</span><a class="self-link" href="#vokabularer-og-klassifikationer"></a></h3>
     ================ 
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
