@@ -2011,7 +2011,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-13">13. september 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-13">14. september 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -2020,7 +2020,7 @@ dfn > a.self-link::before      { content: "#"; }
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelse <small>(non-normative)</small>:
+     <dt>Oversættelse <small>(non-normativ)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2029,7 +2029,7 @@ dfn > a.self-link::before      { content: "#"; }
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
-   <h2 class="no-num no-toc no-ref" id="contents">Indholdsfortegnelse</h2>
+   <h2 class="no-num no-toc no-ref" id="contents">Iindholdsfortegnelse</h2>
    <ol class="toc" role="directory">
     <li>
      <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
@@ -2168,13 +2168,17 @@ dfn > a.self-link::before      { content: "#"; }
    <p><img alt="formel organisation" src="img/FormalOrganization.png"></p>
    <dl class="def">
     <dt>URI
-    <dd>http://data.europa.eu/m8g/PublicOrganisation 
+    <dd>http://www.w3.org/ns/org#FormalOrganization 
     <dt>Foretrukken betegnelse (da)
     <dd>formel organisation
     <dt>Anvendelsesnote (da) 
-    <dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. 
+    <dd>Klassen repræsenterer formelle organisationer. 
     <dt>Anvendelsesnote (en) 
-	   <dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church. 
+    <dd>The class represents formal organisations. 
+    <dt>Definition (da) 
+    <dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. 
+    <dt>Definition (en) 
+    <dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.
     <dt>Underklasse af
     <dd>http://www.w3.org/ns/org#Organization 
     <dt>Kravniveau
@@ -2182,6 +2186,28 @@ dfn > a.self-link::before      { content: "#"; }
    </dl>
    <p>Klassens egenskaber:</p>
    <h4 class="heading settled" data-level="5.1.1" id="egenskab-skospreflabel"><span class="secno">5.1.1. </span><span class="content">Egenskab: skos:prefLabel</span><a class="self-link" href="#egenskab-skospreflabel"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2004/02/skos/core#prefLabel
+    <dt>Foretrukken betegnelse (da)
+    <dd>foretrukken betegnelse
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive organisationens primære, juridisk anerkendte navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to provide the primary, legally recognised name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.
+    <dt>Definition (da) 
+    <dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. 
+    <dt>Definition (en) 
+    <dd>The preferred lexical label for a resource, in a given language. 
+    <dt>Domain
+    <dd>rdfs:Resource
+    <dt>Range
+    <dd>rdf:PlainLiteral
+    <dt>Underegenskab af
+    <dd>rdfs:label 
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
    <h4 class="heading settled" data-level="5.1.2" id="egenskab-skosaltlabel"><span class="secno">5.1.2. </span><span class="content">Egenskab: skos:altLabel</span><a class="self-link" href="#egenskab-skosaltlabel"></a></h4>
    <h4 class="heading settled" data-level="5.1.3" id="egenskab-dctdescription"><span class="secno">5.1.3. </span><span class="content">Egenskab: dct:description</span><a class="self-link" href="#egenskab-dctdescription"></a></h4>
    <h3 class="heading settled" data-level="5.2" id="klassen-cpovpublicorganisation"><span class="secno">5.2. </span><span class="content">Klassen cpov:PublicOrganisation</span><a class="self-link" href="#klassen-cpovpublicorganisation"></a></h3>
@@ -2195,6 +2221,10 @@ dfn > a.self-link::before      { content: "#"; }
     <dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer
     <dt>Anvendelsesnote (en)
     <dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. 
+    <dt>Definition (da) 
+    <dd>Any Organization that is defined as being part of the public sector by a legal framework at any level. 
+    <dt>Definition (en) 
+    <dd>Enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau.
     <dt>Underklasse af
     <dd>http://www.w3.org/ns/org#Organization 
     <dt>Kravniveau
