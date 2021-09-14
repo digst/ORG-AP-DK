@@ -213,13 +213,17 @@ I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 <img src="img/FormalOrganization.png" alt="formel organisation">
 <dl class="def">
 <dt>URI</dt>
-<dd>http://data.europa.eu/m8g/PublicOrganisation </dd>
+<dd>http://www.w3.org/ns/org#FormalOrganization </dd>
 <dt>Foretrukken betegnelse (da)</dt>
 <dd>formel organisation</dd>	
 <dt>Anvendelsesnote (da) </dt>
-<dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. </dt>
+<dd>Klassen repræsenterer formelle organisationer. </dt>
 <dt>Anvendelsesnote (en) </dt>
-<dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.  </dd>
+<dd>The class represents formal organisations. </dd>
+<dt>Definition (da) </dt>
+<dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening.</dt>
+<dt>Definition (en) </dt>
+<dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.</dd>
 <dt>Underklasse af</dt>
 <dd>http://www.w3.org/ns/org#Organization </dd>
 <dt>Kravniveau</dt>
@@ -229,6 +233,31 @@ I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 Klassens egenskaber:	
 
 ### Egenskab: skos:prefLabel
+
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
+<dt>Foretrukken betegnelse (da)</dt>
+<dd>foretrukken betegnelse</dd>	
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive organisationens primære, juridisk anerkendte navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dt>
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to provide the primary, legally recognised name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.</dd>	
+<dt>Definition (da) </dt>
+<dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. </dt>
+<dt>Definition (en) </dt>
+<dd>The preferred lexical label for a resource, in a given language. </dd>
+<dt>Domain</dt>
+<dd>rdfs:Resource</dd>
+<dt>Range</dt>
+<dd>rdf:PlainLiteral</dd>
+<dt>Underegenskab af</dt>
+<dd>rdfs:label </dd>
+<dt>Kravniveau</dt>
+<dd>Obligatorisk</dd>
+</dl>
+
+
 ### Egenskab: skos:altLabel
 ### Egenskab: dct:description 
 
@@ -245,6 +274,10 @@ Klassens egenskaber:
 <dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. </dd>
+<dt>Definition (da) </dt>
+<dd>Any Organization that is defined as being part of the public sector by a legal framework at any level.</dt>
+<dt>Definition (en) </dt>
+<dd>Enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau.</dd>	
 <dt>Underklasse af</dt>
 <dd>http://www.w3.org/ns/org#Organization </dd>
 <dt>Kravniveau</dt>
