@@ -247,9 +247,9 @@ Klassens egenskaber:
 <dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. </dt>
 <dt>Definition (en) </dt>
 <dd>The preferred lexical label for a resource, in a given language. </dd>
-<dt>Domain</dt>
+<dt>Domæne</dt>
 <dd>rdfs:Resource</dd>
-<dt>Range</dt>
+<dt>Rækkevidde</dt>
 <dd>rdf:PlainLiteral</dd>
 <dt>Underegenskab af</dt>
 <dd>rdfs:label </dd>
