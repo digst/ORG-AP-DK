@@ -135,7 +135,7 @@ p.italic{font-style: italic!important;}
 
 
 <pre class="metadata">
-Title: ORG-AP-DK 1.0.0
+Title: ORG-AP-DK 1.0.0-beta
 Status: LD
 URL: https://data.gov.dk/model/profile/ORG-AP-DK/
 Editor Term: Udgiver, Udgivere 
@@ -143,7 +143,7 @@ Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Abstract: 'ORG-AP-DK 1.0.0' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
-Revision: 1.0.0 
+Revision: 1.0.0-beta 
 Date: 2021-09-13
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
@@ -154,7 +154,7 @@ Logo: digst...
 </pre>
 
 
-<h1>UDKAST TIL ORG-AP-DK 1.0.0: Anvendelseprofil for organisation </h1>
+<h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
 
 #  Introduktion
 Dette dokument introducerer modellering af organisationer og definerer en anvendelsesprofil baseret på internationale standarder. Anvendelsesprofilen udgør en fælles model for offentlige såvel som ikke-offentlige organisationer i en dansk administrativ og fællesoffentlig kontekst.
