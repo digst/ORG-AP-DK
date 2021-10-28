@@ -387,11 +387,12 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da) </dt>
 <dd>Bruges til at angive en organisation som omfatter denne organisation. Bemærk at denne undeorganisation har en selvstændig eksistens - modsat en organisationsenhed</dt>	
 <dt>Anvendelsesnote (en) </dt>
-<dd>Used to specifying an organisation which contains this organisation. Note that this sub-organisation has an independent eksistence - unlike an organisational unit</dt>		
+<dd>Used to specifying an organisation which contains this organisation. Note that this sub-organisation has an independent eksistence - unlike an organisational unit</dt>	<!--	
 <dt>Definition på dansk</dt>  
 <dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som omfatter denne organisation. </dd>  
 <dt>Definition på engelsk</dt>  
 <dd>Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization. Inverse of `org:hasSubOrganization`. </dd>  
+-->
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/ns/org#</dd>  
 <dt>Udfaldsrum:</dt>
@@ -408,9 +409,9 @@ Klassens egenskaber:
 <dt>Foretrukken term på engelsk</dt>  
 <dd>has sub-organization</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>Bruges til at angive en organisation som er omfattet af denne organisation, men hvis identitet og anerkendelse ikke er afhængig af denne.</dt>	
+<dd>Bruges til at angive en organisation som er omfattet af denne organisation</dt>	
 <dt>Anvendelsesnote (en) </dt>
-<dd>Used to specifying the date on which the organisation was created</dt>	
+<dd>Used to specifying an organisation which contain this organisation/dt>	
 <!--	
 <dt>Definition på dansk</dt>  
 <dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som er en del eller et barn af denne organisation. </dd>  
@@ -479,10 +480,51 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>  
 
+### navn
+
+### alternativt navn
+
+### beskrivelse
+
+### oprettelsesdato
+
+### nedlæggelsesdato
+
+### er enhed af
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#unitOf </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>enhed af</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>unit of</dd>  
+<dt>Definition på dansk</dt>  
+<dd>Angiver en organisation, som denne enhed er en del af, f.eks. en afdeling i en større organisation. </dd>  
+<dt>Definition på engelsk</dt>  
+<dd>Indicates an Organization of which this Unit is a part, e.g. a Department within a larger FormalOrganization. This is the inverse of `org:hasUnit`. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>  
+<dt>Multiplicitet</dt><dd>[1..1]</dd>  
+<dt>Rækkevidde</dt><dd>FormalOrganization</dd></dl>  
+
+### er underorganisation af (?)
+<dl>
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive en organisationsenhed som er omfattet af denne organisationsenhed</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying an organisation which contain this organisaitonal unit</dt>	
+</dl>
+
+### har underorganisation (?)
+<dl>
+<dt>Anvendelsesnote (da)</dt>  
+<dd>Bruges til at angive en organisationsenhed som omfatter denne organisationsenhed. </dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying an organisational unit which contains this organisational unit. </dt>	
+</dl>
 
 
 
-
+<!--
 
 ## Offentlig organisation
 
@@ -496,12 +538,12 @@ Klassens egenskaber:
 <dd>Bruges til at beskrive organisationer der defineres som værende en del af den offentlige sektor under en juridsk ramme på ethvert niveau</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>Used for describing organisations that are defined as being part of the public sector by a legal framework at any level </dd>
-<!--
+
 <dt>Definition (da) </dt>
 <dd>Any Organization that is defined as being part of the public sector by a legal framework at any level.</dt>
 <dt>Definition (en) </dt>
 <dd>Enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau.</dd>	
--->
+
 <dt>Specialisering af </dt>
 <dd>http://www.w3.org/ns/org#Organization </dd>
 <dt>Kravniveau</dt>
@@ -509,6 +551,7 @@ Klassens egenskaber:
 </dl>	 
 Klassens egenskaber:	
 
+-->
 
 <!--
 ## Klassen org:Site (sted)  
