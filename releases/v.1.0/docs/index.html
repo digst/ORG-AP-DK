@@ -2,7 +2,7 @@
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>ORG-AP-DK 1.0.0</title>
+  <title>ORG-AP-DK 1.0.0-beta</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1488,7 +1488,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version e8cbf4ed2, updated Fri Sep 10 10:21:28 2021 -0700" name="generator">
+  <meta content="Bikeshed version d7036035b, updated Fri Oct 8 17:07:11 2021 -0700" name="generator">
   <link href="https://data.gov.dk/model/profile/ORG-AP-DK/" rel="canonical">
 <style>
 @media print {
@@ -1824,6 +1824,16 @@ figcaption {
 figcaption:not(.no-marker)::before {
     content: "Figure " counter(figure) " ";
 }</style>
+<style>/* style-issues */
+
+a[href].issue-return {
+    float: right;
+    float: inline-end;
+    color: var(--issueheading-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+</style>
 <style>/* style-md-lists */
 
 /* This is a weird hack for me not yet following the commonmark spec
@@ -2011,16 +2021,16 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-09-13">14. september 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-10-28">28 oktober 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Navneområde:
+     <dt>This version:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelse <small>(non-normativ)</small>:
+     <dt>Translations <small>(non-normative)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2029,7 +2039,7 @@ dfn > a.self-link::before      { content: "#"; }
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
-   <h2 class="no-num no-toc no-ref" id="contents">Iindholdsfortegnelse</h2>
+   <h2 class="no-num no-toc no-ref" id="contents">Indholdsfortegnelse</h2>
    <ol class="toc" role="directory">
     <li>
      <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
@@ -2046,14 +2056,29 @@ dfn > a.self-link::before      { content: "#"; }
      <a href="#elementer-i-org-ap-dk"><span class="secno">5</span> <span class="content">Elementer i ORG-AP-DK</span></a>
      <ol class="toc">
       <li>
-       <a href="#klassen-orgformalorganization"><span class="secno">5.1</span> <span class="content">Klassen org:FormalOrganization</span></a>
+       <a href="#organisation"><span class="secno">5.1</span> <span class="content">Organisation</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-skospreflabel"><span class="secno">5.1.1</span> <span class="content">Egenskab: skos:prefLabel</span></a>
-        <li><a href="#egenskab-skosaltlabel"><span class="secno">5.1.2</span> <span class="content">Egenskab: skos:altLabel</span></a>
-        <li><a href="#egenskab-dctdescription"><span class="secno">5.1.3</span> <span class="content">Egenskab: dct:description</span></a>
+        <li><a href="#navn"><span class="secno">5.1.1</span> <span class="content">navn</span></a>
+        <li><a href="#alternativt-navn"><span class="secno">5.1.2</span> <span class="content">alternativt navn</span></a>
+        <li><a href="#beskrivelse"><span class="secno">5.1.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#oprettelsesdato"><span class="secno">5.1.4</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato"><span class="secno">5.1.5</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#er-underorganisation-af"><span class="secno">5.1.6</span> <span class="content">er underorganisation af</span></a>
+        <li><a href="#har-underorganisation"><span class="secno">5.1.7</span> <span class="content">har underorganisation</span></a>
+        <li><a href="#har-enhed"><span class="secno">5.1.8</span> <span class="content">har enhed</span></a>
        </ol>
-      <li><a href="#klassen-cpovpublicorganisation"><span class="secno">5.2</span> <span class="content">Klassen cpov:PublicOrganisation</span></a>
-      <li><a href="#klassen-orgorganizationalunit"><span class="secno">5.3</span> <span class="content">Klassen org:OrganizationalUnit</span></a>
+      <li>
+       <a href="#organisationsenhed"><span class="secno">5.2</span> <span class="content">Organisationsenhed</span></a>
+       <ol class="toc">
+        <li><a href="#navn①"><span class="secno">5.2.1</span> <span class="content">navn</span></a>
+        <li><a href="#alternativt-navn①"><span class="secno">5.2.2</span> <span class="content">alternativt navn</span></a>
+        <li><a href="#beskrivelse①"><span class="secno">5.2.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#oprettelsesdato①"><span class="secno">5.2.4</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato①"><span class="secno">5.2.5</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#er-enhed-af"><span class="secno">5.2.6</span> <span class="content">er enhed af</span></a>
+        <li><a href="#er-underorganisation-af①"><span class="secno">5.2.7</span> <span class="content">er underorganisation af (?)</span></a>
+        <li><a href="#har-underorganisation①"><span class="secno">5.2.8</span> <span class="content">har underorganisation (?)</span></a>
+       </ol>
      </ol>
     <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
     <li>
@@ -2164,74 +2189,235 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="heading settled" data-level="4" id="gldende-krav-og-overensstemmelse"><span class="secno">4. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
    <h2 class="heading settled" data-level="5" id="elementer-i-org-ap-dk"><span class="secno">5. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse. 
-   <h3 class="heading settled" data-level="5.1" id="klassen-orgformalorganization"><span class="secno">5.1. </span><span class="content">Klassen org:FormalOrganization</span><a class="self-link" href="#klassen-orgformalorganization"></a></h3>
+   <h3 class="heading settled" data-level="5.1" id="organisation"><span class="secno">5.1. </span><span class="content">Organisation</span><a class="self-link" href="#organisation"></a></h3>
    <p><img alt="formel organisation" src="img/FormalOrganization.png"></p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#FormalOrganization 
     <dt>Foretrukken betegnelse (da)
+    <dd>organisation
+    <dt>Alternativ betegnelse (da)
     <dd>formel organisation
     <dt>Anvendelsesnote (da) 
-    <dd>Klassen repræsenterer formelle organisationer. 
+    <dd>organisation der er formelt anerkendt i samfundet med tilhørende rettigheder og ansvar 
     <dt>Anvendelsesnote (en) 
-    <dd>The class represents formal organisations. 
-    <dt>Definition (da) 
-    <dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening. 
-    <dt>Definition (en) 
-    <dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.
-    <dt>Underklasse af
+    <dd>organization which is recognized in the world at large with associated rights and responsibilities
+    <dt>Specialisering af
     <dd>http://www.w3.org/ns/org#Organization 
     <dt>Kravniveau
-    <dd>?
+    <dd>Obligatorisk
    </dl>
    <p>Klassens egenskaber:</p>
-   <h4 class="heading settled" data-level="5.1.1" id="egenskab-skospreflabel"><span class="secno">5.1.1. </span><span class="content">Egenskab: skos:prefLabel</span><a class="self-link" href="#egenskab-skospreflabel"></a></h4>
+   <h4 class="heading settled" data-level="5.1.1" id="navn"><span class="secno">5.1.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#prefLabel
     <dt>Foretrukken betegnelse (da)
+    <dd>navn
+    <dt>Alternativ betegnelse (da)
     <dd>foretrukken betegnelse
     <dt>Anvendelsesnote (da) 
-    <dd>Bruges til at angive organisationens primære, juridisk anerkendte navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. 
+    <dd>Bruges til at angive organisationens primære -ofte juridisk anerkendte - navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. 
     <dt>Anvendelsesnote (en) 
-    <dd>Used to provide the primary, legally recognised name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.
-    <dt>Definition (da) 
-    <dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. 
-    <dt>Definition (en) 
-    <dd>The preferred lexical label for a resource, in a given language. 
-    <dt>Domæne
-    <dd>rdfs:Resource
-    <dt>Rækkevidde
+    <dd>Used to provide the primary - often legally recognised - name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.
+    <dt>Udfaldsrum
     <dd>rdf:PlainLiteral
     <dt>Underegenskab af
     <dd>rdfs:label 
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="5.1.2" id="egenskab-skosaltlabel"><span class="secno">5.1.2. </span><span class="content">Egenskab: skos:altLabel</span><a class="self-link" href="#egenskab-skosaltlabel"></a></h4>
-   <h4 class="heading settled" data-level="5.1.3" id="egenskab-dctdescription"><span class="secno">5.1.3. </span><span class="content">Egenskab: dct:description</span><a class="self-link" href="#egenskab-dctdescription"></a></h4>
-   <h3 class="heading settled" data-level="5.2" id="klassen-cpovpublicorganisation"><span class="secno">5.2. </span><span class="content">Klassen cpov:PublicOrganisation</span><a class="self-link" href="#klassen-cpovpublicorganisation"></a></h3>
-   <p><img alt="offentlig organisation" src="img/PublicOrganisation.png"></p>
+   <h4 class="heading settled" data-level="5.1.2" id="alternativt-navn"><span class="secno">5.1.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>http://data.europa.eu/m8g/PublicOrganisation 
-    <dt>Foretrukken betegnelse (da)
-    <dd>offentlig organisation
+    <dd>http://www.w3.org/2004/02/skos/core#altLabel
+    <dt>Foretrukken term på dansk
+    <dd>alternativt navn
+    <dt>Alternativ term på dansk
+    <dd>alternativ betegnelse
+    <dt>Foretrukken term på engelsk
+    <dd>alternative label
     <dt>Anvendelsesnote (da) 
-    <dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer
-    <dt>Anvendelsesnote (en)
-    <dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. 
-    <dt>Definition (da) 
-    <dd>Any Organization that is defined as being part of the public sector by a legal framework at any level. 
-    <dt>Definition (en) 
-    <dd>Enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau.
-    <dt>Underklasse af
+    <dd>Bruges til at angive et accepteret - men ikke foretrukkent - navn for organisationen 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to provide an accepted - not not preferred - name for the organisation 
+    <dt>Multiplicitet
+    <dd>[0..*]
+   </dl>
+   <h4 class="heading settled" data-level="5.1.3" id="beskrivelse"><span class="secno">5.1.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/elements/1.1/description
+    <dt>Foretrukken term på dansk
+    <dd>beskrivelse
+    <dt>Foretrukken term på engelsk
+    <dd>description
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive en tekstbaseret beskrivelse af organisationens formål og arbejde 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to provide a textual description of the purpose and avtivity of the organisation 
+    <dt>Defineret af
+    <dd>http://purl.org/dc/elements/1.1/
+    <dt>Udfaldsrum:
+    <dd>rdf:langString
+    <dt>Multiplicitet
+    <dd>[0..*]
+   </dl>
+   <h4 class="heading settled" data-level="5.1.4" id="oprettelsesdato"><span class="secno">5.1.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/foundingDate
+    <dt>Foretrukken term på dansk
+    <dd>oprettelsesdato
+    <dt>Alternativ betegnelse (da)
+    <dd>grundlæggelsesdato
+    <dt>Foretrukken term på engelsk
+    <dd>founding date
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive den dato hvorpå organisationen blev oprettet 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to specifying the date on which the organisation was created 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Udfaldsrum:
+    <dd>xsd:date
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="5.1.5" id="nedlggelsesdato"><span class="secno">5.1.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/dissolutionDate 
+    <dt>Foretrukken term på dansk
+    <dd>nedlæggelsesdato
+    <dt>Alternativ betegnelse (da)
+    <dd>opløsningsdato
+    <dt>Foretrukken term på engelsk
+    <dd>dissolution date
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive den dato hvorpå organisationen blev nedlagt 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to specifying the date on which the organisation was dissolved 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Udfaldsrum:
+    <dd>xsd:date
+    --> 
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="5.1.6" id="er-underorganisation-af"><span class="secno">5.1.6. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/org#subOrganizationOf
+    <dt>Foretrukken term på dansk
+    <dd>er underorganisation af
+    <dt>Foretrukken term på engelsk
+    <dd>sub-organization of
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive en organisation som omfatter denne organisation. Bemærk at denne undeorganisation har en selvstændig eksistens - modsat en organisationsenhed 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to specifying an organisation which contains this organisation. Note that this sub-organisation has an independent eksistence - unlike an organisational unit 
+    <dt>Defineret af
+    <dd>http://www.w3.org/ns/org#
+    <dt>Udfaldsrum:
+    <dd>http://www.w3.org/ns/org#FormalOrganization
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="5.1.7" id="har-underorganisation"><span class="secno">5.1.7. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/org#hasSubOrganization 
+    <dt>Foretrukken term på dansk
+    <dd>har underorganisation
+    <dt>Foretrukken term på engelsk
+    <dd>has sub-organization
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive en organisation som er omfattet af denne organisation 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to specifying an organisation which contain this organisation/dt> 
+    <dt>Defineret af
+    <dd>http://www.w3.org/ns/org#
+    <dt>Udfaldsrum:
+    <dd>http://www.w3.org/ns/org#FormalOrganization
+    <dt>Multiplicitet
+    <dd>[0..*]
+   </dl>
+   <h4 class="heading settled" data-level="5.1.8" id="har-enhed"><span class="secno">5.1.8. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/org#hasUnit 
+    <dt>Foretrukken term på dansk
+    <dd>har enhed
+    <dt>Foretrukken term på engelsk
+    <dd>has unit 
+    <dt>Defineret af
+    <dd>http://www.w3.org/ns/org#
+    <dt>Udfaldsrum:
+    <dd>http://www.w3.org/ns/org#OrganizationalUnit
+    <dt>Multiplicitet
+    <dd>[0..*]
+   </dl>
+   <h3 class="heading settled" data-level="5.2" id="organisationsenhed"><span class="secno">5.2. </span><span class="content">Organisationsenhed</span><a class="self-link" href="#organisationsenhed"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/org#OrganizationalUnit
+    <dt>Foretrukken term på dansk
+    <dd>organisationsenhed
+    <dt>Alternativ betegnelse (da)
+    <dd>organisatorisk enhed
+    <dt>Foretrukken term på engelsk
+    <dd>organizational unit
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at beskrive en enhed som er del af en større organisation og kun har en fuld anerkendelse i forbindelse med den organisation. Organisationer består typisk af mange organisationsenheder som såsom afdelinger, kontorer, enheder, teams, grupper osv. 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used for describing a unit which is part of some larger organization and only has full recognition within the context of that organization. Typically, organisations consist of many organisational units such as deparments, divisions, units, teams, groups etc. 
+    <dt>Defineret af
+    <dd>http://www.w3.org/ns/org#
+    <dt>Specialisering af 
     <dd>http://www.w3.org/ns/org#Organization 
     <dt>Kravniveau
-    <dd>?
+    <dd>Valgfri
    </dl>
-    Klassens egenskaber: 
-   <h3 class="heading settled" data-level="5.3" id="klassen-orgorganizationalunit"><span class="secno">5.3. </span><span class="content">Klassen org:OrganizationalUnit</span><a class="self-link" href="#klassen-orgorganizationalunit"></a></h3>
+   <h4 class="heading settled" data-level="5.2.1" id="navn①"><span class="secno">5.2.1. </span><span class="content">navn</span><a class="self-link" href="#navn①"></a></h4>
+   <h4 class="heading settled" data-level="5.2.2" id="alternativt-navn①"><span class="secno">5.2.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn①"></a></h4>
+   <h4 class="heading settled" data-level="5.2.3" id="beskrivelse①"><span class="secno">5.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
+   <h4 class="heading settled" data-level="5.2.4" id="oprettelsesdato①"><span class="secno">5.2.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="5.2.5" id="nedlggelsesdato①"><span class="secno">5.2.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="5.2.6" id="er-enhed-af"><span class="secno">5.2.6. </span><span class="content">er enhed af</span><a class="self-link" href="#er-enhed-af"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/org#unitOf 
+    <dt>Foretrukken term på dansk
+    <dd>enhed af
+    <dt>Foretrukken term på engelsk
+    <dd>unit of
+    <dt>Definition på dansk
+    <dd>Angiver en organisation, som denne enhed er en del af, f.eks. en afdeling i en større organisation. 
+    <dt>Definition på engelsk
+    <dd>Indicates an Organization of which this Unit is a part, e.g. a Department within a larger FormalOrganization. This is the inverse of <code>org:hasUnit</code>. 
+    <dt>Defineret af
+    <dd>http://www.w3.org/ns/org#
+    <dt>Multiplicitet
+    <dd>[1..1]
+    <dt>Rækkevidde
+    <dd>FormalOrganization
+   </dl>
+   <h4 class="heading settled" data-level="5.2.7" id="er-underorganisation-af①"><span class="secno">5.2.7. </span><span class="content">er underorganisation af (?)</span><a class="self-link" href="#er-underorganisation-af①"></a></h4>
+   <dl>
+    <dt>Anvendelsesnote (da) 
+    <dd>Bruges til at angive en organisationsenhed som er omfattet af denne organisationsenhed 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to specifying an organisation which contain this organisaitonal unit 
+   </dl>
+   <h4 class="heading settled" data-level="5.2.8" id="har-underorganisation①"><span class="secno">5.2.8. </span><span class="content">har underorganisation (?)</span><a class="self-link" href="#har-underorganisation①"></a></h4>
+   <dl>
+    <dt>Anvendelsesnote (da)
+    <dd>Bruges til at angive en organisationsenhed som omfatter denne organisationsenhed. 
+    <dt>Anvendelsesnote (en) 
+    <dd>Used to specifying an organisational unit which contains this organisational unit. 
+   </dl>
    <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
