@@ -208,48 +208,54 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 #  Elementer i ORG-AP-DK
 I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 
-## Klassen org:FormalOrganization 
+## Organisation
 
 <img src="img/FormalOrganization.png" alt="formel organisation">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/org#FormalOrganization </dd>
 <dt>Foretrukken betegnelse (da)</dt>
-<dd>formel organisation</dd>	
+<dd>organisation</dd>	
+<dt>Alternativ betegnelse (da)</dt>
+<dd>formel organisation</dd>		
 <dt>Anvendelsesnote (da) </dt>
-<dd>Klassen repræsenterer formelle organisationer. </dt>
+<dd>organisation der er formelt anerkendt i samfundet med tilhørende rettigheder og ansvar </dt>
 <dt>Anvendelsesnote (en) </dt>
-<dd>The class represents formal organisations. </dd>
+<dd>organization which is recognized in the world at large with associated rights and responsibilities</dd>
+<!--
 <dt>Definition (da) </dt>
 <dd>En organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening.</dt>
 <dt>Definition (en) </dt>
 <dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.</dd>
-<dt>Underklasse af</dt>
+-->
+<dt>Specialisering af</dt>
 <dd>http://www.w3.org/ns/org#Organization </dd>
 <dt>Kravniveau</dt>
-<dd>?</dd>
+<dd>Obligatorisk</dd>
 </dl>	 
 
 Klassens egenskaber:	
 
-### Egenskab: skos:prefLabel
+### navn
 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
 <dt>Foretrukken betegnelse (da)</dt>
+<dd>navn</dd>	
+<dt>Alternativ betegnelse (da)</dt>
 <dd>foretrukken betegnelse</dd>	
 <dt>Anvendelsesnote (da) </dt>
-<dd>Bruges til at angive organisationens primære, juridisk anerkendte navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dt>
+<dd>Bruges til at angive organisationens primære -ofte juridisk anerkendte - navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dt>
 <dt>Anvendelsesnote (en) </dt>
-<dd>Used to provide the primary, legally recognised name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.</dd>	
+<dd>Used to provide the primary - often legally recognised - name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.</dd>	
+<!--
 <dt>Definition (da) </dt>
 <dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. </dt>
 <dt>Definition (en) </dt>
 <dd>The preferred lexical label for a resource, in a given language. </dd>
-<dt>Domæne</dt>
-<dd>rdfs:Resource</dd>
-<dt>Rækkevidde</dt>
+-->
+<dt>Udfaldsrum</dt>
 <dd>rdf:PlainLiteral</dd>
 <dt>Underegenskab af</dt>
 <dd>rdfs:label </dd>
@@ -258,11 +264,227 @@ Klassens egenskaber:
 </dl>
 
 
-### Egenskab: skos:altLabel
-### Egenskab: dct:description 
+### alternativt navn
+
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/2004/02/skos/core#altLabel</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>alternativt navn</dd>  
+<dt>Alternativ term på dansk</dt>  
+<dd>alternativ betegnelse</dd>  	
+<dt>Foretrukken term på engelsk</dt>  
+<dd>alternative label</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive et accepteret - men ikke foretrukkent - navn for organisationen</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to provide an accepted - not not preferred - name for the organisation</dt>	
+<!--
+<dt>Definition på dansk</dt>  
+<dd>en alternativ leksikalsk betegnelse for en ressource</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>An alternative lexical label for a resource.</dd>  
+
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/2004/02/skos/core#</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>rdf:langString</dd>
+-->
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>
+</dl>
 
 
-## Klassen cpov:PublicOrganisation 
+### beskrivelse 
+<dl class="def"><dt>URI</dt>  
+<dd>http://purl.org/dc/elements/1.1/description</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>beskrivelse</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>description</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive en tekstbaseret beskrivelse af organisationens formål og arbejde</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to provide a textual description of the purpose and avtivity of the organisation</dt>	
+<!--
+<dt>Definition på dansk</dt>  
+<dd>en forklaring af en ressource</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>An account of the resource. </dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://purl.org/dc/elements/1.1/</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>rdf:langString</dd>
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>
+</dl>
+
+
+### oprettelsesdato
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/foundingDate</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>oprettelsesdato</dd>  
+<dt>Alternativ betegnelse (da)</dt>
+<dd>grundlæggelsesdato</dd>		
+<dt>Foretrukken term på engelsk</dt>  
+<dd>founding date</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive den dato hvorpå organisationen blev oprettet</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying the date on which the organisation was created</dt>
+<!--
+<dt>Definition på dansk</dt>  
+<dd>den dato organisationen blev oprettet</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The date that this organization was founded.</dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>xsd:date</dd>
+<dt>Multiplicitet</dt>
+<dd>[0..1]</dd>
+</dl>
+
+
+
+### nedlæggelsesdato
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/dissolutionDate </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>nedlæggelsesdato</dd>	
+<dt>Alternativ betegnelse (da)</dt>	
+<dd>opløsningsdato</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>dissolution date</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive den dato hvorpå organisationen blev nedlagt</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying the date on which the organisation was dissolved</dt>	
+<!--
+<dt>Definition på dansk</dt>  
+<dd>den dato organisationen blev nedlagt</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The date that this organization was dissolved. </dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>xsd:date</dd>-->
+<dt>Multiplicitet</dt>
+<dd>[0..1]</dd>
+</dl>
+
+
+### er underorganisation af 
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#subOrganizationOf</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>er underorganisation af</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>sub-organization of</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive en organisation som omfatter denne organisation. Bemærk at denne undeorganisation har en selvstændig eksistens - modsat en organisationsenhed</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying an organisation which contains this organisation. Note that this sub-organisation has an independent eksistence - unlike an organisational unit</dt>		
+<dt>Definition på dansk</dt>  
+<dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som omfatter denne organisation. </dd>  
+<dt>Definition på engelsk</dt>  
+<dd>Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization. Inverse of `org:hasSubOrganization`. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>  
+</dl>  
+
+
+### har underorganisation 
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#hasSubOrganization </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>har underorganisation</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>has sub-organization</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive en organisation som er omfattet af denne organisation, men hvis identitet og anerkendelse ikke er afhængig af denne.</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying the date on which the organisation was created</dt>	
+<!--	
+<dt>Definition på dansk</dt>  
+<dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som er en del eller et barn af denne organisation. </dd>  
+<dt>Definition på engelsk</dt>  
+<dd>Represents hierarchical containment of Organizations or Organizational Units; indicates an organization which is a sub-part or child of this organization. Inverse of `org:subOrganizationOf`. </dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>
+<dt>Udfaldsrum:</dt>
+<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
+
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+
+</dl>  
+
+
+### har enhed 
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#hasUnit </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>har enhed</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>has unit </dd>  
+<!--
+<dt>Definition på dansk</dt>  
+<dd>Angiver en enhed, som er del af denne organisation, f.eks. en afdeling i en større organisation </dd>  
+<dt>Definition på engelsk</dt>  
+<dd>Indicates a unit which is part of this Organization, e.g. a Department within a larger FormalOrganization. Inverse of `org:unitOf` </dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>http://www.w3.org/ns/org#OrganizationalUnit</dd>
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>  
+</dl>  
+
+
+
+## Organisationsenhed
+
+<dl class="def">  
+<dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#OrganizationalUnit</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>organisationsenhed</dd> 
+<dt>Alternativ betegnelse (da)</dt>	
+<dd>organisatorisk enhed</dd>  	
+<dt>Foretrukken term på engelsk</dt>  
+<dd>organizational unit</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at beskrive en enhed som er del af en større organisation og kun har en fuld anerkendelse i forbindelse med den organisation. Organisationer består typisk af mange organisationsenheder som såsom afdelinger, kontorer, enheder, teams, grupper osv. </dt>		
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used for describing a unit which is part of some larger organization and only has full recognition within the context of that organization. Typically, organisations consist of many organisational units such as deparments, divisions, units, teams, groups etc. </dt>		
+<!--
+<dt>Definition på dansk</dt>  
+<dd>En organisation som en afdeling eller en supportenhed, der er del af en større organisation og kun har fuld anerkendelse i forbindelse med den organisation. Det gælder især, at enheden ikke i sig selv kan opfattes som en juridisk enhed. </dd>  
+<dt>Definition på engelsk</dt>  
+<dd>An Organization such as a department or support unit which is part of some larger Organization and only has full recognition within the context of that Organization. In particular the unit would not be regarded as a legal entity in its own right. </dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>  
+<dt>Specialisering af </dt>
+<dd>http://www.w3.org/ns/org#Organization </dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>  
+
+
+
+
+
+
+## Offentlig organisation
 
 <img src="img/PublicOrganisation.png" alt="offentlig organisation">
 <dl class="def">
@@ -271,22 +493,22 @@ Klassens egenskaber:
 <dt>Foretrukken betegnelse (da)</dt>
 <dd>offentlig organisation</dd>		
 <dt>Anvendelsesnote (da) </dt>
-<dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer</dd>
+<dd>Bruges til at beskrive organisationer der defineres som værende en del af den offentlige sektor under en juridsk ramme på ethvert niveau</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. </dd>
+<dd>Used for describing organisations that are defined as being part of the public sector by a legal framework at any level </dd>
+<!--
 <dt>Definition (da) </dt>
 <dd>Any Organization that is defined as being part of the public sector by a legal framework at any level.</dt>
 <dt>Definition (en) </dt>
 <dd>Enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau.</dd>	
-<dt>Underklasse af</dt>
+-->
+<dt>Specialisering af </dt>
 <dd>http://www.w3.org/ns/org#Organization </dd>
 <dt>Kravniveau</dt>
-<dd>?</dd>
+<dd>Valgfri</dd>
 </dl>	 
 Klassens egenskaber:	
 
-
-## Klassen org:OrganizationalUnit
 
 <!--
 ## Klassen org:Site (sted)  
@@ -308,6 +530,7 @@ Klassens egenskaber:
 ## Klassen ?:PublicOrganizationalUnitType (offentlig organisatorisk enhedstype)  
 ## Klassen ?:PublicAdministrativeTaskType (type af forvaltningsopgave)  
 -->
+
 
 
 
