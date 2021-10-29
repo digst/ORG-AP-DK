@@ -2076,8 +2076,7 @@ dfn > a.self-link::before      { content: "#"; }
         <li><a href="#oprettelsesdato①"><span class="secno">5.2.4</span> <span class="content">oprettelsesdato</span></a>
         <li><a href="#nedlggelsesdato①"><span class="secno">5.2.5</span> <span class="content">nedlæggelsesdato</span></a>
         <li><a href="#er-enhed-af"><span class="secno">5.2.6</span> <span class="content">er enhed af</span></a>
-        <li><a href="#er-underenhed-af"><span class="secno">5.2.7</span> <span class="content">er underenhed af</span></a>
-        <li><a href="#har-underenhed"><span class="secno">5.2.8</span> <span class="content">har underenhed</span></a>
+        <li><a href="#har-enhed①"><span class="secno">5.2.7</span> <span class="content">har enhed</span></a>
        </ol>
       <li><a href="#offentlig-organisation"><span class="secno">5.3</span> <span class="content">Offentlig organisation</span></a>
      </ol>
@@ -2102,8 +2101,7 @@ dfn > a.self-link::before      { content: "#"; }
     Anvendelsesprofilen er oprettet i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og sammensætter således eksisterende vokabularer til en bestemt anvendelse. Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Dataverdenens modelleringsgrundlag, Resource Description Framework (RDF). En basal forståelse af RDF samt kendskab til de her profilerede vokabularer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. ORG og CPOV foreligger i danske oversættelser. Disse oversatte dokumenter udgør normative referencer for den i efterfølgende opstillede anvendelsesprofil. 
    <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
    <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
-   <p><a href="img/OrganisationalStructure.png"><img src="img/OrganisationalStructure.png" alt="Organisatorisk struktur"/></a> </p>
-  
+   <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
    <h2 class="heading settled" data-level="3" id="navneomrder"><span class="secno">3. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
     <thead>
@@ -2397,52 +2395,33 @@ dfn > a.self-link::before      { content: "#"; }
     <dd>enhed af
     <dt>Foretrukken term på engelsk
     <dd>unit of
-    <dt>Definition på dansk
-    <dd>Angiver en organisation, som denne enhed er en del af, f.eks. en afdeling i en større organisation. 
-    <dt>Definition på engelsk
-    <dd>Indicates an Organization of which this Unit is a part, e.g. a Department within a larger FormalOrganization. This is the inverse of <code>org:hasUnit</code>. 
+    <dt>Anvendelsesnote (da)
+    <dd>Angiver en organisation eller en organisationsenhed, som denne enhed er en del af 
+    <dt>Anvendelsesnote (en)
+    <dd>Indicates an organization or organizational unit of which this unit is a part 
     <dt>Defineret af
     <dd>http://www.w3.org/ns/org#
-    <dt>Multiplicitet
-    <dd>[1..1]
-    <dt>Rækkevidde
-    <dd>FormalOrganization
-   </dl>
-   <h4 class="heading settled" data-level="5.2.7" id="er-underenhed-af"><span class="secno">5.2.7. </span><span class="content">er underenhed af</span><a class="self-link" href="#er-underenhed-af"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/org#subOrganizationOf
-    <dt>Foretrukken term på dansk
-    <dd>er underenhed af
-    <dt>Foretrukken term på engelsk
-    <dd>sub-organization of
-    <dt>Anvendelsesnote (da) 
-    <dd>Bruges til at angive en organisationsenhed som omfatter denne organisationsenhed. 
-    <dt>Anvendelsesnote (en) 
-    <dd>Used to specifying an organizational unit which contains this organizational unit. 
-    <dt>Defineret af
-    <dd>http://www.w3.org/ns/org#
-    <dt>Udfaldsrum:
-    <dd>http://www.w3.org/ns/org#FormalOrganization
     <dt>Multiplicitet
     <dd>[0..1]
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/org#FormalOrganization &amp; http://www.w3.org/ns/org#OrganizationalUnit
    </dl>
-   <h4 class="heading settled" data-level="5.2.8" id="har-underenhed"><span class="secno">5.2.8. </span><span class="content">har underenhed</span><a class="self-link" href="#har-underenhed"></a></h4>
+   <h4 class="heading settled" data-level="5.2.7" id="har-enhed①"><span class="secno">5.2.7. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed①"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>http://www.w3.org/ns/org#hasSubOrganization 
+    <dd>http://www.w3.org/ns/org#hasUnit 
     <dt>Foretrukken term på dansk
-    <dd>har underenhed
+    <dd>har enhed
     <dt>Foretrukken term på engelsk
-    <dd>has sub-organization
+    <dd>has unit 
     <dt>Anvendelsesnote (da) 
-    <dd>Bruges til at angive en organisationsenhed som er omfattet af denne organisationsenhed 
+    <dd>Bruges til at angive en organisationsenhed som er en del af denne organisationsenhed 
     <dt>Anvendelsesnote (en) 
-    <dd>Used to specifying an organizational unit which contains this organizational unit/dt> 
+    <dd>Used to specifying an organizational unit which is a part of this organizational unit/dt> 
     <dt>Defineret af
     <dd>http://www.w3.org/ns/org#
     <dt>Udfaldsrum:
-    <dd>http://www.w3.org/ns/org#FormalOrganization
+    <dd>http://www.w3.org/ns/org#OrganizationalUnit
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
