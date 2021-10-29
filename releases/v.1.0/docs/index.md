@@ -212,6 +212,10 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
         dct:description "Beskrivelse af organisationsenhed 3"@da .	
 </xmp>
 </div>
+	    
+# Globalt unikke og stabile identifikatorer	    
+Organisationer skal have tilknyttet metadata, og organisationer skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til organisationer på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Der henvises til FAIR-principperne, EU 10 Rules for Persistent URIs samt Retningslinjer for stablile http-urier.	    
+	    
 
 # Navneområder
 <table class="term-table">
