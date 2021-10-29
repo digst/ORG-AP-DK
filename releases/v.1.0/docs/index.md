@@ -214,10 +214,10 @@ I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/org#FormalOrganization </dd>
-<dt>Foretrukken betegnelse (da)</dt>
-<dd>organisation</dd>	
-<dt>Alternativ betegnelse (da)</dt>
-<dd>formel organisation</dd>		
+<dt>Foretrukken term (da)</dt>
+<dd>formel organisation</dd>	
+<dt>Alternativ term (da)</dt>
+<dd>organisation</dd>		
 <dt>Anvendelsesnote (da) </dt>
 <dd>organisation der er formelt anerkendt i samfundet med tilhørende rettigheder og ansvar </dt>
 <dt>Anvendelsesnote (en) </dt>
@@ -241,10 +241,10 @@ Klassens egenskaber:
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
-<dt>Foretrukken betegnelse (da)</dt>
+<dt>Foretrukken term (da)</dt>
 <dd>navn</dd>	
-<dt>Alternativ betegnelse (da)</dt>
-<dd>foretrukken betegnelse</dd>	
+<dt>Alternativ term (da)</dt>
+<dd>foretrukken term</dd>	
 <dt>Anvendelsesnote (da) </dt>
 <dd>Bruges til at angive organisationens primære -ofte juridisk anerkendte - navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dt>
 <dt>Anvendelsesnote (en) </dt>
@@ -422,9 +422,7 @@ Klassens egenskaber:
 <dd>http://www.w3.org/ns/org#</dd>
 <dt>Udfaldsrum:</dt>
 <dd>http://www.w3.org/ns/org#FormalOrganization</dd>
-
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
-
 </dl>  
 
 
@@ -506,25 +504,47 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt><dd>[1..1]</dd>  
 <dt>Rækkevidde</dt><dd>FormalOrganization</dd></dl>  
 
-### er underorganisation af (?)
-<dl>
+### er underenhed af 
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#subOrganizationOf</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>er underenhed af</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>sub-organization of</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive en organisationsenhed som omfatter denne organisationsenhed. </dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to specifying an organizational unit which contains this organizational unit.</dt>	
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>  
+</dl>  
+
+
+### har underenhed 
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#hasSubOrganization </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>har underenhed</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>has sub-organization</dd>
 <dt>Anvendelsesnote (da) </dt>
 <dd>Bruges til at angive en organisationsenhed som er omfattet af denne organisationsenhed</dt>	
 <dt>Anvendelsesnote (en) </dt>
-<dd>Used to specifying an organisation which contain this organisaitonal unit</dt>	
-</dl>
+<dd>Used to specifying an organizational unit which contains this organizational unit/dt>	
 
-### har underorganisation (?)
-<dl>
-<dt>Anvendelsesnote (da)</dt>  
-<dd>Bruges til at angive en organisationsenhed som omfatter denne organisationsenhed. </dt>	
-<dt>Anvendelsesnote (en) </dt>
-<dd>Used to specifying an organisational unit which contains this organisational unit. </dt>	
-</dl>
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>
+<dt>Udfaldsrum:</dt>
+<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+</dl>  
 
 
 
-<!--
+
 
 ## Offentlig organisation
 
@@ -566,6 +586,7 @@ Klassens egenskaber:
 ## Klassen cpsv:FormalFramework (formel ramme)  
 ## Klassen cpov:FoundationEvent (grundlæggelseshændelse)  
 ## Klassen org:ChangeEvent (ændringshændelse)  
+
 ## Klassen dagi:AdministrativInddeling (administrativ inddeling) 
 ## Klassen ?:FormalOrganizationType (offentlig organisationstype)  
 ## Klassen ?:PublicFormalOrganizationType (offentlig organisationstype)  
