@@ -2021,7 +2021,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-10-29">29 October 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-10-29">29 oktober 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Denne version:
@@ -2030,7 +2030,7 @@ dfn > a.self-link::before      { content: "#"; }
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelse <small>(non-normative)</small>:
+     <dt>Overstættelse <small>(non-normative)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2103,37 +2103,37 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
    <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
    <p><img alt="organisatorisk struktur -eksempel" src="img/OrganisationalStructure-example.png"></p>
-   <div class="example" id="example-4f480ec3">
-    <a class="self-link" href="#example-4f480ec3"></a> 
-<pre><httpU0003A example.com organization1> a org:Organization;
+   <div class="example" id="example-054ad009">
+    <a class="self-link" href="#example-054ad009"></a> 
+<pre>&lt;http://example.com/Organization1> a org:Organization;
     skos:prefLabel  "Organisation 1"@da ;
     dct:description "Beskrivelse af organisation 1"@da .
 
-<httpU0003A example.com organization2> a org:Organization;
+&lt;http://example.com/Organization2> a org:Organization;
     skos:prefLabel  "Organisation 2"@da ;
-    org:subOrganizationOf  <httpU0003A example.com organization1> ;
+    org:subOrganizationOf  &lt;http://example.com/Organization1> ;
     dct:description "Beskrivelse af organisation 2"@da .
 
-<httpU0003A example.com organization3> a org:Organization;
+&lt;http://example.com/Organization3> a org:Organization;
     skos:prefLabel  "Organisation 3"@da ;
-    org:subOrganizationOf  <httpU0003A example.com organization1> ;
+    org:subOrganizationOf  &lt;http://example.com/Organization1> ;
     dct:description "Beskrivelse af organisation 2"@da .
 
-<httpU0003A example.com organizationalunit1> a org:OrganizationalUnit;
+&lt;http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
     skos:prefLabel  "Organisationsenhed 1"@da ;
-    org:unitOf  <httpU0003A example.com organization3> ;
+    org:unitOf  &lt;http://example.com/Organization3> ;
     dct:description "Beskrivelse af organisationsenhed 1"@da .
 
-<httpU0003A example.com organizationalunit2> a org:OrganizationalUnit;
+&lt;http://example.com/OrganizationalUnit2> a org:OrganizationalUnit;
     skos:prefLabel  "Organisationsenhed 2"@da ;
-    org:unitOf  <httpU0003A example.com organizationalunit1> ;
+    org:unitOf  &lt;http://example.com/OrganizationalUnit1> ;
     dct:description "Beskrivelse af organisationsenhed 2"@da .
 
-<httpU0003A example.com organizationalunit3> a org:OrganizationalUnit;
+&lt;http://example.com/OrganizationalUnit3> a org:OrganizationalUnit;
     skos:prefLabel  "Organisationsenhed 3"@da ;
-    org:unitOf  <httpU0003A example.com organizationalunit1> ;
+    org:unitOf  &lt;http://example.com/OrganizationalUnit1> ;
     dct:description "Beskrivelse af organisationsenhed 3"@da .  
-</httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></pre>
+</pre>
    </div>
    <h2 class="heading settled" data-level="3" id="navneomrder"><span class="secno">3. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
