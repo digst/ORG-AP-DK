@@ -194,7 +194,7 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
     <http://example.com/Organization3> a org:Organization;
         skos:prefLabel  "Organisation 3"@da ;
         org:subOrganizationOf  <http://example.com/Organization1> ;
-        dct:description "Beskrivelse af organisation 2"@da .
+        dct:description "Beskrivelse af organisation 3"@da .
 
     <http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
         skos:prefLabel  "Organisationsenhed 1"@da ;
