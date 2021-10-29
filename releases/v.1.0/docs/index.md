@@ -176,6 +176,8 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 #  Modellens grundlæggende struktur
 
 
+<img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
+
 # Navneområder
 <table class="term-table">
 <thead><tr><th>præfiks</th><th>navneområde</th><th>titel</th></tr></thead><tbody>
@@ -208,7 +210,7 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 #  Elementer i ORG-AP-DK
 I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 
-## Organisation
+## Formel organisation
 
 <img src="img/FormalOrganization.png" alt="formel organisation">
 <dl class="def">
