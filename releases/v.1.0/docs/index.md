@@ -497,53 +497,33 @@ Klassens egenskaber:
 <dd>enhed af</dd>  
 <dt>Foretrukken term på engelsk</dt>  
 <dd>unit of</dd>  
-<dt>Definition på dansk</dt>  
-<dd>Angiver en organisation, som denne enhed er en del af, f.eks. en afdeling i en større organisation. </dd>  
-<dt>Definition på engelsk</dt>  
-<dd>Indicates an Organization of which this Unit is a part, e.g. a Department within a larger FormalOrganization. This is the inverse of `org:hasUnit`. </dd>  
+<dt>Anvendelsesnote (da)</dt>  
+<dd>Angiver en organisation eller en organisationsenhed, som denne enhed er en del af </dd>  
+<dt>Anvendelsesnote (en)</dt>  
+<dd>Indicates an organization or organizational unit of which this unit is a part </dd>  
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/ns/org#</dd>  
-<dt>Multiplicitet</dt><dd>[1..1]</dd>  
-<dt>Rækkevidde</dt><dd>FormalOrganization</dd></dl>  
-
-### er underenhed af 
-<dl class="def"><dt>URI</dt>  
-<dd>http://www.w3.org/ns/org#subOrganizationOf</dd>  
-<dt>Foretrukken term på dansk</dt>  
-<dd>er underenhed af</dd>  
-<dt>Foretrukken term på engelsk</dt>  
-<dd>sub-organization of</dd>  
-<dt>Anvendelsesnote (da) </dt>
-<dd>Bruges til at angive en organisationsenhed som omfatter denne organisationsenhed. </dt>	
-<dt>Anvendelsesnote (en) </dt>
-<dd>Used to specifying an organizational unit which contains this organizational unit.</dt>	
-<dt>Defineret af</dt>  
-<dd>http://www.w3.org/ns/org#</dd>  
-<dt>Udfaldsrum:</dt>
-<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
 <dt>Multiplicitet</dt><dd>[0..1]</dd>  
-</dl>  
+<dt>Rækkevidde</dt><dd>http://www.w3.org/ns/org#FormalOrganization & http://www.w3.org/ns/org#OrganizationalUnit</dd></dl>  
 
-
-### har underenhed 
+### har enhed 
 <dl class="def"><dt>URI</dt>  
-<dd>http://www.w3.org/ns/org#hasSubOrganization </dd>  
+<dd>http://www.w3.org/ns/org#hasUnit </dd>  
 <dt>Foretrukken term på dansk</dt>  
-<dd>har underenhed</dd>  
+<dd>har enhed</dd>  
 <dt>Foretrukken term på engelsk</dt>  
-<dd>has sub-organization</dd>
+<dd>has unit </dd>  
 <dt>Anvendelsesnote (da) </dt>
-<dd>Bruges til at angive en organisationsenhed som er omfattet af denne organisationsenhed</dt>	
+<dd>Bruges til at angive en organisationsenhed som er en del af denne organisationsenhed</dt>	
 <dt>Anvendelsesnote (en) </dt>
-<dd>Used to specifying an organizational unit which contains this organizational unit/dt>	
-
+<dd>Used to specifying an organizational unit which is a part of this organizational unit/dt>	
 <dt>Defineret af</dt>  
-<dd>http://www.w3.org/ns/org#</dd>
+<dd>http://www.w3.org/ns/org#</dd>  
 <dt>Udfaldsrum:</dt>
-<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
-<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+<dd>http://www.w3.org/ns/org#OrganizationalUnit</dd>
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>  
 </dl>  
-
 
 
 
