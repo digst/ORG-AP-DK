@@ -2102,6 +2102,39 @@ dfn > a.self-link::before      { content: "#"; }
    <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
    <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
    <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
+   <p><img alt="organisatorisk struktur -eksempel" src="img/OrganisationalStructure-example.png"></p>
+   <div class="example" id="example-4f480ec3">
+    <a class="self-link" href="#example-4f480ec3"></a> 
+<pre><httpU0003A example.com organization1> a org:Organization;
+    skos:prefLabel  "Organisation 1"@da ;
+    dct:description "Beskrivelse af organisation 1"@da .
+
+<httpU0003A example.com organization2> a org:Organization;
+    skos:prefLabel  "Organisation 2"@da ;
+    org:subOrganizationOf  <httpU0003A example.com organization1> ;
+    dct:description "Beskrivelse af organisation 2"@da .
+
+<httpU0003A example.com organization3> a org:Organization;
+    skos:prefLabel  "Organisation 3"@da ;
+    org:subOrganizationOf  <httpU0003A example.com organization1> ;
+    dct:description "Beskrivelse af organisation 2"@da .
+
+<httpU0003A example.com organizationalunit1> a org:OrganizationalUnit;
+    skos:prefLabel  "Organisationsenhed 1"@da ;
+    org:unitOf  <httpU0003A example.com organization3> ;
+    dct:description "Beskrivelse af organisationsenhed 1"@da .
+
+<httpU0003A example.com organizationalunit2> a org:OrganizationalUnit;
+    skos:prefLabel  "Organisationsenhed 2"@da ;
+    org:unitOf  <httpU0003A example.com organizationalunit1> ;
+    dct:description "Beskrivelse af organisationsenhed 2"@da .
+
+<httpU0003A example.com organizationalunit3> a org:OrganizationalUnit;
+    skos:prefLabel  "Organisationsenhed 3"@da ;
+    org:unitOf  <httpU0003A example.com organizationalunit1> ;
+    dct:description "Beskrivelse af organisationsenhed 3"@da .  
+</httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></httpU0003A></pre>
+   </div>
    <h2 class="heading settled" data-level="3" id="navneomrder"><span class="secno">3. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
     <thead>
@@ -2582,18 +2615,4 @@ dfn > a.self-link::before      { content: "#"; }
   }
 
 })();
-</script>
-	 
- <script>
-    /*Set attribute tabindex on all elements in TOC*/
-    var toc =  document.querySelectorAll("#toc .content");
-    for (var i = 0; i < toc.length; i++) {
-      if (!toc[i].hasAttribute("tabindex")){
-        var att = document.createAttribute("tabindex");
-        att.value = "0";
-        toc[i].setAttributeNode(att);
-      }
-    }
-    /*Set lang attribute value to "da" in html tag*/
-    document.getElementsByTagName("html")[0].setAttribute("lang", "da");
 </script>
