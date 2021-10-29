@@ -140,11 +140,11 @@ Status: LD
 URL: https://data.gov.dk/model/profile/ORG-AP-DK/
 Editor Term: Udgiver, Udgivere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
-Abstract: 'ORG-AP-DK 1.0.0' .
+Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-09-13
+Date: 2021-10-29
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -452,7 +452,7 @@ Klassens egenskaber:
 
 
 ## Organisationsenhed
-
+<img src="img/OrganizationalUnit.png" alt="organisationsenhed">
 <dl class="def">  
 <dt>URI</dt>  
 <dd>http://www.w3.org/ns/org#OrganizationalUnit</dd>  
