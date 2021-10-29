@@ -178,6 +178,41 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
+<img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur -eksempel">
+
+<div class='example'>
+<pre>
+    <http://example.com/Organization1> a org:Organization;
+        skos:prefLabel  "Organisation 1"@da ;
+        dct:description "Beskrivelse af organisation 1"@da .
+
+    <http://example.com/Organization2> a org:Organization;
+        skos:prefLabel  "Organisation 2"@da ;
+        org:subOrganizationOf  <http://example.com/Organization1> ;
+        dct:description "Beskrivelse af organisation 2"@da .
+
+    <http://example.com/Organization3> a org:Organization;
+        skos:prefLabel  "Organisation 3"@da ;
+        org:subOrganizationOf  <http://example.com/Organization1> ;
+        dct:description "Beskrivelse af organisation 2"@da .
+
+    <http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
+        skos:prefLabel  "Organisationsenhed 1"@da ;
+        org:unitOf  <http://example.com/Organization3> ;
+        dct:description "Beskrivelse af organisationsenhed 1"@da .
+
+    <http://example.com/OrganizationalUnit2> a org:OrganizationalUnit;
+        skos:prefLabel  "Organisationsenhed 2"@da ;
+        org:unitOf  <http://example.com/OrganizationalUnit1> ;
+        dct:description "Beskrivelse af organisationsenhed 2"@da .
+
+    <http://example.com/OrganizationalUnit3> a org:OrganizationalUnit;
+        skos:prefLabel  "Organisationsenhed 3"@da ;
+        org:unitOf  <http://example.com/OrganizationalUnit1> ;
+        dct:description "Beskrivelse af organisationsenhed 3"@da .	
+</pre>
+</div>
+
 # Navneområder
 <table class="term-table">
 <thead><tr><th>præfiks</th><th>navneområde</th><th>titel</th></tr></thead><tbody>
