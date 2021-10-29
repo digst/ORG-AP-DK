@@ -181,7 +181,7 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 <img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur -eksempel">
 
 <div class='example'>
-<pre>
+<xmp>
     <http://example.com/Organization1> a org:Organization;
         skos:prefLabel  "Organisation 1"@da ;
         dct:description "Beskrivelse af organisation 1"@da .
@@ -210,7 +210,7 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
         skos:prefLabel  "Organisationsenhed 3"@da ;
         org:unitOf  <http://example.com/OrganizationalUnit1> ;
         dct:description "Beskrivelse af organisationsenhed 3"@da .	
-</pre>
+</xmp>
 </div>
 
 # Navneområder
