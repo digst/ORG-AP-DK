@@ -2030,7 +2030,7 @@ dfn > a.self-link::before      { content: "#"; }
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Overstættelse <small>(non-normative)</small>:
+     <dt>Oversættelse <small>(non-normative)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2050,42 +2050,43 @@ dfn > a.self-link::before      { content: "#"; }
       <li><a href="#profilens-anvendelse"><span class="secno">1.4</span> <span class="content">Profilens anvendelse</span></a>
      </ol>
     <li><a href="#modellens-grundlggende-struktur"><span class="secno">2</span> <span class="content">Modellens grundlæggende struktur</span></a>
-    <li><a href="#navneomrder"><span class="secno">3</span> <span class="content">Navneområder</span></a>
-    <li><a href="#gldende-krav-og-overensstemmelse"><span class="secno">4</span> <span class="content">Gældende krav og overensstemmelse</span></a>
+    <li><a href="#globalt-unikke-og-stabile-identifikatorer"><span class="secno">3</span> <span class="content">Globalt unikke og stabile identifikatorer</span></a>
+    <li><a href="#navneomrder"><span class="secno">4</span> <span class="content">Navneområder</span></a>
+    <li><a href="#gldende-krav-og-overensstemmelse"><span class="secno">5</span> <span class="content">Gældende krav og overensstemmelse</span></a>
     <li>
-     <a href="#elementer-i-org-ap-dk"><span class="secno">5</span> <span class="content">Elementer i ORG-AP-DK</span></a>
+     <a href="#elementer-i-org-ap-dk"><span class="secno">6</span> <span class="content">Elementer i ORG-AP-DK</span></a>
      <ol class="toc">
       <li>
-       <a href="#formel-organisation"><span class="secno">5.1</span> <span class="content">Formel organisation</span></a>
+       <a href="#formel-organisation"><span class="secno">6.1</span> <span class="content">Formel organisation</span></a>
        <ol class="toc">
-        <li><a href="#navn"><span class="secno">5.1.1</span> <span class="content">navn</span></a>
-        <li><a href="#alternativt-navn"><span class="secno">5.1.2</span> <span class="content">alternativt navn</span></a>
-        <li><a href="#beskrivelse"><span class="secno">5.1.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#oprettelsesdato"><span class="secno">5.1.4</span> <span class="content">oprettelsesdato</span></a>
-        <li><a href="#nedlggelsesdato"><span class="secno">5.1.5</span> <span class="content">nedlæggelsesdato</span></a>
-        <li><a href="#er-underorganisation-af"><span class="secno">5.1.6</span> <span class="content">er underorganisation af</span></a>
-        <li><a href="#har-underorganisation"><span class="secno">5.1.7</span> <span class="content">har underorganisation</span></a>
-        <li><a href="#har-enhed"><span class="secno">5.1.8</span> <span class="content">har enhed</span></a>
+        <li><a href="#navn"><span class="secno">6.1.1</span> <span class="content">navn</span></a>
+        <li><a href="#alternativt-navn"><span class="secno">6.1.2</span> <span class="content">alternativt navn</span></a>
+        <li><a href="#beskrivelse"><span class="secno">6.1.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#oprettelsesdato"><span class="secno">6.1.4</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato"><span class="secno">6.1.5</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#er-underorganisation-af"><span class="secno">6.1.6</span> <span class="content">er underorganisation af</span></a>
+        <li><a href="#har-underorganisation"><span class="secno">6.1.7</span> <span class="content">har underorganisation</span></a>
+        <li><a href="#har-enhed"><span class="secno">6.1.8</span> <span class="content">har enhed</span></a>
        </ol>
       <li>
-       <a href="#organisationsenhed"><span class="secno">5.2</span> <span class="content">Organisationsenhed</span></a>
+       <a href="#organisationsenhed"><span class="secno">6.2</span> <span class="content">Organisationsenhed</span></a>
        <ol class="toc">
-        <li><a href="#navn①"><span class="secno">5.2.1</span> <span class="content">navn</span></a>
-        <li><a href="#alternativt-navn①"><span class="secno">5.2.2</span> <span class="content">alternativt navn</span></a>
-        <li><a href="#beskrivelse①"><span class="secno">5.2.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#oprettelsesdato①"><span class="secno">5.2.4</span> <span class="content">oprettelsesdato</span></a>
-        <li><a href="#nedlggelsesdato①"><span class="secno">5.2.5</span> <span class="content">nedlæggelsesdato</span></a>
-        <li><a href="#er-enhed-af"><span class="secno">5.2.6</span> <span class="content">er enhed af</span></a>
-        <li><a href="#har-enhed①"><span class="secno">5.2.7</span> <span class="content">har enhed</span></a>
+        <li><a href="#navn①"><span class="secno">6.2.1</span> <span class="content">navn</span></a>
+        <li><a href="#alternativt-navn①"><span class="secno">6.2.2</span> <span class="content">alternativt navn</span></a>
+        <li><a href="#beskrivelse①"><span class="secno">6.2.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#oprettelsesdato①"><span class="secno">6.2.4</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato①"><span class="secno">6.2.5</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#er-enhed-af"><span class="secno">6.2.6</span> <span class="content">er enhed af</span></a>
+        <li><a href="#har-enhed①"><span class="secno">6.2.7</span> <span class="content">har enhed</span></a>
        </ol>
-      <li><a href="#offentlig-organisation"><span class="secno">5.3</span> <span class="content">Offentlig organisation</span></a>
+      <li><a href="#offentlig-organisation"><span class="secno">6.3</span> <span class="content">Offentlig organisation</span></a>
      </ol>
-    <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
+    <li><a href="#referencer"><span class="secno">7</span> <span class="content">Referencer</span></a>
     <li>
-     <a href="#bilag"><span class="secno">7</span> <span class="content">Bilag</span></a>
+     <a href="#bilag"><span class="secno">8</span> <span class="content">Bilag</span></a>
      <ol class="toc">
-      <li><a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
-      <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
+      <li><a href="#uml-diagrammer"><span class="secno">8.1</span> <span class="content">UML-diagrammer</span></a>
+      <li><a href="#eksempler"><span class="secno">8.2</span> <span class="content">Eksempler</span></a>
      </ol>
    </ol>
   </nav>
@@ -2103,8 +2104,8 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
    <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
    <p><img alt="organisatorisk struktur -eksempel" src="img/OrganisationalStructure-example.png"></p>
-   <div class="example" id="example-054ad009">
-    <a class="self-link" href="#example-054ad009"></a> 
+   <div class="example" id="example-e3322faf">
+    <a class="self-link" href="#example-e3322faf"></a> 
 <pre>&lt;http://example.com/Organization1> a org:Organization;
     skos:prefLabel  "Organisation 1"@da ;
     dct:description "Beskrivelse af organisation 1"@da .
@@ -2135,7 +2136,9 @@ dfn > a.self-link::before      { content: "#"; }
     dct:description "Beskrivelse af organisationsenhed 3"@da .  
 </pre>
    </div>
-   <h2 class="heading settled" data-level="3" id="navneomrder"><span class="secno">3. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
+   <h2 class="heading settled" data-level="3" id="globalt-unikke-og-stabile-identifikatorer"><span class="secno">3. </span><span class="content">Globalt unikke og stabile identifikatorer</span><a class="self-link" href="#globalt-unikke-og-stabile-identifikatorer"></a></h2>
+    Organisationer skal have tilknyttet metadata, og organisationer skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til organisationer på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Der henvises til FAIR-principperne, EU 10 Rules for Persistent URIs samt Retningslinjer for stablile http-urier. 
+   <h2 class="heading settled" data-level="4" id="navneomrder"><span class="secno">4. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
     <thead>
      <tr>
@@ -2220,10 +2223,10 @@ dfn > a.self-link::before      { content: "#"; }
       <td>https://data.gov.dk/model/organization/extension# 
       <td>Organization Vocabulary Extension 
    </table>
-   <h2 class="heading settled" data-level="4" id="gldende-krav-og-overensstemmelse"><span class="secno">4. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
-   <h2 class="heading settled" data-level="5" id="elementer-i-org-ap-dk"><span class="secno">5. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
+   <h2 class="heading settled" data-level="5" id="gldende-krav-og-overensstemmelse"><span class="secno">5. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
+   <h2 class="heading settled" data-level="6" id="elementer-i-org-ap-dk"><span class="secno">6. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse. 
-   <h3 class="heading settled" data-level="5.1" id="formel-organisation"><span class="secno">5.1. </span><span class="content">Formel organisation</span><a class="self-link" href="#formel-organisation"></a></h3>
+   <h3 class="heading settled" data-level="6.1" id="formel-organisation"><span class="secno">6.1. </span><span class="content">Formel organisation</span><a class="self-link" href="#formel-organisation"></a></h3>
    <p><img alt="formel organisation" src="img/FormalOrganization.png"></p>
    <dl class="def">
     <dt>URI
@@ -2242,7 +2245,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dd>Obligatorisk
    </dl>
    <p>Klassens egenskaber:</p>
-   <h4 class="heading settled" data-level="5.1.1" id="navn"><span class="secno">5.1.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
+   <h4 class="heading settled" data-level="6.1.1" id="navn"><span class="secno">6.1.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#prefLabel
@@ -2261,7 +2264,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="5.1.2" id="alternativt-navn"><span class="secno">5.1.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn"></a></h4>
+   <h4 class="heading settled" data-level="6.1.2" id="alternativt-navn"><span class="secno">6.1.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#altLabel
@@ -2278,7 +2281,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="5.1.3" id="beskrivelse"><span class="secno">5.1.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse"></a></h4>
+   <h4 class="heading settled" data-level="6.1.3" id="beskrivelse"><span class="secno">6.1.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/elements/1.1/description
@@ -2297,7 +2300,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="5.1.4" id="oprettelsesdato"><span class="secno">5.1.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="6.1.4" id="oprettelsesdato"><span class="secno">6.1.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/foundingDate
@@ -2318,7 +2321,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="5.1.5" id="nedlggelsesdato"><span class="secno">5.1.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="6.1.5" id="nedlggelsesdato"><span class="secno">6.1.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/dissolutionDate 
@@ -2340,7 +2343,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="5.1.6" id="er-underorganisation-af"><span class="secno">5.1.6. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
+   <h4 class="heading settled" data-level="6.1.6" id="er-underorganisation-af"><span class="secno">6.1.6. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#subOrganizationOf
@@ -2359,7 +2362,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="5.1.7" id="har-underorganisation"><span class="secno">5.1.7. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
+   <h4 class="heading settled" data-level="6.1.7" id="har-underorganisation"><span class="secno">6.1.7. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#hasSubOrganization 
@@ -2378,7 +2381,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="5.1.8" id="har-enhed"><span class="secno">5.1.8. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
+   <h4 class="heading settled" data-level="6.1.8" id="har-enhed"><span class="secno">6.1.8. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#hasUnit 
@@ -2393,7 +2396,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h3 class="heading settled" data-level="5.2" id="organisationsenhed"><span class="secno">5.2. </span><span class="content">Organisationsenhed</span><a class="self-link" href="#organisationsenhed"></a></h3>
+   <h3 class="heading settled" data-level="6.2" id="organisationsenhed"><span class="secno">6.2. </span><span class="content">Organisationsenhed</span><a class="self-link" href="#organisationsenhed"></a></h3>
     <img alt="organisationsenhed" src="img/OrganizationalUnit.png"> 
    <dl class="def">
     <dt>URI
@@ -2415,12 +2418,12 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="5.2.1" id="navn①"><span class="secno">5.2.1. </span><span class="content">navn</span><a class="self-link" href="#navn①"></a></h4>
-   <h4 class="heading settled" data-level="5.2.2" id="alternativt-navn①"><span class="secno">5.2.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn①"></a></h4>
-   <h4 class="heading settled" data-level="5.2.3" id="beskrivelse①"><span class="secno">5.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
-   <h4 class="heading settled" data-level="5.2.4" id="oprettelsesdato①"><span class="secno">5.2.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato①"></a></h4>
-   <h4 class="heading settled" data-level="5.2.5" id="nedlggelsesdato①"><span class="secno">5.2.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato①"></a></h4>
-   <h4 class="heading settled" data-level="5.2.6" id="er-enhed-af"><span class="secno">5.2.6. </span><span class="content">er enhed af</span><a class="self-link" href="#er-enhed-af"></a></h4>
+   <h4 class="heading settled" data-level="6.2.1" id="navn①"><span class="secno">6.2.1. </span><span class="content">navn</span><a class="self-link" href="#navn①"></a></h4>
+   <h4 class="heading settled" data-level="6.2.2" id="alternativt-navn①"><span class="secno">6.2.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn①"></a></h4>
+   <h4 class="heading settled" data-level="6.2.3" id="beskrivelse①"><span class="secno">6.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
+   <h4 class="heading settled" data-level="6.2.4" id="oprettelsesdato①"><span class="secno">6.2.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="6.2.5" id="nedlggelsesdato①"><span class="secno">6.2.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="6.2.6" id="er-enhed-af"><span class="secno">6.2.6. </span><span class="content">er enhed af</span><a class="self-link" href="#er-enhed-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#unitOf 
@@ -2439,7 +2442,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/org#FormalOrganization &amp; http://www.w3.org/ns/org#OrganizationalUnit
    </dl>
-   <h4 class="heading settled" data-level="5.2.7" id="har-enhed①"><span class="secno">5.2.7. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed①"></a></h4>
+   <h4 class="heading settled" data-level="6.2.7" id="har-enhed①"><span class="secno">6.2.7. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#hasUnit 
@@ -2458,7 +2461,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h3 class="heading settled" data-level="5.3" id="offentlig-organisation"><span class="secno">5.3. </span><span class="content">Offentlig organisation</span><a class="self-link" href="#offentlig-organisation"></a></h3>
+   <h3 class="heading settled" data-level="6.3" id="offentlig-organisation"><span class="secno">6.3. </span><span class="content">Offentlig organisation</span><a class="self-link" href="#offentlig-organisation"></a></h3>
    <p><img alt="offentlig organisation" src="img/PublicOrganisation.png"></p>
    <dl class="def">
     <dt>URI
@@ -2480,10 +2483,10 @@ dfn > a.self-link::before      { content: "#"; }
    </dl>
     Klassens egenskaber: 
    <p>--></p>
-   <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
-   <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
-   <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
-   <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
+   <h2 class="heading settled" data-level="7" id="referencer"><span class="secno">7. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
+   <h2 class="heading settled" data-level="8" id="bilag"><span class="secno">8. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
+   <h3 class="heading settled" data-level="8.1" id="uml-diagrammer"><span class="secno">8.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
+   <h3 class="heading settled" data-level="8.2" id="eksempler"><span class="secno">8.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
     ================ 
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
