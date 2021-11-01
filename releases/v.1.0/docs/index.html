@@ -2136,6 +2136,21 @@ dfn > a.self-link::before      { content: "#"; }
     <li data-md>
      <p>En organisation kan kædes sammen med dens <strong>hjemmeside</strong> på internettet.</p>
    </ul>
+   <div class="example" id="example-48556397">
+    <a class="self-link" href="#example-48556397"></a> 
+<pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    skos:prefLabel  "Organization 1"@en ;
+    skos:altLabel  "Org 1"@da ;
+    skos:altLabel  "Org 1"@en ;
+    dct:description "Beskrivelse af organisation 1 "@da ;
+    dct:description "Description of organization 1"@da ;
+    schema:foundingDate "2011-11-01"^^xsd:date ;
+    schema:dissolutionDate "2021-11-01"^^xsd:date ;
+    schema:logo &lt;example.com/logo-organization1.png> ;
+    foaf:homepage &lt;example.com/homepage/Organization1> .
+</pre>
+   </div>
    <h3 class="heading settled" data-level="2.3" id="organisatorisk-struktur"><span class="secno">2.3. </span><span class="content">Organisatorisk struktur</span><a class="self-link" href="#organisatorisk-struktur"></a></h3>
    <ul>
     <li data-md>
@@ -2147,18 +2162,18 @@ dfn > a.self-link::before      { content: "#"; }
    </ul>
    <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
    <p><img alt="organisatorisk struktur -eksempel" src="img/OrganisationalStructure-example.png"></p>
-   <div class="example" id="example-e3322faf">
-    <a class="self-link" href="#example-e3322faf"></a> 
-<pre>&lt;http://example.com/Organization1> a org:Organization;
+   <div class="example" id="example-e7e21831">
+    <a class="self-link" href="#example-e7e21831"></a> 
+<pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
     skos:prefLabel  "Organisation 1"@da ;
     dct:description "Beskrivelse af organisation 1"@da .
 
-&lt;http://example.com/Organization2> a org:Organization;
+&lt;http://example.com/Organization2> a org:FormalOrganization;
     skos:prefLabel  "Organisation 2"@da ;
     org:subOrganizationOf  &lt;http://example.com/Organization1> ;
     dct:description "Beskrivelse af organisation 2"@da .
 
-&lt;http://example.com/Organization3> a org:Organization;
+&lt;http://example.com/Organization3> a org:FormalOrganization;
     skos:prefLabel  "Organisation 3"@da ;
     org:subOrganizationOf  &lt;http://example.com/Organization1> ;
     dct:description "Beskrivelse af organisation 3"@da .
