@@ -178,24 +178,31 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 <img src="img/illustration-til-ORG-AP-DK-core.svg" alt="kernen">
 
 ## Organisation
-- Det grundlæggende vokabular, ORG, definerer bredt organisation som ”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”
-- En formel organisation beskrives af ORG som ”en organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening”.
-- En offentlig organisation beskrives af CPOV som ”enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau”.
-Basisinformation
+- Det grundlæggende vokabular, ORG, definerer bredt **organisation** som *”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”*
+- En **formel organisation** beskrives af ORG som *”en organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening”.*
+- En **offentlig organisation** beskrives af CPOV som *”enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau”.*
 
 ## Basisinformation
-- En organisation tilføjes en eller flere navne. En af navnene på et givet sprog vil være organisationens primære, juridiske navn, men andres kan angives som alternative eller skjulte navne.
-- En organisation kan forsynes med en tekstbaseret beskrivelse af organisationen <!-
-- En organisation kan forsynes med en identifikator. - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Organisationer kan identificeres med brug af et CVR-nummer. -->
-- En organisation kan have en billedlig repræsentation i form at et logo og en miniature.
-- En organisation kan kædes sammen med dens hjemmeside på internettet.
+- En organisation tilføjes en eller flere navne. En af navnene på et givet sprog vil være organisationens **primære, juridiske navn**, men andres kan angives som **alternative eller skjulte navne**.
+- En organisation kan forsynes med en **tekstbaseret beskrivelse** af organisationen <!--
+- En organisation kan forsynes med en **identifikator**. - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Organisationer kan identificeres med brug af et CVR-nummer. -->
+- En organisation kan have en billedlig repræsentation i form at et **logo og en miniature**.
+- En organisation kan kædes sammen med dens **hjemmeside** på internettet.
 
 ## Organisatorisk struktur
-- En organisation kan bestå af flere underorganisationer der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
-- En organisation kan være inddelt i mindre organisationsenheder hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv.
-- Organisationer kan indbyrdes have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.
-- En organisation kan klassificeres som værende af en bestemt organisationstype. I forhold til offentlige organisationer kunne det fx være kommune, region, ministerier, styrelser og mange af de andre former for offentlige organisationer, der er en væsentlig del af hverdagen i det offentlige organisationslandskab.
+- En organisation kan bestå af flere **underorganisationer** der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
+- En organisation kan være inddelt i mindre **organisationsenheder** hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv.
+- Organisationer kan indbyrdes have **andre former for relationer** end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.
+<!--
+- En organisation kan klassificeres som værende af en bestemt **organisationstype**. I forhold til offentlige organisationer kunne det fx være kommune, region, ministerier, styrelser og mange af de andre former for offentlige organisationer, der er en væsentlig del af hverdagen i det offentlige organisationslandskab. -->
 
+## Medlemsskab og aktører
+
+## Kontaktinformation
+
+## Sted
+
+## Historik og retsgrundlag
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
@@ -509,7 +516,61 @@ Klassens egenskaber:
 <dd>[0..*]</dd>  
 </dl>  
 
+### relateret til  
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/ns/org#linkedTo</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>relateret til</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>linked to</dd>  
+<dt>Definition på dansk</dt>  
+<dd>Angiver en arbitrær relation mellem to organisationer. </dd>  
+<dt>Definition på engelsk</dt>  
+<dd>Indicates an arbitrary relationship between two organizations. </dd>  
+<dt>Kommentar på dansk</dt>  
+<dd>Specialiseringer af denne kan f.eks. bruges til at angive finansiering eller kæderelationer. </dd>  
+<dt>Kommentar på engelsk</dt>  
+<dd>Specializations of this can be used to, for example, denote funding or supply chain relationships. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/org#</dd>  
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>  
+<dt>Udfaldsrum</dt>
+<dd>http://www.w3.org/ns/org#FormalOrganization</dd></dl>  
 
+
+### hjemmeside  
+<dl class="def"><dt>URI</dt>  
+<dd>http://xmlns.com/foaf/0.1/homepage</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>hjemmeside</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>homepage</dd>  
+<dt>Definition på dansk</dt>  
+<dd>en hjemmeside for noget</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>A homepage for some thing. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://xmlns.com/foaf/0.1/</dd>  
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+<dt>Udfaldsrum</dt><dd>http://xmlns.com/foaf/0.1/WebPage</dd></dl>  
+
+### logo  
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/logo </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>logo</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>logo</dd>  
+<dt>Definition på dansk</dt>  
+<dd>et tilknyttet logo</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>An associated logo.</dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Multiplicitet</dt><dd>[0..1]</dd>  
+<dt>Udfaldsrum</dt><dd>ttp://schema.org/ImageObject</dd></dl>  
+ 
 
 ## Organisationsenhed
 <img src="img/OrganizationalUnit.png" alt="organisationsenhed">
@@ -661,7 +722,6 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>[0..*]</dd>  
 </dl>  
-
 
 
 
