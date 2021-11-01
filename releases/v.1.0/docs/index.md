@@ -196,13 +196,6 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 <!--
 - En organisation kan klassificeres som værende af en bestemt **organisationstype**. I forhold til offentlige organisationer kunne det fx være kommune, region, ministerier, styrelser og mange af de andre former for offentlige organisationer, der er en væsentlig del af hverdagen i det offentlige organisationslandskab. -->
 
-## Medlemsskab og aktører
-
-## Kontaktinformation
-
-## Sted
-
-## Historik og retsgrundlag
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
@@ -240,6 +233,16 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
         dct:description "Beskrivelse af organisationsenhed 3"@da .	
 </xmp>
 </div>
+	    
+	    
+## Medlemsskab og aktører
+
+## Kontaktinformation
+
+## Sted
+
+## Historik og retsgrundlag
+	    
 	    
 # Globalt unikke og stabile identifikatorer	    
 Organisationer skal have tilknyttet metadata, og organisationer skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til organisationer på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Der henvises til FAIR-principperne, EU 10 Rules for Persistent URIs samt Retningslinjer for stablile http-urier.	    
