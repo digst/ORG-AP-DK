@@ -175,6 +175,27 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 #  Modellens grundlæggende struktur
 
+<img src="img/illustration-til-ORG-AP-DK-core.svg" alt="kernen">
+
+## Organisation
+- Det grundlæggende vokabular, ORG, definerer bredt organisation som ”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”
+- En formel organisation beskrives af ORG som ”en organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening”.
+- En offentlig organisation beskrives af CPOV som ”enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau”.
+Basisinformation
+
+## Basisinformation
+- En organisation tilføjes en eller flere navne. En af navnene på et givet sprog vil være organisationens primære, juridiske navn, men andres kan angives som alternative eller skjulte navne.
+- En organisation kan forsynes med en tekstbaseret beskrivelse af organisationen <!-
+- En organisation kan forsynes med en identifikator. - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Organisationer kan identificeres med brug af et CVR-nummer. -->
+- En organisation kan have en billedlig repræsentation i form at et logo og en miniature.
+- En organisation kan kædes sammen med dens hjemmeside på internettet.
+
+## Organisatorisk struktur
+- En organisation kan bestå af flere underorganisationer der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
+- En organisation kan være inddelt i mindre organisationsenheder hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv.
+- Organisationer kan indbyrdes have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.
+- En organisation kan klassificeres som værende af en bestemt organisationstype. I forhold til offentlige organisationer kunne det fx være kommune, region, ministerier, styrelser og mange af de andre former for offentlige organisationer, der er en væsentlig del af hverdagen i det offentlige organisationslandskab.
+
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
@@ -521,9 +542,86 @@ Klassens egenskaber:
 
 ### navn
 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
+<dt>Foretrukken term (da)</dt>
+<dd>navn</dd>	
+<dt>Alternativ term (da)</dt>
+<dd>foretrukken term</dd>	
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive organisationsenhedens primære navn. Det antages at organisationsenheder kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dt>
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to provide the primary name of the organizationak unit. An organizational unit may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.</dd>	
+<!--
+<dt>Definition (da) </dt>
+<dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. </dt>
+<dt>Definition (en) </dt>
+<dd>The preferred lexical label for a resource, in a given language. </dd>
+-->
+<dt>Udfaldsrum</dt>
+<dd>rdf:PlainLiteral</dd>
+<dt>Underegenskab af</dt>
+<dd>rdfs:label </dd>
+<dt>Kravniveau</dt>
+<dd>Obligatorisk</dd>
+</dl>
+
+
 ### alternativt navn
 
-### beskrivelse
+<dl class="def"><dt>URI</dt>  
+<dd>http://www.w3.org/2004/02/skos/core#altLabel</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>alternativt navn</dd>  
+<dt>Alternativ term på dansk</dt>  
+<dd>alternativ betegnelse</dd>  	
+<dt>Foretrukken term på engelsk</dt>  
+<dd>alternative label</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive et accepteret - men ikke foretrukkent - navn for organisationsenheden</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to provide an accepted - not not preferred - name for the organizational unit</dt>	
+<!--
+<dt>Definition på dansk</dt>  
+<dd>en alternativ leksikalsk betegnelse for en ressource</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>An alternative lexical label for a resource.</dd>  
+
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/2004/02/skos/core#</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>rdf:langString</dd>
+-->
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>
+</dl>
+
+
+### beskrivelse 
+<dl class="def"><dt>URI</dt>  
+<dd>http://purl.org/dc/elements/1.1/description</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>beskrivelse</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>description</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd>Bruges til at angive en tekstbaseret beskrivelse af organisationsenhedens formål og arbejde</dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd>Used to provide a textual description of the purpose and avtivity of the organizational unit</dt>	
+<!--
+<dt>Definition på dansk</dt>  
+<dd>en forklaring af en ressource</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>An account of the resource. </dd>  
+-->
+<dt>Defineret af</dt>  
+<dd>http://purl.org/dc/elements/1.1/</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>rdf:langString</dd>
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>
+</dl>
 
 ### oprettelsesdato
 
