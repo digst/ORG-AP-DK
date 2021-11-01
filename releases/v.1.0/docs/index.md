@@ -189,6 +189,22 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 - En organisation kan have en billedlig repræsentation i form at et **logo og en miniature**.
 - En organisation kan kædes sammen med dens **hjemmeside** på internettet.
 
+<div class='example'>
+<xmp>
+<http://example.com/Organization1> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    skos:prefLabel  "Organization 1"@en ;
+    skos:altLabel  "Org 1"@da ;
+    skos:altLabel  "Org 1"@en ;
+    dct:description "Beskrivelse af organisation 1 "@da ;
+    dct:description "Description of organization 1"@da ;
+    schema:foundingDate "2011-11-01"^^xsd:date ;
+    schema:dissolutionDate "2021-11-01"^^xsd:date ;
+    schema:logo <example.com/logo-organization1.png> ;
+    foaf:homepage <example.com/homepage/Organization1> .
+</xmp>
+</div>
+	
 ## Organisatorisk struktur
 - En organisation kan bestå af flere **underorganisationer** der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
 - En organisation kan være inddelt i mindre **organisationsenheder** hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv.
@@ -203,16 +219,16 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 <div class='example'>
 <xmp>
-    <http://example.com/Organization1> a org:Organization;
+    <http://example.com/Organization1> a org:FormalOrganization;
         skos:prefLabel  "Organisation 1"@da ;
         dct:description "Beskrivelse af organisation 1"@da .
 
-    <http://example.com/Organization2> a org:Organization;
+    <http://example.com/Organization2> a org:FormalOrganization;
         skos:prefLabel  "Organisation 2"@da ;
         org:subOrganizationOf  <http://example.com/Organization1> ;
         dct:description "Beskrivelse af organisation 2"@da .
 
-    <http://example.com/Organization3> a org:Organization;
+    <http://example.com/Organization3> a org:FormalOrganization;
         skos:prefLabel  "Organisation 3"@da ;
         org:subOrganizationOf  <http://example.com/Organization1> ;
         dct:description "Beskrivelse af organisation 3"@da .
