@@ -249,19 +249,32 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
         dct:description "Beskrivelse af organisationsenhed 3"@da .	
 </xmp>
 </div>
+
+## Kontaktinformation
+- En organisation eller en organisationsenhed kan oprette et **kontaktpunkt** til et givet **formål**
+- Et kontaktpunkt kan tilknyttes **telefonnummer**, **e-mailadresse**, **url**, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
+- Et kontaktpunktet kan også levere information om dets **åbningstider**.
+	    
+
 	    
 	    
 ## Medlemsskab og aktører
 
-## Kontaktinformation
 
 ## Sted
+	    
 
 ## Historik og retsgrundlag
 	    
 	    
 # Globalt unikke og stabile identifikatorer	    
-Organisationer skal have tilknyttet metadata, og organisationer skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til organisationer på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Der henvises til FAIR-principperne, EU 10 Rules for Persistent URIs samt Retningslinjer for stablile http-urier.	    
+Formelle organisationer og organisationsenheder skal identificeres med en unik, stabil og tværgående identifikator der er uafhængig af det system den er skabt i. Derved kan organisationsdata opmærket med organisationsstandarden identificeres unikt på tværs af it-løsninger og organisatoriske skel. 
+	    
+Der er et generelt behov for at kunne sammenstille organisationsdata fra forskellige kilder og forretningsdata opmærket med organisationsdata på en sikker og nem måde. Det betyder, at der er behov for at de relevante organisationer og enheder er opmærket med en unik, tværgående identifikator. 
+	    
+Den tværgående identifikator ændres ikke i hele entitetens livstid. Oprettes en f.eks en ny organisationsenhed som erstatning for en tidligere enhed med samme navn, gives den nye en ny unik identifikator. Identifikatoren kan altid efter tildeling anvendes til at finde entiteten. 
+
+Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Læs mere om unikke og stabile identifikatorer i [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt [Retningslinjer for stabile http-urier](https://arkitektur.digst.dk/node/588).    
 	    
 
 # Navneområder
@@ -771,11 +784,232 @@ Klassens egenskaber:
 
 -->
 
+
+## Kontaktpunkt 
+<dl class="def">  
+<dt>URI</dt>  
+<dd>http://schema.org/ContactPoint</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>kontaktpunkt</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>contact point</dd>  
+<dt>Definition på dansk</dt>  
+<dd>Et kontaktpunkt - eksempelvis en Kundeklageafdeling</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>A contact point—for example, a Customer Complaints department. </dd>  
+<dt>Anvendelsesnote på dansk</dt>  
+<dd>Dette er en klasse, der repræsenterer et kontaktpunkt for organisationen</dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+</dl>  
+ 
+  
+<strong>Datatypeegenskaber (attributter): </strong>  
+
+
+### kontakpunktnavn  
+<dl class="def"><dt>URI</dt>  
+<dd>https://schema.org/contactType</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>kontakttype</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>contact type</dd>  
+<dt>Definition på dansk</dt>  
+<dd>denne egenskab anvendes til at klassificere kontaktpunkter</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.</dd>  
+<dt>Defineret af</dt>  
+<dd>https://schema.org/</dd>  
+<dt>Rækkevidde:</dt><dd>rdf:langString</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+
+
+### telefonnummer
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/telephone </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>telefon</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>telephone</dd>  
+<dt>Accepteret term på dansk</dt>  
+<dd>telefonnummer</dd>  
+<dt>Definition på dansk</dt>  
+<dd>telefonnummer som tilhører et bestemt mobilabonnement</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The telephone number. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Rækkevidde:</dt><dd>rdfs:Literal</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>  
+<strong>Objektegenskaber (associationsender): </strong>  
+
+### email 
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/email</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>e-mail</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>email</dd>  
+<dt>Accepteret term på dansk</dt>  
+<dd>e-mailadresse</dd>  
+<dt>Definition på dansk</dt>  
+<dd>adresse der identificerer en elektronisk postkasse til hvilken meddelelser kan leveres</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>Email address. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/email</dd>  
+<dt>Rækkevidde:</dt><dd>rdfs:Literal</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+
+### url 
+
+### åbningstider
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/openingHours </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>åbningstider</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>opening hours</dd>  
+<dt>Definition på dansk</dt>  
+<dd>Angiver den normale åbningstid for organisationen. 
+</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The general opening hours for a business. </dd>  
+<dt>Kommentar på dansk</dt>  
+<dd>Værdien af denne egenskab er struktureret tekst, der angiver det tidsrum, hvor kontaktpunktet normalt er tilgængeligt.
+Dage angives med kombinationer af to bogstaver: Mo, Tu, We, Th, Fr, Sa, Su. Flere dage kan angives, adskilt med komma ’,’ mellem de enkelte dage. Dage og timer kan angives som et tidsrum, med brug af bindestreg ’-’.
+Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien af schema:openingHours være Mo-Fr 09:00-17:00. Hvis kontaktpunktet er tilgængeligt tirsdag og torsdag mellem 16 og 20, vil værdien være Tu,Th 16:00-20:00.
+</dd>  
+<dt>Kommentar på engelsk</dt>  
+<dd>Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'. 
+Days are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su.
+Times are specified using 24:00 time. For example, 3pm is specified as 15:00.
+Here is an example: &lt;time itemprop="openingHours" datetime="Tu,Th 16:00-20:00"&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;.
+If a business is open 7 days a week, then it can be specified as &lt;time itemprop="openingHours" datetime="Mo-Su"&gt;Monday through Sunday, all day&lt;/time&gt;.
+</dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Rækkevidde:</dt><dd>rdfs:Literal</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+
+
+### tilgænglig i 
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/hoursAvailable </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>tilgængelig i tidsrum</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>hours available</dd>  
+<dt>Definition på dansk</dt>  
+<dd>tidsrum hvor denne service eller dette kontapunkt er tilråde</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The hours during which this service or contact is available. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+<dt>Rækkevidde</dt><dd>OpeningHoursSpecification</dd></dl>  
+ 
+
+		
+		
+
+## Åbningstidsspecifikation  
+<dl class="def">  
+<dt>URI</dt>  
+<dd>http://schema.org/OpeningHoursSpecification </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>åbningstidsspecifikation</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>opening hours specification </dd>  
+<dt>Definition på dansk</dt>  
+<dd>En struktureret værdi som giver information om åbningstider for en lokation eller en bestemt service der tilbydes på en lokation.
+Lokationen er åben hvis egenskaben ”åbner” er specificeret og ellers lukket.
+Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner” så antages det at perioden omfatter næste dag.
+</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>A structured value providing information about the opening hours of a place or a certain service inside a place. 
+The place is open if the opens property is specified, and closed otherwise.
+If the value for the closes property is less than the value for the opens property then the hour range is assumed to span over the next day
+</dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+</dl>  
+ 
+  
+<strong>Datatypeegenskaber (attributter): </strong>  
+
+
+### lukker  
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/closes</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>lukker</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>closes</dd>  
+<dt>Definition på dansk</dt>  
+<dd>det tidspunkt lokationen eller tjenesten lukker på den eller de angive ugedage</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The closing hour of the place or service on the given day(s) of the week. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/closes</dd>  
+<dt>Rækkevidde:</dt><dd>xsd:time</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+
+### åbner 
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/opens</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>åbner</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>opens</dd>  
+<dt>Definition på dansk</dt>  
+<dd>det tidspunkt lokationen eller tjenesten åbner på den eller de angive ugedage</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The opening hour of the place or service on the given day(s) of the week</dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Rækkevidde:</dt><dd>xsd:time</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+
+### gælder fra 
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/validFrom </dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>gældende fra</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>valid from</dd>  
+<dt>Definition på dansk</dt>  
+<dd>den dato hvorfra noget gælder</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The date when the item becomes valid. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Rækkevidde:</dt><dd>xsd:dateTime</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+
+### gælder til
+<dl class="def"><dt>URI</dt>  
+<dd>http://schema.org/validThrough</dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>gældende indtil</dd>  
+<dt>Definition på dansk</dt>  
+<dd>den dato hvorefter noget ikke længere er gældende</dd>  
+<dt>Definition på engelsk</dt>  
+<dd>The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. </dd>  
+<dt>Defineret af</dt>  
+<dd>http://schema.org/</dd>  
+<dt>Rækkevidde:</dt><dd>xsd:dateTime</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>  
+<strong>Objektegenskaber (associationsender): </strong>  
+
+
+### ugedag
+<dl class="def"><dt>Foretrukken term på dansk</dt>  
+<dd>ugedag</dd>  
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+<dt>Rækkevidde</dt><dd>DayOfWeek</dd></dl>  
+ 
+
+		
+
+
+
 <!--
 ## Klassen org:Site (sted)  
 ## Klassen locn:Address (adresse)  
-## Klassen schema:ContactPoint (kontaktpunkt) 
-## Klassen schema:OpeningHoursSpecification (åbningstider) 
+
 ## Klassen schema:ImageObject (billedobjekt)   
 ## Klassen org:Membership (medlemskab)  
 ## Klassen org:Role (rolle)  
