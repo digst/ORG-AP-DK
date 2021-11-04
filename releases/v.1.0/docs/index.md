@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-10-29
+Date: 2021-11-04
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
