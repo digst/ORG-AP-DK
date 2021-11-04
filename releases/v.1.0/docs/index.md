@@ -177,7 +177,7 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 Indsæt reference til KLs brugsscenarier  
 </div>	
 
-#  Modellens grundlæggende struktur
+#  Perspektiver
 
 <img src="img/illustration-til-ORG-AP-DK-core.svg" alt="kernen">
 
