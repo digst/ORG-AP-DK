@@ -216,7 +216,7 @@ Indsæt reference til KLs brugsscenarier
 
 <img src="img/View-ContactPoint.png" alt="kontaktpunkt">
 
-[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-kontaktinformation)
+[Se eksempel her](https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs//#eksempel-p-kontaktinformation)
 
 
 
