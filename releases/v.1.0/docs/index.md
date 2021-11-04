@@ -206,8 +206,6 @@ Indsæt reference til KLs brugsscenarier
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
-<img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur - graf">
-
 [Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-organisatoriske-strukturer)
 
 
@@ -1044,6 +1042,9 @@ If the value for the closes property is less than the value for the opens proper
 	
 
 ### Eksempel på beskrivelse af organisatoriske strukturer
+	
+<img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur - graf">
+	
 <div class='example'>
 <xmp>
     <http://example.com/Organization1> a org:FormalOrganization;
