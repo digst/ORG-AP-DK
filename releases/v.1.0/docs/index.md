@@ -193,7 +193,7 @@ Indsæt reference til KLs brugsscenarier
 - En organisation kan kædes sammen med dens **hjemmeside** på internettet.
 - En organisation kan forsynes med en **identifikator** - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer. 
 
-[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-basisinformation)
+[Se eksempel her](https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-basisinformation)
 
 	
 ## Organisatorisk struktur
@@ -206,7 +206,7 @@ Indsæt reference til KLs brugsscenarier
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
-[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-organisatoriske-strukturer)
+[Se eksempel her](https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-organisatoriske-strukturer)
 
 
 ## Kontaktinformation
@@ -216,7 +216,7 @@ Indsæt reference til KLs brugsscenarier
 
 <img src="img/View-ContactPoint.png" alt="kontaktpunkt">
 
-[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-kontakinformation)
+[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-kontaktinformation)
 
 
 
@@ -1005,7 +1005,7 @@ If the value for the closes property is less than the value for the opens proper
 ## UML-diagrammer
 ## Eksempler 
 
-### Eksempel på beskrivelse af basisinformation
+### Eksempel på basisinformation
 <div class='example'>
 <xmp>
 <http://example.com/Organization1> a org:FormalOrganization;
@@ -1022,7 +1022,7 @@ If the value for the closes property is less than the value for the opens proper
 </xmp>
 </div>
 
-### Eksempel på beskrivelse af idenfikatorer
+### Eksempel på idenfikatorer
 <div class='example'>
 <xmp>
 <http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
@@ -1041,7 +1041,7 @@ If the value for the closes property is less than the value for the opens proper
 	
 	
 
-### Eksempel på beskrivelse af organisatoriske strukturer
+### Eksempel på organisatoriske strukturer
 	
 <img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur - graf">
 	
@@ -1078,7 +1078,7 @@ If the value for the closes property is less than the value for the opens proper
 </xmp>
 </div>
 
-### Eksempel på beskrivelse af kontakinformation    
+### Eksempel på kontaktinformation    
 <div class='example'>
 <xmp>
 <http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
