@@ -215,9 +215,9 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 
 
 ## Kontaktinformation
-- En organisation eller en organisationsenhed kan oprette et **kontaktpunkt**  som kan gives et **navn** der formidler kontaktpunktets formål.
+- En organisation eller en organisationsenhed kan oprette et **kontaktpunkt** som kan gives et **navn** der formidler kontaktpunktets formål.
 - Et kontaktpunkt kan tilknyttes **telefonnummer**, **e-mailadresse**, **url**, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
-- Et kontaktpunkt kan også levere information om dets **åbningstider** - enten i klar tekst eller i et strukturet format.
+- Et kontaktpunkt kan også levere information om dets **åbningstider** - enten i klar tekst eller i et struktureret format.
 
 <img src="img/View-ContactPoint.png" alt="kontaktpunkt">
 
@@ -1103,7 +1103,7 @@ If the value for the closes property is less than the value for the opens proper
     skos:prefLabel  "Organisation 1"@da ;
     schema:contactPoint [
     a schema:ContactPoint ;
-    schema:contactPointName "Reception" ; 
+    schema:contactType "Reception" ; 
     schema:telephone "33925200 ";	
     schema:openingsHours "Mo,Tu,We,Th,Fri 08:00-16:00" ] .	    
 </xmp>
