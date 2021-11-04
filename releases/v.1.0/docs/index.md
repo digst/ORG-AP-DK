@@ -178,9 +178,9 @@ Indsæt reference til KLs brugsscenarier.
 Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i næste afsnit.
 </div>	
 
-#  Perspektiver
+# Grundlæggende perspektiver
 
-<img src="img/illustration-til-ORG-AP-DK-core.svg" alt="kernen">
+<img src="img/illustration-til-ORG-AP-DK-core.svg" alt="grundlæggende perspektiver">
 
 <div class='issue'>
 Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen.
@@ -226,12 +226,27 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 
 
 ## Sted
-
+- En organisations fysiske placering kan angives. Placeringen kan fx angives med en adresse.
+- Det kan angives hvilket administrativt geografisk område en offentlig organisation dækker forvaltningsmæssigt.
+<!-- En organisation kan også have en virtuel lokation -->
 	
 ## Medlemsskab og aktører
-	
+- En persons relation til en organisation kan beskrives som en medlemskabsrelation. En organisations relation til en anden organisation kan også have karakter af et medlemskab. En person ansat i en organisation kan betragtes som medlem af organisationen. I forhold til et givet medlemskab kan spiller aktøren i forhold til organisationen en rolle, som kan specificeres i en klassifikation over rolletyper.
+- En organisations relationer til personer i form af ansatte og ledere kan også angives direkte.
 
+<div class='issue'>
+Relation til Non-Person Entities /It-systemer bør indføres.
+</div>
+
+<div class='issue'>
+Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner og delegering af opgaver i organisationen.
+</div>
+	
 ## Historik og retsgrundlag
+- En organisation oprettes og ændres som svar på begivenheder eller hændelser. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den lovgivning, den politik eller anden retskilde, der udløste eller ligger til grund for hændelsen.
+- En organisations oprettelse eller nedlæggelse kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode.
+- Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.
+- En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en forvaltningsopgave. Til dette formål anvendes en klassifikation over forvaltningsopgaver.
 	    
 	    
 # Globalt unikke og stabile identifikatorer	    
@@ -241,7 +256,7 @@ Der er et generelt behov for at kunne sammenstille organisationsdata fra forskel
 	    
 Den tværgående identifikator ændres ikke i hele entitetens livstid. Oprettes en f.eks en ny organisationsenhed som erstatning for en tidligere enhed med samme navn, gives den nye en ny unik identifikator. Identifikatoren kan altid efter tildeling anvendes til at finde entiteten. 
 
-Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Læs mere om unikke og stabile identifikatorer i [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt [Retningslinjer for stabile http-urier](https://arkitektur.digst.dk/node/588).
+Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Læs mere om unikke og stabile identifikatorer i [https://www.ietf.org/rfc/rfc3986.txt](RFC 4646) [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt [Retningslinjer for stabile http-urier](https://arkitektur.digst.dk/node/588).
 
 Udover den globalt unikke URI, forsynes organisationer også ofte med andre identifikatorer som udstedes til forskellige formål af specifikke myndigheder, fx. myndighedskoder og CVR-nummer som denne specifikation også kan rumme. 
 	    
@@ -390,8 +405,6 @@ Klassens egenskaber:
 </dl>
 
 
-### identifikator
-
 ### oprettelsesdato
 <dl class="def"><dt>URI</dt>  
 <dd>http://schema.org/foundingDate</dd>  
@@ -447,6 +460,29 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>[0..1]</dd>
 </dl>
+
+
+### identifikator
+
+<dl class="def"><dt>URI</dt>  
+<dd></dd>  
+<dt>Foretrukken term på dansk</dt>  
+<dd>identifikator</dd>  
+<dt>Foretrukken term på engelsk</dt>  
+<dd>identifier</dd>  
+<dt>Anvendelsesnote (da) </dt>
+<dd></dt>	
+<dt>Anvendelsesnote (en) </dt>
+<dd></dt>	
+<dt>Defineret af</dt>  
+<dd>http://www.w3.org/ns/adms#</dd>  
+<dt>Udfaldsrum:</dt>
+<dd>http://www.w3.org/ns/adms#Identifier</dd>
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+</dl> 
+
+se også https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#globalt-unikke-og-stabile-identifikatorer
+
 
 
 ### er underorganisation af 
@@ -757,6 +793,9 @@ Klassens egenskaber:
 
 
 ## Kontaktpunkt 
+
+<img src="img/ContactPoint.png" alt="kontaktpunkt">
+
 <dl class="def">  
 <dt>URI</dt>  
 <dd>http://schema.org/ContactPoint</dd>  
@@ -879,6 +918,7 @@ If a business is open 7 days a week, then it can be specified as &lt;time itempr
  
 
 ## Åbningstidsspecifikation  
+<img src="img/OpeningsHoursSpecification.png" alt="Åbningstidsspecifikation">
 <dl class="def">  
 <dt>URI</dt>  
 <dd>http://schema.org/OpeningHoursSpecification </dd>  
@@ -972,32 +1012,41 @@ If the value for the closes property is less than the value for the opens proper
  
 
 ## Sted	
+<img src="img/Site.png" alt="sted">
 
 ## Adresse
+<img src="img/Address.png" alt="adresse">
 
 ## Administrativ geografisk inddeling
+<img src="img/AdministrativeTerritorialUnits.png" alt="admininistrativ geografisk inddeling">
 
 ## Medlemsskab
+<img src="img/Membership.png" alt="medlemsskab">
 
 ## Rolle
+<img src="img/Role.png" alt="rolle">
 
-<!--
-## Klassen foaf:Person (person)  
--->
+## Funktion
+<img src="img/Function.png" alt="funktion">
 
-<!--
-## Klassen sys:ITSystem (it-system)  
--->
+## Person
+
+## IT-system 
 
 ## Ændringshændelse
+<img src="img/ChangeEvent.png" alt="ændringshændelse">
 
-## Formel ramme
+## Retskilde
+<img src="img/LegalResource.png" alt="retskilde">
 
 ## Dokument
+<img src="img/Document.png" alt="dokument">
 
 ## Billedobjekt
+<img src="img/Image.png" alt="billedobjekt">
 
 ## Identifikator
+<img src="img/Identifier.png" alt="identifikator">
 
 ### kode
 ### udstedende myndighed
@@ -1006,11 +1055,16 @@ If the value for the closes property is less than the value for the opens proper
 
 # Klassifikationer
 
-## Klassen FormalOrganizationType (offentlig organisationstype)  
-## Klassen PublicFormalOrganizationType (offentlig organisationstype)  
-## Klassen OrganizationalUnitType (organisatorisk enhedstype)  
-## Klassen PublicOrganizationalUnitType (offentlig organisatorisk enhedstype)  
-## Klassen PublicAdministrativeTaskType (type af forvaltningsopgave)  
+##  offentlig organisationstype
+FormalOrganizationType
+##  offentlig organisationstype
+PublicFormalOrganizationType
+##  organisatorisk enhedstype
+OrganizationalUnitType
+##  offentlig organisatorisk enhedstype
+PublicOrganizationalUnitType
+##  type af forvaltningsopgave
+PublicAdministrativeTaskType
 
 
 
@@ -1021,6 +1075,10 @@ If the value for the closes property is less than the value for the opens proper
 #  Bilag
 
 ## UML-diagrammer
+
+### UML-diagram: ORG-AP-DK v. 1.0.0-beta 
+<a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img alt="Illustration af ORG-AP-DK v. 1.0.0-beta UML" src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"></a>
+
 ## Eksempler 
 
 ### Eksempel på basisinformation
