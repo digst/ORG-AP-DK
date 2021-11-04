@@ -173,6 +173,10 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 ## Profilens anvendelse
 
+<div class='issue'>
+Indsæt reference til KLs brugsscenarier  
+</div>	
+
 #  Modellens grundlæggende struktur
 
 <img src="img/illustration-til-ORG-AP-DK-core.svg" alt="kernen">
@@ -184,26 +188,13 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 ## Basisinformation
 - En organisation tilføjes en eller flere navne. En af navnene på et givet sprog vil være organisationens **primære, juridiske navn**, men andres kan angives som **alternative eller skjulte navne**.
-- En organisation kan forsynes med en **tekstbaseret beskrivelse** af organisationen <!--
-- En organisation kan forsynes med en **identifikator**. - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Organisationer kan identificeres med brug af et CVR-nummer. -->
+- En organisation kan forsynes med en **tekstbaseret beskrivelse** af organisationen 
 - En organisation kan have en billedlig repræsentation i form at et **logo og en miniature**.
 - En organisation kan kædes sammen med dens **hjemmeside** på internettet.
+- En organisation kan forsynes med en **identifikator** - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer. 
 
-<div class='example'>
-<xmp>
-<http://example.com/Organization1> a org:FormalOrganization;
-    skos:prefLabel  "Organisation 1"@da ;
-    skos:prefLabel  "Organization 1"@en ;
-    skos:altLabel  "Org 1"@da ;
-    skos:altLabel  "Org 1"@en ;
-    dct:description "Beskrivelse af organisation 1 "@da ;
-    dct:description "Description of organization 1"@da ;
-    schema:foundingDate "2011-11-01"^^xsd:date ;
-    schema:dissolutionDate "2021-11-01"^^xsd:date ;
-    schema:logo <example.com/logo-organization1.png> ;
-    foaf:homepage <example.com/homepage/Organization1> .
-</xmp>
-</div>
+[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-basisinformation)
+
 	
 ## Organisatorisk struktur
 - En organisation kan bestå af flere **underorganisationer** der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
@@ -215,54 +206,27 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
-<img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur -eksempel">
+<img src="img/OrganisationalStructure-example.png" alt="organisatorisk struktur - graf">
 
-<div class='example'>
-<xmp>
-    <http://example.com/Organization1> a org:FormalOrganization;
-        skos:prefLabel  "Organisation 1"@da ;
-        dct:description "Beskrivelse af organisation 1"@da .
+[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-organisatoriske-strukturer)
 
-    <http://example.com/Organization2> a org:FormalOrganization;
-        skos:prefLabel  "Organisation 2"@da ;
-        org:subOrganizationOf  <http://example.com/Organization1> ;
-        dct:description "Beskrivelse af organisation 2"@da .
-
-    <http://example.com/Organization3> a org:FormalOrganization;
-        skos:prefLabel  "Organisation 3"@da ;
-        org:subOrganizationOf  <http://example.com/Organization1> ;
-        dct:description "Beskrivelse af organisation 3"@da .
-
-    <http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
-        skos:prefLabel  "Organisationsenhed 1"@da ;
-        org:unitOf  <http://example.com/Organization3> ;
-        dct:description "Beskrivelse af organisationsenhed 1"@da .
-
-    <http://example.com/OrganizationalUnit2> a org:OrganizationalUnit;
-        skos:prefLabel  "Organisationsenhed 2"@da ;
-        org:unitOf  <http://example.com/OrganizationalUnit1> ;
-        dct:description "Beskrivelse af organisationsenhed 2"@da .
-
-    <http://example.com/OrganizationalUnit3> a org:OrganizationalUnit;
-        skos:prefLabel  "Organisationsenhed 3"@da ;
-        org:unitOf  <http://example.com/OrganizationalUnit1> ;
-        dct:description "Beskrivelse af organisationsenhed 3"@da .	
-</xmp>
-</div>
 
 ## Kontaktinformation
-- En organisation eller en organisationsenhed kan oprette et **kontaktpunkt** til et givet **formål**
+- En organisation eller en organisationsenhed kan oprette et **kontaktpunkt**  som kan gives et **navn** der formidler kontaktpunkts formål.
 - Et kontaktpunkt kan tilknyttes **telefonnummer**, **e-mailadresse**, **url**, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
 - Et kontaktpunktet kan også levere information om dets **åbningstider**.
-	    
 
-	    
-	    
-## Medlemsskab og aktører
+<img src="img/View-ContactPoint.png" alt="kontaktpunkt">
+
+[Se eksempel her](https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-kontakinformation)
+
 
 
 ## Sted
-	    
+
+	
+## Medlemsskab og aktører
+	
 
 ## Historik og retsgrundlag
 	    
@@ -274,7 +238,9 @@ Der er et generelt behov for at kunne sammenstille organisationsdata fra forskel
 	    
 Den tværgående identifikator ændres ikke i hele entitetens livstid. Oprettes en f.eks en ny organisationsenhed som erstatning for en tidligere enhed med samme navn, gives den nye en ny unik identifikator. Identifikatoren kan altid efter tildeling anvendes til at finde entiteten. 
 
-Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Læs mere om unikke og stabile identifikatorer i [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt [Retningslinjer for stabile http-urier](https://arkitektur.digst.dk/node/588).    
+Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Læs mere om unikke og stabile identifikatorer i [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt [Retningslinjer for stabile http-urier](https://arkitektur.digst.dk/node/588).
+
+Udover den globalt unikke URI, forsynes organisationer også ofte med andre identifikatorer som udstedes til forskellige formål af specifikke myndigheder, fx. myndighedskoder og CVR-nummer som denne specifikation også kan rumme.
 	    
 
 # Navneområder
@@ -420,6 +386,8 @@ Klassens egenskaber:
 <dd>[0..*]</dd>
 </dl>
 
+
+### identifikator
 
 ### oprettelsesdato
 <dl class="def"><dt>URI</dt>  
@@ -859,7 +827,8 @@ Klassens egenskaber:
 <dt>Rækkevidde:</dt><dd>rdfs:Literal</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
 
 ### url 
-
+	
+	
 ### åbningstider
 <dl class="def"><dt>URI</dt>  
 <dd>http://schema.org/openingHours </dd>  
@@ -889,7 +858,7 @@ If a business is open 7 days a week, then it can be specified as &lt;time itempr
 <dt>Rækkevidde:</dt><dd>rdfs:Literal</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
 
 
-### tilgænglig i 
+### tilgænglig i tidsrum 
 <dl class="def"><dt>URI</dt>  
 <dd>http://schema.org/hoursAvailable </dd>  
 <dt>Foretrukken term på dansk</dt>  
@@ -905,9 +874,6 @@ If a business is open 7 days a week, then it can be specified as &lt;time itempr
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Rækkevidde</dt><dd>OpeningHoursSpecification</dd></dl>  
  
-
-		
-		
 
 ## Åbningstidsspecifikation  
 <dl class="def">  
@@ -1002,17 +968,21 @@ If the value for the closes property is less than the value for the opens proper
 <dt>Rækkevidde</dt><dd>DayOfWeek</dd></dl>  
  
 
-		
+## Sted	
+
+## Adresse
+
+## Medlemsskab
+
+## Rolle
+
 
 
 
 <!--
-## Klassen org:Site (sted)  
-## Klassen locn:Address (adresse)  
 
 ## Klassen schema:ImageObject (billedobjekt)   
-## Klassen org:Membership (medlemskab)  
-## Klassen org:Role (rolle)  
+
 ## Klassen foaf:Person (person)  
 ## Klassen foaf:Document (dokument) 
 ## Klassen cpsv:FormalFramework (formel ramme)  
@@ -1037,6 +1007,90 @@ If the value for the closes property is less than the value for the opens proper
 ## UML-diagrammer
 ## Eksempler 
 
+### Eksempel på beskrivelse af basisinformation
+<div class='example'>
+<xmp>
+<http://example.com/Organization1> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    skos:prefLabel  "Organization 1"@en ;
+    skos:altLabel  "Org 1"@da ;
+    skos:altLabel  "Org 1"@en ;
+    dct:description "Beskrivelse af organisation 1 "@da ;
+    dct:description "Description of organization 1"@da ;
+    schema:foundingDate "2011-11-01"^^xsd:date ;
+    schema:dissolutionDate "2021-11-01"^^xsd:date ;
+    schema:logo <example.com/logo-organization1.png> ;
+    foaf:homepage <example.com/homepage/Organization1> .
+</xmp>
+</div>
+
+### Eksempel på beskrivelse af idenfikatorer
+<div class='example'>
+<xmp>
+<http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
+    legal:legalIdentifier [
+    a adms:Identifier ;
+    skos:notation "#CVR-nummer" ;
+    issuingAuthorityName "ERST" ;
+  ] ;
+    org:identifier [
+    a adms:Identifier ;
+    skos:notation"#CPR-myndighedskode#" ;
+    issuingAuthorityName "CPR" ;
+  ] .
+</xmp>
+</div>
+	
+	
+
+### Eksempel på beskrivelse af organisatoriske strukturer
+<div class='example'>
+<xmp>
+    <http://example.com/Organization1> a org:FormalOrganization;
+        skos:prefLabel  "Organisation 1"@da ;
+        dct:description "Beskrivelse af organisation 1"@da .
+
+    <http://example.com/Organization2> a org:FormalOrganization;
+        skos:prefLabel  "Organisation 2"@da ;
+        org:subOrganizationOf  <http://example.com/Organization1> ;
+        dct:description "Beskrivelse af organisation 2"@da .
+
+    <http://example.com/Organization3> a org:FormalOrganization;
+        skos:prefLabel  "Organisation 3"@da ;
+        org:subOrganizationOf  <http://example.com/Organization1> ;
+        dct:description "Beskrivelse af organisation 3"@da .
+
+    <http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
+        skos:prefLabel  "Organisationsenhed 1"@da ;
+        org:unitOf  <http://example.com/Organization3> ;
+        dct:description "Beskrivelse af organisationsenhed 1"@da .
+
+    <http://example.com/OrganizationalUnit2> a org:OrganizationalUnit;
+        skos:prefLabel  "Organisationsenhed 2"@da ;
+        org:unitOf  <http://example.com/OrganizationalUnit1> ;
+        dct:description "Beskrivelse af organisationsenhed 2"@da .
+
+    <http://example.com/OrganizationalUnit3> a org:OrganizationalUnit;
+        skos:prefLabel  "Organisationsenhed 3"@da ;
+        org:unitOf  <http://example.com/OrganizationalUnit1> ;
+        dct:description "Beskrivelse af organisationsenhed 3"@da .	
+</xmp>
+</div>
+
+### Eksempel på beskrivelse af kontakinformation    
+<div class='example'>
+<xmp>
+<http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    schema:contactPoint [
+    a schema:ContactPoint ;
+    schema:contactPointName "Reception" ; 
+    schema:telephone "33925200 ";	
+    schema:openingsHours "Mo,Tu,We,Th,Fri 08:00-16:00" ] .	    
+</xmp>
+</div>	    
+	
+	
 <!--
 ## FormalOrganizationTypes (offentlig organisationstype)  
 ## PublicFormalOrganizationTypes (offentlig organisationstype)  
