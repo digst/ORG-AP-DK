@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -1488,7 +1487,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version d7036035b, updated Fri Oct 8 17:07:11 2021 -0700" name="generator">
+  <meta content="Bikeshed version 83b904c2e, updated Wed Nov 3 17:20:53 2021 -0700" name="generator">
   <link href="https://data.gov.dk/model/profile/ORG-AP-DK/" rel="canonical">
 <style>
 @media print {
@@ -2021,13 +2020,14 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-10-29">29 October 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-04">4. oktober 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
+     <dd><a href="#issues-index">Inline In Spec</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
      <dt>Oversættelse <small>(non-normative)</small>:
@@ -2055,9 +2055,9 @@ dfn > a.self-link::before      { content: "#"; }
       <li><a href="#organisation"><span class="secno">2.1</span> <span class="content">Organisation</span></a>
       <li><a href="#basisinformation"><span class="secno">2.2</span> <span class="content">Basisinformation</span></a>
       <li><a href="#organisatorisk-struktur"><span class="secno">2.3</span> <span class="content">Organisatorisk struktur</span></a>
-      <li><a href="#medlemsskab-og-aktrer"><span class="secno">2.4</span> <span class="content">Medlemsskab og aktører</span></a>
-      <li><a href="#kontaktinformation"><span class="secno">2.5</span> <span class="content">Kontaktinformation</span></a>
-      <li><a href="#sted"><span class="secno">2.6</span> <span class="content">Sted</span></a>
+      <li><a href="#kontaktinformation"><span class="secno">2.4</span> <span class="content">Kontaktinformation</span></a>
+      <li><a href="#sted"><span class="secno">2.5</span> <span class="content">Sted</span></a>
+      <li><a href="#medlemsskab-og-aktrer"><span class="secno">2.6</span> <span class="content">Medlemsskab og aktører</span></a>
       <li><a href="#historik-og-retsgrundlag"><span class="secno">2.7</span> <span class="content">Historik og retsgrundlag</span></a>
      </ol>
     <li><a href="#globalt-unikke-og-stabile-identifikatorer"><span class="secno">3</span> <span class="content">Globalt unikke og stabile identifikatorer</span></a>
@@ -2072,14 +2072,15 @@ dfn > a.self-link::before      { content: "#"; }
         <li><a href="#navn"><span class="secno">6.1.1</span> <span class="content">navn</span></a>
         <li><a href="#alternativt-navn"><span class="secno">6.1.2</span> <span class="content">alternativt navn</span></a>
         <li><a href="#beskrivelse"><span class="secno">6.1.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#oprettelsesdato"><span class="secno">6.1.4</span> <span class="content">oprettelsesdato</span></a>
-        <li><a href="#nedlggelsesdato"><span class="secno">6.1.5</span> <span class="content">nedlæggelsesdato</span></a>
-        <li><a href="#er-underorganisation-af"><span class="secno">6.1.6</span> <span class="content">er underorganisation af</span></a>
-        <li><a href="#har-underorganisation"><span class="secno">6.1.7</span> <span class="content">har underorganisation</span></a>
-        <li><a href="#har-enhed"><span class="secno">6.1.8</span> <span class="content">har enhed</span></a>
-        <li><a href="#relateret-til"><span class="secno">6.1.9</span> <span class="content">relateret til</span></a>
-        <li><a href="#hjemmeside"><span class="secno">6.1.10</span> <span class="content">hjemmeside</span></a>
-        <li><a href="#logo"><span class="secno">6.1.11</span> <span class="content">logo</span></a>
+        <li><a href="#identifikator"><span class="secno">6.1.4</span> <span class="content">identifikator</span></a>
+        <li><a href="#oprettelsesdato"><span class="secno">6.1.5</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato"><span class="secno">6.1.6</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#er-underorganisation-af"><span class="secno">6.1.7</span> <span class="content">er underorganisation af</span></a>
+        <li><a href="#har-underorganisation"><span class="secno">6.1.8</span> <span class="content">har underorganisation</span></a>
+        <li><a href="#har-enhed"><span class="secno">6.1.9</span> <span class="content">har enhed</span></a>
+        <li><a href="#relateret-til"><span class="secno">6.1.10</span> <span class="content">relateret til</span></a>
+        <li><a href="#hjemmeside"><span class="secno">6.1.11</span> <span class="content">hjemmeside</span></a>
+        <li><a href="#logo"><span class="secno">6.1.12</span> <span class="content">logo</span></a>
        </ol>
       <li>
        <a href="#organisationsenhed"><span class="secno">6.2</span> <span class="content">Organisationsenhed</span></a>
@@ -2093,14 +2094,45 @@ dfn > a.self-link::before      { content: "#"; }
         <li><a href="#har-enhed①"><span class="secno">6.2.7</span> <span class="content">har enhed</span></a>
        </ol>
       <li><a href="#offentlig-organisation"><span class="secno">6.3</span> <span class="content">Offentlig organisation</span></a>
+      <li>
+       <a href="#kontaktpunkt"><span class="secno">6.4</span> <span class="content">Kontaktpunkt</span></a>
+       <ol class="toc">
+        <li><a href="#kontakpunktnavn"><span class="secno">6.4.1</span> <span class="content">kontakpunktnavn</span></a>
+        <li><a href="#telefonnummer"><span class="secno">6.4.2</span> <span class="content">telefonnummer</span></a>
+        <li><a href="#email"><span class="secno">6.4.3</span> <span class="content">email</span></a>
+        <li><a href="#url"><span class="secno">6.4.4</span> <span class="content">url</span></a>
+        <li><a href="#bningstider"><span class="secno">6.4.5</span> <span class="content">åbningstider</span></a>
+        <li><a href="#tilgnglig-i-tidsrum"><span class="secno">6.4.6</span> <span class="content">tilgænglig i tidsrum</span></a>
+       </ol>
+      <li>
+       <a href="#bningstidsspecifikation"><span class="secno">6.5</span> <span class="content">Åbningstidsspecifikation</span></a>
+       <ol class="toc">
+        <li><a href="#lukker"><span class="secno">6.5.1</span> <span class="content">lukker</span></a>
+        <li><a href="#bner"><span class="secno">6.5.2</span> <span class="content">åbner</span></a>
+        <li><a href="#glder-fra"><span class="secno">6.5.3</span> <span class="content">gælder fra</span></a>
+        <li><a href="#glder-til"><span class="secno">6.5.4</span> <span class="content">gælder til</span></a>
+        <li><a href="#ugedag"><span class="secno">6.5.5</span> <span class="content">ugedag</span></a>
+       </ol>
+      <li><a href="#sted①"><span class="secno">6.6</span> <span class="content">Sted</span></a>
+      <li><a href="#adresse"><span class="secno">6.7</span> <span class="content">Adresse</span></a>
+      <li><a href="#medlemsskab"><span class="secno">6.8</span> <span class="content">Medlemsskab</span></a>
+      <li><a href="#rolle"><span class="secno">6.9</span> <span class="content">Rolle</span></a>
      </ol>
     <li><a href="#referencer"><span class="secno">7</span> <span class="content">Referencer</span></a>
     <li>
      <a href="#bilag"><span class="secno">8</span> <span class="content">Bilag</span></a>
      <ol class="toc">
       <li><a href="#uml-diagrammer"><span class="secno">8.1</span> <span class="content">UML-diagrammer</span></a>
-      <li><a href="#eksempler"><span class="secno">8.2</span> <span class="content">Eksempler</span></a>
+      <li>
+       <a href="#eksempler"><span class="secno">8.2</span> <span class="content">Eksempler</span></a>
+       <ol class="toc">
+        <li><a href="#eksempel-p-beskrivelse-af-basisinformation"><span class="secno">8.2.1</span> <span class="content">Eksempel på beskrivelse af basisinformation</span></a>
+        <li><a href="#eksempel-p-beskrivelse-af-idenfikatorer"><span class="secno">8.2.2</span> <span class="content">Eksempel på beskrivelse af idenfikatorer</span></a>
+        <li><a href="#eksempel-p-beskrivelse-af-organisatoriske-strukturer"><span class="secno">8.2.3</span> <span class="content">Eksempel på beskrivelse af organisatoriske strukturer</span></a>
+        <li><a href="#eksempel-p-beskrivelse-af-kontakinformation"><span class="secno">8.2.4</span> <span class="content">Eksempel på beskrivelse af kontakinformation</span></a>
+       </ol>
      </ol>
+    <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
@@ -2114,6 +2146,7 @@ dfn > a.self-link::before      { content: "#"; }
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
     Anvendelsesprofilen er oprettet i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og sammensætter således eksisterende vokabularer til en bestemt anvendelse. Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Dataverdenens modelleringsgrundlag, Resource Description Framework (RDF). En basal forståelse af RDF samt kendskab til de her profilerede vokabularer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. ORG og CPOV foreligger i danske oversættelser. Disse oversatte dokumenter udgør normative referencer for den i efterfølgende opstillede anvendelsesprofil. 
    <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
+   <div class="issue" id="issue-b59575cf"><a class="self-link" href="#issue-b59575cf"></a> Indsæt reference til KLs brugsscenarier </div>
    <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
    <p><img alt="kernen" src="img/illustration-til-ORG-AP-DK-core.svg"></p>
    <h3 class="heading settled" data-level="2.1" id="organisation"><span class="secno">2.1. </span><span class="content">Organisation</span><a class="self-link" href="#organisation"></a></h3>
@@ -2135,22 +2168,10 @@ dfn > a.self-link::before      { content: "#"; }
      <p>En organisation kan have en billedlig repræsentation i form at et <strong>logo og en miniature</strong>.</p>
     <li data-md>
      <p>En organisation kan kædes sammen med dens <strong>hjemmeside</strong> på internettet.</p>
+    <li data-md>
+     <p>En organisation kan forsynes med en <strong>identifikator</strong> - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer.</p>
    </ul>
-   <div class="example" id="example-48556397">
-    <a class="self-link" href="#example-48556397"></a> 
-<pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
-    skos:prefLabel  "Organisation 1"@da ;
-    skos:prefLabel  "Organization 1"@en ;
-    skos:altLabel  "Org 1"@da ;
-    skos:altLabel  "Org 1"@en ;
-    dct:description "Beskrivelse af organisation 1 "@da ;
-    dct:description "Description of organization 1"@da ;
-    schema:foundingDate "2011-11-01"^^xsd:date ;
-    schema:dissolutionDate "2021-11-01"^^xsd:date ;
-    schema:logo &lt;example.com/logo-organization1.png> ;
-    foaf:homepage &lt;example.com/homepage/Organization1> .
-</pre>
-   </div>
+   <p><a href="https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-basisinformation">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.3" id="organisatorisk-struktur"><span class="secno">2.3. </span><span class="content">Organisatorisk struktur</span><a class="self-link" href="#organisatorisk-struktur"></a></h3>
    <ul>
     <li data-md>
@@ -2161,45 +2182,28 @@ dfn > a.self-link::before      { content: "#"; }
      <p>Organisationer kan indbyrdes have <strong>andre former for relationer</strong> end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.</p>
    </ul>
    <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
-   <p><img alt="organisatorisk struktur -eksempel" src="img/OrganisationalStructure-example.png"></p>
-   <div class="example" id="example-e7e21831">
-    <a class="self-link" href="#example-e7e21831"></a> 
-<pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
-    skos:prefLabel  "Organisation 1"@da ;
-    dct:description "Beskrivelse af organisation 1"@da .
-
-&lt;http://example.com/Organization2> a org:FormalOrganization;
-    skos:prefLabel  "Organisation 2"@da ;
-    org:subOrganizationOf  &lt;http://example.com/Organization1> ;
-    dct:description "Beskrivelse af organisation 2"@da .
-
-&lt;http://example.com/Organization3> a org:FormalOrganization;
-    skos:prefLabel  "Organisation 3"@da ;
-    org:subOrganizationOf  &lt;http://example.com/Organization1> ;
-    dct:description "Beskrivelse af organisation 3"@da .
-
-&lt;http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
-    skos:prefLabel  "Organisationsenhed 1"@da ;
-    org:unitOf  &lt;http://example.com/Organization3> ;
-    dct:description "Beskrivelse af organisationsenhed 1"@da .
-
-&lt;http://example.com/OrganizationalUnit2> a org:OrganizationalUnit;
-    skos:prefLabel  "Organisationsenhed 2"@da ;
-    org:unitOf  &lt;http://example.com/OrganizationalUnit1> ;
-    dct:description "Beskrivelse af organisationsenhed 2"@da .
-
-&lt;http://example.com/OrganizationalUnit3> a org:OrganizationalUnit;
-    skos:prefLabel  "Organisationsenhed 3"@da ;
-    org:unitOf  &lt;http://example.com/OrganizationalUnit1> ;
-    dct:description "Beskrivelse af organisationsenhed 3"@da .  
-</pre>
-   </div>
-   <h3 class="heading settled" data-level="2.4" id="medlemsskab-og-aktrer"><span class="secno">2.4. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
-   <h3 class="heading settled" data-level="2.5" id="kontaktinformation"><span class="secno">2.5. </span><span class="content">Kontaktinformation</span><a class="self-link" href="#kontaktinformation"></a></h3>
-   <h3 class="heading settled" data-level="2.6" id="sted"><span class="secno">2.6. </span><span class="content">Sted</span><a class="self-link" href="#sted"></a></h3>
+   <p><img alt="organisatorisk struktur - graf" src="img/OrganisationalStructure-example.png"></p>
+   <p><a href="https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-organisatoriske-strukturer">Se eksempel her</a></p>
+   <h3 class="heading settled" data-level="2.4" id="kontaktinformation"><span class="secno">2.4. </span><span class="content">Kontaktinformation</span><a class="self-link" href="#kontaktinformation"></a></h3>
+   <ul>
+    <li data-md>
+     <p>En organisation eller en organisationsenhed kan oprette et <strong>kontaktpunkt</strong> som kan gives et <strong>navn</strong> der formidler kontaktpunkts formål.</p>
+    <li data-md>
+     <p>Et kontaktpunkt kan tilknyttes <strong>telefonnummer</strong>, <strong>e-mailadresse</strong>, <strong>url</strong>, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen.</p>
+    <li data-md>
+     <p>Et kontaktpunktet kan også levere information om dets <strong>åbningstider</strong>.</p>
+   </ul>
+   <p><img alt="kontaktpunkt" src="img/View-ContactPoint.png"></p>
+   <p><a href="https://api.csswg.org/bikeshed/#eksempel-p-beskrivelse-af-kontakinformation">Se eksempel her</a></p>
+   <h3 class="heading settled" data-level="2.5" id="sted"><span class="secno">2.5. </span><span class="content">Sted</span><a class="self-link" href="#sted"></a></h3>
+   <h3 class="heading settled" data-level="2.6" id="medlemsskab-og-aktrer"><span class="secno">2.6. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
    <h3 class="heading settled" data-level="2.7" id="historik-og-retsgrundlag"><span class="secno">2.7. </span><span class="content">Historik og retsgrundlag</span><a class="self-link" href="#historik-og-retsgrundlag"></a></h3>
    <h2 class="heading settled" data-level="3" id="globalt-unikke-og-stabile-identifikatorer"><span class="secno">3. </span><span class="content">Globalt unikke og stabile identifikatorer</span><a class="self-link" href="#globalt-unikke-og-stabile-identifikatorer"></a></h2>
-    Organisationer skal have tilknyttet metadata, og organisationer skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til organisationer på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Der henvises til FAIR-principperne, EU 10 Rules for Persistent URIs samt Retningslinjer for stablile http-urier. 
+    Formelle organisationer og organisationsenheder skal identificeres med en unik, stabil og tværgående identifikator der er uafhængig af det system den er skabt i. Derved kan organisationsdata opmærket med organisationsstandarden identificeres unikt på tværs af it-løsninger og organisatoriske skel. 
+   <p>Der er et generelt behov for at kunne sammenstille organisationsdata fra forskellige kilder og forretningsdata opmærket med organisationsdata på en sikker og nem måde. Det betyder, at der er behov for at de relevante organisationer og enheder er opmærket med en unik, tværgående identifikator.</p>
+   <p>Den tværgående identifikator ændres ikke i hele entitetens livstid. Oprettes en f.eks en ny organisationsenhed som erstatning for en tidligere enhed med samme navn, gives den nye en ny unik identifikator. Identifikatoren kan altid efter tildeling anvendes til at finde entiteten.</p>
+   <p>Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering af ressourcer som på internettet. Læs mere om unikke og stabile identifikatorer i <a href="https://www.go-fair.org/fair-principles/">FAIR-principperne</a>, <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris">EU 10 Rules for Persistent URIs</a> samt <a href="https://arkitektur.digst.dk/node/588">Retningslinjer for stabile http-urier</a>.</p>
+   <p>Udover den globalt unikke URI, forsynes organisationer også ofte med andre identifikatorer som udstedes til forskellige formål af specifikke myndigheder, fx. myndighedskoder og CVR-nummer som denne specifikation også kan rumme.</p>
    <h2 class="heading settled" data-level="4" id="navneomrder"><span class="secno">4. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
     <thead>
@@ -2362,7 +2366,8 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.4" id="oprettelsesdato"><span class="secno">6.1.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="6.1.4" id="identifikator"><span class="secno">6.1.4. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
+   <h4 class="heading settled" data-level="6.1.5" id="oprettelsesdato"><span class="secno">6.1.5. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/foundingDate
@@ -2383,7 +2388,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.1.5" id="nedlggelsesdato"><span class="secno">6.1.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="6.1.6" id="nedlggelsesdato"><span class="secno">6.1.6. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/dissolutionDate 
@@ -2405,7 +2410,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.1.6" id="er-underorganisation-af"><span class="secno">6.1.6. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
+   <h4 class="heading settled" data-level="6.1.7" id="er-underorganisation-af"><span class="secno">6.1.7. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#subOrganizationOf
@@ -2424,7 +2429,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.1.7" id="har-underorganisation"><span class="secno">6.1.7. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
+   <h4 class="heading settled" data-level="6.1.8" id="har-underorganisation"><span class="secno">6.1.8. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#hasSubOrganization 
@@ -2443,7 +2448,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.8" id="har-enhed"><span class="secno">6.1.8. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
+   <h4 class="heading settled" data-level="6.1.9" id="har-enhed"><span class="secno">6.1.9. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#hasUnit 
@@ -2458,7 +2463,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.9" id="relateret-til"><span class="secno">6.1.9. </span><span class="content">relateret til</span><a class="self-link" href="#relateret-til"></a></h4>
+   <h4 class="heading settled" data-level="6.1.10" id="relateret-til"><span class="secno">6.1.10. </span><span class="content">relateret til</span><a class="self-link" href="#relateret-til"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/org#linkedTo
@@ -2481,7 +2486,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Udfaldsrum
     <dd>http://www.w3.org/ns/org#FormalOrganization
    </dl>
-   <h4 class="heading settled" data-level="6.1.10" id="hjemmeside"><span class="secno">6.1.10. </span><span class="content">hjemmeside</span><a class="self-link" href="#hjemmeside"></a></h4>
+   <h4 class="heading settled" data-level="6.1.11" id="hjemmeside"><span class="secno">6.1.11. </span><span class="content">hjemmeside</span><a class="self-link" href="#hjemmeside"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/homepage
@@ -2500,7 +2505,7 @@ dfn > a.self-link::before      { content: "#"; }
     <dt>Udfaldsrum
     <dd>http://xmlns.com/foaf/0.1/WebPage
    </dl>
-   <h4 class="heading settled" data-level="6.1.11" id="logo"><span class="secno">6.1.11. </span><span class="content">logo</span><a class="self-link" href="#logo"></a></h4>
+   <h4 class="heading settled" data-level="6.1.12" id="logo"><span class="secno">6.1.12. </span><span class="content">logo</span><a class="self-link" href="#logo"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/logo 
@@ -2658,10 +2663,324 @@ dfn > a.self-link::before      { content: "#"; }
    </dl>
     Klassens egenskaber: 
    <p>--></p>
+   <h3 class="heading settled" data-level="6.4" id="kontaktpunkt"><span class="secno">6.4. </span><span class="content">Kontaktpunkt</span><a class="self-link" href="#kontaktpunkt"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/ContactPoint
+    <dt>Foretrukken term på dansk
+    <dd>kontaktpunkt
+    <dt>Foretrukken term på engelsk
+    <dd>contact point
+    <dt>Definition på dansk
+    <dd>Et kontaktpunkt - eksempelvis en Kundeklageafdeling
+    <dt>Definition på engelsk
+    <dd>A contact point—for example, a Customer Complaints department. 
+    <dt>Anvendelsesnote på dansk
+    <dd>Dette er en klasse, der repræsenterer et kontaktpunkt for organisationen
+    <dt>Defineret af
+    <dd>http://schema.org/
+   </dl>
+   <p><strong>Datatypeegenskaber (attributter): </strong></p>
+   <h4 class="heading settled" data-level="6.4.1" id="kontakpunktnavn"><span class="secno">6.4.1. </span><span class="content">kontakpunktnavn</span><a class="self-link" href="#kontakpunktnavn"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>https://schema.org/contactType
+    <dt>Foretrukken term på dansk
+    <dd>kontakttype
+    <dt>Foretrukken term på engelsk
+    <dd>contact type
+    <dt>Definition på dansk
+    <dd>denne egenskab anvendes til at klassificere kontaktpunkter
+    <dt>Definition på engelsk
+    <dd>A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
+    <dt>Defineret af
+    <dd>https://schema.org/
+    <dt>Rækkevidde:
+    <dd>rdf:langString
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="6.4.2" id="telefonnummer"><span class="secno">6.4.2. </span><span class="content">telefonnummer</span><a class="self-link" href="#telefonnummer"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/telephone 
+    <dt>Foretrukken term på dansk
+    <dd>telefon
+    <dt>Foretrukken term på engelsk
+    <dd>telephone
+    <dt>Accepteret term på dansk
+    <dd>telefonnummer
+    <dt>Definition på dansk
+    <dd>telefonnummer som tilhører et bestemt mobilabonnement
+    <dt>Definition på engelsk
+    <dd>The telephone number. 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Rækkevidde:
+    <dd>rdfs:Literal
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+    <strong>Objektegenskaber (associationsender): </strong> 
+   <h4 class="heading settled" data-level="6.4.3" id="email"><span class="secno">6.4.3. </span><span class="content">email</span><a class="self-link" href="#email"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/email
+    <dt>Foretrukken term på dansk
+    <dd>e-mail
+    <dt>Foretrukken term på engelsk
+    <dd>email
+    <dt>Accepteret term på dansk
+    <dd>e-mailadresse
+    <dt>Definition på dansk
+    <dd>adresse der identificerer en elektronisk postkasse til hvilken meddelelser kan leveres
+    <dt>Definition på engelsk
+    <dd>Email address. 
+    <dt>Defineret af
+    <dd>http://schema.org/email
+    <dt>Rækkevidde:
+    <dd>rdfs:Literal
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="6.4.4" id="url"><span class="secno">6.4.4. </span><span class="content">url</span><a class="self-link" href="#url"></a></h4>
+   <h4 class="heading settled" data-level="6.4.5" id="bningstider"><span class="secno">6.4.5. </span><span class="content">åbningstider</span><a class="self-link" href="#bningstider"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/openingHours 
+    <dt>Foretrukken term på dansk
+    <dd>åbningstider
+    <dt>Foretrukken term på engelsk
+    <dd>opening hours
+    <dt>Definition på dansk
+    <dd>Angiver den normale åbningstid for organisationen. 
+    <dt>Definition på engelsk
+    <dd>The general opening hours for a business. 
+    <dt>Kommentar på dansk
+    <dd>Værdien af denne egenskab er struktureret tekst, der angiver det tidsrum, hvor kontaktpunktet normalt er tilgængeligt.
+Dage angives med kombinationer af to bogstaver: Mo, Tu, We, Th, Fr, Sa, Su. Flere dage kan angives, adskilt med komma ’,’ mellem de enkelte dage. Dage og timer kan angives som et tidsrum, med brug af bindestreg ’-’.
+Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien af schema:openingHours være Mo-Fr 09:00-17:00. Hvis kontaktpunktet er tilgængeligt tirsdag og torsdag mellem 16 og 20, vil værdien være Tu,Th 16:00-20:00. 
+    <dt>Kommentar på engelsk
+    <dd>Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'. 
+Days are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su.
+Times are specified using 24:00 time. For example, 3pm is specified as 15:00.
+Here is an example: &lt;time itemprop="openingHours" datetime="Tu,Th 16:00-20:00">Tuesdays and Thursdays 4-8pm&lt;/time>.
+If a business is open 7 days a week, then it can be specified as &lt;time itemprop="openingHours" datetime="Mo-Su">Monday through Sunday, all day&lt;/time>. 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Rækkevidde:
+    <dd>rdfs:Literal
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="6.4.6" id="tilgnglig-i-tidsrum"><span class="secno">6.4.6. </span><span class="content">tilgænglig i tidsrum</span><a class="self-link" href="#tilgnglig-i-tidsrum"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/hoursAvailable 
+    <dt>Foretrukken term på dansk
+    <dd>tilgængelig i tidsrum
+    <dt>Foretrukken term på engelsk
+    <dd>hours available
+    <dt>Definition på dansk
+    <dd>tidsrum hvor denne service eller dette kontapunkt er tilråde
+    <dt>Definition på engelsk
+    <dd>The hours during which this service or contact is available. 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Multiplicitet
+    <dd>[0..*]
+    <dt>Rækkevidde
+    <dd>OpeningHoursSpecification
+   </dl>
+   <h3 class="heading settled" data-level="6.5" id="bningstidsspecifikation"><span class="secno">6.5. </span><span class="content">Åbningstidsspecifikation</span><a class="self-link" href="#bningstidsspecifikation"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/OpeningHoursSpecification 
+    <dt>Foretrukken term på dansk
+    <dd>åbningstidsspecifikation
+    <dt>Foretrukken term på engelsk
+    <dd>opening hours specification 
+    <dt>Definition på dansk
+    <dd>En struktureret værdi som giver information om åbningstider for en lokation eller en bestemt service der tilbydes på en lokation.
+Lokationen er åben hvis egenskaben ”åbner” er specificeret og ellers lukket.
+Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner” så antages det at perioden omfatter næste dag. 
+    <dt>Definition på engelsk
+    <dd>A structured value providing information about the opening hours of a place or a certain service inside a place. 
+The place is open if the opens property is specified, and closed otherwise.
+If the value for the closes property is less than the value for the opens property then the hour range is assumed to span over the next day 
+    <dt>Defineret af
+    <dd>http://schema.org/
+   </dl>
+   <p><strong>Datatypeegenskaber (attributter): </strong></p>
+   <h4 class="heading settled" data-level="6.5.1" id="lukker"><span class="secno">6.5.1. </span><span class="content">lukker</span><a class="self-link" href="#lukker"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/closes
+    <dt>Foretrukken term på dansk
+    <dd>lukker
+    <dt>Foretrukken term på engelsk
+    <dd>closes
+    <dt>Definition på dansk
+    <dd>det tidspunkt lokationen eller tjenesten lukker på den eller de angive ugedage
+    <dt>Definition på engelsk
+    <dd>The closing hour of the place or service on the given day(s) of the week. 
+    <dt>Defineret af
+    <dd>http://schema.org/closes
+    <dt>Rækkevidde:
+    <dd>xsd:time
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="6.5.2" id="bner"><span class="secno">6.5.2. </span><span class="content">åbner</span><a class="self-link" href="#bner"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/opens
+    <dt>Foretrukken term på dansk
+    <dd>åbner
+    <dt>Foretrukken term på engelsk
+    <dd>opens
+    <dt>Definition på dansk
+    <dd>det tidspunkt lokationen eller tjenesten åbner på den eller de angive ugedage
+    <dt>Definition på engelsk
+    <dd>The opening hour of the place or service on the given day(s) of the week
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Rækkevidde:
+    <dd>xsd:time
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="6.5.3" id="glder-fra"><span class="secno">6.5.3. </span><span class="content">gælder fra</span><a class="self-link" href="#glder-fra"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/validFrom 
+    <dt>Foretrukken term på dansk
+    <dd>gældende fra
+    <dt>Foretrukken term på engelsk
+    <dd>valid from
+    <dt>Definition på dansk
+    <dd>den dato hvorfra noget gælder
+    <dt>Definition på engelsk
+    <dd>The date when the item becomes valid. 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Rækkevidde:
+    <dd>xsd:dateTime
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h4 class="heading settled" data-level="6.5.4" id="glder-til"><span class="secno">6.5.4. </span><span class="content">gælder til</span><a class="self-link" href="#glder-til"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/validThrough
+    <dt>Foretrukken term på dansk
+    <dd>gældende indtil
+    <dt>Definition på dansk
+    <dd>den dato hvorefter noget ikke længere er gældende
+    <dt>Definition på engelsk
+    <dd>The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. 
+    <dt>Defineret af
+    <dd>http://schema.org/
+    <dt>Rækkevidde:
+    <dd>xsd:dateTime
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+    <strong>Objektegenskaber (associationsender): </strong> 
+   <h4 class="heading settled" data-level="6.5.5" id="ugedag"><span class="secno">6.5.5. </span><span class="content">ugedag</span><a class="self-link" href="#ugedag"></a></h4>
+   <dl class="def">
+    <dt>Foretrukken term på dansk
+    <dd>ugedag
+    <dt>Multiplicitet
+    <dd>[0..*]
+    <dt>Rækkevidde
+    <dd>DayOfWeek
+   </dl>
+   <h3 class="heading settled" data-level="6.6" id="sted①"><span class="secno">6.6. </span><span class="content">Sted</span><a class="self-link" href="#sted①"></a></h3>
+   <h3 class="heading settled" data-level="6.7" id="adresse"><span class="secno">6.7. </span><span class="content">Adresse</span><a class="self-link" href="#adresse"></a></h3>
+   <h3 class="heading settled" data-level="6.8" id="medlemsskab"><span class="secno">6.8. </span><span class="content">Medlemsskab</span><a class="self-link" href="#medlemsskab"></a></h3>
+   <h3 class="heading settled" data-level="6.9" id="rolle"><span class="secno">6.9. </span><span class="content">Rolle</span><a class="self-link" href="#rolle"></a></h3>
    <h2 class="heading settled" data-level="7" id="referencer"><span class="secno">7. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <h2 class="heading settled" data-level="8" id="bilag"><span class="secno">8. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="8.1" id="uml-diagrammer"><span class="secno">8.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
    <h3 class="heading settled" data-level="8.2" id="eksempler"><span class="secno">8.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
+   <h4 class="heading settled" data-level="8.2.1" id="eksempel-p-beskrivelse-af-basisinformation"><span class="secno">8.2.1. </span><span class="content">Eksempel på beskrivelse af basisinformation</span><a class="self-link" href="#eksempel-p-beskrivelse-af-basisinformation"></a></h4>
+   <div class="example" id="example-48556397">
+    <a class="self-link" href="#example-48556397"></a> 
+<pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    skos:prefLabel  "Organization 1"@en ;
+    skos:altLabel  "Org 1"@da ;
+    skos:altLabel  "Org 1"@en ;
+    dct:description "Beskrivelse af organisation 1 "@da ;
+    dct:description "Description of organization 1"@da ;
+    schema:foundingDate "2011-11-01"^^xsd:date ;
+    schema:dissolutionDate "2021-11-01"^^xsd:date ;
+    schema:logo &lt;example.com/logo-organization1.png> ;
+    foaf:homepage &lt;example.com/homepage/Organization1> .
+</pre>
+   </div>
+   <h4 class="heading settled" data-level="8.2.2" id="eksempel-p-beskrivelse-af-idenfikatorer"><span class="secno">8.2.2. </span><span class="content">Eksempel på beskrivelse af idenfikatorer</span><a class="self-link" href="#eksempel-p-beskrivelse-af-idenfikatorer"></a></h4>
+   <div class="example" id="example-faa2775e">
+    <a class="self-link" href="#example-faa2775e"></a> 
+<pre>&lt;http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
+    legal:legalIdentifier [
+    a adms:Identifier ;
+    skos:notation "#CVR-nummer" ;
+    issuingAuthorityName "ERST" ;
+  ] ;
+    org:identifier [
+    a adms:Identifier ;
+    skos:notation"#CPR-myndighedskode#" ;
+    issuingAuthorityName "CPR" ;
+  ] .
+</pre>
+   </div>
+   <h4 class="heading settled" data-level="8.2.3" id="eksempel-p-beskrivelse-af-organisatoriske-strukturer"><span class="secno">8.2.3. </span><span class="content">Eksempel på beskrivelse af organisatoriske strukturer</span><a class="self-link" href="#eksempel-p-beskrivelse-af-organisatoriske-strukturer"></a></h4>
+   <div class="example" id="example-e7e21831">
+    <a class="self-link" href="#example-e7e21831"></a> 
+<pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    dct:description "Beskrivelse af organisation 1"@da .
+
+&lt;http://example.com/Organization2> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 2"@da ;
+    org:subOrganizationOf  &lt;http://example.com/Organization1> ;
+    dct:description "Beskrivelse af organisation 2"@da .
+
+&lt;http://example.com/Organization3> a org:FormalOrganization;
+    skos:prefLabel  "Organisation 3"@da ;
+    org:subOrganizationOf  &lt;http://example.com/Organization1> ;
+    dct:description "Beskrivelse af organisation 3"@da .
+
+&lt;http://example.com/OrganizationalUnit1> a org:OrganizationalUnit;
+    skos:prefLabel  "Organisationsenhed 1"@da ;
+    org:unitOf  &lt;http://example.com/Organization3> ;
+    dct:description "Beskrivelse af organisationsenhed 1"@da .
+
+&lt;http://example.com/OrganizationalUnit2> a org:OrganizationalUnit;
+    skos:prefLabel  "Organisationsenhed 2"@da ;
+    org:unitOf  &lt;http://example.com/OrganizationalUnit1> ;
+    dct:description "Beskrivelse af organisationsenhed 2"@da .
+
+&lt;http://example.com/OrganizationalUnit3> a org:OrganizationalUnit;
+    skos:prefLabel  "Organisationsenhed 3"@da ;
+    org:unitOf  &lt;http://example.com/OrganizationalUnit1> ;
+    dct:description "Beskrivelse af organisationsenhed 3"@da .  
+</pre>
+   </div>
+   <h4 class="heading settled" data-level="8.2.4" id="eksempel-p-beskrivelse-af-kontakinformation"><span class="secno">8.2.4. </span><span class="content">Eksempel på beskrivelse af kontakinformation</span><a class="self-link" href="#eksempel-p-beskrivelse-af-kontakinformation"></a></h4>
+   <div class="example" id="example-8c44a424">
+    <a class="self-link" href="#example-8c44a424"></a> 
+<pre>&lt;http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
+    skos:prefLabel  "Organisation 1"@da ;
+    schema:contactPoint [
+    a schema:ContactPoint ;
+    schema:contactPointName "Reception" ; 
+    schema:telephone "33925200 ";  
+    schema:openingsHours "Mo,Tu,We,Th,Fri 08:00-16:00" ] .      
+</pre>
+   </div>
     ================ 
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
@@ -2794,3 +3113,7 @@ dfn > a.self-link::before      { content: "#"; }
 
 })();
 </script>
+  <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
+  <div style="counter-reset:issue">
+   <div class="issue"> Indsæt reference til KLs brugsscenarier <a class="issue-return" href="#issue-b59575cf" title="Jump to section">↵</a></div>
+  </div>
