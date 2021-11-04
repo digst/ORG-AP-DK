@@ -174,12 +174,17 @@ Anvendelsesprofilen er oprettet i henhold de [Fællesoffentlige regler for begre
 ## Profilens anvendelse
 
 <div class='issue'>
-Indsæt reference til KLs brugsscenarier  
+Indsæt reference til KLs brugsscenarier.
+Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i næste afsnit.
 </div>	
 
 #  Perspektiver
 
 <img src="img/illustration-til-ORG-AP-DK-core.svg" alt="kernen">
+
+<div class='issue'>
+Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen.
+</div>
 
 ## Organisation
 - Det grundlæggende vokabular, ORG, definerer bredt **organisation** som *”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”*
@@ -970,30 +975,43 @@ If the value for the closes property is less than the value for the opens proper
 
 ## Adresse
 
+## Administrativ geografisk inddeling
+
 ## Medlemsskab
 
 ## Rolle
 
-
-
+<!--
+## Klassen foaf:Person (person)  
+-->
 
 <!--
-
-## Klassen schema:ImageObject (billedobjekt)   
-
-## Klassen foaf:Person (person)  
-## Klassen foaf:Document (dokument) 
-## Klassen cpsv:FormalFramework (formel ramme)  
-## Klassen cpov:FoundationEvent (grundlæggelseshændelse)  
-## Klassen org:ChangeEvent (ændringshændelse)  
-
-## Klassen dagi:AdministrativInddeling (administrativ inddeling) 
-## Klassen ?:FormalOrganizationType (offentlig organisationstype)  
-## Klassen ?:PublicFormalOrganizationType (offentlig organisationstype)  
-## Klassen ?:OrganizationalUnitType (organisatorisk enhedstype)  
-## Klassen ?:PublicOrganizationalUnitType (offentlig organisatorisk enhedstype)  
-## Klassen ?:PublicAdministrativeTaskType (type af forvaltningsopgave)  
+## Klassen sys:ITSystem (it-system)  
 -->
+
+## Ændringshændelse
+
+## Formel ramme
+
+## Dokument
+
+## Billedobjekt
+
+## Identifikator
+
+### kode
+### udstedende myndighed
+### udstedelsesdato
+
+
+# Klassifikationer
+
+## Klassen FormalOrganizationType (offentlig organisationstype)  
+## Klassen PublicFormalOrganizationType (offentlig organisationstype)  
+## Klassen OrganizationalUnitType (organisatorisk enhedstype)  
+## Klassen PublicOrganizationalUnitType (offentlig organisatorisk enhedstype)  
+## Klassen PublicAdministrativeTaskType (type af forvaltningsopgave)  
+
 
 
 
