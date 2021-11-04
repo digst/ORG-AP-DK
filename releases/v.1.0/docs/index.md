@@ -212,7 +212,7 @@ Indsæt reference til KLs brugsscenarier
 ## Kontaktinformation
 - En organisation eller en organisationsenhed kan oprette et **kontaktpunkt**  som kan gives et **navn** der formidler kontaktpunkts formål.
 - Et kontaktpunkt kan tilknyttes **telefonnummer**, **e-mailadresse**, **url**, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
-- Et kontaktpunktet kan også levere information om dets **åbningstider**.
+- Et kontaktpunkt kan også levere information om dets **åbningstider** - enten i klar tekst i et strukturet format.
 
 <img src="img/View-ContactPoint.png" alt="kontaktpunkt">
 
