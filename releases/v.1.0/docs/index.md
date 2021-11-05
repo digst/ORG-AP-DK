@@ -1080,7 +1080,7 @@ If the value for the closes property is less than the value for the opens proper
 
 # Klassifikationer
 
-##  offentlig organisationstype
+##  formel organisationstype
 FormalOrganizationType
 ##  offentlig organisationstype
 PublicFormalOrganizationType
