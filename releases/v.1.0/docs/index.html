@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -2021,17 +2020,17 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-04">4. november 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-05">5. november 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Denne version:
+     <dt>Namespace:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
      <dd><a href="#issues-index">Inline In Spec</a>
      <dt class="editor">Udgiver:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
-     <dt>Oversættelse <small>(ikke-normativ)</small>:
+     <dt>Oversættelse <small>(non-normative)</small>:
      <dd><a href="https://digst.github.io/ORG-AP-DK/docs/index-en.html" hreflang="en" rel="alternate">en</a>
     </dl>
    </div>
@@ -2063,102 +2062,111 @@ dfn > a.self-link::before      { content: "#"; }
      </ol>
     <li><a href="#globalt-unikke-og-stabile-identifikatorer"><span class="secno">3</span> <span class="content">Globalt unikke og stabile identifikatorer</span></a>
     <li><a href="#navneomrder"><span class="secno">4</span> <span class="content">Navneområder</span></a>
-    <li><a href="#gldende-krav-og-overensstemmelse"><span class="secno">5</span> <span class="content">Gældende krav og overensstemmelse</span></a>
     <li>
-     <a href="#elementer-i-org-ap-dk"><span class="secno">6</span> <span class="content">Elementer i ORG-AP-DK</span></a>
+     <a href="#gldende-krav-og-overensstemmelse"><span class="secno">5</span> <span class="content">Gældende krav og overensstemmelse</span></a>
+     <ol class="toc">
+      <li><a href="#kravniveauer"><span class="secno">5.1</span> <span class="content">Kravniveauer</span></a>
+     </ol>
+    <li>
+     <a href="#uml-diagrammer"><span class="secno">6</span> <span class="content">UML-diagrammer</span></a>
+     <ol class="toc">
+      <li><a href="#diagram-med-alle-elementer"><span class="secno">6.1</span> <span class="content">Diagram med alle elementer</span></a>
+     </ol>
+    <li>
+     <a href="#elementer-i-org-ap-dk"><span class="secno">7</span> <span class="content">Elementer i ORG-AP-DK</span></a>
      <ol class="toc">
       <li>
-       <a href="#formel-organisation"><span class="secno">6.1</span> <span class="content">Formel organisation</span></a>
+       <a href="#formel-organisation"><span class="secno">7.1</span> <span class="content">Formel organisation</span></a>
        <ol class="toc">
-        <li><a href="#navn"><span class="secno">6.1.1</span> <span class="content">navn</span></a>
-        <li><a href="#alternativt-navn"><span class="secno">6.1.2</span> <span class="content">alternativt navn</span></a>
-        <li><a href="#beskrivelse"><span class="secno">6.1.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#oprettelsesdato"><span class="secno">6.1.4</span> <span class="content">oprettelsesdato</span></a>
-        <li><a href="#nedlggelsesdato"><span class="secno">6.1.5</span> <span class="content">nedlæggelsesdato</span></a>
-        <li><a href="#identifikator"><span class="secno">6.1.6</span> <span class="content">identifikator</span></a>
-        <li><a href="#er-underorganisation-af"><span class="secno">6.1.7</span> <span class="content">er underorganisation af</span></a>
-        <li><a href="#har-underorganisation"><span class="secno">6.1.8</span> <span class="content">har underorganisation</span></a>
-        <li><a href="#har-enhed"><span class="secno">6.1.9</span> <span class="content">har enhed</span></a>
-        <li><a href="#relateret-til"><span class="secno">6.1.10</span> <span class="content">relateret til</span></a>
-        <li><a href="#hjemmeside"><span class="secno">6.1.11</span> <span class="content">hjemmeside</span></a>
-        <li><a href="#logo"><span class="secno">6.1.12</span> <span class="content">logo</span></a>
+        <li><a href="#navn"><span class="secno">7.1.1</span> <span class="content">navn</span></a>
+        <li><a href="#alternativt-navn"><span class="secno">7.1.2</span> <span class="content">alternativt navn</span></a>
+        <li><a href="#beskrivelse"><span class="secno">7.1.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#oprettelsesdato"><span class="secno">7.1.4</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato"><span class="secno">7.1.5</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#identifikator"><span class="secno">7.1.6</span> <span class="content">identifikator</span></a>
+        <li><a href="#er-underorganisation-af"><span class="secno">7.1.7</span> <span class="content">er underorganisation af</span></a>
+        <li><a href="#har-underorganisation"><span class="secno">7.1.8</span> <span class="content">har underorganisation</span></a>
+        <li><a href="#har-enhed"><span class="secno">7.1.9</span> <span class="content">har enhed</span></a>
+        <li><a href="#relateret-til"><span class="secno">7.1.10</span> <span class="content">relateret til</span></a>
+        <li><a href="#hjemmeside"><span class="secno">7.1.11</span> <span class="content">hjemmeside</span></a>
+        <li><a href="#logo"><span class="secno">7.1.12</span> <span class="content">logo</span></a>
        </ol>
       <li>
-       <a href="#organisationsenhed"><span class="secno">6.2</span> <span class="content">Organisationsenhed</span></a>
+       <a href="#organisationsenhed"><span class="secno">7.2</span> <span class="content">Organisationsenhed</span></a>
        <ol class="toc">
-        <li><a href="#navn①"><span class="secno">6.2.1</span> <span class="content">navn</span></a>
-        <li><a href="#alternativt-navn①"><span class="secno">6.2.2</span> <span class="content">alternativt navn</span></a>
-        <li><a href="#beskrivelse①"><span class="secno">6.2.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#oprettelsesdato①"><span class="secno">6.2.4</span> <span class="content">oprettelsesdato</span></a>
-        <li><a href="#nedlggelsesdato①"><span class="secno">6.2.5</span> <span class="content">nedlæggelsesdato</span></a>
-        <li><a href="#er-enhed-af"><span class="secno">6.2.6</span> <span class="content">er enhed af</span></a>
-        <li><a href="#har-enhed①"><span class="secno">6.2.7</span> <span class="content">har enhed</span></a>
+        <li><a href="#navn①"><span class="secno">7.2.1</span> <span class="content">navn</span></a>
+        <li><a href="#alternativt-navn①"><span class="secno">7.2.2</span> <span class="content">alternativt navn</span></a>
+        <li><a href="#beskrivelse①"><span class="secno">7.2.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#oprettelsesdato①"><span class="secno">7.2.4</span> <span class="content">oprettelsesdato</span></a>
+        <li><a href="#nedlggelsesdato①"><span class="secno">7.2.5</span> <span class="content">nedlæggelsesdato</span></a>
+        <li><a href="#er-enhed-af"><span class="secno">7.2.6</span> <span class="content">er enhed af</span></a>
+        <li><a href="#har-enhed①"><span class="secno">7.2.7</span> <span class="content">har enhed</span></a>
        </ol>
-      <li><a href="#offentlig-organisation"><span class="secno">6.3</span> <span class="content">Offentlig organisation</span></a>
+      <li><a href="#offentlig-organisation"><span class="secno">7.3</span> <span class="content">Offentlig organisation</span></a>
       <li>
-       <a href="#kontaktpunkt"><span class="secno">6.4</span> <span class="content">Kontaktpunkt</span></a>
+       <a href="#kontaktpunkt"><span class="secno">7.4</span> <span class="content">Kontaktpunkt</span></a>
        <ol class="toc">
-        <li><a href="#kontakpunktnavn"><span class="secno">6.4.1</span> <span class="content">kontakpunktnavn</span></a>
-        <li><a href="#telefonnummer"><span class="secno">6.4.2</span> <span class="content">telefonnummer</span></a>
-        <li><a href="#email"><span class="secno">6.4.3</span> <span class="content">email</span></a>
-        <li><a href="#url"><span class="secno">6.4.4</span> <span class="content">url</span></a>
-        <li><a href="#bningstider"><span class="secno">6.4.5</span> <span class="content">åbningstider</span></a>
-        <li><a href="#tilgnglig-i-tidsrum"><span class="secno">6.4.6</span> <span class="content">tilgænglig i tidsrum</span></a>
+        <li><a href="#kontakpunktnavn"><span class="secno">7.4.1</span> <span class="content">kontakpunktnavn</span></a>
+        <li><a href="#telefonnummer"><span class="secno">7.4.2</span> <span class="content">telefonnummer</span></a>
+        <li><a href="#email"><span class="secno">7.4.3</span> <span class="content">email</span></a>
+        <li><a href="#url"><span class="secno">7.4.4</span> <span class="content">url</span></a>
+        <li><a href="#bningstider"><span class="secno">7.4.5</span> <span class="content">åbningstider</span></a>
+        <li><a href="#tilgnglig-i-tidsrum"><span class="secno">7.4.6</span> <span class="content">tilgænglig i tidsrum</span></a>
        </ol>
       <li>
-       <a href="#bningstidsspecifikation"><span class="secno">6.5</span> <span class="content">Åbningstidsspecifikation</span></a>
+       <a href="#bningstidsspecifikation"><span class="secno">7.5</span> <span class="content">Åbningstidsspecifikation</span></a>
        <ol class="toc">
-        <li><a href="#lukker"><span class="secno">6.5.1</span> <span class="content">lukker</span></a>
-        <li><a href="#bner"><span class="secno">6.5.2</span> <span class="content">åbner</span></a>
-        <li><a href="#glder-fra"><span class="secno">6.5.3</span> <span class="content">gælder fra</span></a>
-        <li><a href="#glder-til"><span class="secno">6.5.4</span> <span class="content">gælder til</span></a>
-        <li><a href="#ugedag"><span class="secno">6.5.5</span> <span class="content">ugedag</span></a>
+        <li><a href="#lukker"><span class="secno">7.5.1</span> <span class="content">lukker</span></a>
+        <li><a href="#bner"><span class="secno">7.5.2</span> <span class="content">åbner</span></a>
+        <li><a href="#glder-fra"><span class="secno">7.5.3</span> <span class="content">gælder fra</span></a>
+        <li><a href="#glder-til"><span class="secno">7.5.4</span> <span class="content">gælder til</span></a>
+        <li><a href="#ugedag"><span class="secno">7.5.5</span> <span class="content">ugedag</span></a>
        </ol>
-      <li><a href="#sted①"><span class="secno">6.6</span> <span class="content">Sted</span></a>
-      <li><a href="#adresse"><span class="secno">6.7</span> <span class="content">Adresse</span></a>
-      <li><a href="#administrativ-geografisk-inddeling"><span class="secno">6.8</span> <span class="content">Administrativ geografisk inddeling</span></a>
-      <li><a href="#medlemsskab"><span class="secno">6.9</span> <span class="content">Medlemsskab</span></a>
-      <li><a href="#rolle"><span class="secno">6.10</span> <span class="content">Rolle</span></a>
-      <li><a href="#funktion"><span class="secno">6.11</span> <span class="content">Funktion</span></a>
-      <li><a href="#person"><span class="secno">6.12</span> <span class="content">Person</span></a>
-      <li><a href="#it-system"><span class="secno">6.13</span> <span class="content">IT-system</span></a>
-      <li><a href="#ndringshndelse"><span class="secno">6.14</span> <span class="content">Ændringshændelse</span></a>
-      <li><a href="#retskilde"><span class="secno">6.15</span> <span class="content">Retskilde</span></a>
-      <li><a href="#dokument"><span class="secno">6.16</span> <span class="content">Dokument</span></a>
-      <li><a href="#billedobjekt"><span class="secno">6.17</span> <span class="content">Billedobjekt</span></a>
+      <li><a href="#sted①"><span class="secno">7.6</span> <span class="content">Sted</span></a>
+      <li><a href="#adresse"><span class="secno">7.7</span> <span class="content">Adresse</span></a>
+      <li><a href="#administrativ-geografisk-inddeling"><span class="secno">7.8</span> <span class="content">Administrativ geografisk inddeling</span></a>
+      <li><a href="#medlemsskab"><span class="secno">7.9</span> <span class="content">Medlemsskab</span></a>
+      <li><a href="#rolle"><span class="secno">7.10</span> <span class="content">Rolle</span></a>
+      <li><a href="#funktion"><span class="secno">7.11</span> <span class="content">Funktion</span></a>
+      <li><a href="#person"><span class="secno">7.12</span> <span class="content">Person</span></a>
+      <li><a href="#it-system"><span class="secno">7.13</span> <span class="content">IT-system</span></a>
+      <li><a href="#ndringshndelse"><span class="secno">7.14</span> <span class="content">Ændringshændelse</span></a>
+      <li><a href="#retskilde"><span class="secno">7.15</span> <span class="content">Retskilde</span></a>
+      <li><a href="#dokument"><span class="secno">7.16</span> <span class="content">Dokument</span></a>
+      <li><a href="#billedobjekt"><span class="secno">7.17</span> <span class="content">Billedobjekt</span></a>
       <li>
-       <a href="#identifikator①"><span class="secno">6.18</span> <span class="content">Identifikator</span></a>
+       <a href="#identifikator①"><span class="secno">7.18</span> <span class="content">Identifikator</span></a>
        <ol class="toc">
-        <li><a href="#kode"><span class="secno">6.18.1</span> <span class="content">kode</span></a>
-        <li><a href="#udstedende-myndighed"><span class="secno">6.18.2</span> <span class="content">udstedende myndighed</span></a>
-        <li><a href="#udstedelsesdato"><span class="secno">6.18.3</span> <span class="content">udstedelsesdato</span></a>
+        <li><a href="#kode"><span class="secno">7.18.1</span> <span class="content">kode</span></a>
+        <li><a href="#udstedende-myndighed"><span class="secno">7.18.2</span> <span class="content">udstedende myndighed</span></a>
+        <li><a href="#udstedelsesdato"><span class="secno">7.18.3</span> <span class="content">udstedelsesdato</span></a>
        </ol>
      </ol>
     <li>
-     <a href="#klassifikationer"><span class="secno">7</span> <span class="content">Klassifikationer</span></a>
+     <a href="#klassifikationer"><span class="secno">8</span> <span class="content">Klassifikationer</span></a>
      <ol class="toc">
-      <li><a href="#offentlig-organisationstype"><span class="secno">7.1</span> <span class="content">offentlig organisationstype</span></a>
-      <li><a href="#offentlig-organisationstype①"><span class="secno">7.2</span> <span class="content">offentlig organisationstype</span></a>
-      <li><a href="#organisatorisk-enhedstype"><span class="secno">7.3</span> <span class="content">organisatorisk enhedstype</span></a>
-      <li><a href="#offentlig-organisatorisk-enhedstype"><span class="secno">7.4</span> <span class="content">offentlig organisatorisk enhedstype</span></a>
-      <li><a href="#type-af-forvaltningsopgave"><span class="secno">7.5</span> <span class="content">type af forvaltningsopgave</span></a>
+      <li><a href="#offentlig-organisationstype"><span class="secno">8.1</span> <span class="content">offentlig organisationstype</span></a>
+      <li><a href="#offentlig-organisationstype①"><span class="secno">8.2</span> <span class="content">offentlig organisationstype</span></a>
+      <li><a href="#organisatorisk-enhedstype"><span class="secno">8.3</span> <span class="content">organisatorisk enhedstype</span></a>
+      <li><a href="#offentlig-organisatorisk-enhedstype"><span class="secno">8.4</span> <span class="content">offentlig organisatorisk enhedstype</span></a>
+      <li><a href="#type-af-forvaltningsopgave"><span class="secno">8.5</span> <span class="content">type af forvaltningsopgave</span></a>
      </ol>
-    <li><a href="#referencer"><span class="secno">8</span> <span class="content">Referencer</span></a>
+    <li><a href="#referencer"><span class="secno">9</span> <span class="content">Referencer</span></a>
     <li>
-     <a href="#bilag"><span class="secno">9</span> <span class="content">Bilag</span></a>
+     <a href="#bilag"><span class="secno">10</span> <span class="content">Bilag</span></a>
      <ol class="toc">
       <li>
-       <a href="#uml-diagrammer"><span class="secno">9.1</span> <span class="content">UML-diagrammer</span></a>
+       <a href="#uml-diagrammer①"><span class="secno">10.1</span> <span class="content">UML-diagrammer</span></a>
        <ol class="toc">
-        <li><a href="#uml-diagram-org-ap-dk-v-100-beta"><span class="secno">9.1.1</span> <span class="content">UML-diagram: ORG-AP-DK v. 1.0.0-beta</span></a>
+        <li><a href="#uml-diagram-org-ap-dk-v-100-beta"><span class="secno">10.1.1</span> <span class="content">UML-diagram: ORG-AP-DK v. 1.0.0-beta</span></a>
        </ol>
       <li>
-       <a href="#eksempler"><span class="secno">9.2</span> <span class="content">Eksempler</span></a>
+       <a href="#eksempler"><span class="secno">10.2</span> <span class="content">Eksempler</span></a>
        <ol class="toc">
-        <li><a href="#eksempel-p-basisinformation"><span class="secno">9.2.1</span> <span class="content">Eksempel på basisinformation</span></a>
-        <li><a href="#eksempel-p-idenfikatorer"><span class="secno">9.2.2</span> <span class="content">Eksempel på idenfikatorer</span></a>
-        <li><a href="#eksempel-p-organisatoriske-strukturer"><span class="secno">9.2.3</span> <span class="content">Eksempel på organisatoriske strukturer</span></a>
-        <li><a href="#eksempel-p-kontaktinformation"><span class="secno">9.2.4</span> <span class="content">Eksempel på kontaktinformation</span></a>
+        <li><a href="#eksempel-p-basisinformation"><span class="secno">10.2.1</span> <span class="content">Eksempel på basisinformation</span></a>
+        <li><a href="#eksempel-p-idenfikatorer"><span class="secno">10.2.2</span> <span class="content">Eksempel på idenfikatorer</span></a>
+        <li><a href="#eksempel-p-organisatoriske-strukturer"><span class="secno">10.2.3</span> <span class="content">Eksempel på organisatoriske strukturer</span></a>
+        <li><a href="#eksempel-p-kontaktinformation"><span class="secno">10.2.4</span> <span class="content">Eksempel på kontaktinformation</span></a>
        </ol>
      </ol>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
@@ -2344,9 +2352,26 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
       <td>Organization Vocabulary Extension 
    </table>
    <h2 class="heading settled" data-level="5" id="gldende-krav-og-overensstemmelse"><span class="secno">5. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
-   <h2 class="heading settled" data-level="6" id="elementer-i-org-ap-dk"><span class="secno">6. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
+    ORG-AP-DK 1.0.0 er er baseret på og anvender dermed klasser og egenskaber fra <a href="https://www.w3.org/TR/vocab-org/">The Organization Ontology (ORG)</a> og <a href="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100">Core Public Organisation Vocabulary (CPOV)</a> 
+   <h3 class="heading settled" data-level="5.1" id="kravniveauer"><span class="secno">5.1. </span><span class="content">Kravniveauer</span><a class="self-link" href="#kravniveauer"></a></h3>
+    I ORG-AP-DK anvender følgende kravniveauer. 
+   <ul>
+    <li data-md>
+     <p><strong>Obligatorisk</strong> (Mandatory): informationen SKAL angives</p>
+    <li data-md>
+     <p><strong>Anbefalet</strong> (Recommended): informationen BØR angives hvis den er tilgængelig</p>
+    <li data-md>
+     <p><strong>Valgfri</strong> (Optional): informationen KAN angives</p>
+   </ul>
+   <div class="issue" id="issue-02bca119"><a class="self-link" href="#issue-02bca119"></a> I det aktuelle udkast er der endnu ikke taget stilling til kravniveau. </div>
+   <h2 class="heading settled" data-level="6" id="uml-diagrammer"><span class="secno">6. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h2>
+   <h3 class="heading settled" data-level="6.1" id="diagram-med-alle-elementer"><span class="secno">6.1. </span><span class="content">Diagram med alle elementer</span><a class="self-link" href="#diagram-med-alle-elementer"></a></h3>
+    Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer). 
+   <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png" src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"></a></p>
+   <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"><img alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram (kun på dansk og uden datatyper og stereotyper).png" src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"></a></p>
+   <h2 class="heading settled" data-level="7" id="elementer-i-org-ap-dk"><span class="secno">7. </span><span class="content">Elementer i ORG-AP-DK</span><a class="self-link" href="#elementer-i-org-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse. 
-   <h3 class="heading settled" data-level="6.1" id="formel-organisation"><span class="secno">6.1. </span><span class="content">Formel organisation</span><a class="self-link" href="#formel-organisation"></a></h3>
+   <h3 class="heading settled" data-level="7.1" id="formel-organisation"><span class="secno">7.1. </span><span class="content">Formel organisation</span><a class="self-link" href="#formel-organisation"></a></h3>
    <p><img alt="formel organisation" src="img/FormalOrganization.png"></p>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#FormalOrganization ">http://www.w3.org/ns/org#FormalOrganization </a>
@@ -2364,7 +2389,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dd>Obligatorisk
    </dl>
    <p>Klassens egenskaber:</p>
-   <h4 class="heading settled" data-level="6.1.1" id="navn"><span class="secno">6.1.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
+   <h4 class="heading settled" data-level="7.1.1" id="navn"><span class="secno">7.1.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/2004/02/skos/core#prefLabel">http://www.w3.org/2004/02/skos/core#prefLabel</a>
     <dt>Foretrukken term (da)
@@ -2382,7 +2407,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="6.1.2" id="alternativt-navn"><span class="secno">6.1.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn"></a></h4>
+   <h4 class="heading settled" data-level="7.1.2" id="alternativt-navn"><span class="secno">7.1.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/2004/02/skos/core#altLabel">http://www.w3.org/2004/02/skos/core#altLabel</a>
     <dt>Foretrukken term på dansk
@@ -2398,7 +2423,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.3" id="beskrivelse"><span class="secno">6.1.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse"></a></h4>
+   <h4 class="heading settled" data-level="7.1.3" id="beskrivelse"><span class="secno">7.1.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://purl.org/dc/elements/1.1/description">http://purl.org/dc/elements/1.1/description</a>
     <dt>Foretrukken term på dansk
@@ -2416,7 +2441,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.4" id="oprettelsesdato"><span class="secno">6.1.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="7.1.4" id="oprettelsesdato"><span class="secno">7.1.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/foundingDate">http://schema.org/foundingDate</a>
     <dt>Foretrukken term på dansk
@@ -2436,7 +2461,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.1.5" id="nedlggelsesdato"><span class="secno">6.1.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="7.1.5" id="nedlggelsesdato"><span class="secno">7.1.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/dissolutionDate ">http://schema.org/dissolutionDate </a>
     <dt>Foretrukken term på dansk
@@ -2457,7 +2482,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.1.6" id="identifikator"><span class="secno">6.1.6. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
+   <h4 class="heading settled" data-level="7.1.6" id="identifikator"><span class="secno">7.1.6. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href=""></a>
     <dt>Foretrukken term på dansk
@@ -2476,7 +2501,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dd>[0..*]
    </dl>
    <p>se også https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#globalt-unikke-og-stabile-identifikatorer</p>
-   <h4 class="heading settled" data-level="6.1.7" id="er-underorganisation-af"><span class="secno">6.1.7. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
+   <h4 class="heading settled" data-level="7.1.7" id="er-underorganisation-af"><span class="secno">7.1.7. </span><span class="content">er underorganisation af</span><a class="self-link" href="#er-underorganisation-af"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#subOrganizationOf">http://www.w3.org/ns/org#subOrganizationOf</a>
     <dt>Foretrukken term på dansk
@@ -2494,7 +2519,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.1.8" id="har-underorganisation"><span class="secno">6.1.8. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
+   <h4 class="heading settled" data-level="7.1.8" id="har-underorganisation"><span class="secno">7.1.8. </span><span class="content">har underorganisation</span><a class="self-link" href="#har-underorganisation"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#hasSubOrganization ">http://www.w3.org/ns/org#hasSubOrganization </a>
     <dt>Foretrukken term på dansk
@@ -2512,7 +2537,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.9" id="har-enhed"><span class="secno">6.1.9. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
+   <h4 class="heading settled" data-level="7.1.9" id="har-enhed"><span class="secno">7.1.9. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#hasUnit ">http://www.w3.org/ns/org#hasUnit </a>
     <dt>Foretrukken term på dansk
@@ -2526,7 +2551,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.1.10" id="relateret-til"><span class="secno">6.1.10. </span><span class="content">relateret til</span><a class="self-link" href="#relateret-til"></a></h4>
+   <h4 class="heading settled" data-level="7.1.10" id="relateret-til"><span class="secno">7.1.10. </span><span class="content">relateret til</span><a class="self-link" href="#relateret-til"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#linkedTo">http://www.w3.org/ns/org#linkedTo</a>
     <dt>Foretrukken term på dansk
@@ -2548,7 +2573,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Udfaldsrum
     <dd>http://www.w3.org/ns/org#FormalOrganization
    </dl>
-   <h4 class="heading settled" data-level="6.1.11" id="hjemmeside"><span class="secno">6.1.11. </span><span class="content">hjemmeside</span><a class="self-link" href="#hjemmeside"></a></h4>
+   <h4 class="heading settled" data-level="7.1.11" id="hjemmeside"><span class="secno">7.1.11. </span><span class="content">hjemmeside</span><a class="self-link" href="#hjemmeside"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://xmlns.com/foaf/0.1/homepage">http://xmlns.com/foaf/0.1/homepage</a>
     <dt>Foretrukken term på dansk
@@ -2566,7 +2591,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Udfaldsrum
     <dd>http://xmlns.com/foaf/0.1/WebPage
    </dl>
-   <h4 class="heading settled" data-level="6.1.12" id="logo"><span class="secno">6.1.12. </span><span class="content">logo</span><a class="self-link" href="#logo"></a></h4>
+   <h4 class="heading settled" data-level="7.1.12" id="logo"><span class="secno">7.1.12. </span><span class="content">logo</span><a class="self-link" href="#logo"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/logo ">http://schema.org/logo </a>
     <dt>Foretrukken term på dansk
@@ -2584,7 +2609,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Udfaldsrum
     <dd>ttp://schema.org/ImageObject
    </dl>
-   <h3 class="heading settled" data-level="6.2" id="organisationsenhed"><span class="secno">6.2. </span><span class="content">Organisationsenhed</span><a class="self-link" href="#organisationsenhed"></a></h3>
+   <h3 class="heading settled" data-level="7.2" id="organisationsenhed"><span class="secno">7.2. </span><span class="content">Organisationsenhed</span><a class="self-link" href="#organisationsenhed"></a></h3>
     <img alt="organisationsenhed" src="img/OrganizationalUnit.png"> 
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#OrganizationalUnit">http://www.w3.org/ns/org#OrganizationalUnit</a>
@@ -2605,7 +2630,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="6.2.1" id="navn①"><span class="secno">6.2.1. </span><span class="content">navn</span><a class="self-link" href="#navn①"></a></h4>
+   <h4 class="heading settled" data-level="7.2.1" id="navn①"><span class="secno">7.2.1. </span><span class="content">navn</span><a class="self-link" href="#navn①"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/2004/02/skos/core#prefLabel">http://www.w3.org/2004/02/skos/core#prefLabel</a>
     <dt>Foretrukken term (da)
@@ -2623,7 +2648,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="6.2.2" id="alternativt-navn①"><span class="secno">6.2.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn①"></a></h4>
+   <h4 class="heading settled" data-level="7.2.2" id="alternativt-navn①"><span class="secno">7.2.2. </span><span class="content">alternativt navn</span><a class="self-link" href="#alternativt-navn①"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/2004/02/skos/core#altLabel">http://www.w3.org/2004/02/skos/core#altLabel</a>
     <dt>Foretrukken term på dansk
@@ -2639,7 +2664,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.2.3" id="beskrivelse①"><span class="secno">6.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
+   <h4 class="heading settled" data-level="7.2.3" id="beskrivelse①"><span class="secno">7.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://purl.org/dc/elements/1.1/description">http://purl.org/dc/elements/1.1/description</a>
     <dt>Foretrukken term på dansk
@@ -2657,9 +2682,9 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h4 class="heading settled" data-level="6.2.4" id="oprettelsesdato①"><span class="secno">6.2.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato①"></a></h4>
-   <h4 class="heading settled" data-level="6.2.5" id="nedlggelsesdato①"><span class="secno">6.2.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato①"></a></h4>
-   <h4 class="heading settled" data-level="6.2.6" id="er-enhed-af"><span class="secno">6.2.6. </span><span class="content">er enhed af</span><a class="self-link" href="#er-enhed-af"></a></h4>
+   <h4 class="heading settled" data-level="7.2.4" id="oprettelsesdato①"><span class="secno">7.2.4. </span><span class="content">oprettelsesdato</span><a class="self-link" href="#oprettelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="7.2.5" id="nedlggelsesdato①"><span class="secno">7.2.5. </span><span class="content">nedlæggelsesdato</span><a class="self-link" href="#nedlggelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="7.2.6" id="er-enhed-af"><span class="secno">7.2.6. </span><span class="content">er enhed af</span><a class="self-link" href="#er-enhed-af"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#unitOf ">http://www.w3.org/ns/org#unitOf </a>
     <dt>Foretrukken term på dansk
@@ -2677,7 +2702,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/org#FormalOrganization &amp; http://www.w3.org/ns/org#OrganizationalUnit
    </dl>
-   <h4 class="heading settled" data-level="6.2.7" id="har-enhed①"><span class="secno">6.2.7. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed①"></a></h4>
+   <h4 class="heading settled" data-level="7.2.7" id="har-enhed①"><span class="secno">7.2.7. </span><span class="content">har enhed</span><a class="self-link" href="#har-enhed①"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://www.w3.org/ns/org#hasUnit ">http://www.w3.org/ns/org#hasUnit </a>
     <dt>Foretrukken term på dansk
@@ -2695,7 +2720,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
-   <h3 class="heading settled" data-level="6.3" id="offentlig-organisation"><span class="secno">6.3. </span><span class="content">Offentlig organisation</span><a class="self-link" href="#offentlig-organisation"></a></h3>
+   <h3 class="heading settled" data-level="7.3" id="offentlig-organisation"><span class="secno">7.3. </span><span class="content">Offentlig organisation</span><a class="self-link" href="#offentlig-organisation"></a></h3>
    <p><img alt="offentlig organisation" src="img/PublicOrganisation.png"></p>
    <dl class="def">
     <dt>URI <dd><a href="http://data.europa.eu/m8g/PublicOrganisation ">http://data.europa.eu/m8g/PublicOrganisation </a>
@@ -2716,7 +2741,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    </dl>
     Klassens egenskaber: 
    <p>--></p>
-   <h3 class="heading settled" data-level="6.4" id="kontaktpunkt"><span class="secno">6.4. </span><span class="content">Kontaktpunkt</span><a class="self-link" href="#kontaktpunkt"></a></h3>
+   <h3 class="heading settled" data-level="7.4" id="kontaktpunkt"><span class="secno">7.4. </span><span class="content">Kontaktpunkt</span><a class="self-link" href="#kontaktpunkt"></a></h3>
    <p><img alt="kontaktpunkt" src="img/ContactPoint.png"></p>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/ContactPoint">http://schema.org/ContactPoint</a>
@@ -2734,7 +2759,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dd>http://schema.org/
    </dl>
    <p><strong>Datatypeegenskaber (attributter): </strong></p>
-   <h4 class="heading settled" data-level="6.4.1" id="kontakpunktnavn"><span class="secno">6.4.1. </span><span class="content">kontakpunktnavn</span><a class="self-link" href="#kontakpunktnavn"></a></h4>
+   <h4 class="heading settled" data-level="7.4.1" id="kontakpunktnavn"><span class="secno">7.4.1. </span><span class="content">kontakpunktnavn</span><a class="self-link" href="#kontakpunktnavn"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="https://schema.org/contactType">https://schema.org/contactType</a>
     <dt>Foretrukken term på dansk
@@ -2752,7 +2777,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.2" id="telefonnummer"><span class="secno">6.4.2. </span><span class="content">telefonnummer</span><a class="self-link" href="#telefonnummer"></a></h4>
+   <h4 class="heading settled" data-level="7.4.2" id="telefonnummer"><span class="secno">7.4.2. </span><span class="content">telefonnummer</span><a class="self-link" href="#telefonnummer"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/telephone ">http://schema.org/telephone </a>
     <dt>Foretrukken term på dansk
@@ -2773,7 +2798,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dd>[0..1]
    </dl>
     <strong>Objektegenskaber (associationsender): </strong> 
-   <h4 class="heading settled" data-level="6.4.3" id="email"><span class="secno">6.4.3. </span><span class="content">email</span><a class="self-link" href="#email"></a></h4>
+   <h4 class="heading settled" data-level="7.4.3" id="email"><span class="secno">7.4.3. </span><span class="content">email</span><a class="self-link" href="#email"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/email">http://schema.org/email</a>
     <dt>Foretrukken term på dansk
@@ -2793,8 +2818,8 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.4" id="url"><span class="secno">6.4.4. </span><span class="content">url</span><a class="self-link" href="#url"></a></h4>
-   <h4 class="heading settled" data-level="6.4.5" id="bningstider"><span class="secno">6.4.5. </span><span class="content">åbningstider</span><a class="self-link" href="#bningstider"></a></h4>
+   <h4 class="heading settled" data-level="7.4.4" id="url"><span class="secno">7.4.4. </span><span class="content">url</span><a class="self-link" href="#url"></a></h4>
+   <h4 class="heading settled" data-level="7.4.5" id="bningstider"><span class="secno">7.4.5. </span><span class="content">åbningstider</span><a class="self-link" href="#bningstider"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/openingHours ">http://schema.org/openingHours </a>
     <dt>Foretrukken term på dansk
@@ -2822,7 +2847,7 @@ If a business is open 7 days a week, then it can be specified as &lt;time itempr
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.6" id="tilgnglig-i-tidsrum"><span class="secno">6.4.6. </span><span class="content">tilgænglig i tidsrum</span><a class="self-link" href="#tilgnglig-i-tidsrum"></a></h4>
+   <h4 class="heading settled" data-level="7.4.6" id="tilgnglig-i-tidsrum"><span class="secno">7.4.6. </span><span class="content">tilgænglig i tidsrum</span><a class="self-link" href="#tilgnglig-i-tidsrum"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/hoursAvailable ">http://schema.org/hoursAvailable </a>
     <dt>Foretrukken term på dansk
@@ -2840,7 +2865,7 @@ If a business is open 7 days a week, then it can be specified as &lt;time itempr
     <dt>Rækkevidde
     <dd>OpeningHoursSpecification
    </dl>
-   <h3 class="heading settled" data-level="6.5" id="bningstidsspecifikation"><span class="secno">6.5. </span><span class="content">Åbningstidsspecifikation</span><a class="self-link" href="#bningstidsspecifikation"></a></h3>
+   <h3 class="heading settled" data-level="7.5" id="bningstidsspecifikation"><span class="secno">7.5. </span><span class="content">Åbningstidsspecifikation</span><a class="self-link" href="#bningstidsspecifikation"></a></h3>
     <img alt="Åbningstidsspecifikation" src="img/OpeningsHoursSpecification.png"> 
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/OpeningHoursSpecification ">http://schema.org/OpeningHoursSpecification </a>
@@ -2860,7 +2885,7 @@ If the value for the closes property is less than the value for the opens proper
     <dd>http://schema.org/
    </dl>
    <p><strong>Datatypeegenskaber (attributter): </strong></p>
-   <h4 class="heading settled" data-level="6.5.1" id="lukker"><span class="secno">6.5.1. </span><span class="content">lukker</span><a class="self-link" href="#lukker"></a></h4>
+   <h4 class="heading settled" data-level="7.5.1" id="lukker"><span class="secno">7.5.1. </span><span class="content">lukker</span><a class="self-link" href="#lukker"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/closes">http://schema.org/closes</a>
     <dt>Foretrukken term på dansk
@@ -2878,7 +2903,7 @@ If the value for the closes property is less than the value for the opens proper
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.5.2" id="bner"><span class="secno">6.5.2. </span><span class="content">åbner</span><a class="self-link" href="#bner"></a></h4>
+   <h4 class="heading settled" data-level="7.5.2" id="bner"><span class="secno">7.5.2. </span><span class="content">åbner</span><a class="self-link" href="#bner"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/opens">http://schema.org/opens</a>
     <dt>Foretrukken term på dansk
@@ -2896,7 +2921,7 @@ If the value for the closes property is less than the value for the opens proper
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.5.3" id="glder-fra"><span class="secno">6.5.3. </span><span class="content">gælder fra</span><a class="self-link" href="#glder-fra"></a></h4>
+   <h4 class="heading settled" data-level="7.5.3" id="glder-fra"><span class="secno">7.5.3. </span><span class="content">gælder fra</span><a class="self-link" href="#glder-fra"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/validFrom ">http://schema.org/validFrom </a>
     <dt>Foretrukken term på dansk
@@ -2914,7 +2939,7 @@ If the value for the closes property is less than the value for the opens proper
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.5.4" id="glder-til"><span class="secno">6.5.4. </span><span class="content">gælder til</span><a class="self-link" href="#glder-til"></a></h4>
+   <h4 class="heading settled" data-level="7.5.4" id="glder-til"><span class="secno">7.5.4. </span><span class="content">gælder til</span><a class="self-link" href="#glder-til"></a></h4>
    <dl class="def">
     <dt>URI <dd><a href="http://schema.org/validThrough">http://schema.org/validThrough</a>
     <dt>Foretrukken term på dansk
@@ -2931,7 +2956,7 @@ If the value for the closes property is less than the value for the opens proper
     <dd>[0..1]
    </dl>
     <strong>Objektegenskaber (associationsender): </strong> 
-   <h4 class="heading settled" data-level="6.5.5" id="ugedag"><span class="secno">6.5.5. </span><span class="content">ugedag</span><a class="self-link" href="#ugedag"></a></h4>
+   <h4 class="heading settled" data-level="7.5.5" id="ugedag"><span class="secno">7.5.5. </span><span class="content">ugedag</span><a class="self-link" href="#ugedag"></a></h4>
    <dl class="def">
     <dt>Foretrukken term på dansk
     <dd>ugedag
@@ -2940,51 +2965,51 @@ If the value for the closes property is less than the value for the opens proper
     <dt>Rækkevidde
     <dd>DayOfWeek
    </dl>
-   <h3 class="heading settled" data-level="6.6" id="sted①"><span class="secno">6.6. </span><span class="content">Sted</span><a class="self-link" href="#sted①"></a></h3>
+   <h3 class="heading settled" data-level="7.6" id="sted①"><span class="secno">7.6. </span><span class="content">Sted</span><a class="self-link" href="#sted①"></a></h3>
     <img alt="sted" src="img/Site.png"> 
-   <h3 class="heading settled" data-level="6.7" id="adresse"><span class="secno">6.7. </span><span class="content">Adresse</span><a class="self-link" href="#adresse"></a></h3>
+   <h3 class="heading settled" data-level="7.7" id="adresse"><span class="secno">7.7. </span><span class="content">Adresse</span><a class="self-link" href="#adresse"></a></h3>
     <img alt="adresse" src="img/Address.png"> 
-   <h3 class="heading settled" data-level="6.8" id="administrativ-geografisk-inddeling"><span class="secno">6.8. </span><span class="content">Administrativ geografisk inddeling</span><a class="self-link" href="#administrativ-geografisk-inddeling"></a></h3>
+   <h3 class="heading settled" data-level="7.8" id="administrativ-geografisk-inddeling"><span class="secno">7.8. </span><span class="content">Administrativ geografisk inddeling</span><a class="self-link" href="#administrativ-geografisk-inddeling"></a></h3>
     <img alt="admininistrativ geografisk inddeling" src="img/AdministrativeTerritorialUnits.png"> 
-   <h3 class="heading settled" data-level="6.9" id="medlemsskab"><span class="secno">6.9. </span><span class="content">Medlemsskab</span><a class="self-link" href="#medlemsskab"></a></h3>
+   <h3 class="heading settled" data-level="7.9" id="medlemsskab"><span class="secno">7.9. </span><span class="content">Medlemsskab</span><a class="self-link" href="#medlemsskab"></a></h3>
     <img alt="medlemsskab" src="img/Membership.png"> 
-   <h3 class="heading settled" data-level="6.10" id="rolle"><span class="secno">6.10. </span><span class="content">Rolle</span><a class="self-link" href="#rolle"></a></h3>
+   <h3 class="heading settled" data-level="7.10" id="rolle"><span class="secno">7.10. </span><span class="content">Rolle</span><a class="self-link" href="#rolle"></a></h3>
     <img alt="rolle" src="img/Role.png"> 
-   <h3 class="heading settled" data-level="6.11" id="funktion"><span class="secno">6.11. </span><span class="content">Funktion</span><a class="self-link" href="#funktion"></a></h3>
+   <h3 class="heading settled" data-level="7.11" id="funktion"><span class="secno">7.11. </span><span class="content">Funktion</span><a class="self-link" href="#funktion"></a></h3>
     <img alt="funktion" src="img/Function.png"> 
-   <h3 class="heading settled" data-level="6.12" id="person"><span class="secno">6.12. </span><span class="content">Person</span><a class="self-link" href="#person"></a></h3>
-   <h3 class="heading settled" data-level="6.13" id="it-system"><span class="secno">6.13. </span><span class="content">IT-system</span><a class="self-link" href="#it-system"></a></h3>
-   <h3 class="heading settled" data-level="6.14" id="ndringshndelse"><span class="secno">6.14. </span><span class="content">Ændringshændelse</span><a class="self-link" href="#ndringshndelse"></a></h3>
+   <h3 class="heading settled" data-level="7.12" id="person"><span class="secno">7.12. </span><span class="content">Person</span><a class="self-link" href="#person"></a></h3>
+   <h3 class="heading settled" data-level="7.13" id="it-system"><span class="secno">7.13. </span><span class="content">IT-system</span><a class="self-link" href="#it-system"></a></h3>
+   <h3 class="heading settled" data-level="7.14" id="ndringshndelse"><span class="secno">7.14. </span><span class="content">Ændringshændelse</span><a class="self-link" href="#ndringshndelse"></a></h3>
     <img alt="ændringshændelse" src="img/ChangeEvent.png"> 
-   <h3 class="heading settled" data-level="6.15" id="retskilde"><span class="secno">6.15. </span><span class="content">Retskilde</span><a class="self-link" href="#retskilde"></a></h3>
+   <h3 class="heading settled" data-level="7.15" id="retskilde"><span class="secno">7.15. </span><span class="content">Retskilde</span><a class="self-link" href="#retskilde"></a></h3>
     <img alt="retskilde" src="img/LegalResource.png"> 
-   <h3 class="heading settled" data-level="6.16" id="dokument"><span class="secno">6.16. </span><span class="content">Dokument</span><a class="self-link" href="#dokument"></a></h3>
+   <h3 class="heading settled" data-level="7.16" id="dokument"><span class="secno">7.16. </span><span class="content">Dokument</span><a class="self-link" href="#dokument"></a></h3>
     <img alt="dokument" src="img/Document.png"> 
-   <h3 class="heading settled" data-level="6.17" id="billedobjekt"><span class="secno">6.17. </span><span class="content">Billedobjekt</span><a class="self-link" href="#billedobjekt"></a></h3>
+   <h3 class="heading settled" data-level="7.17" id="billedobjekt"><span class="secno">7.17. </span><span class="content">Billedobjekt</span><a class="self-link" href="#billedobjekt"></a></h3>
     <img alt="billedobjekt" src="img/Image.png"> 
-   <h3 class="heading settled" data-level="6.18" id="identifikator①"><span class="secno">6.18. </span><span class="content">Identifikator</span><a class="self-link" href="#identifikator①"></a></h3>
+   <h3 class="heading settled" data-level="7.18" id="identifikator①"><span class="secno">7.18. </span><span class="content">Identifikator</span><a class="self-link" href="#identifikator①"></a></h3>
     <img alt="identifikator" src="img/Identifier.png"> 
-   <h4 class="heading settled" data-level="6.18.1" id="kode"><span class="secno">6.18.1. </span><span class="content">kode</span><a class="self-link" href="#kode"></a></h4>
-   <h4 class="heading settled" data-level="6.18.2" id="udstedende-myndighed"><span class="secno">6.18.2. </span><span class="content">udstedende myndighed</span><a class="self-link" href="#udstedende-myndighed"></a></h4>
-   <h4 class="heading settled" data-level="6.18.3" id="udstedelsesdato"><span class="secno">6.18.3. </span><span class="content">udstedelsesdato</span><a class="self-link" href="#udstedelsesdato"></a></h4>
-   <h2 class="heading settled" data-level="7" id="klassifikationer"><span class="secno">7. </span><span class="content">Klassifikationer</span><a class="self-link" href="#klassifikationer"></a></h2>
-   <h3 class="heading settled" data-level="7.1" id="offentlig-organisationstype"><span class="secno">7.1. </span><span class="content">offentlig organisationstype</span><a class="self-link" href="#offentlig-organisationstype"></a></h3>
+   <h4 class="heading settled" data-level="7.18.1" id="kode"><span class="secno">7.18.1. </span><span class="content">kode</span><a class="self-link" href="#kode"></a></h4>
+   <h4 class="heading settled" data-level="7.18.2" id="udstedende-myndighed"><span class="secno">7.18.2. </span><span class="content">udstedende myndighed</span><a class="self-link" href="#udstedende-myndighed"></a></h4>
+   <h4 class="heading settled" data-level="7.18.3" id="udstedelsesdato"><span class="secno">7.18.3. </span><span class="content">udstedelsesdato</span><a class="self-link" href="#udstedelsesdato"></a></h4>
+   <h2 class="heading settled" data-level="8" id="klassifikationer"><span class="secno">8. </span><span class="content">Klassifikationer</span><a class="self-link" href="#klassifikationer"></a></h2>
+   <h3 class="heading settled" data-level="8.1" id="offentlig-organisationstype"><span class="secno">8.1. </span><span class="content">offentlig organisationstype</span><a class="self-link" href="#offentlig-organisationstype"></a></h3>
     FormalOrganizationType 
-   <h3 class="heading settled" data-level="7.2" id="offentlig-organisationstype①"><span class="secno">7.2. </span><span class="content">offentlig organisationstype</span><a class="self-link" href="#offentlig-organisationstype①"></a></h3>
+   <h3 class="heading settled" data-level="8.2" id="offentlig-organisationstype①"><span class="secno">8.2. </span><span class="content">offentlig organisationstype</span><a class="self-link" href="#offentlig-organisationstype①"></a></h3>
     PublicFormalOrganizationType 
-   <h3 class="heading settled" data-level="7.3" id="organisatorisk-enhedstype"><span class="secno">7.3. </span><span class="content">organisatorisk enhedstype</span><a class="self-link" href="#organisatorisk-enhedstype"></a></h3>
+   <h3 class="heading settled" data-level="8.3" id="organisatorisk-enhedstype"><span class="secno">8.3. </span><span class="content">organisatorisk enhedstype</span><a class="self-link" href="#organisatorisk-enhedstype"></a></h3>
     OrganizationalUnitType 
-   <h3 class="heading settled" data-level="7.4" id="offentlig-organisatorisk-enhedstype"><span class="secno">7.4. </span><span class="content">offentlig organisatorisk enhedstype</span><a class="self-link" href="#offentlig-organisatorisk-enhedstype"></a></h3>
+   <h3 class="heading settled" data-level="8.4" id="offentlig-organisatorisk-enhedstype"><span class="secno">8.4. </span><span class="content">offentlig organisatorisk enhedstype</span><a class="self-link" href="#offentlig-organisatorisk-enhedstype"></a></h3>
     PublicOrganizationalUnitType 
-   <h3 class="heading settled" data-level="7.5" id="type-af-forvaltningsopgave"><span class="secno">7.5. </span><span class="content">type af forvaltningsopgave</span><a class="self-link" href="#type-af-forvaltningsopgave"></a></h3>
+   <h3 class="heading settled" data-level="8.5" id="type-af-forvaltningsopgave"><span class="secno">8.5. </span><span class="content">type af forvaltningsopgave</span><a class="self-link" href="#type-af-forvaltningsopgave"></a></h3>
     PublicAdministrativeTaskType 
-   <h2 class="heading settled" data-level="8" id="referencer"><span class="secno">8. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
-   <h2 class="heading settled" data-level="9" id="bilag"><span class="secno">9. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
-   <h3 class="heading settled" data-level="9.1" id="uml-diagrammer"><span class="secno">9.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
-   <h4 class="heading settled" data-level="9.1.1" id="uml-diagram-org-ap-dk-v-100-beta"><span class="secno">9.1.1. </span><span class="content">UML-diagram: ORG-AP-DK v. 1.0.0-beta</span><a class="self-link" href="#uml-diagram-org-ap-dk-v-100-beta"></a></h4>
+   <h2 class="heading settled" data-level="9" id="referencer"><span class="secno">9. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
+   <h2 class="heading settled" data-level="10" id="bilag"><span class="secno">10. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
+   <h3 class="heading settled" data-level="10.1" id="uml-diagrammer①"><span class="secno">10.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer①"></a></h3>
+   <h4 class="heading settled" data-level="10.1.1" id="uml-diagram-org-ap-dk-v-100-beta"><span class="secno">10.1.1. </span><span class="content">UML-diagram: ORG-AP-DK v. 1.0.0-beta</span><a class="self-link" href="#uml-diagram-org-ap-dk-v-100-beta"></a></h4>
     <a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img alt="Illustration af ORG-AP-DK v. 1.0.0-beta UML" src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"></a> 
-   <h3 class="heading settled" data-level="9.2" id="eksempler"><span class="secno">9.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
-   <h4 class="heading settled" data-level="9.2.1" id="eksempel-p-basisinformation"><span class="secno">9.2.1. </span><span class="content">Eksempel på basisinformation</span><a class="self-link" href="#eksempel-p-basisinformation"></a></h4>
+   <h3 class="heading settled" data-level="10.2" id="eksempler"><span class="secno">10.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
+   <h4 class="heading settled" data-level="10.2.1" id="eksempel-p-basisinformation"><span class="secno">10.2.1. </span><span class="content">Eksempel på basisinformation</span><a class="self-link" href="#eksempel-p-basisinformation"></a></h4>
    <div class="example" id="example-48556397">
     <a class="self-link" href="#example-48556397"></a> 
 <pre>&lt;http://example.com/Organization1> a org:FormalOrganization;
@@ -3000,7 +3025,7 @@ If the value for the closes property is less than the value for the opens proper
     foaf:homepage &lt;example.com/homepage/Organization1> .
 </pre>
    </div>
-   <h4 class="heading settled" data-level="9.2.2" id="eksempel-p-idenfikatorer"><span class="secno">9.2.2. </span><span class="content">Eksempel på idenfikatorer</span><a class="self-link" href="#eksempel-p-idenfikatorer"></a></h4>
+   <h4 class="heading settled" data-level="10.2.2" id="eksempel-p-idenfikatorer"><span class="secno">10.2.2. </span><span class="content">Eksempel på idenfikatorer</span><a class="self-link" href="#eksempel-p-idenfikatorer"></a></h4>
    <div class="example" id="example-faa2775e">
     <a class="self-link" href="#example-faa2775e"></a> 
 <pre>&lt;http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
@@ -3016,7 +3041,7 @@ If the value for the closes property is less than the value for the opens proper
   ] .
 </pre>
    </div>
-   <h4 class="heading settled" data-level="9.2.3" id="eksempel-p-organisatoriske-strukturer"><span class="secno">9.2.3. </span><span class="content">Eksempel på organisatoriske strukturer</span><a class="self-link" href="#eksempel-p-organisatoriske-strukturer"></a></h4>
+   <h4 class="heading settled" data-level="10.2.3" id="eksempel-p-organisatoriske-strukturer"><span class="secno">10.2.3. </span><span class="content">Eksempel på organisatoriske strukturer</span><a class="self-link" href="#eksempel-p-organisatoriske-strukturer"></a></h4>
    <p><img alt="organisatorisk struktur - graf" src="img/OrganisationalStructure-example.png"></p>
    <div class="example" id="example-e7e21831">
     <a class="self-link" href="#example-e7e21831"></a> 
@@ -3050,7 +3075,7 @@ If the value for the closes property is less than the value for the opens proper
     dct:description "Beskrivelse af organisationsenhed 3"@da .  
 </pre>
    </div>
-   <h4 class="heading settled" data-level="9.2.4" id="eksempel-p-kontaktinformation"><span class="secno">9.2.4. </span><span class="content">Eksempel på kontaktinformation</span><a class="self-link" href="#eksempel-p-kontaktinformation"></a></h4>
+   <h4 class="heading settled" data-level="10.2.4" id="eksempel-p-kontaktinformation"><span class="secno">10.2.4. </span><span class="content">Eksempel på kontaktinformation</span><a class="self-link" href="#eksempel-p-kontaktinformation"></a></h4>
    <div class="example" id="example-6d9dae82">
     <a class="self-link" href="#example-6d9dae82"></a> 
 <pre>&lt;http://example.com/Organization1> a org:FormalOrganization; a org:PublicOrganization;
@@ -3201,4 +3226,5 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <div class="issue"> Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen. <a class="issue-return" href="#issue-626ea700" title="Jump to section">↵</a></div>
    <div class="issue"> Relation til Non-Person Entities /It-systemer bør indføres. <a class="issue-return" href="#issue-07edc1b6" title="Jump to section">↵</a></div>
    <div class="issue"> Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner og delegering af opgaver i organisationen. <a class="issue-return" href="#issue-7ea09339" title="Jump to section">↵</a></div>
+   <div class="issue"> I det aktuelle udkast er der endnu ikke taget stilling til kravniveau. <a class="issue-return" href="#issue-02bca119" title="Jump to section">↵</a></div>
   </div>
