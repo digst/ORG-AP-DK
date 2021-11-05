@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-11-04
+Date: 2021-11-05
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -288,7 +288,32 @@ Udover den globalt unikke URI, forsynes organisationer også ofte med andre iden
 </table>
 
 #  Gældende krav og overensstemmelse
+ORG-AP-DK 1.0.0 er er baseret på og anvender dermed klasser og egenskaber fra [The Organization Ontology (ORG)](https://www.w3.org/TR/vocab-org/) og [Core Public Organisation Vocabulary (CPOV)](https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100) 
 
+## Kravniveauer
+I ORG-AP-DK anvender følgende kravniveauer. 
+
+* **Obligatorisk** (Mandatory): informationen SKAL angives
+* **Anbefalet** (Recommended): informationen BØR angives hvis den er tilgængelig
+* **Valgfri** (Optional): informationen KAN angives  
+
+<div class='issue'>
+I det aktuelle udkast er der endnu ikke taget stilling til kravniveau.
+</div>
+
+# UML-diagrammer
+
+<!--
+### Diagram med obligatoriske elementer (minimumsmodel)
+### Diagram med obligatoriske og anbefalede elementer
+-->
+
+## Diagram med alle elementer
+Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
+
+<p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png"/></a></p>
+
+<p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram (kun på dansk og uden datatyper og stereotyper).png"/></a></p>
 
 #  Elementer i ORG-AP-DK
 I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
