@@ -1033,7 +1033,7 @@ If the value for the closes property is less than the value for the opens proper
 <img src="img/Address.png" alt="adresse">
 
 ## Administrativ geografisk inddeling
-<img src="img/AdministrativeTerritorialUnits.png" alt="admininistrativ geografisk inddeling">
+<img src="img/AdministrativeTerritorialUnits.png" alt="administrativ geografisk inddeling">
 
 ## Medlemsskab
 <img src="img/Membership.png" alt="medlemsskab">
