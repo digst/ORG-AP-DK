@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-11-05
+Date: 2021-11-08
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -226,13 +226,17 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 
 
 ## Sted
-- En organisations fysiske placering kan angives. Placeringen kan fx angives med en adresse.
-- Det kan angives hvilket administrativt geografisk område en offentlig organisation dækker forvaltningsmæssigt.
-<!-- En organisation kan også have en virtuel lokation -->
+- En organisations **fysiske placering** kan angives. Placeringen kan fx angives med en **adresse**.
+- Det kan angives hvilket **administrativt geografisk område** en offentlig organisation dækker forvaltningsmæssigt.
+
+<div class='issue'>
+En organisation kan også have en virtuel lokation.
+</div>
+
 	
 ## Medlemsskab og aktører
-- En persons relation til en organisation kan beskrives som en medlemskabsrelation. En organisations relation til en anden organisation kan også have karakter af et medlemskab. En person ansat i en organisation kan betragtes som medlem af organisationen. I forhold til et givet medlemskab kan spiller aktøren i forhold til organisationen en rolle, som kan specificeres i en klassifikation over rolletyper.
-- En organisations relationer til personer i form af ansatte og ledere kan også angives direkte.
+- En persons relation til en organisation kan beskrives som en **medlemskabsrelation**. En organisations relation til en anden organisation kan også have karakter af et **medlemskab**. En person ansat i en organisation kan betragtes som **medlem** af organisationen. I forhold til et givet medlemskab kan spiller aktøren i forhold til organisationen en **rolle**, som kan specificeres i en klassifikation over rolletyper.
+- En organisations relationer til personer i form af **ansatte** og **ledere** kan også angives direkte.
 
 <div class='issue'>
 Relation til Non-Person Entities /It-systemer bør indføres.
@@ -243,11 +247,26 @@ Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner og deleger
 </div>
 	
 ## Historik og retsgrundlag
-- En organisation oprettes og ændres som svar på begivenheder eller hændelser. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den lovgivning, den politik eller anden retskilde, der udløste eller ligger til grund for hændelsen.
-- En organisations oprettelse eller nedlæggelse kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode.
+- En organisation oprettes og ændres som svar på begivenheder eller **hændelser**. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den **lovgivning, den politik eller anden retskilde**, der udløste eller ligger til grund for hændelsen.
+- En organisations **oprettelse** eller **nedlæggelse** kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode.
 - Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.
-- En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en forvaltningsopgave. Til dette formål anvendes en klassifikation over forvaltningsopgaver.
-	    
+- En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en **forvaltningsopgave**. Til dette formål anvendes en klassifikation over forvaltningsopgaver.
+
+
+# UML-diagrammer
+
+<!--
+### Diagram med obligatoriske elementer (minimumsmodel)
+### Diagram med obligatoriske og anbefalede elementer
+-->
+
+## Diagram med alle elementer
+Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
+
+<p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png"/></a></p>
+
+<p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram (kun på dansk og uden datatyper og stereotyper).png"/></a></p>
+
 	    
 # Globalt unikke og stabile identifikatorer	    
 Formelle organisationer og organisationsenheder skal identificeres med en unik, stabil og tværgående identifikator der er uafhængig af det system den er skabt i. Derved kan organisationsdata opmærket med organisationsstandarden identificeres unikt på tværs af it-løsninger og organisatoriske skel. 
@@ -287,33 +306,7 @@ Udover den globalt unikke URI, forsynes organisationer også ofte med andre iden
 
 </table>
 
-#  Gældende krav og overensstemmelse
-ORG-AP-DK 1.0.0 er er baseret på og anvender dermed klasser og egenskaber fra [The Organization Ontology (ORG)](https://www.w3.org/TR/vocab-org/) og [Core Public Organisation Vocabulary (CPOV)](https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100) 
 
-## Kravniveauer
-I ORG-AP-DK anvender følgende kravniveauer. 
-
-* **Obligatorisk** (Mandatory): informationen SKAL angives
-* **Anbefalet** (Recommended): informationen BØR angives hvis den er tilgængelig
-* **Valgfri** (Optional): informationen KAN angives  
-
-<div class='issue'>
-I det aktuelle udkast er der endnu ikke taget stilling til kravniveau.
-</div>
-
-# UML-diagrammer
-
-<!--
-### Diagram med obligatoriske elementer (minimumsmodel)
-### Diagram med obligatoriske og anbefalede elementer
--->
-
-## Diagram med alle elementer
-Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
-
-<p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png"/></a></p>
-
-<p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram (kun på dansk og uden datatyper og stereotyper).png"/></a></p>
 
 #  Elementer i ORG-AP-DK
 I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
