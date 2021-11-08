@@ -248,8 +248,7 @@ Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner og deleger
 	
 ## Historik og retsgrundlag
 - En organisation oprettes og ændres som svar på begivenheder eller **hændelser**. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den **lovgivning, den politik eller anden retskilde**, der udløste eller ligger til grund for hændelsen.
-- En organisations **oprettelse** eller **nedlæggelse** kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode.
-- Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.
+- En organisations **oprettelse** eller **nedlæggelse** kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode. Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.
 - En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en **forvaltningsopgave**. Til dette formål anvendes en klassifikation over forvaltningsopgaver.
 
 
