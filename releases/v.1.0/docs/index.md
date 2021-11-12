@@ -211,7 +211,7 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.5 Basisinformation om o
 - Organisationer kan indbyrdes have **andre former for relationer** end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.
 - En organisation kan klassificeres som værende af en bestemt **organisationstype**. I forhold til offentlige organisationer kunne det fx være kommune, region, ministerier, styrelser og mange af de andre former for offentlige organisationer, der er en væsentlig del af hverdagen i det offentlige organisationslandskab. 
 
-Svarer på følgende brugsscenarier beskrevet af KL: *"3.1 Hvordan er organisationen bygget på?"* 
+Svarer på følgende brugsscenarier beskrevet af KL: *"3.1 Hvordan er organisationen bygget op?"* 
 
 <img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
 
