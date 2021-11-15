@@ -14,32 +14,31 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 679.5 384.7"
 	 style="enable-background:new 0 0 679.5 384.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F0F0F0;stroke:#C8C8C8;stroke-width:2;stroke-miterlimit:10;}
-	.st1{fill:#F0F0F0;stroke:#999999;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#C8C8C8;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:#86B1E0;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#000000;stroke-width:1.0476;stroke-miterlimit:10;}
-	.st7{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st8{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
-	.st9{stroke:#000000;stroke-width:1.0476;stroke-miterlimit:10;}
-	.st10{fill:none;stroke:#86B1EA;stroke-width:2;stroke-miterlimit:10;}
-	.st11{fill:none;stroke:#86B1E0;stroke-width:2;stroke-miterlimit:10;}
-	.st12{fill:#FFFFFF;}
-	.st13{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st14{fill:#C8C8C8;}
-	.st15{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st16{fill:#86B1E0;stroke:#000000;stroke-miterlimit:10;}
-	.st17{fill:none;}
-	.st18{display:none;}
-	.st19{display:inline;}
-	.st20{font-family:'ArialMT';}
-	.st21{font-size:12px;}
-	.st22{font-family:'Calibri';}
-	.st23{font-size:14px;}
-	.st24{font-size:13.5px;}
-	.st25{display:inline;opacity:0.68;fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;enable-background:new    ;}
+	.st0{fill:#F0F0F0;stroke:#999999;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#C8C8C8;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#86B1E0;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:1.0476;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st7{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st8{stroke:#000000;stroke-width:1.0476;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#86B1EA;stroke-width:2;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#86B1E0;stroke-width:2;stroke-miterlimit:10;}
+	.st11{fill:#FFFFFF;}
+	.st12{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st13{fill:#C8C8C8;}
+	.st14{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st15{fill:#86B1E0;stroke:#000000;stroke-miterlimit:10;}
+	.st16{fill:none;}
+	.st17{display:none;}
+	.st18{display:inline;}
+	.st19{font-family:'ArialMT';}
+	.st20{font-size:12px;}
+	.st21{font-family:'Calibri';}
+	.st22{font-size:14px;}
+	.st23{font-size:13.5px;}
+	.st24{display:inline;opacity:0.68;fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;enable-background:new    ;}
 </style>
 <metadata>
 	<sfw  xmlns="&ns_sfw;">
@@ -51,160 +50,160 @@
 	<g id="Figurer">
 		<polygon class="st0" points="398,155.7 398,226.7 459.5,262.2 521,226.7 521,155.7 459.5,120.2 		"/>
 		<polygon class="st0" points="328,273.7 328,344.7 389.5,380.2 451,344.7 451,273.7 389.5,238.2 		"/>
-		<polygon class="st1" points="328,36.7 328,107.7 389.5,143.2 451,107.7 451,36.7 389.5,1.2 		"/>
+		<polygon class="st0" points="328,36.7 328,107.7 389.5,143.2 451,107.7 451,36.7 389.5,1.2 		"/>
 		<polygon class="st0" points="191,273.7 191,344.7 252.5,380.2 314,344.7 314,273.7 252.5,238.2 		"/>
 		<polygon class="st0" points="125.5,158.1 125.5,229.1 187,264.6 248.5,229.1 248.5,158.1 187,122.6 		"/>
-		<polygon class="st1" points="191,36.7 191,107.7 252.5,143.2 314,107.7 314,36.7 252.5,1.2 		"/>
-		<polygon class="st1" points="261,155 261,226 322.5,261.5 384,226 384,155 322.5,119.5 		"/>
+		<polygon class="st0" points="191,36.7 191,107.7 252.5,143.2 314,107.7 314,36.7 252.5,1.2 		"/>
+		<polygon class="st0" points="261,155 261,226 322.5,261.5 384,226 384,155 322.5,119.5 		"/>
 		<g>
-			<rect x="312.8" y="154.1" class="st2" width="29.3" height="56"/>
-			<rect x="302" y="165" class="st3" width="23.6" height="45"/>
-			<line class="st4" x1="293.1" y1="210" x2="351.6" y2="210"/>
-			<line class="st4" x1="325.5" y1="167.3" x2="342.1" y2="167.4"/>
-			<line class="st4" x1="325.6" y1="176.1" x2="342.4" y2="176.1"/>
-			<line class="st4" x1="325.6" y1="184.8" x2="342.1" y2="185"/>
-			<line class="st4" x1="325.5" y1="193.7" x2="341.7" y2="193.6"/>
-			<rect x="309.1" y="199.1" class="st5" width="9.4" height="10.9"/>
-			<rect x="309.1" y="171.9" class="st5" width="3.8" height="3.8"/>
-			<rect x="309.1" y="180.8" class="st5" width="3.8" height="3.8"/>
-			<rect x="309.1" y="189.7" class="st5" width="3.8" height="3.8"/>
+			<rect x="312.8" y="154.1" class="st1" width="29.3" height="56"/>
+			<rect x="302" y="165" class="st2" width="23.6" height="45"/>
+			<line class="st3" x1="293.1" y1="210" x2="351.6" y2="210"/>
+			<line class="st3" x1="325.5" y1="167.3" x2="342.1" y2="167.4"/>
+			<line class="st3" x1="325.6" y1="176.1" x2="342.4" y2="176.1"/>
+			<line class="st3" x1="325.6" y1="184.8" x2="342.1" y2="185"/>
+			<line class="st3" x1="325.5" y1="193.7" x2="341.7" y2="193.6"/>
+			<rect x="309.1" y="199.1" class="st4" width="9.4" height="10.9"/>
+			<rect x="309.1" y="171.9" class="st4" width="3.8" height="3.8"/>
+			<rect x="309.1" y="180.8" class="st4" width="3.8" height="3.8"/>
+			<rect x="309.1" y="189.7" class="st4" width="3.8" height="3.8"/>
 		</g>
 		<g>
-			<path class="st5" d="M285.9,88.7h-63.4c-2.4,0-4.3-1.9-4.3-4.3V45.9c0-2.4,1.9-4.3,4.3-4.3h63.4c2.4,0,4.3,1.9,4.3,4.3v38.4
+			<path class="st4" d="M285.9,88.7h-63.4c-2.4,0-4.3-1.9-4.3-4.3V45.9c0-2.4,1.9-4.3,4.3-4.3h63.4c2.4,0,4.3,1.9,4.3,4.3v38.4
 				C290.2,86.8,288.3,88.7,285.9,88.7z"/>
-			<path class="st2" d="M259.9,47.2h-11.2v-7.7c0-2.9,2.3-5.2,5.2-5.2h0.7c2.9,0,5.2,2.3,5.2,5.2L259.9,47.2L259.9,47.2z"/>
-			<rect x="231.7" y="53.7" class="st2" width="14" height="26.8"/>
-			<rect x="226.5" y="58.9" class="st3" width="11.3" height="21.6"/>
-			<line class="st4" x1="222.3" y1="80.5" x2="250.3" y2="80.5"/>
-			<line class="st6" x1="237.8" y1="60" x2="245.7" y2="60"/>
-			<line class="st7" x1="238" y1="64.2" x2="246.1" y2="64.2"/>
-			<line class="st6" x1="238" y1="68.4" x2="245.9" y2="68.5"/>
-			<line class="st7" x1="237.8" y1="72.7" x2="245.5" y2="72.6"/>
-			<rect x="229.9" y="75.2" class="st8" width="4.5" height="5.2"/>
-			<rect x="229.9" y="61.9" class="st9" width="1.8" height="1.8"/>
-			<rect x="229.9" y="66.3" class="st9" width="1.8" height="1.8"/>
-			<rect x="229.9" y="70.7" class="st9" width="1.8" height="1.8"/>
-			<line class="st4" x1="260" y1="54.5" x2="284.4" y2="54.5"/>
-			<line class="st4" x1="260" y1="63.2" x2="284.4" y2="63.2"/>
-			<line class="st4" x1="260" y1="71.8" x2="284.4" y2="71.8"/>
-			<line class="st4" x1="260" y1="80.5" x2="284.4" y2="80.5"/>
+			<path class="st1" d="M259.9,47.2h-11.2v-7.7c0-2.9,2.3-5.2,5.2-5.2h0.7c2.9,0,5.2,2.3,5.2,5.2L259.9,47.2L259.9,47.2z"/>
+			<rect x="231.7" y="53.7" class="st1" width="14" height="26.8"/>
+			<rect x="226.5" y="58.9" class="st2" width="11.3" height="21.6"/>
+			<line class="st3" x1="222.3" y1="80.5" x2="250.3" y2="80.5"/>
+			<line class="st5" x1="237.8" y1="60" x2="245.7" y2="60"/>
+			<line class="st6" x1="238" y1="64.2" x2="246.1" y2="64.2"/>
+			<line class="st5" x1="238" y1="68.4" x2="245.9" y2="68.5"/>
+			<line class="st6" x1="237.8" y1="72.7" x2="245.5" y2="72.6"/>
+			<rect x="229.9" y="75.2" class="st7" width="4.5" height="5.2"/>
+			<rect x="229.9" y="61.9" class="st8" width="1.8" height="1.8"/>
+			<rect x="229.9" y="66.3" class="st8" width="1.8" height="1.8"/>
+			<rect x="229.9" y="70.7" class="st8" width="1.8" height="1.8"/>
+			<line class="st3" x1="260" y1="54.5" x2="284.4" y2="54.5"/>
+			<line class="st3" x1="260" y1="63.2" x2="284.4" y2="63.2"/>
+			<line class="st3" x1="260" y1="71.8" x2="284.4" y2="71.8"/>
+			<line class="st3" x1="260" y1="80.5" x2="284.4" y2="80.5"/>
 		</g>
 		<g>
-			<rect x="371.5" y="27.5" class="st3" width="21" height="11.4"/>
-			<rect x="386.9" y="53.2" class="st3" width="21" height="11.4"/>
-			<rect x="356" y="53.3" class="st5" width="21" height="11.4"/>
-			<rect x="371.7" y="79.2" class="st5" width="21" height="11.4"/>
-			<rect x="402" y="79" class="st5" width="21" height="11.4"/>
-			<polyline class="st7" points="366.5,53.2 366.5,46 382,46 382,38.9 			"/>
-			<polyline class="st7" points="397.4,53.2 397.4,46 382,46 382,38.9 			"/>
-			<polyline class="st7" points="382,78.8 382,71.7 397.4,71.7 397.4,64.5 			"/>
-			<polyline class="st7" points="412.9,78.8 412.9,71.7 397.4,71.7 397.4,64.5 			"/>
+			<rect x="371.5" y="27.5" class="st2" width="21" height="11.4"/>
+			<rect x="386.9" y="53.2" class="st2" width="21" height="11.4"/>
+			<rect x="356" y="53.3" class="st4" width="21" height="11.4"/>
+			<rect x="371.7" y="79.2" class="st4" width="21" height="11.4"/>
+			<rect x="402" y="79" class="st4" width="21" height="11.4"/>
+			<polyline class="st6" points="366.5,53.2 366.5,46 382,46 382,38.9 			"/>
+			<polyline class="st6" points="397.4,53.2 397.4,46 382,46 382,38.9 			"/>
+			<polyline class="st6" points="382,78.8 382,71.7 397.4,71.7 397.4,64.5 			"/>
+			<polyline class="st6" points="412.9,78.8 412.9,71.7 397.4,71.7 397.4,64.5 			"/>
 		</g>
 		<g>
-			<circle class="st3" cx="458.9" cy="149.9" r="4.9"/>
-			<circle class="st4" cx="475.1" cy="153.5" r="4"/>
-			<path class="st3" d="M469,181h-19.6c-2,0-3.5-1.6-3.5-3.5v-14.4c0-2,1.6-3.5,3.5-3.5H469c2,0,3.5,1.6,3.5,3.5v14.4
+			<circle class="st2" cx="458.9" cy="149.9" r="4.9"/>
+			<circle class="st3" cx="475.1" cy="153.5" r="4"/>
+			<path class="st2" d="M469,181h-19.6c-2,0-3.5-1.6-3.5-3.5v-14.4c0-2,1.6-3.5,3.5-3.5H469c2,0,3.5,1.6,3.5,3.5v14.4
 				C472.5,179.4,470.9,181,469,181z"/>
-			<path class="st3" d="M466.2,166.2v31c0,1-0.8,1.8-1.8,1.8h-10.7c-1,0-1.8-0.8-1.8-1.8v-31"/>
-			<line class="st4" x1="459.3" y1="181" x2="459.1" y2="198.5"/>
-			<path class="st4" d="M437.7,178.3h-2.1c-1.4,0-2.5-1.1-2.5-2.5v-11.2c0-1.4,1.1-2.5,2.5-2.5h7.6"/>
-			<path class="st4" d="M475.1,162.1h7.5c1.4,0,2.5,1.1,2.5,2.5v11.2c0,1.4-1.1,2.5-2.5,2.5h-2.4"/>
-			<path class="st4" d="M443.2,166.5"/>
-			<path class="st4" d="M443.9,182.6v11c0,0.4-0.3,0.8-0.8,0.8h-4.2c-0.4,0-0.8-0.3-0.8-0.8v-27"/>
-			<path class="st4" d="M480,166.5v27c0,0.4-0.3,0.8-0.8,0.8h-4.1c-0.4,0-0.8-0.3-0.8-0.8v-11"/>
-			<path class="st4" d="M475.1,166.5"/>
-			<circle class="st4" cx="443.3" cy="153.5" r="4"/>
+			<path class="st2" d="M466.2,166.2v31c0,1-0.8,1.8-1.8,1.8h-10.7c-1,0-1.8-0.8-1.8-1.8v-31"/>
+			<line class="st3" x1="459.3" y1="181" x2="459.1" y2="198.5"/>
+			<path class="st3" d="M437.7,178.3h-2.1c-1.4,0-2.5-1.1-2.5-2.5v-11.2c0-1.4,1.1-2.5,2.5-2.5h7.6"/>
+			<path class="st3" d="M475.1,162.1h7.5c1.4,0,2.5,1.1,2.5,2.5v11.2c0,1.4-1.1,2.5-2.5,2.5h-2.4"/>
+			<path class="st3" d="M443.2,166.5"/>
+			<path class="st3" d="M443.9,182.6v11c0,0.4-0.3,0.8-0.8,0.8h-4.2c-0.4,0-0.8-0.3-0.8-0.8v-27"/>
+			<path class="st3" d="M480,166.5v27c0,0.4-0.3,0.8-0.8,0.8h-4.1c-0.4,0-0.8-0.3-0.8-0.8v-11"/>
+			<path class="st3" d="M475.1,166.5"/>
+			<circle class="st3" cx="443.3" cy="153.5" r="4"/>
 		</g>
-		<path class="st4" d="M164,167.2"/>
-		<path class="st10" d="M190.8,185.1c-0.1-4.6-4.1-8.2-9-8.1"/>
-		<path class="st11" d="M198.6,185.1c-0.2-8.7-8-15.7-17.5-15.5"/>
-		<path class="st10" d="M206.7,184.5c-0.2-12.8-11.7-22.9-25.6-22.6"/>
-		<path class="st2" d="M182.8,196.4c1.2-2.6,4-4,7.4-3l7,1.9c3.3,0.9,5.1,4.9,3.5,8.3l-1,1.8c-0.5,1-1.7,1.8-3,2.2
+		<path class="st3" d="M164,167.2"/>
+		<path class="st9" d="M190.8,185.1c-0.1-4.6-4.1-8.2-9-8.1"/>
+		<path class="st10" d="M198.6,185.1c-0.2-8.7-8-15.7-17.5-15.5"/>
+		<path class="st9" d="M206.7,184.5c-0.2-12.8-11.7-22.9-25.6-22.6"/>
+		<path class="st1" d="M182.8,196.4c1.2-2.6,4-4,7.4-3l7,1.9c3.3,0.9,5.1,4.9,3.5,8.3l-1,1.8c-0.5,1-1.7,1.8-3,2.2
 			c-1.4,0.4-2.7,0.3-2.7,0.3h-0.4h0.2c-3.2-0.2-12.4-1.3-22.4-9.8c-10.5-8.9-12.6-19.9-13.3-22.9l0.1,0.6c-0.7-2.7,0-5.8,2.3-7.5
 			l1.5-1.1c3-2.3,7.4-1.2,9,2.2l3.1,6.5c1.6,3.4-0.8,7.5-4.4,8.5l0,0c0.2,1.3,0.8,5.1,5.1,8.8c4.1,3.5,6.4,3.8,7.8,3.9L182.8,196.4z
 			"/>
-		<path class="st12" d="M414.8,269.1c-0.8-1.2-2.2-2.1-3.6-2.1l-0.1,0.1c-0.2,0-0.4-0.1-0.5,0c-0.1,0-0.2,0-0.3,0.1
+		<path class="st11" d="M414.8,269.1c-0.8-1.2-2.2-2.1-3.6-2.1l-0.1,0.1c-0.2,0-0.4-0.1-0.5,0c-0.1,0-0.2,0-0.3,0.1
 			c-0.7,0.2-1.3,0.6-1.8,1.1c0.6-0.8,1.2-1.2,2.1-1.2c0.2,0,0.4-0.1,0.6-0.1h-31.1l-0.3,0.1c-1.8,0.5-2.8,2.4-3.5,4.2
 			c-0.8,2.1-1.4,4.2-1.9,6.4c-1-0.3-2-0.4-3-0.4c-6.5,0-11.8,5.3-11.8,11.8s5.3,11.8,11.8,11.8c0.6,0,1.3-0.1,1.9-0.2v0.1
 			c0.1,1.9,0.1,3.7,0.3,5.6c0.1,0.4,0.1,0.9,0.1,1.3h-10.9c-0.6,2.7,0.1,5.7,2.2,7.4c0.9,0.7,2,1.1,3.1,1.2h0.4h30.6
 			c1.4,0,2.8-0.5,3.8-1.6c2-2.2,1.5-5.5,1.2-8.5c-0.2-1.9-0.3-3.7-0.3-5.6c-0.3-7.8-0.5-15.8,1.2-23.3h9l0,0c1.3-0.4,1.8-2,1.9-3.3
 			C416,272.4,415.8,270.6,414.8,269.1z M405.2,277.2c0,0,0-0.1,0.2-0.1C405.3,277.3,405.2,277.3,405.2,277.2z"/>
-		<path class="st13" d="M411.4,267h-31.1l-0.2,0.1c-1.8,0.5-2.8,2.4-3.5,4.2c-3.6,9.3-3.4,19.6-3,29.6c0.1,1.9,0.1,3.7,0.3,5.6
+		<path class="st12" d="M411.4,267h-31.1l-0.2,0.1c-1.8,0.5-2.8,2.4-3.5,4.2c-3.6,9.3-3.4,19.6-3,29.6c0.1,1.9,0.1,3.7,0.3,5.6
 			c0,0.4,0.1,0.9,0.1,1.3"/>
-		<path class="st14" d="M415.8,272.6c0,2.6-0.7,4.9-2.7,4.9c-4,0.1-7.9-0.5-7.7-0.3c0.3,0.5,1.3-3.6,1.5-4.3
+		<path class="st13" d="M415.8,272.6c0,2.6-0.7,4.9-2.7,4.9c-4,0.1-7.9-0.5-7.7-0.3c0.3,0.5,1.3-3.6,1.5-4.3
 			c1.3-4.8,2.5-6.8,5.7-5.5C414.3,268.2,415.8,270,415.8,272.6z"/>
-		<path class="st4" d="M372.6,314.8"/>
-		<path class="st4" d="M399.4,316.4h-30.6h-0.4c-1.1-0.1-2.3-0.5-3.1-1.2c-2.1-1.7-2.8-4.8-2.2-7.4h0.1h30.3c-0.7,2.6,0,5.7,2.1,7.4
+		<path class="st3" d="M372.6,314.8"/>
+		<path class="st3" d="M399.4,316.4h-30.6h-0.4c-1.1-0.1-2.3-0.5-3.1-1.2c-2.1-1.7-2.8-4.8-2.2-7.4h0.1h30.3c-0.7,2.6,0,5.7,2.1,7.4
 			c2.1,1.7,5.6,1.7,7.4-0.3c2-2.2,1.5-5.5,1.2-8.5c-0.2-1.9-0.3-3.7-0.3-5.6c-0.3-8.4-0.5-17.1,1.7-25.2c0.4-1.5,0.9-2.9,1.4-4.3
 			c0.7-1.8,1.7-3.7,3.5-4.2c1.7-0.5,3.5,0.5,4.5,2s1.2,3.3,1,5.1c-0.1,1.3-0.6,2.9-1.9,3.3l0,0H405"/>
-		<line class="st4" x1="379.2" y1="280.9" x2="398.3" y2="280.9"/>
-		<line class="st4" x1="378.6" y1="286.1" x2="397.7" y2="286.1"/>
-		<line class="st4" x1="378.2" y1="291.3" x2="397.3" y2="291.3"/>
-		<path class="st12" d="M282.4,320.7h-56.5c1.9-4.2,3.7-8.4,5.6-12.6c1.3-3,2.6-6,4-8.9h13.4l5.3,9.5l5.3-9.5h14.8L282.4,320.7z"/>
-		<line class="st4" x1="378.2" y1="296.5" x2="397.3" y2="296.5"/>
-		<line class="st4" x1="378.2" y1="301.8" x2="397.3" y2="301.8"/>
-		<line class="st4" x1="380.6" y1="275.6" x2="399.7" y2="275.6"/>
+		<line class="st3" x1="379.2" y1="280.9" x2="398.3" y2="280.9"/>
+		<line class="st3" x1="378.6" y1="286.1" x2="397.7" y2="286.1"/>
+		<line class="st3" x1="378.2" y1="291.3" x2="397.3" y2="291.3"/>
+		<path class="st11" d="M282.4,320.7h-56.5c1.9-4.2,3.7-8.4,5.6-12.6c1.3-3,2.6-6,4-8.9h13.4l5.3,9.5l5.3-9.5h14.8L282.4,320.7z"/>
+		<line class="st3" x1="378.2" y1="296.5" x2="397.3" y2="296.5"/>
+		<line class="st3" x1="378.2" y1="301.8" x2="397.3" y2="301.8"/>
+		<line class="st3" x1="380.6" y1="275.6" x2="399.7" y2="275.6"/>
 		<g>
-			<circle class="st5" cx="371.6" cy="289" r="11.8"/>
-			<line class="st15" x1="364.8" y1="289" x2="371.6" y2="289"/>
-			<line class="st15" x1="371.6" y1="282.5" x2="371.6" y2="289"/>
+			<circle class="st4" cx="371.6" cy="289" r="11.8"/>
+			<line class="st14" x1="364.8" y1="289" x2="371.6" y2="289"/>
+			<line class="st14" x1="371.6" y1="282.5" x2="371.6" y2="289"/>
 		</g>
-		<line class="st7" x1="246.3" y1="299.2" x2="241.2" y2="320.7"/>
-		<path class="st3" d="M253.9,255.6c-9.4,0-17,7.6-17,17c0,3.1,0.8,6,2.3,8.5l0.2,0.3l9.3,16.8l5.3,9.5l5.3-9.5l9.3-16.8l0.2-0.3
+		<line class="st6" x1="246.3" y1="299.2" x2="241.2" y2="320.7"/>
+		<path class="st2" d="M253.9,255.6c-9.4,0-17,7.6-17,17c0,3.1,0.8,6,2.3,8.5l0.2,0.3l9.3,16.8l5.3,9.5l5.3-9.5l9.3-16.8l0.2-0.3
 			c1.4-2.5,2.3-5.4,2.3-8.5C270.9,263.2,263.3,255.6,253.9,255.6z M253.9,281c-4.7,0-8.4-3.8-8.4-8.5s3.8-8.5,8.4-8.5
 			c4.7,0,8.5,3.8,8.5,8.5S258.6,281,253.9,281z"/>
-		<path class="st7" d="M265,299.2c0.4,2.7,1.4,3.8,2.2,4.4c1.3,0.8,2.5,0.4,5,0.9c1.9,0.3,3.4,0.9,4.3,1.3"/>
-		<path class="st16" d="M229.5,312.3l1.2-3.1h0.1c1.5-0.1,3.8-0.2,6.5,0.3c3.7,0.7,5.6,2,7.6,2.8c6,2.6,12.9,1.2,23-0.8
+		<path class="st6" d="M265,299.2c0.4,2.7,1.4,3.8,2.2,4.4c1.3,0.8,2.5,0.4,5,0.9c1.9,0.3,3.4,0.9,4.3,1.3"/>
+		<path class="st15" d="M229.5,312.3l1.2-3.1h0.1c1.5-0.1,3.8-0.2,6.5,0.3c3.7,0.7,5.6,2,7.6,2.8c6,2.6,12.9,1.2,23-0.8
 			c2.4-0.5,5.9-1.3,10.1-2.7l-0.3,0.1l1.1,2.8l0.1,0.1c-4.3,1.7-8.2,2.8-10.7,3.4c-10.5,2.5-17.6,4.2-23.9,1c-2-1.1-4-2.7-7.9-3.5
 			c-2.8-0.6-5.2-0.6-6.7-0.5L229.5,312.3z"/>
-		<path class="st4" d="M282.1,320.7h-56.5c1.9-4.2,3.7-8.4,5.6-12.6c1.3-3,2.6-6,4-8.9h13.4l5.3,9.5l5.3-9.5H274L282.1,320.7z"/>
-		<polygon class="st17" points="471.3,42.3 479.9,42.3 479.9,42.3 		"/>
-		<polygon class="st17" points="105,158.9 108.4,158.9 108.4,158.9 		"/>
+		<path class="st3" d="M282.1,320.7h-56.5c1.9-4.2,3.7-8.4,5.6-12.6c1.3-3,2.6-6,4-8.9h13.4l5.3,9.5l5.3-9.5H274L282.1,320.7z"/>
+		<polygon class="st16" points="471.3,42.3 479.9,42.3 479.9,42.3 		"/>
+		<polygon class="st16" points="105,158.9 108.4,158.9 108.4,158.9 		"/>
 	</g>
-	<g id="Punkttekst" class="st18">
-		<text transform="matrix(1 0 0 1 528.5459 166.4057)" class="st19 st20 st21">• Medlemskab og rolle</text>
-		<text transform="matrix(1 0 0 1 528.5459 180.8056)" class="st19 st20 st21">• Organisationsmedlemskab</text>
-		<text transform="matrix(1 0 0 1 528.5459 195.2056)" class="st19 st20 st21">• Organisatorisk samarbejde</text>
-		<text transform="matrix(1 0 0 1 528.5459 209.6057)" class="st19 st20 st21">• Persontilknytning </text>
-		<text transform="matrix(1 0 0 1 528.5459 224.0056)" class="st19 st20 st21">• Ansat og leder</text>
-		<text transform="matrix(1 0 0 1 458.3633 291.662)" class="st19 st20 st21">• Organisationens oprettelse   </text>
-		<text transform="matrix(1 0 0 1 458.3633 306.062)" class="st19 st20 st21">• Ændringer af organisationen   </text>
-		<text transform="matrix(1 0 0 1 458.3633 320.4619)" class="st19 st20 st21">• Regelgrundlag og retskilde  </text>
-		<text transform="matrix(1 0 0 1 458.3633 334.862)" class="st19 st20 st21">• Forvaltningsopgaver</text>
-		<text transform="matrix(1 0 0 1 88.7183 291.2675)" class="st19 st20 st21">Fysisk placering •</text>
-		<text transform="matrix(1 0 0 1 130.7183 305.6675)" class="st19 st20 st21">Adresse •</text>
-		<text transform="matrix(1 0 0 1 50.7183 320.0675)" class="st19 st20 st21">Juridisk registreret sted •</text>
-		<text transform="matrix(1 0 0 1 1.831055e-02 334.4676)" class="st19 st20 st21">Administrativt geografisk område •</text>
-		<text transform="matrix(1 0 0 1 32.4275 175.0139)" class="st19 st20 st21">E-mailadresse •</text>
-		<text transform="matrix(1 0 0 1 25.1275 189.4138)" class="st19 st20 st21">Telefonnummer •</text>
-		<text transform="matrix(1 0 0 1 45.1275 203.8138)" class="st19 st20 st21"> Digital Post •</text>
-		<text transform="matrix(1 0 0 1 42.4275 218.2139)" class="st19 st20 st21">Åbningstider •</text>
-		<text transform="matrix(1 0 0 1 147.3213 53.6225)" class="st19 st20 st21">Navn •</text>
-		<text transform="matrix(1 0 0 1 114.0213 68.0225)" class="st19 st20 st21">Beskrivelse •</text>
-		<text transform="matrix(1 0 0 1 113.3213 82.4225)" class="st19 st20 st21">Identifikator •</text>
-		<text transform="matrix(1 0 0 1 79.2213 96.8225)" class="st19 st20 st21">Logo og miniature •</text>
-		<text transform="matrix(1 0 0 1 108.6213 111.2225)" class="st19 st20 st21">Hjemmeside •</text>
-		<text transform="matrix(1 0 0 1 457.7275 51.224)" class="st19 st20 st21">• Underorganisation   </text>
-		<text transform="matrix(1 0 0 1 457.7275 65.624)" class="st19 st20 st21">• Organisatorisk enhed   </text>
-		<text transform="matrix(1 0 0 1 457.7275 80.024)" class="st19 st20 st21">• Relateret organisation   </text>
-		<text transform="matrix(1 0 0 1 457.7275 94.424)" class="st19 st20 st21">• Organisationstype   </text>
+	<g id="Punkttekst" class="st17">
+		<text transform="matrix(1 0 0 1 528.5459 166.4057)" class="st18 st19 st20">• Medlemskab og rolle</text>
+		<text transform="matrix(1 0 0 1 528.5459 180.8056)" class="st18 st19 st20">• Organisationsmedlemskab</text>
+		<text transform="matrix(1 0 0 1 528.5459 195.2056)" class="st18 st19 st20">• Organisatorisk samarbejde</text>
+		<text transform="matrix(1 0 0 1 528.5459 209.6057)" class="st18 st19 st20">• Persontilknytning </text>
+		<text transform="matrix(1 0 0 1 528.5459 224.0056)" class="st18 st19 st20">• Ansat og leder</text>
+		<text transform="matrix(1 0 0 1 458.3633 291.662)" class="st18 st19 st20">• Organisationens oprettelse   </text>
+		<text transform="matrix(1 0 0 1 458.3633 306.062)" class="st18 st19 st20">• Ændringer af organisationen   </text>
+		<text transform="matrix(1 0 0 1 458.3633 320.4619)" class="st18 st19 st20">• Regelgrundlag og retskilde  </text>
+		<text transform="matrix(1 0 0 1 458.3633 334.862)" class="st18 st19 st20">• Forvaltningsopgaver</text>
+		<text transform="matrix(1 0 0 1 88.7183 291.2675)" class="st18 st19 st20">Fysisk placering •</text>
+		<text transform="matrix(1 0 0 1 130.7183 305.6675)" class="st18 st19 st20">Adresse •</text>
+		<text transform="matrix(1 0 0 1 50.7183 320.0675)" class="st18 st19 st20">Juridisk registreret sted •</text>
+		<text transform="matrix(1 0 0 1 1.831055e-02 334.4676)" class="st18 st19 st20">Administrativt geografisk område •</text>
+		<text transform="matrix(1 0 0 1 32.4275 175.0139)" class="st18 st19 st20">E-mailadresse •</text>
+		<text transform="matrix(1 0 0 1 25.1275 189.4138)" class="st18 st19 st20">Telefonnummer •</text>
+		<text transform="matrix(1 0 0 1 45.1275 203.8138)" class="st18 st19 st20"> Digital Post •</text>
+		<text transform="matrix(1 0 0 1 42.4275 218.2139)" class="st18 st19 st20">Åbningstider •</text>
+		<text transform="matrix(1 0 0 1 147.3213 53.6225)" class="st18 st19 st20">Navn •</text>
+		<text transform="matrix(1 0 0 1 114.0213 68.0225)" class="st18 st19 st20">Beskrivelse •</text>
+		<text transform="matrix(1 0 0 1 113.3213 82.4225)" class="st18 st19 st20">Identifikator •</text>
+		<text transform="matrix(1 0 0 1 79.2213 96.8225)" class="st18 st19 st20">Logo og miniature •</text>
+		<text transform="matrix(1 0 0 1 108.6213 111.2225)" class="st18 st19 st20">Hjemmeside •</text>
+		<text transform="matrix(1 0 0 1 457.7275 51.224)" class="st18 st19 st20">• Underorganisation   </text>
+		<text transform="matrix(1 0 0 1 457.7275 65.624)" class="st18 st19 st20">• Organisatorisk enhed   </text>
+		<text transform="matrix(1 0 0 1 457.7275 80.024)" class="st18 st19 st20">• Relateret organisation   </text>
+		<text transform="matrix(1 0 0 1 457.7275 94.424)" class="st18 st19 st20">• Organisationstype   </text>
 	</g>
 	<g id="Figurtekst">
-		<text transform="matrix(1 0 0 1 281.9665 229.3602)" class="st22 st23">Organisation</text>
-		<text transform="matrix(1 0 0 1 428.3156 212.5938)" class="st22 st24">Aktører og  </text>
-		<text transform="matrix(1 0 0 1 419.7156 228.7937)" class="st22 st24"> medlemsskab</text>
-		<text transform="matrix(1 0 0 1 202.5041 105.5937)" class="st22 st23">Basisinformation</text>
-		<text transform="matrix(1 0 0 1 347.8761 105.5937)" class="st22 st23">Organisatorisk </text>
-		<text transform="matrix(1 0 0 1 366.1761 122.3937)" class="st22 st23">struktur</text>
-		<text transform="matrix(1 0 0 1 233.9737 343.594)" class="st22 st23">Sted</text>
-		<text transform="matrix(1 0 0 1 357.8583 333.5935)" class="st22 st23">Hændelser </text>
-		<text transform="matrix(1 0 0 1 353.9583 350.3935)" class="st22 st23">og opgaver</text>
-		<text transform="matrix(1 0 0 1 158.8018 228.7944)" class="st22 st23">Kontakt</text>
+		<text transform="matrix(1 0 0 1 281.9665 229.3602)" class="st21 st22">Organisation</text>
+		<text transform="matrix(1 0 0 1 428.3156 212.5938)" class="st21 st23">Aktører og  </text>
+		<text transform="matrix(1 0 0 1 419.7156 228.7937)" class="st21 st23"> medlemsskab</text>
+		<text transform="matrix(1 0 0 1 202.5041 105.5937)" class="st21 st22">Basisinformation</text>
+		<text transform="matrix(1 0 0 1 347.8761 105.5937)" class="st21 st22">Organisatorisk </text>
+		<text transform="matrix(1 0 0 1 366.1761 122.3937)" class="st21 st22">struktur</text>
+		<text transform="matrix(1 0 0 1 233.9737 343.594)" class="st21 st22">Sted</text>
+		<text transform="matrix(1 0 0 1 357.8583 333.5935)" class="st21 st22">Hændelser </text>
+		<text transform="matrix(1 0 0 1 353.9583 350.3935)" class="st21 st22">og opgaver</text>
+		<text transform="matrix(1 0 0 1 158.8018 228.7944)" class="st21 st22">Kontakt</text>
 	</g>
 </g>
-<g id="Skjul" class="st18">
-	<polygon class="st25" points="395.5,154.8 395.5,228.6 459.3,265.5 523,228.6 523,154.8 459.3,118 	"/>
-	<polygon class="st25" points="189.2,271.6 189.2,345.4 252.9,382.3 316.6,345.4 316.6,271.6 252.9,234.7 	"/>
-	<polygon class="st25" points="325.4,272.8 325.4,346.6 389.1,383.5 452.9,346.6 452.9,272.8 389.1,235.9 	"/>
+<g id="Skjul" class="st17">
+	<polygon class="st24" points="395.5,154.8 395.5,228.6 459.3,265.5 523,228.6 523,154.8 459.3,118 	"/>
+	<polygon class="st24" points="189.2,271.6 189.2,345.4 252.9,382.3 316.6,345.4 316.6,271.6 252.9,234.7 	"/>
+	<polygon class="st24" points="325.4,272.8 325.4,346.6 389.1,383.5 452.9,346.6 452.9,272.8 389.1,235.9 	"/>
 </g>
 </svg>
