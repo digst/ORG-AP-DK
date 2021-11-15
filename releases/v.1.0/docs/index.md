@@ -485,7 +485,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd>er underorganisation af</dd>  
 <!-- <dt>Foretrukken term på engelsk</dt>  <dd>sub-organization of</dd> --> 
 <dt>Anvendelsesnote </dt>
-<dd>Bruges til at angive en hierarkisk overdordnet organisation. </dt>	
+<dd>Bruges til at angive en hierarkisk overordnet organisation. </dt>	
 <!--
 <dt>Anvendelsesnote (en) </dt>
 <dd>Used to specify a hierarchically superordinate organisation.</dd>	-->
