@@ -1487,7 +1487,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version dfbc2b297, updated Thu Nov 11 15:52:32 2021 -0800" name="generator">
+  <meta content="Bikeshed version bbc364800, updated Mon Nov 15 13:57:55 2021 -0800" name="generator">
   <link href="https://data.gov.dk/model/profile/ORG-AP-DK/" rel="canonical">
 <style>
 @media print {
@@ -2020,7 +2020,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-15">15. november 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-19">19. november 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Denne version:
@@ -2039,7 +2039,7 @@ dfn > a.self-link::before      { content: "#"; }
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
-   <h2 class="no-num no-toc no-ref" id="contents">Indholdsfortegnelse</h2>
+   <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li>
      <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
@@ -2117,11 +2117,12 @@ dfn > a.self-link::before      { content: "#"; }
        <a href="#kontaktoplysning"><span class="secno">6.4</span> <span class="content">Kontaktoplysning</span></a>
        <ol class="toc">
         <li><a href="#kontakttype"><span class="secno">6.4.1</span> <span class="content">kontakttype</span></a>
-        <li><a href="#telefonnummer"><span class="secno">6.4.2</span> <span class="content">telefonnummer</span></a>
-        <li><a href="#email"><span class="secno">6.4.3</span> <span class="content">email</span></a>
-        <li><a href="#url"><span class="secno">6.4.4</span> <span class="content">url</span></a>
-        <li><a href="#bningstider"><span class="secno">6.4.5</span> <span class="content">åbningstider</span></a>
-        <li><a href="#tilgnglig-i-tidsrum"><span class="secno">6.4.6</span> <span class="content">tilgænglig i tidsrum</span></a>
+        <li><a href="#synlighed"><span class="secno">6.4.2</span> <span class="content">synlighed</span></a>
+        <li><a href="#telefonnummer"><span class="secno">6.4.3</span> <span class="content">telefonnummer</span></a>
+        <li><a href="#email"><span class="secno">6.4.4</span> <span class="content">email</span></a>
+        <li><a href="#url"><span class="secno">6.4.5</span> <span class="content">url</span></a>
+        <li><a href="#bningstider"><span class="secno">6.4.6</span> <span class="content">åbningstider</span></a>
+        <li><a href="#tilgnglig-i-tidsrum"><span class="secno">6.4.7</span> <span class="content">tilgænglig i tidsrum</span></a>
        </ol>
       <li>
        <a href="#bningstidsspecifikation"><span class="secno">6.5</span> <span class="content">Åbningstidsspecifikation</span></a>
@@ -2269,11 +2270,11 @@ dfn > a.self-link::before      { content: "#"; }
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
     Anvendelsesprofilen er oprettet i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og sammensætter således eksisterende vokabularer til en bestemt anvendelse. Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Dataverdenens modelleringsgrundlag, Resource Description Framework (RDF). En basal forståelse af RDF samt kendskab til de her profilerede vokabularer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. ORG og CPOV foreligger i danske oversættelser. Disse oversatte dokumenter udgør normative referencer for den i efterfølgende opstillede anvendelsesprofil. 
    <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
-   <div class="issue" id="issue-256b9920"><a class="self-link" href="#issue-256b9920"></a> Indsæt reference til KLs brugsscenarier.
+   <div class="note" role="note"> Indsæt reference til KLs brugsscenarier.
 Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i næste afsnit. </div>
    <h2 class="heading settled" data-level="2" id="grundlggende-perspektiver"><span class="secno">2. </span><span class="content">Grundlæggende perspektiver</span><a class="self-link" href="#grundlggende-perspektiver"></a></h2>
    <p><img alt="grundlæggende perspektiver" src="img/illustration-til-ORG-AP-DK-core.svg"></p>
-   <div class="issue" id="issue-626ea700"><a class="self-link" href="#issue-626ea700"></a> Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen. </div>
+   <div class="note" role="note"> Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen. </div>
    <h3 class="heading settled" data-level="2.1" id="organisation"><span class="secno">2.1. </span><span class="content">Organisation</span><a class="self-link" href="#organisation"></a></h3>
    <ul>
     <li data-md>
@@ -2286,17 +2287,17 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <h3 class="heading settled" data-level="2.2" id="basisinformation"><span class="secno">2.2. </span><span class="content">Basisinformation</span><a class="self-link" href="#basisinformation"></a></h3>
    <ul>
     <li data-md>
-     <p>En organisation tilføjes en eller flere navne. En af navnene på et givet sprog vil være organisationens <strong>primære, juridiske navn</strong>, men andres kan angives som <strong>alternative eller skjulte navne</strong>.</p>
+     <p>En organisation og en organisationsenhed kan have et eller flere navne. Et af navnene på et givet sprog vil være det <strong>foretrukne navn</strong>, men andre kan angives som <strong>alternative eller skjulte navne</strong>.</p>
     <li data-md>
-     <p>En organisation kan forsynes med en <strong>tekstbaseret beskrivelse</strong> af organisationen</p>
+     <p>En organisation og en organisationsenhed kan forsynes med en <strong>tekstbaseret beskrivelse</strong>.</p>
+    <li data-md>
+     <p>En organisation og en organisationsenhed kan forsynes med en <strong>identifikator</strong> - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer.</p>
+    <li data-md>
+     <p>En offentlig organisation kan tilknyttes de <strong>forvaltningsopgaver</strong> der varetages af myndigheden opmærkning med fx KLE eller FORM.</p>
     <li data-md>
      <p>En organisation kan have en billedlig repræsentation i form at et <strong>logo og en miniature</strong>.</p>
     <li data-md>
      <p>En organisation kan kædes sammen med dens <strong>hjemmeside</strong> på internettet.</p>
-    <li data-md>
-     <p>En organisation kan forsynes med en <strong>identifikator</strong> - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer.</p>
-    <li data-md>
-     <p>En offentlig organisation kan tilknyttes de <strong>forvaltningsopgaver</strong> der varetages af myndigheden opmærkning med fx KLE eller FORM.</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.5 Basisinformation om organisationen"</em></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-basisinformation">Se eksempel her</a></p>
@@ -2305,7 +2306,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>En organisation kan bestå af flere <strong>underorganisationer</strong> der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.</p>
     <li data-md>
-     <p>En organisation kan være inddelt i mindre <strong>organisationsenheder</strong> hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv.</p>
+     <p>En organisation kan være inddelt i mindre <strong>organisationsenheder</strong> hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv. En organisationsenhed kan også have underordnede enheder.</p>
     <li data-md>
      <p>Organisationer kan indbyrdes have <strong>andre former for relationer</strong> end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.</p>
     <li data-md>
@@ -2319,9 +2320,9 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen</p>
     <li data-md>
-     <p>Et kontaktoplysning kan fx være et <strong>telefonnummer</strong>, en <strong>e-mailadresse</strong>, en <strong>url</strong>, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen.</p>
+     <p>En kontaktoplysning kan fx være et <strong>telefonnummer</strong>, en <strong>e-mailadresse</strong>, en <strong>url</strong>, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen.</p>
     <li data-md>
-     <p>Et kontaktoplysningen kan også indholde information om <strong>åbningstider</strong> - enten på simpel vis eller i en mere komplekks struktur med yderligere begrænsninger.</p>
+     <p>En kontaktoplysning kan også indholde information om <strong>åbningstider</strong> - enten på simpel vis eller i en mere komplekks struktur med yderligere begrænsninger.</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.4 Hvordan kontaktes organisationen?"</em></p>
    <p><img alt="kontaktoplysning" src="img/View-ContactPoint.png"></p>
@@ -2329,17 +2330,18 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <h3 class="heading settled" data-level="2.5" id="sted"><span class="secno">2.5. </span><span class="content">Sted</span><a class="self-link" href="#sted"></a></h3>
    <ul>
     <li data-md>
-     <p>En organisations <strong>fysiske placering</strong> kan angives. Placeringen kan fx angives med en <strong>adresse</strong>.</p>
+     <p>En organisation og en organisationsenheds <strong>fysiske placering</strong> kan angives. En organisation kan også have flere forskellige fysiske placeringer.</p>
+    <li data-md>
+     <p>Placeringen kan fx angives med en <strong>adresse</strong> - gerne i henhold til Danmarks Adresseregister (DAR)</p>
     <li data-md>
      <p>Det kan angives hvilket <strong>administrativt geografisk område</strong> en offentlig organisation dækker forvaltningsmæssigt.</p>
    </ul>
-   <div class="issue" id="issue-529445f5"><a class="self-link" href="#issue-529445f5"></a> En organisation kan også have en virtuel lokation. </div>
    <h3 class="heading settled" data-level="2.6" id="medlemsskab-og-aktrer"><span class="secno">2.6. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
    <ul>
     <li data-md>
-     <p>En persons relation til en organisation kan beskrives som en direkte <strong>medlemskabsrelation</strong>. En organisations relation til en anden organisation kan også have karakter af et <strong>medlemskab</strong>. En person ansat i en organisation kan betragtes som <strong>medlem</strong> af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en <strong>rolle</strong>, som kan specificeres i en klassifikation over rolletyper.</p>
+     <p>En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte <strong>medlemskabsrelation</strong>. En organisations relation til en anden organisation kan også have karakter af et <strong>medlemskab</strong>. En person ansat i en organisation kan betragtes som <strong>medlem</strong> af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en <strong>rolle</strong>, som kan specificeres i en klassifikation over rolletyper.</p>
     <li data-md>
-     <p>En organisations relationer til personer i form af <strong>ansatte</strong> og <strong>ledere</strong> kan også angives direkte.</p>
+     <p>Relationen mellem en organisation eller organisationsenhed til en person, såsom <strong>ansat</strong> og <strong>leder</strong> kan også angives direkte.</p>
     <li data-md>
      <p>En <strong>softwareaktør</strong>, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse</p>
    </ul>
@@ -2350,7 +2352,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>En organisation oprettes og ændres som svar på begivenheder eller <strong>hændelser</strong>. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den <strong>lovgivning, den politik eller anden retskilde</strong>, der udløste eller ligger til grund for hændelsen.</p>
     <li data-md>
-     <p>En organisations <strong>oprettelse</strong> eller <strong>nedlæggelse</strong> kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode. Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.</p>
+     <p>En organisation eller organisationsenheds <strong>oprettelse</strong> eller <strong>nedlæggelse</strong> kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode. Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.</p>
     <li data-md>
      <p>En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en <strong>forvaltningsopgave</strong>. Til dette formål anvendes en klassifikation over forvaltningsopgaver.</p>
    </ul>
@@ -2967,7 +2969,9 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.2" id="telefonnummer"><span class="secno">6.4.2. </span><span class="content">telefonnummer</span><a class="self-link" href="#telefonnummer"></a></h4>
+   <h4 class="heading settled" data-level="6.4.2" id="synlighed"><span class="secno">6.4.2. </span><span class="content">synlighed</span><a class="self-link" href="#synlighed"></a></h4>
+   <div class="note" role="note"> Det vurderes at der er behov for opmærkning af kontaktoplysningens <a class="property" data-link-type="propdesc">synlighed</a>. </div>
+   <h4 class="heading settled" data-level="6.4.3" id="telefonnummer"><span class="secno">6.4.3. </span><span class="content">telefonnummer</span><a class="self-link" href="#telefonnummer"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/telephone 
@@ -2984,7 +2988,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.3" id="email"><span class="secno">6.4.3. </span><span class="content">email</span><a class="self-link" href="#email"></a></h4>
+   <h4 class="heading settled" data-level="6.4.4" id="email"><span class="secno">6.4.4. </span><span class="content">email</span><a class="self-link" href="#email"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/email
@@ -3001,7 +3005,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt></a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">[0..1]</a>
    </dl>
-   <h4 class="heading settled" data-level="6.4.4" id="url"><span class="secno">6.4.4. </span><span class="content">url</span><a class="self-link" href="#url"></a></h4>
+   <h4 class="heading settled" data-level="6.4.5" id="url"><span class="secno">6.4.5. </span><span class="content">url</span><a class="self-link" href="#url"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/u
@@ -3020,7 +3024,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.5" id="bningstider"><span class="secno">6.4.5. </span><span class="content">åbningstider</span><a class="self-link" href="#bningstider"></a></h4>
+   <h4 class="heading settled" data-level="6.4.6" id="bningstider"><span class="secno">6.4.6. </span><span class="content">åbningstider</span><a class="self-link" href="#bningstider"></a></h4>
    <dl class="def">
     <dt>URI
     <dd><a href="http://schema.org/openingHours" title="URI til openingHours ">https://schema.org/openingHours </a>
@@ -3039,7 +3043,7 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.4.6" id="tilgnglig-i-tidsrum"><span class="secno">6.4.6. </span><span class="content">tilgænglig i tidsrum</span><a class="self-link" href="#tilgnglig-i-tidsrum"></a></h4>
+   <h4 class="heading settled" data-level="6.4.7" id="tilgnglig-i-tidsrum"><span class="secno">6.4.7. </span><span class="content">tilgænglig i tidsrum</span><a class="self-link" href="#tilgnglig-i-tidsrum"></a></h4>
    <dl class="def">
     <dt>URI
     <dd><a href="http://schema.org/hoursAvailable" title="URI til hoursAvailable ">https://schema.org/hoursAvailable </a>
@@ -3510,9 +3514,5 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
 </script>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"> Indsæt reference til KLs brugsscenarier.
-Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i næste afsnit. <a class="issue-return" href="#issue-256b9920" title="Jump to section">↵</a></div>
-   <div class="issue"> Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen. <a class="issue-return" href="#issue-626ea700" title="Jump to section">↵</a></div>
-   <div class="issue"> En organisation kan også have en virtuel lokation. <a class="issue-return" href="#issue-529445f5" title="Jump to section">↵</a></div>
    <div class="issue"> Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: <em>"3.2 Hvad arbejder organisationen med?"</em> ) <a class="issue-return" href="#issue-78891f50" title="Jump to section">↵</a></div>
   </div>
