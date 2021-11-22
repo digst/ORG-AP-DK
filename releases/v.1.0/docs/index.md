@@ -455,7 +455,7 @@ Klassens egenskaber:
 ### identifikator
 
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://www.w3.org/ns/adms#identifier" title="URI til identifier">http://www.w3.org/ns/adms#identifier</dd>  
+<dd><a href="http://www.w3.org/ns/adms#identifier" title="URI til identifier">http://www.w3.org/ns/adms#identifier</a>http://www.w3.org/ns/adms#identifier</dd>  
 <dt>Foretrukken term</dt>  
 <dd>identifikator</dd>  
 <!-- <dt>Foretrukken term på engelsk</dt>  <dd>identifier</dd> --> 
