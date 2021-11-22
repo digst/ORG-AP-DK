@@ -2020,10 +2020,10 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-19">19. november 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-11-19">22. november 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Denne version:
+     <dt>Namespace:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
@@ -2058,7 +2058,7 @@ dfn > a.self-link::before      { content: "#"; }
       <li><a href="#kontaktoplysninger"><span class="secno">2.4</span> <span class="content">Kontaktoplysninger</span></a>
       <li><a href="#sted"><span class="secno">2.5</span> <span class="content">Sted</span></a>
       <li><a href="#medlemsskab-og-aktrer"><span class="secno">2.6</span> <span class="content">Medlemsskab og aktører</span></a>
-      <li><a href="#hndelser-og-opgaver"><span class="secno">2.7</span> <span class="content">Hændelser og opgaver</span></a>
+      <li><a href="#historik-og-opgaver"><span class="secno">2.7</span> <span class="content">Historik og opgaver</span></a>
      </ol>
     <li>
      <a href="#uml-diagrammer"><span class="secno">3</span> <span class="content">UML-diagrammer</span></a>
@@ -2293,8 +2293,6 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>En organisation og en organisationsenhed kan forsynes med en <strong>identifikator</strong> - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer.</p>
     <li data-md>
-     <p>En offentlig organisation kan tilknyttes de <strong>forvaltningsopgaver</strong> der varetages af myndigheden opmærkning med fx KLE eller FORM.</p>
-    <li data-md>
      <p>En organisation kan have en billedlig repræsentation i form at et <strong>logo og en miniature</strong>.</p>
     <li data-md>
      <p>En organisation kan kædes sammen med dens <strong>hjemmeside</strong> på internettet.</p>
@@ -2318,11 +2316,11 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <h3 class="heading settled" data-level="2.4" id="kontaktoplysninger"><span class="secno">2.4. </span><span class="content">Kontaktoplysninger</span><a class="self-link" href="#kontaktoplysninger"></a></h3>
    <ul>
     <li data-md>
-     <p>En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen</p>
+     <p>En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen eller organisationsenheden.</p>
     <li data-md>
      <p>En kontaktoplysning kan fx være et <strong>telefonnummer</strong>, en <strong>e-mailadresse</strong>, en <strong>url</strong>, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen.</p>
     <li data-md>
-     <p>En kontaktoplysning kan også indholde information om <strong>åbningstider</strong> - enten på simpel vis eller i en mere komplekks struktur med yderligere begrænsninger.</p>
+     <p>En kontaktoplysning kan også indholde information om <strong>åbningstider</strong> - enten på simpel vis eller i en mere kompleks struktur med yderligere begrænsninger.</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.4 Hvordan kontaktes organisationen?"</em></p>
    <p><img alt="kontaktoplysning" src="img/View-ContactPoint.png"></p>
@@ -2339,29 +2337,27 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <h3 class="heading settled" data-level="2.6" id="medlemsskab-og-aktrer"><span class="secno">2.6. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
    <ul>
     <li data-md>
-     <p>En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte <strong>medlemskabsrelation</strong>. En organisations relation til en anden organisation kan også have karakter af et <strong>medlemskab</strong>. En person ansat i en organisation kan betragtes som <strong>medlem</strong> af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en <strong>rolle</strong>, som kan specificeres i en klassifikation over rolletyper.</p>
+     <p>En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte <strong>medlemskabsrelation</strong>. En organisations relation til en anden organisation kan også have karakter af et <strong>medlemskab</strong>. En person ansat i en organisation kan betragtes som <strong>medlem</strong> af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en <strong>rolle</strong>, som kan specificeres i en klassifikation over <strong>rolletyper</strong>.</p>
     <li data-md>
      <p>Relationen mellem en organisation eller organisationsenhed til en person, såsom <strong>ansat</strong> og <strong>leder</strong> kan også angives direkte.</p>
     <li data-md>
      <p>En <strong>softwareaktør</strong>, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.3 Hvem er medlemmer af organisationen?"</em></p>
-   <div class="note" id="issue-78891f50"><a class="self-link" href="#issue-78891f50"></a> Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: <em>"3.2 Hvad arbejder organisationen med?"</em> ) </div>
-   <h3 class="heading settled" data-level="2.7" id="hndelser-og-opgaver"><span class="secno">2.7. </span><span class="content">Hændelser og opgaver</span><a class="self-link" href="#hndelser-og-opgaver"></a></h3>
+   <div class="issue" id="issue-78891f50"><a class="self-link" href="#issue-78891f50"></a> Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: <em>"3.2 Hvad arbejder organisationen med?"</em> ) </div>
+   <h3 class="heading settled" data-level="2.7" id="historik-og-opgaver"><span class="secno">2.7. </span><span class="content">Historik og opgaver</span><a class="self-link" href="#historik-og-opgaver"></a></h3>
    <ul>
     <li data-md>
-     <p>En organisation oprettes og ændres som svar på begivenheder eller <strong>hændelser</strong>. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den <strong>lovgivning, den politik eller anden retskilde</strong>, der udløste eller ligger til grund for hændelsen.</p>
+     <p>En organisations eller organisationsenheds <strong>oprettelsesdato</strong> eller <strong>nedlæggelsedato</strong> kan angives, og dermed kan både overordnede organisatoriske ændringer og interne omstruktureringer rummes af modellen.</p>
     <li data-md>
-     <p>En organisation eller organisationsenheds <strong>oprettelse</strong> eller <strong>nedlæggelse</strong> kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode. Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.</p>
-    <li data-md>
-     <p>En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en <strong>forvaltningsopgave</strong>. Til dette formål anvendes en klassifikation over forvaltningsopgaver.</p>
+     <p>En offentlig organisation kan tilknyttes de <strong>forvaltningsopgaver</strong> der varetages af myndigheden. Til dette formål anvendes en klassifikation over forvaltningsopgaver, fx. FORM eller KLE. En forvaltningsopgave kan kædes sammen med den <strong>lovgivning, den politik eller anden retskilde</strong>, der ligger til grund for forvaltningsopgaven.</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.6.4 Forretningshændelser?"</em></p>
    <h2 class="heading settled" data-level="3" id="uml-diagrammer"><span class="secno">3. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h2>
    <h3 class="heading settled" data-level="3.1" id="diagram-med-alle-elementer"><span class="secno">3.1. </span><span class="content">Diagram med alle elementer</span><a class="self-link" href="#diagram-med-alle-elementer"></a></h3>
     Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram. 
    <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png" src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"></a></p>
-    Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram uden datatyper og stereotyper og kun på dansk)  
+   <p>Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram uden datatyper og stereotyper og kun på dansk)</p>
    <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"><img alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram (kun på dansk og uden datatyper og stereotyper).png" src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"></a></p>
    <h2 class="heading settled" data-level="4" id="navneomrder"><span class="secno">4. </span><span class="content">Navneområder</span><a class="self-link" href="#navneomrder"></a></h2>
    <table class="term-table">
