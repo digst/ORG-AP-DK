@@ -251,7 +251,7 @@ Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisa
 ## Historik og opgaver
 
 - En organisations eller organisationsenheds  **oprettelsesdato** eller **nedlæggelsedato** kan angives, og dermed kan både overordnede organisatoriske ændringer og interne omstruktureringer rummes af modellen.
-- En offentlig organisation kan tilknyttes de **forvaltningsopgaver** der varetages af myndigheden. Til dette formål anvendes en klassifikation over forvaltningsopgaver, fx. FORM eller KLE. En forvaltningsopgave kan kædes sammen med den **lovgivning, den politik eller anden retskilde**, der ligger til grund for forvaltningsopgaven.
+- En offentlig organisation kan tilknyttes de **forvaltningsopgaver** den varetager. Til dette formål anvendes en klassifikation over forvaltningsopgaver, fx. FORM eller KLE. En forvaltningsopgave kan kædes sammen med den **lovgivning, den politik eller anden retskilde**, der ligger til grund for forvaltningsopgaven.
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.6.4 Forretningshændelser?"* 
 
