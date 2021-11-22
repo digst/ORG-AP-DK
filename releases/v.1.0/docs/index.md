@@ -196,7 +196,6 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 - En organisation og en organisationsenhed kan have et eller flere navne. Et af navnene på et givet sprog vil være det **foretrukne navn**, men andre kan angives som **alternative eller skjulte navne**.
 - En organisation og en organisationsenhed kan forsynes med en **tekstbaseret beskrivelse**.
 - En organisation og en organisationsenhed kan forsynes med en **identifikator** - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer. 
-- En offentlig organisation kan tilknyttes de **forvaltningsopgaver** der varetages af myndigheden opmærkning med fx KLE eller FORM.
 - En organisation kan have en billedlig repræsentation i form at et **logo og en miniature**.
 - En organisation kan kædes sammen med dens **hjemmeside** på internettet.
 
@@ -219,9 +218,9 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.1 Hvordan er organisati
 
 
 ## Kontaktoplysninger
-- En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen
+- En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen eller organisationsenheden.
 - En kontaktoplysning kan fx være et **telefonnummer**, en **e-mailadresse**, en **url**, herunder Digital Post, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
-- En kontaktoplysning kan også indholde information om **åbningstider** - enten på simpel vis eller i en mere komplekks struktur med yderligere begrænsninger. 
+- En kontaktoplysning kan også indholde information om **åbningstider** - enten på simpel vis eller i en mere kompleks struktur med yderligere begrænsninger. 
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes organisationen?"* 
 
@@ -236,10 +235,9 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes org
 - Placeringen kan fx angives med en **adresse** - gerne i henhold til Danmarks Adresseregister (DAR)
 - Det kan angives hvilket **administrativt geografisk område** en offentlig organisation dækker forvaltningsmæssigt.
 
-
 	
 ## Medlemsskab og aktører
-- En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte **medlemskabsrelation**. En organisations relation til en anden organisation kan også have karakter af et **medlemskab**. En person ansat i en organisation kan betragtes som **medlem** af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en **rolle**, som kan specificeres i en klassifikation over rolletyper.
+- En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte **medlemskabsrelation**. En organisations relation til en anden organisation kan også have karakter af et **medlemskab**. En person ansat i en organisation kan betragtes som **medlem** af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en **rolle**, som kan specificeres i en klassifikation over **rolletyper**.
 - Relationen mellem en organisation eller organisationsenhed til en person, såsom **ansat** og **leder** kan også angives direkte.
 - En **softwareaktør**, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse
 
@@ -250,10 +248,10 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.3 Hvem er medlemmer af 
 Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: *"3.2 Hvad arbejder organisationen med?"* )
 </div>
 	
-## Hændelser og opgaver
-- En organisation oprettes og ændres som svar på begivenheder eller **hændelser**. Dette kan være resultatet af ny lovgivning, ny politik eller at den påtager sig nye forpligtelser mv. En given ændring eller oprettelse kan således kædes sammen med den **lovgivning, den politik eller anden retskilde**, der udløste eller ligger til grund for hændelsen.
-- En organisation eller organisationsenheds **oprettelse** eller **nedlæggelse** kan beskrives og denne kan ske på et specifikt tidspunkt eller over en periode. Både overordnede organisatoriske ændringer og interne omstruktureringer kan rummes af modellen.
-- En offentlig organisation beskrives med et organisatorisk formål, der antages altid at være en **forvaltningsopgave**. Til dette formål anvendes en klassifikation over forvaltningsopgaver.
+## Historik og opgaver
+
+- En organisations eller organisationsenheds  **oprettelsesdato** eller **nedlæggelsedato** kan angives, og dermed kan både overordnede organisatoriske ændringer og interne omstruktureringer rummes af modellen.
+- En offentlig organisation kan tilknyttes de **forvaltningsopgaver** der varetages af myndigheden. Til dette formål anvendes en klassifikation over forvaltningsopgaver, fx. FORM eller KLE. En forvaltningsopgave kan kædes sammen med den **lovgivning, den politik eller anden retskilde**, der ligger til grund for forvaltningsopgaven.
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.6.4 Forretningshændelser?"* 
 
