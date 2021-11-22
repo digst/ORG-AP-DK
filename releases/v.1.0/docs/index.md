@@ -244,7 +244,7 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes org
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.3 Hvem er medlemmer af organisationen?"* 
 
 
-<div class='issue'>
+<div class='note'>
 Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: *"3.2 Hvad arbejder organisationen med?"* )
 </div>
 	
@@ -984,8 +984,7 @@ Klassens egenskaber:
 <dt>Defineret af</dt>  
 <dd><a href="http://schema.org/" title="URI til Schema.org ">http://schema.org/</a></dd>  
 <dt>Udfaldsrum</dt>
-<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
-	<dt>Multiplicitet</dt><dd>[0..1]" title="URI til langString</dd><dt>Multiplicitet</dt><dd>[0..1]">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</dd>
+<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"</a>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</dd>
 <dt>Multiplicitet</dt><dd>[0..1]</a></dd></dl>
 
 
