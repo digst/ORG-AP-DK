@@ -258,12 +258,13 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.6.4 Forretningshændels
 # UML-diagrammer
 
 
-## Diagram med alle elementer
+## Fuld visning af UML-Diagram 
 Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram.
 
 <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png"/></a></p>
 
-Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram uden datatyper og stereotyper og kun på dansk)  
+## Forenklet visning af UML-diagram
+Forenklet visning af ORG-AP-DK v.1.0.0-beta uden datatyper og stereotyper og kun på dansk)  
 <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML-simple.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram (kun på dansk og uden datatyper og stereotyper).png"/></a></p>
 
 
