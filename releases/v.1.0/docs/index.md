@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-11-30
+Date: 2021-12-01
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -259,7 +259,7 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.6.4 Forretningshændels
 
 
 ## Fuld visning af UML-Diagram 
-Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram.
+Den fulde anvendelsesprofil ORG-AP-DK v.1.0.0-beta visualiseret med UML-diagram. 
 
 <p class="center"><a href="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png"><img src="img/Illustration-ORG-AP-DK-v1.0.0-beta-UML.png" alt="Illustration af ORG-AP-DK v1.0.0-beta som UML-klassediagram.png"/></a></p>
 
@@ -314,7 +314,7 @@ I det følgende præsenteres alle egenskaberne i ORG-AP-DK per klasse.
 <img src="img/FormalOrganization.png" alt="formel organisation">
 <dl class="def">
 <dt>URI</dt>
-<dd><a href="http://www.w3.org/ns/org#FormalOrganization " title="URI til FormalOrganization ">http://www.w3.org/ns/org#FormalOrganization </a></dd>
+<dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization ">http://www.w3.org/ns/org#FormalOrganization </a></dd>
 <dt>Foretrukken term (da)</dt>
 <dd>formel organisation</dd>	
 <dt>Alternativ term (da)</dt>
@@ -342,6 +342,8 @@ Klassens egenskaber:
 <dd>Bruges til at angive organisationens primære - ofte juridisk anerkendte - navn. Det antages at organisationer kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dd>
 <dt>Definition (da) </dt>
 <dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. </dt>
+<dt>Defineret af</dt>  
+<dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til SKOS">http://www.w3.org/2004/02/skos/core#</a></dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral" title="URI til PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a></dd>
 <dt>Underegenskab af</dt>
@@ -363,7 +365,7 @@ Klassens egenskaber:
 <dt>Definition</dt>  
 <dd>en alternativ leksikalsk betegnelse for en ressource</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til ">http://www.w3.org/2004/02/skos/core#</a></dd>  
+<dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til SKOS">http://www.w3.org/2004/02/skos/core#</a></dd>  
 <dt>Udfaldsrum:</dt>
 <dd><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">https://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
 <dt>Multiplicitet</dt>
@@ -381,7 +383,7 @@ Klassens egenskaber:
 <dt>Definition</dt>  
 <dd>en forklaring af en ressource</dd>  
 <dt>Defineret af</dt>  
-<dd>http://purl.org/dc/elements/1.1/</dd>  
+<dd><a href="http://purl.org/dc/elements/1.1/" title="URI til Dublin Core">http://purl.org/dc/elements/1.1/</a></dd>  
 <dt>Udfaldsrum:</dt>
 <dd><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">https://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
 <dt>Multiplicitet</dt>
@@ -422,7 +424,7 @@ Klassens egenskaber:
 <dt>Definition</dt>  
 <dd>den dato organisationen blev nedlagt</dd>  
 <dt>Defineret af</dt>  
-<dd>http://schema.org/</dd>  
+<dd><a href="http://schema.org/" title="URI til SCHEMA.ORG">http://schema.org/</a></dd>  
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/2001/XMLSchema#date" title="URI til xsd:date">http://www.w3.org/2001/XMLSchema#date</a></dd>
 <dt>Multiplicitet</dt>
@@ -441,7 +443,7 @@ Klassens egenskaber:
 <dt>Definition</dt>  
 <dd>Knytter en ressource til en ADMS identifikator</dt>
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/adms#" title="URI til ">http://www.w3.org/ns/adms#</a></dd>  
+<dd><a href="http://www.w3.org/ns/adms#" title="URI til ADMS">http://www.w3.org/ns/adms#</a></dd>  
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/ns/adms#Identifier" title="URI til Identifier">http://www.w3.org/ns/adms#Identifier</a></dd>
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
@@ -461,7 +463,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Definition</dt>  
 <dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som omfatter denne organisation. </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til ">http://www.w3.org/ns/org#</a></dd>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a></dd>
 <dt>Multiplicitet</dt><dd>[0..1]</dd>  
@@ -470,7 +472,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 
 ### har underorganisation 
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://www.w3.org/ns/org#hasSubOrganization " title="URI til hasSubOrganization ">http://www.w3.org/ns/org#hasSubOrganization </a></dd>  
+<dd><a href="http://www.w3.org/ns/org#hasSubOrganization" title="URI til hasSubOrganization">http://www.w3.org/ns/org#hasSubOrganization</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>har underorganisation</dd>  
 <dt>Anvendelsesnote </dt>
@@ -478,7 +480,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Definition</dt>  
 <dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Egenskaben angiver en organisation, som er en del af denne organisation. </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til ">http://www.w3.org/ns/org#</a></dd>
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a></dd>
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
@@ -487,17 +489,17 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 
 ### har enhed 
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://www.w3.org/ns/org#hasUnit " title="URI til hasUnit ">http://www.w3.org/ns/org#hasUnit </a></dd>  
+<dd><a href="http://www.w3.org/ns/org#hasUnit" title="URI til hasUnit ">http://www.w3.org/ns/org#hasUnit </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>har enhed</dd>  
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at angive en enhed som er en organisatorisk del af en større organisation. Bemærk at denne organisationsenhed eksistens er afhængig af den organisation den er en del af.</dd>
 <dt>Definition</dt>  
 <dd>Angiver en enhed, som er del af denne organisation, f.eks. en afdeling i en større organisation </dd>  
-<dt>Anvendelsesnote </dt>
-<dd>Bruges til at angive en enhed som er en organisatorisk del af en større organisation. Bemærk at denne organisationsenhed eksistens er afhængig af den organisation den er en del af.</dd>	
 <dt>Eksempel</dt>  
 <dd>Eksempler kan være afdelinger, kontorer, sektioner, centre og lignende.</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til org">http://www.w3.org/ns/org#</a></dd>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/ns/org#OrganizationalUnit" title="URI til OrganizationalUnit">http://www.w3.org/ns/org#OrganizationalUnit</a></dd>
 <dt>Multiplicitet</dt>
@@ -511,12 +513,12 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd><a href="http://www.w3.org/ns/org#linkedTo" title="URI til linkedTo">http://www.w3.org/ns/org#linkedTo</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>relateret til</dd>  
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at angive en organisation som denne organisation har en eller anden relation til. Det kan eksempelvis være en finanseringsrelation eller en forsyningskæderelation. </dd>
 <dt>Definition</dt>  
 <dd>Angiver en arbitrær relation mellem to organisationer. Specialiseringer af denne kan f.eks. bruges til at angive finansiering eller kæderelationer.</dd>  
-<dt>Anvendelsesnote </dt>
-<dd>Bruges til at angive en organisation som denne organisation har en eller anden relation til. Det kan eksempelvis være en finanseringsrelation eller en forsyningskæderelation. </dd>	
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til ">http://www.w3.org/ns/org#</a></dd>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
 <dt>Multiplicitet</dt>
 <dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
@@ -526,31 +528,35 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 
 ### hjemmeside  
 <dl class="def"><dt>URI</dt>  
-<dd>http://xmlns.com/foaf/0.1/homepage</dd>  
+<dd><a href="http://xmlns.com/foaf/0.1/homepage" title="URI til homepage">http://xmlns.com/foaf/0.1/homepage</a></dd> 
 <dt>Foretrukken term</dt>  
 <dd>hjemmeside</dd>  
-<dt>Definition</dt>  
-<dd>en hjemmeside for noget</dd>  
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive en den primære webside i det websted hvor organisationen præsenterer sig selv</dd>	
+<dt>Definition</dt>  
+<dd>en hjemmeside for noget</dd>  
 <dt>Defineret af</dt>  
-<dd>http://xmlns.com/foaf/0.1/</dd>  
+<dd><a href="http://xmlns.com/foaf/0.1/" title="URI til FOAF">http://xmlns.com/foaf/0.1/</a></dd> 
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
-<dt>Udfaldsrum</dt><dd>http://xmlns.com/foaf/0.1/Document</dd></dl>  
+<dt>Udfaldsrum</dt>
+<dd><a href="http://xmlns.com/foaf/0.1/Document" title="URI til Document">http://xmlns.com/foaf/0.1/Document</a></dd>
+</dl>  
 
 ### logo  
 <dl class="def"><dt>URI</dt>  
-<dd>http://schema.org/logo </dd>  
+<dd><a href="http://schema.org/logo" title="URI til logo">http://schema.org/logo</a></dd> 
 <dt>Foretrukken term</dt>  
 <dd>logo</dd>  
-<dt>Definition</dt>  
-<dd>et tilknyttet logo</dd>  
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive organisationens primære logo</dd>
+<dt>Definition</dt>  
+<dd>et tilknyttet logo</dd> 
 <dt>Defineret af</dt>  
-<dd>http://schema.org/</dd>  
+<dd><a href="http://schema.org/" title="URI til SCHEMA.ORG">http://schema.org/</a></dd>  
 <dt>Multiplicitet</dt><dd>[0..1]</dd>  
-<dt>Udfaldsrum</dt><dd>  <a href="http://schema.org/ImageObject" title="URI til ImageObject ">http://schema.org/ImageObject</a></dd></dl>  
+<dt>Udfaldsrum</dt>
+<dd><a href="http://schema.org/ImageObject" title="URI til ImageObject">http://schema.org/ImageObject</a></dd>
+</dl>  
  
 
 ###	har primært sted  
@@ -558,10 +564,12 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd><a href="http://www.w3.org/ns/org#hasPrimarySite" title="URI til hasParimarySite ">http://www.w3.org/ns/org#hasPrimarySite</a></dd> 
 <dt>Foretrukken term</dt>  
 <dd>har primært sted</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive en organisations primære sted.</dd>  
 <dt>Definition</dt>  
 <dd>Angiver organisationens primære lokalitet. Det er det sted, hvor organisationen som standard kan kontaktes, og det er ikke nødvendigvis det formelle hovedkvarter. </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til org">http://www.w3.org/ns/org#</a></dd>   
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd>   
 <dt>Multiplicitet</dt><dd>[0..1]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/ns/org#Site" title="URI til Site">http://www.w3.org/ns/org#Site</a></dd>
@@ -573,10 +581,12 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd><a href="http://www.w3.org/ns/org#hasSite" title="URI til hasSite ">http://www.w3.org/ns/org#hasSite</a></dd> 
 <dt>Foretrukken term/dt>  
 <dd>har sted</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive en hvor en organisation i nogen grad befinder sig.</dd>    
 <dt>Definition</dt>  
 <dd>Angiver et sted, hvor organisationen i nogen grad befinder sig, selv om det kun er indirekte (f.eks. et virtuelt kontor eller en professional servicevirksomhed, der fungerer som den registrerede adresse for en virksomhed). </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til org">http://www.w3.org/ns/org#</a></dd>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/ns/org#Site" title="URI til Site">http://www.w3.org/ns/org#Site</a></dd>
@@ -584,23 +594,44 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 
 ### adresse
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://www.w3.org/ns/locn#address" title="URI til address ">http://www.w3.org/ns/locn#address</dd> 
+<dd><a href="http://www.w3.org/ns/locn#address" title="URI til address">http://www.w3.org/ns/locn#address</a></dd> 
 <dt>Foretrukken term</dt>  
-<dd>adresse</dd>   
+<dd>adresse</dd>
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive en organisations adresse</dd>     
 <dt>Definition</dt>  
 <dd>adresserelationen kan knytte enhver ressource til en adresse </dd>   
-<dt>Anvendelsesnote</dt>  
-<dd>Bruges til at angive en organisations adresse</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/locn#" title="URI til locn">http://www.w3.org/ns/locn#</a></dd>   
+<dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a></dd>   
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/ns/locn#Address" title="URI til Address">http://www.w3.org/ns/locn#Address</a></dd>
 </dl>  
 
+### har medlem
+<dl class="def"><dt>URI</dt>  
+<dd><a href="http://www.w3.org/ns/org#hasMember" title="URI til hasMember">http://www.w3.org/ns/org#hasMember</a></dd>  
+<dt>Foretrukken term</dt>  
+<dd>har medlem</dd>  
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at angive en aktør som er medlem af organisationen.</dd>	
+<dt>Definition</dt>  
+<dd></dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
+<dt>Udfaldsrum:</dt>
+<dd>
+<a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a>, 
+<a href="http://xmlns.com/foaf/0.1/Person" title="URI til Person">http://xmlns.com/foaf/0.1/Person</a> & SoftwareAgent
+</dd>
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+</dl>  
+
+
+
 ###	ansat  
 <dl class="def"><dt>URI</dt>  
-<dd>http://schema.org/employee</dd>  
+<dd><a href="http://schema.org/employee" title="URI til employee">http://schema.org/employee</a></dd> 
 <dt>Foretrukken term</dt>  
 <dd>ansat</dd>    
 <dt>Definition</dt>  
@@ -611,7 +642,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd>http://schema.org/</dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
-<dd>foaf:Person</dd>
+<dd><a href="http://xmlns.com/foaf/0.1/Person" title="URI til Person">http://xmlns.com/foaf/0.1/Person</a></dd> 
 </dl>  
 
 
@@ -620,13 +651,15 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 ### har kontaktoplysning
 
 <dl class="def"><dt>URI</dt>  
-<dd>http://data.europa.eu/m8g//contactPoint</dd>  
+<dd><a href="http://data.europa.eu/m8g/contactPoint" title="URI til ContactPoint">http://data.europa.eu/m8g/contactPoint</a></dd>
 <dt>Foretrukken term</dt>  
 <dd>har kontaktpunkt</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive hvordan man kommer i kontakt med organisationen</dd>  
 <dt>Definition</dt>  
 <dd></dd>   
 <dt>Defineret af</dt>  
-<dd>http://data.europa.eu/m8g/</dd>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til eGovernment Core Vocabularies">http://data.europa.eu/m8g/</a></dd>
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://data.europa.eu/m8g/ContactPoint" title="URI til ContactPoint">http://data.europa.eu/m8g/ContactPoint</a></dd>
@@ -636,9 +669,11 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 ### formel organisationstype
 <dl class="def">
 <dt>URI</dt>  
-<dd></dd>  
+<dd>ovx:formalType</dd>  
 <dt>Foretrukken term</dt>  
 <dd>formel organisationsstype</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at kæde en formel organisation sammen med et SKOS-begreb tilknyttet klassen ovx:FormalOrganizationType.</dd>   
 <dt>Definition</dt>  
 <dd></dd>   
 <dt>Defineret af</dt>  
@@ -656,17 +691,17 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Foretrukken term</dt>  
 <dd>organisationsenhed</dd> 
 <dt>Alternativ betegnelse</dt>	
-<dd>organisatorisk enhed</dd>  	
+<dd>organisatorisk enhed</dd> 
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at beskrive en enhed som er del af en større organisation og som kun har en fuld anerkendelse i forbindelse med den organisation. Organisationer består typisk af mange organisationsenheder som såsom afdelinger, kontorer, enheder, teams, grupper osv. </dd>	 	
 <dt>Definition</dt>  
 <dd>En organisation som en afdeling eller en supportenhed, der er del af en større organisation og kun har fuld anerkendelse i forbindelse med den organisation. Det gælder især, at enheden ikke i sig selv kan opfattes som en juridisk enhed. </dd>  
 <dt>Eksempel </dt>
 <dd>Eksempler kan være afdelinger, kontorer, centre, enheder, teams	</dd>
-<dt>Anvendelsesnote </dt>
-<dd>Bruges til at beskrive en enhed som er del af en større organisation og som kun har en fuld anerkendelse i forbindelse med den organisation. Organisationer består typisk af mange organisationsenheder som såsom afdelinger, kontorer, enheder, teams, grupper osv. </dd>	
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Specialisering af </dt>
-<dd><a href="http://www.w3.org/ns/org#Organization " title="URI til Organization ">http://www.w3.org/ns/org#Organization </a></dd>
+<dd><a href="http://www.w3.org/ns/org#Organization" title="URI til Organization ">http://www.w3.org/ns/org#Organization </a></dd>
 
 </dl>  
 
@@ -681,14 +716,12 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd>foretrukken betegnelse</dd>	
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive organisationsenhedens primære navn. Det antages at organisationsenheder kun har et sådant navn på hvert sprog. Primære navne kan angives på flere sprog med flere forekomster af egenskaben skos:prefLabel. </dd>
-<dt>Anvendelsesnote (en) </dt>
-<dd>Used to provide the primary name of the organizationak unit. An organizational unit may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.</dd>	
 <dt>Definition </dt>
 <dd>Den foretrukne leksikalske betegnelse for en ressource på et givet sprog. </dt>
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral" title="URI til PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a></dd>
 <dt>Underegenskab af</dt>
-<dd><a href="http://www.w3.org/2000/01/rdf-schema#label" title="URI til label ">http://www.w3.org/2000/01/rdf-schema#label </a></dd>
+<dd><a href="http://www.w3.org/2000/01/rdf-schema#label" title="URI til label">http://www.w3.org/2000/01/rdf-schema#label </a></dd>
 </dl>
 
 
@@ -714,8 +747,9 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 
 
 ### beskrivelse 
-<dl class="def"><dt>URI</dt>  
-<dd>http://purl.org/dc/elements/1.1/description</dd>  
+<dl class="def">
+<dt>URI</dt>  
+<dd><a href="http://purl.org/dc/elements/1.1/description" title="URI til description">http://purl.org/dc/elements/1.1/description</a></dd>   
 <dt>Foretrukken term</dt>  
 <dd>beskrivelse</dd>  
 <dt>Anvendelsesnote </dt>
@@ -723,7 +757,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Definition</dt>  
 <dd>en forklaring af en ressource</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://purl.org/dc/elements/1.1/" title="URI til DC">http://purl.org/dc/elements/1.1/</a></dd>  
+<dd><a href="http://purl.org/dc/elements/1.1/" title="URI til Dublin Core">http://purl.org/dc/elements/1.1/</a></dd>  
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
 <dt>Multiplicitet</dt>
@@ -735,14 +769,14 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd><a href="http://schema.org/foundingDate" title="URI til foundingDate">http://schema.org/foundingDate</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>oprettelsesdato</dd>  
-<dt>Alternativ betegnelse (da)</dt>
+<dt>Alternativ betegnelse </dt>
 <dd>grundlæggelsesdato</dd>		
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive den dato hvorpå organisationsenheden blev oprettet</dd>	
 <dt>Definition</dt>  
 <dd>den dato organisationen blev oprettet</dd>  
 <dt>Defineret af</dt>  
-<dd>http://schema.org/</dd>  
+<dd><a href="http://schema.org/" title="URI til SCHEMA.ORG">http://schema.org/</a></dd>   
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/2001/XMLSchema#date" title="URI til xsd:date">http://www.w3.org/2001/XMLSchema#date</a></dd>
 <dt>Multiplicitet</dt>
@@ -763,7 +797,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Definition</dt>  
 <dd>den dato organisationen blev nedlagt</dd>  
 <dt>Defineret af</dt>  
-<dd>http://schema.org/</dd>  
+<dd><a href="http://schema.org/" title="URI til SCHEMA.ORG">http://schema.org/</a></dd>   
 <dt>Udfaldsrum:</dt>
 <dd><a href="http://www.w3.org/2001/XMLSchema#date" title="URI til xsd:date">http://www.w3.org/2001/XMLSchema#date</a></dd>
 <dt>Multiplicitet</dt>
@@ -776,14 +810,18 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd><a href="http://www.w3.org/ns/org#unitOf" title="URI til unitOf ">http://www.w3.org/ns/org#unitOf </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>enhed af</dd>  
-<dt>Definition </dt>
-<dd>Angiver en organisation som denne organisationsenhed er en del af.</dd>	
 <dt>Anvendelsesnote</dt>  
 <dd>Bruges til at angive en organisation eller en organisationsenhed, som denne enhed er en del af </dd>  
+<dt>Definition </dt>
+<dd>Angiver en organisation som denne organisationsenhed er en del af.</dd>	
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Multiplicitet</dt><dd>[0..1]</dd>  
-<dt>Udfaldsrum</dt><dd><a href="http://www.w3.org/ns/org#FormalOrganization & http://www.w3.org/ns/org#OrganizationalUnit" title="URI til OrganizationalUnit">http://www.w3.org/ns/org#FormalOrganization & http://www.w3.org/ns/org#OrganizationalUnit</a></dd>
+<dt>Udfaldsrum</dt>
+<dd>
+<a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a> & 
+<a href="http://www.w3.org/ns/org#OrganizationalUnit" title="URI til OrganizationalUnit">http://www.w3.org/ns/org#OrganizationalUnit</a>
+</dd>
 </dl>  
 
 ### har enhed 
@@ -791,10 +829,10 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dd><a href="http://www.w3.org/ns/org#hasUnit" title="URI til hasUnit ">http://www.w3.org/ns/org#hasUnit </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>har enhed</dd>  
-<dt>Definition </dt>
-<dd>Angiver en enhed som er den del af denne organisation</dd>		
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive en organisationsenhed som er en del af denne organisationsenhed</dd>	
+<dt>Definition </dt>
+<dd>Angiver en enhed som er den del af denne organisation</dd>		
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Udfaldsrum:</dt>
@@ -807,13 +845,13 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dl class="def"><dt>URI</dt>  
 <dd><a href="http://www.w3.org/ns/org#hasSite" title="URI til hasSite ">http://www.w3.org/ns/org#hasSite</a></dd> 
 <dt>Foretrukken term/dt>  
-<dd>har sted</dd>  
-<dt>Definition</dt>  
-<dd> </dd>  
+<dd>har sted</dd>
 <dt>Anvendelsesnote</dt>  
-<dd>Angiver et sted, hvor organisationsenheden i nogen grad befinder sig, selv om det kun er indirekte (f.eks. et virtuelt kontor). </dd>  
+<dd>Angiver et sted, hvor organisationsenheden i nogen grad befinder sig, selv om det kun er indirekte (f.eks. et virtuelt kontor). </dd>    
+<dt>Definition</dt>  
+<dd>et sted, hvor organisationen i nogen grad befinder sig, selv om det kun er indirekte (f.eks. et virtuelt kontor).</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/org#" title="URI til org">http://www.w3.org/ns/org#</a></dd>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/ns/org#Site" title="URI til Site">http://www.w3.org/ns/org#Site</a></dd>
@@ -821,15 +859,15 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 
 ### adresse
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://www.w3.org/ns/locn#address" title="URI til address ">http://www.w3.org/ns/locn#address</dd> 
+<dd><a href="http://www.w3.org/ns/locn#address" title="URI til address">http://www.w3.org/ns/locn#address</a></dd> 
 <dt>Foretrukken term</dt>  
 <dd>adresse</dd>   
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive organisationsenhedens adresse</dd> 
 <dt>Definition</dt>  
 <dd>adresserelationen kan knytte enhver ressource til en adresse </dd>   
-<dt>Anvendelsesnote</dt>  
-<dd>Bruges til at angive organisationsenhedens adresse</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/locn#" title="URI til locn">http://www.w3.org/ns/locn#</a></dd>   
+<dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a></dd>   
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/ns/locn#Address" title="URI til Address">http://www.w3.org/ns/locn#Address</a></dd>
@@ -838,14 +876,16 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 ### enhedstype
 <dl class="def">
 <dt>URI</dt>  
-<dd></dd>  
+<dd>ovx:unitType</dd>  
 <dt>Foretrukken term</dt>  
 <dd>enhedstype</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til kæde en organisationsenhed sammen med et SKOS-begreb tilknyttet klassen ovx:OrganizationalUnitType.</dd> 
 <dt>Definition</dt>  
 <dd></dd>   
 <dt>Defineret af</dt>  
 <dd></dd>  
-<dt>Multiplicitet</dt><dd></dd>  
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
 <dd>ovx:OrganizationalUnitType</dd>
 </dl> 
@@ -855,7 +895,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <img src="img/OrganizationalCollaboration.png" alt="organisatorisk samarbejde">
 <dl class="def">
 <dt>URI</dt>
-<dd>http://www.w3.org/ns/org#OrganizationalCollaboration</dd>
+<dd><a href="http://www.w3.org/ns/org#OrganizationalCollaboration" title="URI til OrganizationalCollaboration">http://www.w3.org/ns/org#OrganizationalCollaboration</a></dd> 
 <dt>Foretrukken betegnelse (da)</dt>
 <dd>organisatorisk samarbejde</dd>		
 <dt>Anvendelsesnote </dt>
@@ -863,17 +903,38 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Definition </dt>
 <dd>et samarbejde mellem to eller flere organisationer</dt>
 <dt>Specialisering af </dt>
-<dd><a href="http://www.w3.org/ns/org#Organization" title="URI til Organization ">http://www.w3.org/ns/org#Organization </a></dd>
+<dd><a href="http://www.w3.org/ns/org#Organization" title="URI til The Organization Ontology">http://www.w3.org/ns/org#Organization </a></dd>
 </dl>	 
+
 Klassens egenskaber:	
 
 ### har medlem
+<dl class="def"><dt>URI</dt>  
+<dd><a href="http://www.w3.org/ns/org#hasMember" title="URI til hasMember">http://www.w3.org/ns/org#hasMember</a></dd>  
+<dt>Foretrukken term</dt>  
+<dd>har medlem</dd>  
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at angive en aktør som er medlem af organisationen.</dd>	
+<dt>Definition</dt>  
+<dd></dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
+<dt>Udfaldsrum:</dt>
+<dd>
+<a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a>, 
+<a href="http://xmlns.com/foaf/0.1/Person" title="URI til Person">http://xmlns.com/foaf/0.1/Person</a> & SoftwareAgent
+</dd>
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+</dl>  
+
+
+
 
 ## Offentlig organisation
 <img src="img/PublicOrganisation.png" alt="offentlig organisation">
 <dl class="def">
 <dt>URI</dt>
-<dd>http://data.europa.eu/m8g/PublicOrganisation </dd>
+<dd><a href="http://data.europa.eu/m8g/PublicOrganisation " title="URI til PublicOrganisation">http://data.europa.eu/m8g/PublicOrganisation</a></dd> 
 <dt>Foretrukken betegnelse (da)</dt>
 <dd>offentlig organisation</dd>		
 <dt>Anvendelsesnote </dt>
@@ -966,14 +1027,14 @@ Klassens egenskaber:
 <dd><a href="http://www.w3.org/ns/org#purpose" title="URI til hasUnit ">http://www.w3.org/ns/org#purpose</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>formål</dd>  
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at referere til klassifikation af offentlige forvaltningsopgaver</dd>	
 <dt>Definition </dt>
 <dd>Angiver organisationens formål. Der kan være mange formål på forskellige abstraktionsniveauer, men det ligger i en organisations natur at have en grund til at eksistere. Denne egenskab er en metode til at dokumentere denne grund. En organisation kan have flere formål. 
 </dd>	
 <dt>Kommentar </dt>
 <dd>Det anbefales, at formålet bliver angivet af en reguleret term- eller kodeliste, ideelt klassen skos:Concept. Rækkevidden er dog åben for andre typer beskrivende systemer. Det er forventet, at profiler i dette vokabularium vil indsnævre rækkevidden af org:purpose. Alternative navne: emne, ansvar (især hvis det bruges på organisatoriske enheder som statslige departementer.)
 </dd>	
-<dt>Anvendelsesnote </dt>
-<dd>Bruges til at referere til klassifikation af offentlige forvaltningsopgaver</dd>	
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Udfaldsrum:</dt>
@@ -988,6 +1049,8 @@ Klassens egenskaber:
 <dd></dd>  
 <dt>Foretrukken term</dt>  
 <dd>offentlig organisationstype</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive den formelle organisation som den offentlige organisation er medlem af</dd>  
 <dt>Definition</dt>  
 <dd></dd>   
 <dt>Defineret af</dt>  
@@ -997,6 +1060,22 @@ Klassens egenskaber:
 <dd>ovx:PublicOrganizationType</dd>
 </dl> 
 
+### medlem af
+<dl class="def">
+<dt>URI</dt>  
+<dd><a href="http://www.w3.org/ns/org#memberOf" title="URI til memberOf">http://www.w3.org/ns/org#memberOf</a></dd> 
+<dt>Foretrukken term</dt>  
+<dd>medlem af</dd>   
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive den formelle organisation som den offentlige organisation er medlem af</dd>  
+<dt>Definition</dt>  
+<dd>Angiver, at en aktør (person eller anden organisation) er medlem af organisationen uden at angive medlemskabets natur eller rolle i den. </dd>  
+<dd>Bemærk, at valget af navn på egenskaben ikke er tænkt til at begrænse egenskaber til kun formelle medlemskabsarrangementer. Det er også tiltænkt, at det skal dække relaterede begreber, f.eks. tilhørsforhold eller andet engagement i organisationen. Ekstensioner kan specialisere denne relation til at angive bestemte roller inden for organisationen eller mere nuancerede relationer til organisationen. </dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+<dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til Formal Organization">http://www.w3.org/ns/org#FormalOrganization</a></dd>  
+</dl>
 
 
 ## Kontaktoplysning 
@@ -1007,21 +1086,20 @@ Klassens egenskaber:
 <dd><a href="http://data.europa.eu/m8g/ContactPoint" title="URI til ContactPoint">http://data.europa.eu/m8g/ContactPoint</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>kontaktoplysning</dd>  
-<dt>Definition</dt>  
-<dd>Oplysning om hvordan man kan kontakte organisationen</dd>  
 <dt>Anvendelsesnote</dt>  
 <dd>Bruges til at repræsentere en kontaktoplysning for organisationen</dd>  
+<dt>Definition</dt>  
+<dd>Oplysning om hvordan man kan kontakte organisationen</dd>  
+
 <dt>Defineret af</dt>  
 <dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd>  
 </dl>  
- 
   
 Klassens egenskaber:	
 
-
 ### kontakttype  
 <dl class="def"><dt>URI</dt>  
-<dd>https://schema.org/contactType</dd>  
+<dd><a href="https://schema.org/contactType<" title="URI til contactType">https://schema.org/contactType</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>kontakttype</dd>  
 <dt>Anvendelsenote</dt>  
@@ -1029,36 +1107,25 @@ Klassens egenskaber:
 <dt>Defineret af</dt>  
 <dd><a href="http://schema.org/" title="URI til Schema.org ">http://schema.org/</a></dd>  
 <dt>Udfaldsrum</dt>
-<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"</a>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</dd>
-<dt>Multiplicitet</dt><dd>[0..1]</a></dd></dl>
-
-
+<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</a></dd>
+</dl>
 
 ### synlighed  
 <dl class="def"><dt>URI</dt>  
 <dd></dd>  
 <dt>Foretrukken term</dt>  
 <dd>synlighed</dd>  
-<dt>Definition</dt>  
-<dd></dd>  
 <dt>Anvendelsenote</dt>  
 <dd>Bruges til markere hvorvidt kontaktoplysningen må vises offentligt eller ikke</dd>  
+<dt>Definition</dt>  
+<dd></dd>  
 <dt>Udfaldsrum</dt>
 <dd></dd>
-<dt>Multiplicitet</dt><dd>[0..1]</a></dd></dl>
+<dt>Multiplicitet</dt><dd>[0..1]</a></dd>
+</dl>
 
-<div class='note'>
-NY! Fra KL:
-Definition:
-markerer hvorvidt kontaktinformationen må vises offentligt eller ikke.
-Kommentar:
-På eksempelvis hjemmesider, markerer denne hvorvidt oplysningen er ekstern tilgængelig, kun til intern brug eller hemmelig.
-Eksempel:
-- eksternt
-- internt
-- hemmeligt
-
-</div>
+<div class='note'>NY! Fra KL: Definition: markerer hvorvidt kontaktinformationen må vises offentligt eller ikke. Kommentar: På eksempelvis hjemmesider, markerer denne hvorvidt oplysningen er ekstern tilgængelig, kun til intern brug eller hemmelig. Eksempel: - eksternt - internt - hemmeligt </div>
 
 
 ### telefonnummer
@@ -1068,12 +1135,12 @@ Eksempel:
 <dd>telefon</dd>  
 <dt>Accepteret term</dt>  
 <dd>telefonnummer</dd>  
-<dt>Definition</dt>  
-<dd></dd>  
 <dt>Anvendelsesnote</dt>  
 <dd>telefonnummer som man man ringe til hvis man vil i kontakt med organisationen eller organisationsenheden </dd> 
+<dt>Definition</dt>  
+<dd></dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd>   
+<dd><a href="http://data.europa.eu/m8g/" title="URI til eGovernment Core Vocabularies">http://data.europa.eu/m8g/</a></dd>   
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></dd>
 <dt>Multiplicitet</dt><dd>[0..1]</a></dd></dl>  
@@ -1087,15 +1154,16 @@ Eksempel:
 <dd>e-mail</dd>  
 <dt>Accepteret term</dt>  
 <dd>e-mailadresse</dd>  
-<dt>Definition</dt>  
-<dd>adresse der identificerer en elektronisk postkasse</dd>  
 <dt>Anvendelsesnote</dt>  
 <dd>emailadresse som man han skrive til hvis man vil i kontakt med organisationen eller organisationsenheden</dd>  
+<dt>Definition</dt>  
+<dd>adresse der identificerer en elektronisk postkasse</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd> 
+<dd><a href="http://data.europa.eu/m8g/" title="URI til eGovernment Core Vocabularies">http://data.europa.eu/m8g/</a></dd> 
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</dd>
-<dt>Multiplicitet</dt><dd>[0..1]</a></dd></dl>
+<dt>Multiplicitet</dt><dd>[0..1]</a></dd>
+</dl>
 
 
 ### url 
@@ -1113,18 +1181,21 @@ Eksempel:
 <dd></dd>  
 <dt>Udfaldsrum</dt>
 <dd></dd>
-<dt>Multiplicitet</dt><dd>[0..1]</a></dd></dl>
+<dt>Multiplicitet</dt><dd>[0..1]</a></dd>
+</dl>
 	
 <div class='note'>
-NY! URI mangler
-</div>	
+I EUs  eGovernment Core Vocabularies oprettes muligvis en ny egenskab til angivelse af kontaktpunkter repræsenteret ved url'er
+</div>
 	
 	
 ### åbningstider
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://data.europa.eu/m8g/hasEmail" title="URI til ContactPoint">http://data.europa.eu/m8g/hasEmail</a></dd>    
+<dd><a href="http://data.europa.eu/m8g/hasEmail" title="URI til hasEmail">http://data.europa.eu/m8g/hasEmail</a></dd>    
 <dt>Foretrukken term</dt>  
 <dd>åbningstider</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive de normale åbningstider for organisationen eller organisationsenheden.</dd>  
 <dt>Definition</dt>  
 <dd>Angiver den normale åbningstid for organisationen. </dd>  
 <dt>Kommentar</dt>  
@@ -1145,13 +1216,21 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
 <dd><a href="http://schema.org/hoursAvailable" title="URI til hoursAvailable ">https://schema.org/hoursAvailable </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>tilgængelig i tidsrum</dd>  
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive i hvilket tidsrum organisationen eller organisationsenheden har åbent</dd>  
 <dt>Definition</dt>  
-<dd>tidsrum hvor denne service eller dette kontapunkt er tilråde</dd>  
+<dd>tidsrum hvor denne service eller dette kontaktpunkt er tilråde</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til Schema.org ">http://schema.org/</a></dd>  
+<dd><a href="http://schema.org/" title="URI til Schema.org">http://schema.org/</a></dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
-<dt>Udfaldsrum</dt><dd>OpeningHoursSpecification</dd></dl>  
+<dt>Udfaldsrum</dt>
+<dd><a href="http://schema.org/OpeningHoursSpecification" title="URI til OpeningsHoursSpecification">http://schema.org/OpeningHoursSpecification</a></dd>  
+</dl>  
  
+<div class='note'>
+Det er endnu uvist om eGovernment Core Vocabularies opretter en ny egenskab for hoursAvailable ækvivalent med egenskaben fra Schema.org
+</div>
+
  
 <strong>Objektegenskaber (associationsender): </strong>  
 
@@ -1161,15 +1240,20 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
 <dt>URI</dt>  
 <dd><a href="http://schema.org/OpeningHoursSpecification" title="URI til OpeningHoursSpecification ">https://schema.org/OpeningHoursSpecification </a></dd>  
 <dt>Foretrukken term</dt>  
-<dd>åbningstidsspecifikation</dd>  
+<dd>åbningstidsspecifikation</dd>   
 <dt>Definition</dt>  
 <dd>En struktureret værdi som giver information om åbningstider for en lokation eller en bestemt service der tilbydes på en lokation.
 Lokationen er åben hvis egenskaben ”åbner” er specificeret og ellers lukket.
 Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner” så antages det at perioden omfatter næste dag.
 </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til ">https://schema.org/</a></dd>  
+<dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
 </dl>  
+ 
+<div class='note'>
+Det er endnu uvist om eGovernment Core Vocabularies opretter en ny klasse for OpeningsHoursSpecification ækvivalent med klassen fra Schema.org
+</div>
+ 
  
   
 Klassens egenskaber:	
@@ -1183,7 +1267,10 @@ Klassens egenskaber:
 <dd>det tidspunkt lokationen eller tjenesten lukker på den eller de angive ugedage</dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://schema.org/closes" title="URI til closes">https://schema.org/closes</a></dd>  
-<dt>Udfaldsrum</dt><dd>xsd:time</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+<dt>Udfaldsrum</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
+</dl>
 
 ### åbner 
 <dl class="def"><dt>URI</dt>  
@@ -1194,7 +1281,10 @@ Klassens egenskaber:
 <dd>det tidspunkt lokationen eller tjenesten åbner på den eller de angive ugedage</dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
-<dt>Udfaldsrum</dt><dd>xsd:time</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+<dt>Udfaldsrum</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
+</dl>
 
 ### gælder fra 
 <dl class="def"><dt>URI</dt>  
@@ -1205,7 +1295,10 @@ Klassens egenskaber:
 <dd>den dato hvorfra noget gælder</dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
-<dt>Udfaldsrum</dt><dd>xsd:dateTime</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+<dt>Udfaldsrum</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
+</dl>
 
 ### gælder til
 <dl class="def"><dt>URI</dt>  
@@ -1216,15 +1309,25 @@ Klassens egenskaber:
 <dd>den dato hvorefter noget ikke længere er gældende</dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
-<dt>Udfaldsrum</dt><dd>xsd:dateTime</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>  
-
-
+<dt>Udfaldsrum</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a></dd>
+<dt>Multiplicitet</dt>
+<dd>[0..1]</dd>
+</dl>  
 
 ### ugedag
-<dl class="def"><dt>Foretrukken term</dt>  
+<dl class="def"><dt>URI</dt>  
+<dd><a href="http://schema.org/dayOfWeek" title="URI til dayOfWeek">https://schema.org/dayOfWeek</a></dd>  
+<dt>Foretrukken term</dt>  
 <dd>ugedag</dd>  
+<dt>Definition</dt>  
+<dd>den ugedag åbningstiderne gælder for </dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
-<dt>Udfaldsrum</dt><dd>DayOfWeek</dd></dl>  
+<dt>Udfaldsrum</dt>
+<dd><a href="http://schema.org/DayOfWeek" title="URI til DayOfWeek">https://schema.org/DayOfWeek</a></dd>  
+</dl>  
  
 
 ## Sted	
@@ -1252,13 +1355,15 @@ Klassens egenskaber:
 <dd><a href="http://www.w3.org/2004/02/skos/core#prefLabel" title="URI til prefLabel">http://www.w3.org/2004/02/skos/core#prefLabel</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>foretrukken betegnelse</dd>  
-<dt>Definition</dt>  
-<dd>den foretrukne leksikalske betegnelse for en ressource på et givet sprog</dd>  
 <dt>Anvendelsesnote</dt>  
 <dd>Bruges til at angive stedets foretrukne navn</dd>  
+<dt>Definition</dt>  
+<dd>den foretrukne leksikalske betegnelse for en ressource på et givet sprog</dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til SKOS">http://www.w3.org/2004/02/skos/core#</a></dd>  
-<dt>Udfaldsrum:</dt><dd>rdf:langString</dd><dt>Multiplicitet</dt><dd>[0..*]</dd>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
+<dt>Multiplicitet</dt><dd>[0..*]</dd>
 </dl>  
 
 
@@ -1270,14 +1375,15 @@ Klassens egenskaber:
 <dd><a href="http://www.w3.org/2004/02/skos/core#altLabel" title="URI til altLabel">http://www.w3.org/2004/02/skos/core#altLabel</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>alternativ betegnelse</dd>  
-
-<dt>Definition</dt>  
-<dd>en alternativ leksikalsk betegnelse for en ressource</dd>  
 <dt>Anvendelsesnote</dt>  
 <dd>Bruges til at angive stedets alternative navn</dd>  
+<dt>Definition</dt>  
+<dd>en alternativ leksikalsk betegnelse for en ressource</dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til SKOS">http://www.w3.org/2004/02/skos/core#</a></dd>  
-<dt>Udfaldsrum:</dt><dd>rdf:langString</dd><dt>Multiplicitet</dt><dd>[0..*]</dd>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
+<dt>Multiplicitet</dt><dd>[0..*]</dd>
 </dl>
 
 
@@ -1288,16 +1394,21 @@ Klassens egenskaber:
 <dd><a href="http://www.w3.org/ns/locn#address" title="URI til address ">http://www.w3.org/ns/locn#address</a></dd> 
 <dt>Foretrukken term</dt>  
 <dd>adresse</dd>   
-<dt>Definition</dt>  
-<dd>adresserelationen kan knytte enhver ressource til en adresse </dd>   
 <dt>Anvendelsesnote</dt>  
 <dd>Bruges til at angive en stedets adresse</dd>  
+<dt>Definition</dt>  
+<dd>adresserelationen kan knytte enhver ressource til en adresse </dd>   
 <dt>Defineret af</dt>  
-<dd><a href="http://www.w3.org/ns/locn#" title="URI til locn">http://www.w3.org/ns/locn#</a></dd>   
+<dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a></dd>   
 <dt>Multiplicitet</dt><dd>[0..1]</dd>  
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/ns/locn#Address" title="URI til Address">http://www.w3.org/ns/locn#Address</a></dd>
 </dl>  
+
+
+
+<!-- a href Tjek -->
+
 
 ## Adresse
 <img src="img/Address.png" alt="adresse">
@@ -1314,7 +1425,9 @@ Klassens egenskaber:
 <dd>husnummeret til adressen inklusive evt. bogstav </dd>  
 <dt>Defineret af</dt>  
 <dd>https://data.gov.dk/model/profile/dar#</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:string</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
 
 ###	dørbetegnelse  
 <dl class="def"><dt>URI</dt>  
@@ -1325,7 +1438,9 @@ Klassens egenskaber:
 <dd>Betegnelse, som angiver den adgangsdør e.l. som adressen identificerer </dd>  
 <dt>Defineret af</dt>  
 <dd>https://data.gov.dk/model/profile/dar#</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:string</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
 
 ###	etagebetegnelse  
 <dl class="def"><dt>URI</dt>  
@@ -1336,7 +1451,9 @@ Klassens egenskaber:
 <dd>Betegnelse, som angiver hvilken etage den del af bygningen som adressen identificerer, er beliggende på </dd>   
 <dt>Defineret af</dt>  
 <dd>https://data.gov.dk/model/profile/dar#</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:string</dd><dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd></dl>
 
 ### supplerende bynavn
 
@@ -1435,7 +1552,8 @@ Klassens egenskaber:
 <dd>medlemskabets navn</dd>  
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/2000/01/rdf-schema#</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:string</dd>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a></dd>
 <dt>Multiplicitet</dt><dd>[0..1]</dd>
 </dl>  
 
@@ -1450,7 +1568,8 @@ Klassens egenskaber:
 <dd>Bruges til at angive en beskrivelse af medlemsskabet</dd> 
 <dt>Defineret af</dt>  
 <dd>http://purl.org/dc/elements/1.1/</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:string</dd>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a></dd>
 <dt>Multiplicitet</dt><dd>[0..1]</dd>
 </dl>
 
@@ -1465,8 +1584,9 @@ Klassens egenskaber:
 <dd>Bruges til at angive hvornår medlemsskabet blev dannet</dd> 
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/ns/prov#</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:dateTime</dd>
-<dt>Udfaldsrum</dt><dd>[0..1]</dd>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#dateTime" title="URI til xsd:dateTime">http://www.w3.org/2001/XMLSchema#dateTime</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
 </dl>
 
 ### ugyldiggjort på tidspunkt
@@ -1480,8 +1600,9 @@ Klassens egenskaber:
 <dd>Bruges til at angive hvornår medlemsskabet blev ugyldiggjort</dd> 
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/ns/prov#</dd>  
-<dt>Udfaldsrum:</dt><dd>xsd:dateTime</dd>
-<dt>Udfaldsrum</dt><dd>[0..1]</dd>
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#dateTime" title="URI til xsd:dateTime">http://www.w3.org/2001/XMLSchema#dateTime</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
 </dl>
 
 
@@ -1654,7 +1775,7 @@ Klassens egenskaber:
 <dd>Angiver, at en aktør (person eller anden organisation) er medlem af organisationen uden at angive medlemskabets natur eller rolle i den. </dd>  
 <dd>Bemærk, at valget af navn på egenskaben ikke er tænkt til at begrænse egenskaber til kun formelle medlemskabsarrangementer. Det er også tiltænkt, at det skal dække relaterede begreber, f.eks. tilhørsforhold eller andet engagement i organisationen. Ekstensioner kan specialisere denne relation til at angive bestemte roller inden for organisationen eller mere nuancerede relationer til organisationen. </dd>  
 <dt>Anvendelsesnote</dt>  
-<dd></dd>  
+<dd>Bruges til at angive den organisation personen er medlem af</dd>  
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/ns/org#</dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
@@ -1702,7 +1823,7 @@ Klassens egenskaber:
 <dd>Angiver, at en aktør (person eller anden organisation) er medlem af organisationen uden at angive medlemskabets natur eller rolle i den. </dd>  
 <dd>Bemærk, at valget af navn på egenskaben ikke er tænkt til at begrænse egenskaber til kun formelle medlemskabsarrangementer. Det er også tiltænkt, at det skal dække relaterede begreber, f.eks. tilhørsforhold eller andet engagement i organisationen. Ekstensioner kan specialisere denne relation til at angive bestemte roller inden for organisationen eller mere nuancerede relationer til organisationen. </dd>  
 <dt>Anvendelsesnote</dt>  
-<dd></dd>  
+<dd>Bruges til at angive den organisation softwareaktøren er medlem af</dd>  
 <dt>Defineret af</dt>  
 <dd>http://www.w3.org/ns/org#</dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
@@ -1818,34 +1939,21 @@ Klassens egenskaber:
 
 ##  formel organisationstype
 FormalOrganizationType
-### foretrukken betegnelse
-### alternativ betegnelse
-### definition
+
 
 ##  offentlig organisationstype
 PublicFormalOrganizationType
-### foretrukken betegnelse
-### alternativ betegnelse
-### definition
+
 
 ##  organisatorisk enhedstype
 OrganizationalUnitType
-### foretrukken betegnelse
-### alternativ betegnelse
-### definition
 
 ##  offentlig organisatorisk enhedstype
 PublicOrganizationalUnitType
-### foretrukken betegnelse
-### alternativ betegnelse
-### definition
+
 
 ##  type af forvaltningsopgave
 PublicAdministrativeTaskType
-### foretrukken betegnelse
-### alternativ betegnelse
-### definition
-
 
 
 
