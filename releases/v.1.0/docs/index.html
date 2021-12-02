@@ -1487,7 +1487,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version bbc364800, updated Mon Nov 15 13:57:55 2021 -0800" name="generator">
+  <meta content="Bikeshed version 31a2f03f4, updated Wed Dec 1 15:27:21 2021 -0800" name="generator">
   <link href="https://data.gov.dk/model/profile/ORG-AP-DK/" rel="canonical">
 <style>
 @media print {
@@ -2020,7 +2020,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-01">1. december 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-02">2. december 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Namespace:
@@ -2254,12 +2254,17 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <h3 class="heading settled" data-level="2.1" id="organisation"><span class="secno">2.1. </span><span class="content">Organisation</span><a class="self-link" href="#organisation"></a></h3>
    <ul>
     <li data-md>
-     <p>Det grundlæggende vokabular, ORG, definerer bredt <strong>organisation</strong> som <em>”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”</em></p>
+     <p>En <strong>organisation</strong> defineres bredt af det grundlæggende vokabular, ORG, som <em>”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”</em></p>
     <li data-md>
      <p>En <strong>formel organisation</strong> beskrives af ORG som <em>”en organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening”.</em></p>
     <li data-md>
+     <p>En <strong>organisationsenhed</strong> beskrives af ORG som <em>”en organisation som en afdeling eller en supportenhed, der er del af en større organisation og kun har fuld anerkendelse i forbindelse med den organisation. Det gælder især, at enheden ikke i sig selv kan opfattes som en juridisk enhed.”.</em></p>
+    <li data-md>
+     <p>En <strong>organisatorisk samarbejde</strong> beskrives af ORG som <em>”et samarbejde mellem to eller flere organisationer såsom et projekt”.</em></p>
+    <li data-md>
      <p>En <strong>offentlig organisation</strong> beskrives af CPOV som <em>”enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau”.</em></p>
    </ul>
+   <p><img alt="Organisationer" src="img/View-Organisationer.png"></p>
    <h3 class="heading settled" data-level="2.2" id="basisinformation"><span class="secno">2.2. </span><span class="content">Basisinformation</span><a class="self-link" href="#basisinformation"></a></h3>
    <ul>
     <li data-md>
@@ -2274,6 +2279,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
      <p>En organisation kan kædes sammen med dens <strong>hjemmeside</strong> på internettet.</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.5 Basisinformation om organisationen"</em></p>
+   <p><img alt="basisinformation" src="img/View-Basisinformation.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-basisinformation">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.3" id="organisatorisk-struktur"><span class="secno">2.3. </span><span class="content">Organisatorisk struktur</span><a class="self-link" href="#organisatorisk-struktur"></a></h3>
    <ul>
@@ -2287,7 +2293,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
      <p>En organisation kan klassificeres som værende af en bestemt <strong>organisationstype</strong>. I forhold til offentlige organisationer kunne det fx være kommune, region, ministerier, styrelser og mange af de andre former for offentlige organisationer, der er en væsentlig del af hverdagen i det offentlige organisationslandskab.</p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.1 Hvordan er organisationen bygget op?"</em></p>
-   <p><img alt="organisatorisk struktur" src="img/OrganisationalStructure.png"></p>
+   <p><img alt="organisatorisk struktur" src="img/View-OrganisationalStructure.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-organisatoriske-strukturer">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.4" id="kontaktoplysninger"><span class="secno">2.4. </span><span class="content">Kontaktoplysninger</span><a class="self-link" href="#kontaktoplysninger"></a></h3>
    <ul>
@@ -2312,15 +2318,19 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>Det kan angives hvilket <strong>administrativt geografisk område</strong> en offentlig organisation dækker forvaltningsmæssigt.</p>
    </ul>
+   <p><img alt="Sted og adresse" src="img/View-Site.png"></p>
    <h3 class="heading settled" data-level="2.6" id="medlemsskab-og-aktrer"><span class="secno">2.6. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
    <ul>
     <li data-md>
-     <p>En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte <strong>medlemskabsrelation</strong>. En organisations relation til en anden organisation kan også have karakter af et <strong>medlemskab</strong>. En person ansat i en organisation kan betragtes som <strong>medlem</strong> af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en <strong>rolle</strong>, som kan specificeres i en klassifikation over <strong>rolletyper</strong>.</p>
+     <p>En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte <strong>medlemskabsrelation</strong>.</p>
+    <li data-md>
+     <p>En organisations relation til en anden organisation kan også have karakter af et <strong>medlemskab</strong>, som giver mulighed for en mere præcis og detaljeret beskrivelse af en medlemsskabsrelation. En person ansat i en organisation kan betragtes som <strong>medlem</strong> af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en <strong>rolle</strong>, som kan specificeres i en klassifikation over <strong>rolletyper</strong>.</p>
     <li data-md>
      <p>Relationen mellem en organisation eller organisationsenhed til en person, såsom <strong>ansat</strong> og <strong>leder</strong> kan også angives direkte.</p>
     <li data-md>
      <p>En <strong>softwareaktør</strong>, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse</p>
    </ul>
+   <p><img alt="medlemsskab og aktører - kvalificeret" src="img/View-MembershipAndAgents-kvalificeret.png"></p>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.3 Hvem er medlemmer af organisationen?"</em></p>
    <div class="note" role="note"> Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: <em>"3.2 Hvad arbejder organisationen med?"</em> ) </div>
    <h3 class="heading settled" data-level="2.7" id="historik-og-opgaver"><span class="secno">2.7. </span><span class="content">Historik og opgaver</span><a class="self-link" href="#historik-og-opgaver"></a></h3>
