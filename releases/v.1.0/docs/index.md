@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-12-01
+Date: 2021-12-02
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -187,10 +187,13 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 </div>
 
 ## Organisation
-- Det grundlæggende vokabular, ORG, definerer bredt **organisation** som *”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”*
+- En **organisation** defineres bredt af det grundlæggende vokabular, ORG, som *”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”*
 - En **formel organisation** beskrives af ORG som *”en organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening”.*
+- En **organisationsenhed** beskrives af ORG som *”en organisation som en afdeling eller en supportenhed, der er del af en større organisation og kun har fuld anerkendelse i forbindelse med den organisation. Det gælder især, at enheden ikke i sig selv kan opfattes som en juridisk enhed.”.*
+- En **organisatorisk samarbejde** beskrives af ORG som *”et samarbejde mellem to eller flere organisationer såsom et projekt”.*
 - En **offentlig organisation** beskrives af CPOV som *”enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau”.*
 
+<img src="img/View-Organisationer.png" alt="Organisationer">
 
 ## Basisinformation
 - En organisation og en organisationsenhed kan have et eller flere navne. Et af navnene på et givet sprog vil være det **foretrukne navn**, men andre kan angives som **alternative eller skjulte navne**.
@@ -200,6 +203,8 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 - En organisation kan kædes sammen med dens **hjemmeside** på internettet.
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.5 Basisinformation om organisationen"* 
+
+<img src="img/View-Basisinformation.png" alt="basisinformation">
 
 [Se eksempel her](https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-basisinformation)
 
@@ -212,7 +217,7 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.5 Basisinformation om o
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.1 Hvordan er organisationen bygget op?"* 
 
-<img src="img/OrganisationalStructure.png" alt="organisatorisk struktur">
+<img src="img/View-OrganisationalStructure.png" alt="organisatorisk struktur">
 
 [Se eksempel her](https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-organisatoriske-strukturer)
 
@@ -236,11 +241,15 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes org
 - Placeringen kan fx angives med en **adresse** - gerne i henhold til Danmarks Adresseregister (DAR)
 - Det kan angives hvilket **administrativt geografisk område** en offentlig organisation dækker forvaltningsmæssigt.
 
+<img src="img/View-Site.png" alt="Sted og adresse">
 	
 ## Medlemsskab og aktører
-- En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte **medlemskabsrelation**. En organisations relation til en anden organisation kan også have karakter af et **medlemskab**. En person ansat i en organisation kan betragtes som **medlem** af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en **rolle**, som kan specificeres i en klassifikation over **rolletyper**.
+- En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte **medlemskabsrelation**. 
+- En organisations relation til en anden organisation kan også have karakter af et **medlemskab**, som giver mulighed for en mere præcis og detaljeret beskrivelse af en medlemsskabsrelation. En person ansat i en organisation kan betragtes som **medlem** af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en **rolle**, som kan specificeres i en klassifikation over **rolletyper**.
 - Relationen mellem en organisation eller organisationsenhed til en person, såsom **ansat** og **leder** kan også angives direkte.
 - En **softwareaktør**, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse
+
+<img src="img/View-MembershipAndAgents-kvalificeret.png" alt="medlemsskab og aktører - kvalificeret">
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.3 Hvem er medlemmer af organisationen?"* 
 
