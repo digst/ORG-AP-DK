@@ -187,6 +187,10 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 </div>
 
 ## Organisation
+Kerneelementerne i denne anvendelsesprofil er de fire klasser der vises på nedenstående illustration. Overklassen i Organization Ontology er klassen org:Organization. Klassen er bevist holdt som en bred definition af hvad der kan kaldes ’organisation’ og er derfor anvendelig for en meget bred vifte af organisationsbeskrivelser. I denne anvendelsesprofil defineres tre specialiseringer ti klassen org:Organization:
+
+I ORG defineres tre specialiseringer til klassen org:Organization, hhv. org:FormalOrganization, org:OrganizationalUnit, og org:OrganizationalCollaboration. Vokabularet CPOV udvider antallet af specialiseringer af org:Organization ved at tilføje klassen for offentlige organisationer, cpov:PublicOrganization. Bemærk at klassen cpov:PublicOrganization ikke er defineret som værende disjunkt til nogen af de tre klasser, org:FormalOrganization, org:OrganizationalCollaboration og org:OrganizationalUnit.  Det vil med andre ord sige, at en organisation godt kan være erklæret at være en offentlig organisation og samtidigt også kan erklæres at være, eksempelvis, en formel organisation.  
+
 - En **organisation** defineres bredt af det grundlæggende vokabular, ORG, som *”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”*
 - En **formel organisation** beskrives af ORG som *”en organisation, der – især i juridisk forstand – er bredt anerkendt og har tilhørende rettigheder og ansvar. Eksempler kan være et aktieselskab eller en velgørende, statslig eller kirkelig forening”.*
 - En **organisationsenhed** beskrives af ORG som *”en organisation som en afdeling eller en supportenhed, der er del af en større organisation og kun har fuld anerkendelse i forbindelse med den organisation. Det gælder især, at enheden ikke i sig selv kan opfattes som en juridisk enhed.”.*
@@ -196,6 +200,9 @@ Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi a
 <img src="img/View-Organisationer.png" alt="Organisationer">
 
 ## Basisinformation
+
+Alle organisationer deler et fælles sæt af egenskaber til beskrivelse af de mest basale informationer om organisationen. Med basale informationer menes her organisationens navn(e) og beskrivelse af organisationen, en eller flere identifikatorer tildelt organisationen samt logo og hjemmeside.
+
 - En organisation og en organisationsenhed kan have et eller flere navne. Et af navnene på et givet sprog vil være det **foretrukne navn**, men andre kan angives som **alternative eller skjulte navne**.
 - En organisation og en organisationsenhed kan forsynes med en **tekstbaseret beskrivelse**.
 - En organisation og en organisationsenhed kan forsynes med en **identifikator** - Til identifikation af en dansk offentlig organisation kan en myndighedskode anvendes. Kommunekoder og regionskoder udgør begge delmængder af myndighedskoder. Juridiske enheder kan identificeres med brug af et CVR-nummer. 
@@ -210,6 +217,10 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.5 Basisinformation om o
 
 	
 ## Organisatorisk struktur
+Organisationer kan have eller kan indgå i en organisatorisk struktur, oftest en hierarkisk struktur. 
+Organisationer kan eksempelvis være sammensat af andre organisationer i en form for hierarki. Relationerne org:subOrganizationOf og org:hasSubOrganization danner grundlag for disse hierarkiske forbindelser. Bemærk, at dette hierarki er fuldstændigt åbent. Offentlige organisationer er ofte store og komplekse og kan være en samling af mindre organisationer, der hver for sig har en specifik identitet, som kan være givet ved lov. Til at sammenkæde organisationen med dens operationelle afdelinger bruges org:hasUnit og org:unitOf. En organisations interne struktur, det vil sige den måde hvorpå den er opbygget af organisatoriske enheder, kan beskrives ligeledes ved brug af relationerne org:hasSubOrganization og org:subOrganizationOf. Organisationer kan have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold. Til brug for den slags relationer kan egenskaben org:linkedTo anvendes, som en generel beskrivelse af en relation mellem to organisationer. 
+
+
 - En organisation kan bestå af flere **underorganisationer** der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
 - En organisation kan være inddelt i mindre **organisationsenheder** hvis eksistens er afhængig af organisationen, fx en afdeling i en større organisation. Organisationer består typisk af mange afdelinger, kontorer, enheder, teams, grupper osv. En organisationsenhed kan også have underordnede enheder.
 - Organisationer kan indbyrdes have **andre former for relationer** end de der udtrykkes i form af under- og overorganisatoriske forhold, fx finansiering eller kæderelationer.
@@ -223,12 +234,19 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.1 Hvordan er organisati
 
 
 ## Kontaktoplysninger
+
+Kontaktinformation for organisationer omfatter i anvendelsesprofilen beskrivelse af kontaktformer, kaldet kontaktpunkter, som e-mail, telefon eller digital post, tidspunkter hvor kontakt er mulig, samt emne for kontaktpunktet.
+
 - En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen eller organisationsenheden.
 - En kontaktoplysning kan fx være et **telefonnummer**, en **e-mailadresse**, en **url**, herunder **Digital Post**, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
 - En kontaktoplysning kan også indholde information om **åbningstider** - enten på simpel vis eller i en mere kompleks struktur med yderligere begrænsninger. 
 - Det kan angives hvorvidt en given kontaktoplysning er **synlig** 
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes organisationen?"* 
+
+<div class='note'>
+Anvendelsesprofilen følger CPOVs anbefalinger om brug af henholdsvis egenskaben schema:openingsHours og klassen schema:OpeningHoursSpecification til at angive åbningstider for kontaktpunktet. Dette er gjort på trods af at den løsning vurderes både at være ikke-intuitiv og at rumme udfordringer i tolkningen.
+</div>
 
 <img src="img/View-ContactPoint.png" alt="kontaktoplysning">
 
@@ -237,20 +255,39 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes org
 
 
 ## Sted
+
+Med anvendelsesprofilen kan en organisations fysiske placering angives enten direkte med en adresse eller via angivelse af et sted hvor organisationen holder til. Det sted organisationen holder til kan også tilføjes en adresse. 
+I vokabularet Organization Ontology bruges klassen org:Site til at repræsentere de steder en organisation har og/eller holder til. Relationerne org:siteOf og org:hasSite danner forbindelser mellem et sted og en organisation. Egenskaben org:hasPrimarySite anvendes til at angive, hvord organisationen primært er beliggende. Dertil kommer egenskaben org:siteAddress, der angiver stedets adresse.
+Fra vokabularet Location Core Vocabulary anvendes egenskaben locn:address til at angive en direkte forbindelse mellem organisationen og en adresse. Fra samme vokabular anvendes også klassen locn:Address, der er defineret for at være kompatibel med INSPIREs krav til adresser.
+
 - En organisation og en organisationsenheds **fysiske placering** kan angives. En organisation kan også have flere forskellige fysiske placeringer.
 - Den placering hvor den formelle organisation **primært er beliggende** - hjemstedet - kan dog også udpeges specifikt. 
-- Placeringen kan fx angives med en **adresse** - gerne i henhold til Danmarks Adresseregister (DAR)
+- Placeringen kan fx angives med en **adresse** 
 - Det kan angives hvilket **administrativt geografisk område** en offentlig organisation dækker forvaltningsmæssigt.
+
+<div class='note'>
+Resultatet af et kommende arbejde med grunddatakernemodeller forventes at udvide de nuværende klasser og egenskaber, med værdifulde og nødvendige elementer, relateret til ’Danmarks Adresseregister’ (DAR) og til ’Det Centrale Virksomhedsregister’ (CVR). De elementer der er medtaget på nuværende tidspunkt, sikrer at en dansk anvendelseprofil vil være både anvendelig i almindelighed og kompatibel med EUs CPOV-specifikation.
+Vokabularer for DAR- og CVR-data vil yderligere sikre at danske forvaltningsbehov opfyldes helt.
+</div>
 
 <img src="img/View-Site.png" alt="Sted og adresse">
 	
 ## Medlemsskab og aktører
+
+Beskrivelse af et medlemskab er, i denne sammenhæng, en beskrivelse af et forhold eller en relation mellem enten person eller en organisation til en organisation. En person ansat i en organisation er dermed medlem af organisationen, ligesom en organisation der deltager i et organisatorisk samarbejde er medlem af samarbejdet. Anvendelsesprofilen har et antal måder, hvorpå man kan repræsentere relationer mellem mennesker og organisationer. Erfaringer har vist, at der ikke findes én løsning, der passer til alle. I visse tilfælde foretrækker man en meget enkel og direkte repræsentation. I andre tilfælde er det nødvendigt med en mere kompleks repræsentation for at registrere situationens nuancer. Personers tilhørsforhold til en organisation kan under anvendelsesprofilen beskrives som enten et medlemskab, som en ansættelse eller som værende leder af organisationen.
+
+
 - En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte **medlemskabsrelation**. 
 - En organisations relation til en anden organisation kan også have karakter af et **medlemskab**, som giver mulighed for en mere præcis og detaljeret beskrivelse af en medlemsskabsrelation. En person ansat i en organisation kan betragtes som **medlem** af organisationen. I forhold til et givet medlemskab spiller aktøren i forhold til organisationen en **rolle**, som kan specificeres i en klassifikation over **rolletyper**.
 - Relationen mellem en organisation eller organisationsenhed til en person, såsom **ansat** og **leder** kan også angives direkte.
 - En **softwareaktør**, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse
 
+Medlemsskab og aktører - direkte:
+<img src="img/View-MembershipAndAgents-direkte.png" alt="medlemsskab og aktører - direkte">
+
+Medlemsskab og aktører - kvalificeret:
 <img src="img/View-MembershipAndAgents-kvalificeret.png" alt="medlemsskab og aktører - kvalificeret">
+
 
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.3 Hvem er medlemmer af organisationen?"* 
 
@@ -260,6 +297,10 @@ Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisa
 </div>
 	
 ## Historik og opgaver
+
+Ethvert aspekt af en organisationsmæssig struktur kan ændre sig med tiden. Når organisationer ændrer sig grundlæggende (ikke blot ved at udskifte personale eller ændre den indre struktur), f.eks. ved at danne en ny organisation gennem sammenlægning eller opkøb, vil den nye organisation typisk blive betegnet med en ny URI. Til angivelse af organisationens oprettelsesdato eller nedlæggelsesdato benyttes schema:foundingDate og schema:dissolutionDate.
+I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organisatorisk formål. Det organisatoriske formål for en offentlig organisation antages altid at være en forvaltningsopgave. 
+
 - En organisations eller organisationsenheds  **oprettelsesdato** eller **nedlæggelsedato** kan angives, og dermed kan både overordnede organisatoriske ændringer og interne omstruktureringer rummes af modellen.
 - En offentlig organisation kan tilknyttes de **forvaltningsopgaver** den varetager. Til dette formål anvendes en klassifikation over forvaltningsopgaver, fx. FORM eller KLE. En forvaltningsopgave kan kædes sammen med den **lovgivning, den politik eller anden retskilde**, der ligger til grund for forvaltningsopgaven.
 
@@ -357,7 +398,7 @@ Klassens egenskaber:
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til SKOS">http://www.w3.org/2004/02/skos/core#</a></dd>  
 <dt>Udfaldsrum</dt>
-<dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral" title="URI til PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a></dd>
+<dd><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">https://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a></dd>
 <dt>Underegenskab af</dt>
 <dd><a href="http://www.w3.org/2000/01/rdf-schema#label" title="URI til label">http://www.w3.org/2000/01/rdf-schema#label</a></dd>
 
@@ -447,9 +488,11 @@ Klassens egenskaber:
 ### identifikator
 
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://www.w3.org/ns/adms#identifier" title="URI til identifier">http://www.w3.org/ns/adms#identifier</a>http://www.w3.org/ns/adms#identifier</dd>  
+<dd><a href="http://www.w3.org/ns/adms#identifier" title="URI til identifier">http://www.w3.org/ns/adms#identifier</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>identifikator</dd>  
+<dt>Alternativ term</dt>  
+<dd>id</dd> 
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at knytte en organisation til en identifikator. Bemærk at en organisation kan have flere identifikatorer tildelt organisationen af forskellige udstedende myndigheder til forskellige formål.</dd>
 <dt>Definition</dt>  
