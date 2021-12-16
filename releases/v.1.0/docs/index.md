@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-12-02
+Date: 2021-12-16
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -218,7 +218,7 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.5 Basisinformation om o
 	
 ## Organisatorisk struktur
 Organisationer kan have eller kan indgå i en organisatorisk struktur, oftest en hierarkisk struktur. 
-Organisationer kan eksempelvis være sammensat af andre organisationer i en form for hierarki. Relationerne org:subOrganizationOf og org:hasSubOrganization danner grundlag for disse hierarkiske forbindelser. Bemærk, at dette hierarki er fuldstændigt åbent. Offentlige organisationer er ofte store og komplekse og kan være en samling af mindre organisationer, der hver for sig har en specifik identitet, som kan være givet ved lov. Til at sammenkæde organisationen med dens operationelle afdelinger bruges org:hasUnit og org:unitOf. En organisations interne struktur, det vil sige den måde hvorpå den er opbygget af organisatoriske enheder, kan beskrives ligeledes ved brug af relationerne org:hasSubOrganization og org:subOrganizationOf. Organisationer kan have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold. Til brug for den slags relationer kan egenskaben org:linkedTo anvendes, som en generel beskrivelse af en relation mellem to organisationer. 
+Organisationer kan eksempelvis være sammensat af andre organisationer i en form for hierarki. Relationerne org:subOrganizationOf og org:hasSubOrganization danner grundlag for disse hierarkiske forbindelser. Bemærk, at dette hierarki er fuldstændigt åbent. Offentlige organisationer er ofte store og komplekse og kan være en samling af mindre organisationer, der hver for sig har en specifik identitet, som kan være givet ved lov. Til at sammenkæde organisationen med dens operationelle afdelinger bruges org:hasUnit og org:unitOf. En organisations interne struktur, det vil sige den måde hvorpå den er opbygget af organisationsenheder, kan beskrives ligeledes ved brug af relationerne org:hasSubOrganization og org:subOrganizationOf. Organisationer kan have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold. Til brug for den slags relationer kan egenskaben org:linkedTo anvendes, som en generel beskrivelse af en relation mellem to organisationer. 
 
 
 - En organisation kan bestå af flere **underorganisationer** der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.
@@ -235,7 +235,7 @@ Svarer på følgende brugsscenarier beskrevet af KL: *"3.1 Hvordan er organisati
 
 ## Kontaktoplysninger
 
-Kontaktinformation for organisationer omfatter i anvendelsesprofilen beskrivelse af kontaktformer, kaldet kontaktpunkter, som e-mail, telefon eller digital post, tidspunkter hvor kontakt er mulig, samt emne for kontaktpunktet.
+Kontaktoplysninger for organisationer omfatter i anvendelsesprofilen beskrivelse af kontaktformer, kaldet kontaktpunkter, som e-mail, telefon eller digital post, tidspunkter hvor kontakt er mulig, samt emne og synlighed for kontaktpunktet.
 
 - En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen eller organisationsenheden.
 - En kontaktoplysning kan fx være et **telefonnummer**, en **e-mailadresse**, en **url**, herunder **Digital Post**, gennem hvilken man kan kontakte organisationen eller en repræsentant for organisationen. 
@@ -245,7 +245,7 @@ Kontaktinformation for organisationer omfatter i anvendelsesprofilen beskrivelse
 Svarer på følgende brugsscenarier beskrevet af KL: *"3.4 Hvordan kontaktes organisationen?"* 
 
 <div class='note'>
-Anvendelsesprofilen følger CPOVs anbefalinger om brug af henholdsvis egenskaben schema:openingsHours og klassen schema:OpeningHoursSpecification til at angive åbningstider for kontaktpunktet. Dette er gjort på trods af at den løsning vurderes både at være ikke-intuitiv og at rumme udfordringer i tolkningen.
+Anvendelsesprofilen følger CPOVs anbefalinger om brug af henholdsvis egenskaben cv:openingsHours og klassen cv:OpeningHoursSpecification til at angive åbningstider for kontaktpunktet. Dette er gjort på trods af at den løsning vurderes både at være ikke-intuitiv og at rumme udfordringer i tolkningen.
 </div>
 
 <img src="img/View-ContactPoint.png" alt="kontaktoplysning">
@@ -266,8 +266,11 @@ Fra vokabularet Location Core Vocabulary anvendes egenskaben locn:address til at
 - Det kan angives hvilket **administrativt geografisk område** en offentlig organisation dækker forvaltningsmæssigt.
 
 <div class='note'>
-Resultatet af et kommende arbejde med grunddatakernemodeller forventes at udvide de nuværende klasser og egenskaber, med værdifulde og nødvendige elementer, relateret til ’Danmarks Adresseregister’ (DAR) og til ’Det Centrale Virksomhedsregister’ (CVR). De elementer der er medtaget på nuværende tidspunkt, sikrer at en dansk anvendelseprofil vil være både anvendelig i almindelighed og kompatibel med EUs CPOV-specifikation.
-Vokabularer for DAR- og CVR-data vil yderligere sikre at danske forvaltningsbehov opfyldes helt.
+Resultatet af et kommende arbejde med grunddatakernemodeller forventes at udvide de nuværende klasser og egenskaber for stedangivelse, med værdifulde og nødvendige elementer, relateret til ’Danmarks Adresseregister’ (DAR), ’Det Centrale Virksomhedsregister’ (CVR) samt Danmarks Administrativt Geografiske Inddeling (DAGI). De elementer der er medtaget på nuværende tidspunkt, sikrer at en dansk anvendelseprofil vil være både anvendelig i almindelighed og kompatibel med EUs CPOV-specifikation. Vokabularer for DAR-, DAGI og CVR-data vil yderligere sikre at danske forvaltningsbehov opfyldes helt.
+
+Denne del af anvendelsesprofilen fastlægges når et kommende vokabularer til beskrivelse af DAR, DAGI og CVR er tilgængeligt. Arbejdet forventes at være en del af et kommende arbejde med grunddatakernemodeller.
+Anvendelsesprofilen vil, på sigt, muliggøre en præcis udpegning af hvilket administrativt geografisk område en offentlig organisation dækker. Aktuelt benyttes cv:AdministrativeTerritorialUnit som udpeges med egenskaben dct:spatial. 
+
 </div>
 
 <img src="img/View-Site.png" alt="Sted og adresse">
@@ -516,7 +519,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive en hierarkisk overordnet organisation. </dt>	
 <dt>Definition</dt>  
-<dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som omfatter denne organisation. </dd>  
+<dd>Repræsenterer hierarkisk indhold af organisationer eller organisationsenheder. Den angiver en organisation, som omfatter denne organisation. </dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 <dt>Udfaldsrum:</dt>
@@ -533,7 +536,7 @@ Læs også afsnittet <a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/d
 <dt>Anvendelsesnote </dt>
 <dd>Bruges til at angive en hierarkisk underordnet organisation.</dd>	
 <dt>Definition</dt>  
-<dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Egenskaben angiver en organisation, som er en del af denne organisation. </dd>  
+<dd>Repræsenterer hierarkisk indhold af organisationer eller organisationsenheder. Egenskaben angiver en organisation, som er en del af denne organisation. </dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
 <dt>Udfaldsrum:</dt>
@@ -969,16 +972,13 @@ Klassens egenskaber:
 <dt>Foretrukken term</dt>  
 <dd>har medlem</dd>  
 <dt>Anvendelsesnote </dt>
-<dd>Bruges til at angive en aktør som er medlem af organisationen.</dd>	
+<dd>Bruges til at angive en formel organisation som indgår i et organisatorisk samarbejde.</dd>	
 <dt>Definition</dt>  
 <dd></dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a></dd> 
 <dt>Udfaldsrum:</dt>
-<dd>
-<a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a>, 
-<a href="http://xmlns.com/foaf/0.1/Person" title="URI til Person">http://xmlns.com/foaf/0.1/Person</a> & SoftwareAgent
-</dd>
+<dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a></dd>
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 </dl>  
 
@@ -1085,7 +1085,7 @@ Klassens egenskaber:
 <dd>Angiver organisationens formål. Der kan være mange formål på forskellige abstraktionsniveauer, men det ligger i en organisations natur at have en grund til at eksistere. Denne egenskab er en metode til at dokumentere denne grund. En organisation kan have flere formål. 
 </dd>	
 <dt>Kommentar </dt>
-<dd>Det anbefales, at formålet bliver angivet af en reguleret term- eller kodeliste, ideelt klassen skos:Concept. Rækkevidden er dog åben for andre typer beskrivende systemer. Det er forventet, at profiler i dette vokabularium vil indsnævre rækkevidden af org:purpose. Alternative navne: emne, ansvar (især hvis det bruges på organisatoriske enheder som statslige departementer.)
+<dd>Det anbefales, at formålet bliver angivet af en reguleret term- eller kodeliste, ideelt klassen skos:Concept. Rækkevidden er dog åben for andre typer beskrivende systemer. Det er forventet, at profiler i dette vokabularium vil indsnævre rækkevidden af org:purpose. Alternative navne: emne, ansvar (især hvis det bruges på organisationsenheder som statslige departementer.)
 </dd>	
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
@@ -1119,14 +1119,17 @@ Klassens egenskaber:
 <dt>Foretrukken term</dt>  
 <dd>medlem af</dd>   
 <dt>Anvendelsesnote</dt>  
-<dd>Bruges til at angive den formelle organisation som den offentlige organisation er medlem af</dd>  
+<dd>Bruges til at angive det organisatoriske samarbejde som den formelle organisation er medlem af</dd>  
 <dt>Definition</dt>  
-<dd>Angiver, at en aktør (person eller anden organisation) er medlem af organisationen uden at angive medlemskabets natur eller rolle i den. </dd>  
+<dd>Angiver, at en aktør (person eller anden organisation) er medlem af organisationen uden at angive medlemskabets natur eller rolle i den. </dd> 
+<dt>Kommentar</dt>  
 <dd>Bemærk, at valget af navn på egenskaben ikke er tænkt til at begrænse egenskaber til kun formelle medlemskabsarrangementer. Det er også tiltænkt, at det skal dække relaterede begreber, f.eks. tilhørsforhold eller andet engagement i organisationen. Ekstensioner kan specialisere denne relation til at angive bestemte roller inden for organisationen eller mere nuancerede relationer til organisationen. </dd>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
-<dt>Multiplicitet</dt><dd>[0..*]</dd>  
-<dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til Formal Organization">http://www.w3.org/ns/org#FormalOrganization</a></dd>  
+<dt>Multiplicitet</dt>
+<dd>[0..*]</dd>  
+<dt>Udfaldsrum</dt>
+<dd><a href="http://www.w3.org/ns/org#OrganizationalCollaboration" title="URI til OrganizationalCollaboration">http://www.w3.org/ns/org#OrganizationalCollaboration</a></dd>  
 </dl>
 
 
@@ -1265,7 +1268,7 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
 
 ### tilgænglig i tidsrum 
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://schema.org/hoursAvailable" title="URI til hoursAvailable ">https://schema.org/hoursAvailable </a></dd>  
+<dd><a href="http://data.europa.eu/m8g/hoursAvailable" title="URI til hoursAvailable ">http://data.europa.eu/m8g/hoursAvailable </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>tilgængelig i tidsrum</dd>  
 <dt>Anvendelsesnote</dt>  
@@ -1273,10 +1276,10 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
 <dt>Definition</dt>  
 <dd>tidsrum hvor denne service eller dette kontaktpunkt er tilråde</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til Schema.org">http://schema.org/</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd>  
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
-<dd><a href="http://schema.org/OpeningHoursSpecification" title="URI til OpeningsHoursSpecification">http://schema.org/OpeningHoursSpecification</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/OpeningHoursSpecification" title="URI til OpeningsHoursSpecification">http://data.europa.eu/m8g/OpeningHoursSpecification</a></dd>  
 </dl>  
  
 <div class='note'>
@@ -1290,7 +1293,7 @@ Det er endnu uvist om eGovernment Core Vocabularies opretter en ny egenskab for 
 <img src="img/OpeningsHoursSpecification.png" alt="Åbningstidsspecifikation">
 <dl class="def">  
 <dt>URI</dt>  
-<dd><a href="http://schema.org/OpeningHoursSpecification" title="URI til OpeningHoursSpecification ">https://schema.org/OpeningHoursSpecification </a></dd>  
+<dd><a href="http://data.europa.eu/m8g/OpeningHoursSpecification" title="URI til OpeningHoursSpecification">http://data.europa.eu/m8g/OpeningHoursSpecification </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>åbningstidsspecifikation</dd>   
 <dt>Definition</dt>  
@@ -1299,12 +1302,10 @@ Lokationen er åben hvis egenskaben ”åbner” er specificeret og ellers lukke
 Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner” så antages det at perioden omfatter næste dag.
 </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd> 
 </dl>  
  
-<div class='note'>
-Det er endnu uvist om eGovernment Core Vocabularies opretter en ny klasse for OpeningsHoursSpecification ækvivalent med klassen fra Schema.org
-</div>
+
  
  
   
@@ -1340,13 +1341,13 @@ Klassens egenskaber:
 
 ### gælder fra 
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://schema.org/validFrom" title="URI til validFrom ">https://schema.org/validFrom </a></dd>  
+<dd><a href="http://data.europa.eu/m8g/validFrom" title="URI til validFrom">http://data.europa.eu/m8g/validFrom </a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>gældende fra</dd>  
 <dt>Definition</dt>  
 <dd>den dato hvorfra noget gælder</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd> 
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a></dd>
 <dt>Multiplicitet</dt><dd>[0..1]</dd>
@@ -1354,13 +1355,13 @@ Klassens egenskaber:
 
 ### gælder til
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://schema.org/validThrough" title="URI til validThrough">https://schema.org/validThrough</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/validThrough" title="URI til validThrough">http://data.europa.eu/m8g/validThrough</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>gældende indtil</dd>  
 <dt>Definition</dt>  
 <dd>den dato hvorefter noget ikke længere er gældende</dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd> 
 <dt>Udfaldsrum</dt>
 <dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a></dd>
 <dt>Multiplicitet</dt>
@@ -1369,16 +1370,16 @@ Klassens egenskaber:
 
 ### ugedag
 <dl class="def"><dt>URI</dt>  
-<dd><a href="http://schema.org/dayOfWeek" title="URI til dayOfWeek">https://schema.org/dayOfWeek</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/dayOfWeek" title="URI til dayOfWeek">http://data.europa.eu/m8g/dayOfWeek</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>ugedag</dd>  
 <dt>Definition</dt>  
 <dd>den ugedag åbningstiderne gælder for </dd>  
 <dt>Defineret af</dt>  
-<dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a></dd> 
 <dt>Multiplicitet</dt><dd>[0..*]</dd>  
 <dt>Udfaldsrum</dt>
-<dd><a href="http://schema.org/DayOfWeek" title="URI til DayOfWeek">https://schema.org/DayOfWeek</a></dd>  
+<dd><a href="http://data.europa.eu/m8g/DayOfWeek" title="URI til DayOfWeek">http://data.europa.eu/m8g/DayOfWeek</a></dd>  
 </dl>  
  
 
@@ -1463,6 +1464,11 @@ Klassens egenskaber:
 ## Adresse
 <img src="img/Address.png" alt="adresse">
 
+<div class='note'>
+Denne del af anvendelsesprofilen fastlægges endeligt når et kommende vokabularer til beskrivelse af DAR er tilgængeligt. Arbejdet forventes at være en del af et kommende arbejde med grunddatakernemodeller.
+</div>
+
+
 Klassens egenskaber:	
 ### vejnavn
 <dl class="def"><dt>URI</dt>  
@@ -1480,6 +1486,26 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt><dd>[0..1]</dd>
 </dl>
 
+
+###	positionsindikator
+<dl class="def"><dt>URI</dt>  
+<dd><a href="http://www.w3.org/ns/locn#locatorDesignator" title="URI til locatorDesignator">http://www.w3.org/ns/locn#locatorDesignator</a></dd>
+<dt>Foretrukken term</dt>  
+<dd>positionsindikator</dd>   
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til at angive husnummer, dørbetegnelse, etagebetegnelse og lignende.</dd>  
+<dt>Definition</dt>  
+<dd>Et nummer elller tegnsekvens som gør det muligt for en bruger eller applikation at fortolke, parse og formatere positionsindikatorer. Med andre ord, så er det husnummeret, lejlighedsnummeret, etc. For en adresse såsom "Lejlighed 3, 17 Bridge Street", er positionsindikatoreren "Lejlighed 3, 17"</dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a></dd>   
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
+</dl>
+
+<div class='note'>
+Det skønnes at locn:locatorDesignator dækker flere egenskaber i DAR, fx. husnummertekst, etagebetegnelse og dørbetengelse i DAR, hvorfor både disse og locn:locatorDesignator medtages her.
+</div>
 
 ###	husnummertekst  
 <dl class="def"><dt>URI</dt>  
@@ -1610,6 +1636,43 @@ Klassens egenskaber:
 ## Administrativ geografisk inddeling
 <img src="img/AdministrativeTerritorialUnits.png" alt="administrativ geografisk inddeling">
 
+<dl class="def">  
+<dt>URI</dt>  
+<dd><a href="http://data.europa.eu/m8g/AdministrativeTerritorialUnit" title="URI til AdministrativeTerritorialUnit">http://data.europa.eu/m8g/AdministrativeTerritorialUnit</a></dd>  
+<dt>Foretrukken term</dt>  
+<dd>administrativ geografisk inddeling</dd> 
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til angive hvilket administrativt geografisk område en offentlig organisation dækker forvaltningsmæssigt.</dd>  
+<dt>Definition</dt>  
+<dd> </dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://data.europa.eu/m8g/" title="URI til CV">http://data.europa.eu/m8g/</a></dd>  
+</dl>  
+
+<div class='note'>
+Denne del af anvendelsesprofilen fastlægges endeligt når et kommende vokabularer til beskrivelse af DAGI er tilgængeligt. Arbejdet forventes at være en del af et kommende arbejde med grunddatakernemodeller.
+Anvendelsesprofilen vil, på sigt, muliggøre en præcis udpegning af hvilket administrativt geografisk område en offentlig organisation dækker. Aktuelt benyttes cv:AdministrativeTerritorialUnit som udpeges med egenskaben dct:spatial. 
+</div>
+
+Klassens egenskaber:	
+
+### geometri
+<dl class="def"><dt>URI</dt>  
+<dd><a href="http://www.w3.org/2000/01/rdf-schema#label" title="URI til label">http://www.w3.org/2000/01/rdf-schema#label</a></dd>  
+<dt>Foretrukken term</dt>  
+<dd>geometri</dd>    
+<dt>Anvendelsesnote</dt>  
+<dd>Bruges til </dd>  
+<dt>Definition</dt>  
+<dd></dd>  
+<dt>Defineret af</dt>  
+<dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a></dd> 
+<dt>Udfaldsrum:</dt>
+<dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a></dd>
+<dt>Multiplicitet</dt><dd>[0..1]</dd>
+</dl>  
+
+
 
 ## Medlemsskab
 <img src="img/Membership.png" alt="medlemsskab">
@@ -1619,13 +1682,13 @@ Klassens egenskaber:
 <dd><a href="http://www.w3.org/ns/org#Membership" title="URI til Membership">http://www.w3.org/ns/org#Membership</a></dd>  
 <dt>Foretrukken term</dt>  
 <dd>medlemsskab</dd> 
+<dt>Anvendelsesnote</dt>  
 <dd>Bruges til at give en præcis og detaljeret beskrivelse af en medlemsskabsrelation. Klassen, og dermed dens forekomster, har tre faste relationer: 1) til den organisation noget er medlem af, 2) til den aktør der er medlemmet, 3 til den rolle aktøren har i kraft af medlemsskabet.
 </dd>  
 <dt>Definition</dt>  
 <dd>Repræsenterer en n-aritets-relation mellem en aktør, en organisation og en rolle. </dd>  
 <dt>Kommentar</dt>  
 <dd>Det er muligt direkte at angive medlemskab uafhængigt af den specifikke rolle gennem brug af egenskaben org:memberOf. </dd>  
-<dt>Anvendelsesnote</dt>  
 <dt>Defineret af</dt>  
 <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a></dd>  
 </dl>  
