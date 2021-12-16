@@ -2024,7 +2024,7 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-16">16. december 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Namespace:
+     <dt>Navneområde:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
@@ -2155,17 +2155,22 @@ dfn > a.self-link::before      { content: "#"; }
        <a href="#adresse②"><span class="secno">6.8</span> <span class="content">Adresse</span></a>
        <ol class="toc">
         <li><a href="#vejnavn"><span class="secno">6.8.1</span> <span class="content">vejnavn</span></a>
-        <li><a href="#husnummertekst"><span class="secno">6.8.2</span> <span class="content">husnummertekst</span></a>
-        <li><a href="#drbetegnelse"><span class="secno">6.8.3</span> <span class="content">dørbetegnelse</span></a>
-        <li><a href="#etagebetegnelse"><span class="secno">6.8.4</span> <span class="content">etagebetegnelse</span></a>
-        <li><a href="#supplerende-bynavn"><span class="secno">6.8.5</span> <span class="content">supplerende bynavn</span></a>
-        <li><a href="#postboks"><span class="secno">6.8.6</span> <span class="content">postboks</span></a>
-        <li><a href="#postnummer"><span class="secno">6.8.7</span> <span class="content">postnummer</span></a>
-        <li><a href="#postnummernavn"><span class="secno">6.8.8</span> <span class="content">postnummernavn</span></a>
-        <li><a href="#fuld-adresse"><span class="secno">6.8.9</span> <span class="content">fuld adresse</span></a>
-        <li><a href="#adresse-id"><span class="secno">6.8.10</span> <span class="content">adresse-id</span></a>
+        <li><a href="#positionsindikator"><span class="secno">6.8.2</span> <span class="content">positionsindikator</span></a>
+        <li><a href="#husnummertekst"><span class="secno">6.8.3</span> <span class="content">husnummertekst</span></a>
+        <li><a href="#drbetegnelse"><span class="secno">6.8.4</span> <span class="content">dørbetegnelse</span></a>
+        <li><a href="#etagebetegnelse"><span class="secno">6.8.5</span> <span class="content">etagebetegnelse</span></a>
+        <li><a href="#supplerende-bynavn"><span class="secno">6.8.6</span> <span class="content">supplerende bynavn</span></a>
+        <li><a href="#postboks"><span class="secno">6.8.7</span> <span class="content">postboks</span></a>
+        <li><a href="#postnummer"><span class="secno">6.8.8</span> <span class="content">postnummer</span></a>
+        <li><a href="#postnummernavn"><span class="secno">6.8.9</span> <span class="content">postnummernavn</span></a>
+        <li><a href="#fuld-adresse"><span class="secno">6.8.10</span> <span class="content">fuld adresse</span></a>
+        <li><a href="#adresse-id"><span class="secno">6.8.11</span> <span class="content">adresse-id</span></a>
        </ol>
-      <li><a href="#administrativ-geografisk-inddeling"><span class="secno">6.9</span> <span class="content">Administrativ geografisk inddeling</span></a>
+      <li>
+       <a href="#administrativ-geografisk-inddeling"><span class="secno">6.9</span> <span class="content">Administrativ geografisk inddeling</span></a>
+       <ol class="toc">
+        <li><a href="#geometri"><span class="secno">6.9.1</span> <span class="content">geometri</span></a>
+       </ol>
       <li>
        <a href="#medlemsskab"><span class="secno">6.10</span> <span class="content">Medlemsskab</span></a>
        <ol class="toc">
@@ -2287,7 +2292,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-basisinformation">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.3" id="organisatorisk-struktur"><span class="secno">2.3. </span><span class="content">Organisatorisk struktur</span><a class="self-link" href="#organisatorisk-struktur"></a></h3>
     Organisationer kan have eller kan indgå i en organisatorisk struktur, oftest en hierarkisk struktur. 
-Organisationer kan eksempelvis være sammensat af andre organisationer i en form for hierarki. Relationerne org:subOrganizationOf og org:hasSubOrganization danner grundlag for disse hierarkiske forbindelser. Bemærk, at dette hierarki er fuldstændigt åbent. Offentlige organisationer er ofte store og komplekse og kan være en samling af mindre organisationer, der hver for sig har en specifik identitet, som kan være givet ved lov. Til at sammenkæde organisationen med dens operationelle afdelinger bruges org:hasUnit og org:unitOf. En organisations interne struktur, det vil sige den måde hvorpå den er opbygget af organisatoriske enheder, kan beskrives ligeledes ved brug af relationerne org:hasSubOrganization og org:subOrganizationOf. Organisationer kan have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold. Til brug for den slags relationer kan egenskaben org:linkedTo anvendes, som en generel beskrivelse af en relation mellem to organisationer. 
+Organisationer kan eksempelvis være sammensat af andre organisationer i en form for hierarki. Relationerne org:subOrganizationOf og org:hasSubOrganization danner grundlag for disse hierarkiske forbindelser. Bemærk, at dette hierarki er fuldstændigt åbent. Offentlige organisationer er ofte store og komplekse og kan være en samling af mindre organisationer, der hver for sig har en specifik identitet, som kan være givet ved lov. Til at sammenkæde organisationen med dens operationelle afdelinger bruges org:hasUnit og org:unitOf. En organisations interne struktur, det vil sige den måde hvorpå den er opbygget af organisationsenheder, kan beskrives ligeledes ved brug af relationerne org:hasSubOrganization og org:subOrganizationOf. Organisationer kan have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold. Til brug for den slags relationer kan egenskaben org:linkedTo anvendes, som en generel beskrivelse af en relation mellem to organisationer. 
    <ul>
     <li data-md>
      <p>En organisation kan bestå af flere <strong>underorganisationer</strong> der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.</p>
@@ -2302,7 +2307,7 @@ Organisationer kan eksempelvis være sammensat af andre organisationer i en form
    <p><img alt="organisatorisk struktur" src="img/View-OrganisationalStructure.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-organisatoriske-strukturer">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.4" id="kontaktoplysninger"><span class="secno">2.4. </span><span class="content">Kontaktoplysninger</span><a class="self-link" href="#kontaktoplysninger"></a></h3>
-   <p>Kontaktinformation for organisationer omfatter i anvendelsesprofilen beskrivelse af kontaktformer, kaldet kontaktpunkter, som e-mail, telefon eller digital post, tidspunkter hvor kontakt er mulig, samt emne for kontaktpunktet.</p>
+   <p>Kontaktoplysninger for organisationer omfatter i anvendelsesprofilen beskrivelse af kontaktformer, kaldet kontaktpunkter, som e-mail, telefon eller digital post, tidspunkter hvor kontakt er mulig, samt emne og synlighed for kontaktpunktet.</p>
    <ul>
     <li data-md>
      <p>En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen eller organisationsenheden.</p>
@@ -2314,7 +2319,7 @@ Organisationer kan eksempelvis være sammensat af andre organisationer i en form
      <p>Det kan angives hvorvidt en given kontaktoplysning er <strong>synlig</strong></p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.4 Hvordan kontaktes organisationen?"</em></p>
-   <div class="note" role="note"> Anvendelsesprofilen følger CPOVs anbefalinger om brug af henholdsvis egenskaben schema:openingsHours og klassen schema:OpeningHoursSpecification til at angive åbningstider for kontaktpunktet. Dette er gjort på trods af at den løsning vurderes både at være ikke-intuitiv og at rumme udfordringer i tolkningen. </div>
+   <div class="note" role="note"> Anvendelsesprofilen følger CPOVs anbefalinger om brug af henholdsvis egenskaben cv:openingsHours og klassen cv:OpeningHoursSpecification til at angive åbningstider for kontaktpunktet. Dette er gjort på trods af at den løsning vurderes både at være ikke-intuitiv og at rumme udfordringer i tolkningen. </div>
    <p><img alt="kontaktoplysning" src="img/View-ContactPoint.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs//#eksempel-p-kontaktinformation">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.5" id="sted"><span class="secno">2.5. </span><span class="content">Sted</span><a class="self-link" href="#sted"></a></h3>
@@ -2331,8 +2336,11 @@ Fra vokabularet Location Core Vocabulary anvendes egenskaben locn:address til at
     <li data-md>
      <p>Det kan angives hvilket <strong>administrativt geografisk område</strong> en offentlig organisation dækker forvaltningsmæssigt.</p>
    </ul>
-   <div class="note" role="note"> Resultatet af et kommende arbejde med grunddatakernemodeller forventes at udvide de nuværende klasser og egenskaber, med værdifulde og nødvendige elementer, relateret til ’Danmarks Adresseregister’ (DAR) og til ’Det Centrale Virksomhedsregister’ (CVR). De elementer der er medtaget på nuværende tidspunkt, sikrer at en dansk anvendelseprofil vil være både anvendelig i almindelighed og kompatibel med EUs CPOV-specifikation.
-Vokabularer for DAR- og CVR-data vil yderligere sikre at danske forvaltningsbehov opfyldes helt. </div>
+   <div class="note" role="note">
+     Resultatet af et kommende arbejde med grunddatakernemodeller forventes at udvide de nuværende klasser og egenskaber for stedangivelse, med værdifulde og nødvendige elementer, relateret til ’Danmarks Adresseregister’ (DAR), ’Det Centrale Virksomhedsregister’ (CVR) samt Danmarks Administrativt Geografiske Inddeling (DAGI). De elementer der er medtaget på nuværende tidspunkt, sikrer at en dansk anvendelseprofil vil være både anvendelig i almindelighed og kompatibel med EUs CPOV-specifikation. Vokabularer for DAR-, DAGI og CVR-data vil yderligere sikre at danske forvaltningsbehov opfyldes helt. 
+    <p>Denne del af anvendelsesprofilen fastlægges når et kommende vokabularer til beskrivelse af DAR, DAGI og CVR er tilgængeligt. Arbejdet forventes at være en del af et kommende arbejde med grunddatakernemodeller.
+Anvendelsesprofilen vil, på sigt, muliggøre en præcis udpegning af hvilket administrativt geografisk område en offentlig organisation dækker. Aktuelt benyttes cv:AdministrativeTerritorialUnit som udpeges med egenskaben dct:spatial.</p>
+   </div>
    <p><img alt="Sted og adresse" src="img/View-Site.png"></p>
    <h3 class="heading settled" data-level="2.6" id="medlemsskab-og-aktrer"><span class="secno">2.6. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
    <p>Beskrivelse af et medlemskab er, i denne sammenhæng, en beskrivelse af et forhold eller en relation mellem enten person eller en organisation til en organisation. En person ansat i en organisation er dermed medlem af organisationen, ligesom en organisation der deltager i et organisatorisk samarbejde er medlem af samarbejdet. Anvendelsesprofilen har et antal måder, hvorpå man kan repræsentere relationer mellem mennesker og organisationer. Erfaringer har vist, at der ikke findes én løsning, der passer til alle. I visse tilfælde foretrækker man en meget enkel og direkte repræsentation. I andre tilfælde er det nødvendigt med en mere kompleks repræsentation for at registrere situationens nuancer. Personers tilhørsforhold til en organisation kan under anvendelsesprofilen beskrives som enten et medlemskab, som en ansættelse eller som værende leder af organisationen.</p>
@@ -2600,7 +2608,7 @@ I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organ
     <dt>Anvendelsesnote 
     <dd>Bruges til at angive en hierarkisk overordnet organisation. 
     <dt>Definition
-    <dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Den angiver en organisation, som omfatter denne organisation. 
+    <dd>Repræsenterer hierarkisk indhold af organisationer eller organisationsenheder. Den angiver en organisation, som omfatter denne organisation. 
     <dt>Defineret af
     <dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a>
     <dt>Udfaldsrum:
@@ -2617,7 +2625,7 @@ I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organ
     <dt>Anvendelsesnote 
     <dd>Bruges til at angive en hierarkisk underordnet organisation.
     <dt>Definition
-    <dd>Repræsenterer hierarkisk indhold af organisationer eller organisatoriske enheder. Egenskaben angiver en organisation, som er en del af denne organisation. 
+    <dd>Repræsenterer hierarkisk indhold af organisationer eller organisationsenheder. Egenskaben angiver en organisation, som er en del af denne organisation. 
     <dt>Defineret af
     <dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a>
     <dt>Udfaldsrum:
@@ -3032,13 +3040,13 @@ I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organ
     <dt>Foretrukken term
     <dd>har medlem
     <dt>Anvendelsesnote 
-    <dd>Bruges til at angive en aktør som er medlem af organisationen.
+    <dd>Bruges til at angive en formel organisation som indgår i et organisatorisk samarbejde.
     <dt>Definition
     <dd>
     <dt>Defineret af
     <dd><a href="http://www.w3.org/ns/org#" title="URI til The Organization Ontology">http://www.w3.org/ns/org#</a>
     <dt>Udfaldsrum:
-    <dd> <a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a>, <a href="http://xmlns.com/foaf/0.1/Person" title="URI til Person">http://xmlns.com/foaf/0.1/Person</a> &amp; SoftwareAgent 
+    <dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til FormalOrganization">http://www.w3.org/ns/org#FormalOrganization</a>
     <dt>Multiplicitet
     <dd>[0..*]
    </dl>
@@ -3136,7 +3144,7 @@ I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organ
     <dt>Definition 
     <dd>Angiver organisationens formål. Der kan være mange formål på forskellige abstraktionsniveauer, men det ligger i en organisations natur at have en grund til at eksistere. Denne egenskab er en metode til at dokumentere denne grund. En organisation kan have flere formål. 
     <dt>Kommentar 
-    <dd>Det anbefales, at formålet bliver angivet af en reguleret term- eller kodeliste, ideelt klassen skos:Concept. Rækkevidden er dog åben for andre typer beskrivende systemer. Det er forventet, at profiler i dette vokabularium vil indsnævre rækkevidden af org:purpose. Alternative navne: emne, ansvar (især hvis det bruges på organisatoriske enheder som statslige departementer.) 
+    <dd>Det anbefales, at formålet bliver angivet af en reguleret term- eller kodeliste, ideelt klassen skos:Concept. Rækkevidden er dog åben for andre typer beskrivende systemer. Det er forventet, at profiler i dette vokabularium vil indsnævre rækkevidden af org:purpose. Alternative navne: emne, ansvar (især hvis det bruges på organisationsenheder som statslige departementer.) 
     <dt>Defineret af
     <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a>
     <dt>Udfaldsrum:
@@ -3168,15 +3176,17 @@ I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organ
     <dt>Foretrukken term
     <dd>medlem af
     <dt>Anvendelsesnote
-    <dd>Bruges til at angive den formelle organisation som den offentlige organisation er medlem af
+    <dd>Bruges til at angive det organisatoriske samarbejde som den formelle organisation er medlem af
     <dt>Definition
     <dd>Angiver, at en aktør (person eller anden organisation) er medlem af organisationen uden at angive medlemskabets natur eller rolle i den. 
+    <dt>Kommentar
     <dd>Bemærk, at valget af navn på egenskaben ikke er tænkt til at begrænse egenskaber til kun formelle medlemskabsarrangementer. Det er også tiltænkt, at det skal dække relaterede begreber, f.eks. tilhørsforhold eller andet engagement i organisationen. Ekstensioner kan specialisere denne relation til at angive bestemte roller inden for organisationen eller mere nuancerede relationer til organisationen. 
     <dt>Defineret af
     <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a>
     <dt>Multiplicitet
     <dd>[0..*]
-    <dd><a href="http://www.w3.org/ns/org#FormalOrganization" title="URI til Formal Organization">http://www.w3.org/ns/org#FormalOrganization</a>
+    <dt>Udfaldsrum
+    <dd><a href="http://www.w3.org/ns/org#OrganizationalCollaboration" title="URI til OrganizationalCollaboration">http://www.w3.org/ns/org#OrganizationalCollaboration</a>
    </dl>
    <h3 class="heading settled" data-level="6.5" id="kontaktoplysning"><span class="secno">6.5. </span><span class="content">Kontaktoplysning</span><a class="self-link" href="#kontaktoplysning"></a></h3>
     <img alt="kontaktoplysning" src="img/ContactPoint.png"> 
@@ -3306,7 +3316,7 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
    <h4 class="heading settled" data-level="6.5.7" id="tilgnglig-i-tidsrum"><span class="secno">6.5.7. </span><span class="content">tilgænglig i tidsrum</span><a class="self-link" href="#tilgnglig-i-tidsrum"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd><a href="http://schema.org/hoursAvailable" title="URI til hoursAvailable ">https://schema.org/hoursAvailable </a>
+    <dd><a href="http://data.europa.eu/m8g/hoursAvailable" title="URI til hoursAvailable ">http://data.europa.eu/m8g/hoursAvailable </a>
     <dt>Foretrukken term
     <dd>tilgængelig i tidsrum
     <dt>Anvendelsesnote
@@ -3314,11 +3324,11 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
     <dt>Definition
     <dd>tidsrum hvor denne service eller dette kontaktpunkt er tilråde
     <dt>Defineret af
-    <dd><a href="http://schema.org/" title="URI til Schema.org">http://schema.org/</a>
+    <dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a>
     <dt>Multiplicitet
     <dd>[0..*]
     <dt>Udfaldsrum
-    <dd><a href="http://schema.org/OpeningHoursSpecification" title="URI til OpeningsHoursSpecification">http://schema.org/OpeningHoursSpecification</a>
+    <dd><a href="http://data.europa.eu/m8g/OpeningHoursSpecification" title="URI til OpeningsHoursSpecification">http://data.europa.eu/m8g/OpeningHoursSpecification</a>
    </dl>
    <div class="note" role="note"> Det er endnu uvist om eGovernment Core Vocabularies opretter en ny egenskab for hoursAvailable ækvivalent med egenskaben fra Schema.org </div>
    <p><strong>Objektegenskaber (associationsender): </strong></p>
@@ -3326,7 +3336,7 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
     <img alt="Åbningstidsspecifikation" src="img/OpeningsHoursSpecification.png"> 
    <dl class="def">
     <dt>URI
-    <dd><a href="http://schema.org/OpeningHoursSpecification" title="URI til OpeningHoursSpecification ">https://schema.org/OpeningHoursSpecification </a>
+    <dd><a href="http://data.europa.eu/m8g/OpeningHoursSpecification" title="URI til OpeningHoursSpecification">http://data.europa.eu/m8g/OpeningHoursSpecification </a>
     <dt>Foretrukken term
     <dd>åbningstidsspecifikation
     <dt>Definition
@@ -3334,9 +3344,8 @@ Hvis kontaktpunktet f.eks. er åbent mandag til fredag fra 9 -17, vil værdien a
 Lokationen er åben hvis egenskaben ”åbner” er specificeret og ellers lukket.
 Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner” så antages det at perioden omfatter næste dag. 
     <dt>Defineret af
-    <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a>
+    <dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a>
    </dl>
-   <div class="note" role="note"> Det er endnu uvist om eGovernment Core Vocabularies opretter en ny klasse for OpeningsHoursSpecification ækvivalent med klassen fra Schema.org </div>
    <p>Klassens egenskaber:</p>
    <h4 class="heading settled" data-level="6.6.1" id="lukker"><span class="secno">6.6.1. </span><span class="content">lukker</span><a class="self-link" href="#lukker"></a></h4>
    <dl class="def">
@@ -3371,13 +3380,13 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
    <h4 class="heading settled" data-level="6.6.3" id="glder-fra"><span class="secno">6.6.3. </span><span class="content">gælder fra</span><a class="self-link" href="#glder-fra"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd><a href="http://schema.org/validFrom" title="URI til validFrom ">https://schema.org/validFrom </a>
+    <dd><a href="http://data.europa.eu/m8g/validFrom" title="URI til validFrom">http://data.europa.eu/m8g/validFrom </a>
     <dt>Foretrukken term
     <dd>gældende fra
     <dt>Definition
     <dd>den dato hvorfra noget gælder
     <dt>Defineret af
-    <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a>
+    <dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a>
     <dt>Udfaldsrum
     <dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a>
     <dt>Multiplicitet
@@ -3386,13 +3395,13 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
    <h4 class="heading settled" data-level="6.6.4" id="glder-til"><span class="secno">6.6.4. </span><span class="content">gælder til</span><a class="self-link" href="#glder-til"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd><a href="http://schema.org/validThrough" title="URI til validThrough">https://schema.org/validThrough</a>
+    <dd><a href="http://data.europa.eu/m8g/validThrough" title="URI til validThrough">http://data.europa.eu/m8g/validThrough</a>
     <dt>Foretrukken term
     <dd>gældende indtil
     <dt>Definition
     <dd>den dato hvorefter noget ikke længere er gældende
     <dt>Defineret af
-    <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a>
+    <dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a>
     <dt>Udfaldsrum
     <dd><a href="http://www.w3.org/2001/XMLSchema#time" title="URI til xsd:time">http://www.w3.org/2001/XMLSchema#time</a>
     <dt>Multiplicitet
@@ -3401,17 +3410,17 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
    <h4 class="heading settled" data-level="6.6.5" id="ugedag"><span class="secno">6.6.5. </span><span class="content">ugedag</span><a class="self-link" href="#ugedag"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd><a href="http://schema.org/dayOfWeek" title="URI til dayOfWeek">https://schema.org/dayOfWeek</a>
+    <dd><a href="http://data.europa.eu/m8g/dayOfWeek" title="URI til dayOfWeek">http://data.europa.eu/m8g/dayOfWeek</a>
     <dt>Foretrukken term
     <dd>ugedag
     <dt>Definition
     <dd>den ugedag åbningstiderne gælder for 
     <dt>Defineret af
-    <dd><a href="http://schema.org/" title="URI til Schema.org">https://schema.org/</a>
+    <dd><a href="http://data.europa.eu/m8g/" title="URI til Core Vocabularies">http://data.europa.eu/m8g/</a>
     <dt>Multiplicitet
     <dd>[0..*]
     <dt>Udfaldsrum
-    <dd><a href="http://schema.org/DayOfWeek" title="URI til DayOfWeek">https://schema.org/DayOfWeek</a>
+    <dd><a href="http://data.europa.eu/m8g/DayOfWeek" title="URI til DayOfWeek">http://data.europa.eu/m8g/DayOfWeek</a>
    </dl>
    <h3 class="heading settled" data-level="6.7" id="sted①"><span class="secno">6.7. </span><span class="content">Sted</span><a class="self-link" href="#sted①"></a></h3>
     <img alt="sted" src="img/Site.png"> 
@@ -3481,6 +3490,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
    </dl>
    <h3 class="heading settled" data-level="6.8" id="adresse②"><span class="secno">6.8. </span><span class="content">Adresse</span><a class="self-link" href="#adresse②"></a></h3>
     <img alt="adresse" src="img/Address.png"> 
+   <div class="note" role="note"> Denne del af anvendelsesprofilen fastlægges endeligt når et kommende vokabularer til beskrivelse af DAR er tilgængeligt. Arbejdet forventes at være en del af et kommende arbejde med grunddatakernemodeller. </div>
    <p>Klassens egenskaber:</p>
    <h4 class="heading settled" data-level="6.8.1" id="vejnavn"><span class="secno">6.8.1. </span><span class="content">vejnavn</span><a class="self-link" href="#vejnavn"></a></h4>
    <dl class="def">
@@ -3498,14 +3508,30 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd> </a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.2" id="husnummertekst"><span class="secno">6.8.2. </span><span class="content">husnummertekst</span><a class="self-link" href="#husnummertekst"></a></h4> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.2" id="positionsindikator"><span class="secno">6.8.2. </span><span class="content">positionsindikator</span><a class="self-link" href="#positionsindikator"></a></h4> </a>
+   <dl class="def">
+    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> </a>
+    <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/locn#locatorDesignator" title="URI til locatorDesignator">http://www.w3.org/ns/locn#locatorDesignator</a>
+    <dt>Foretrukken term
+    <dd>positionsindikator
+    <dt>Anvendelsesnote
+    <dd>Bruges til at angive husnummer, dørbetegnelse, etagebetegnelse og lignende.
+    <dt>Definition
+    <dd>Et nummer elller tegnsekvens som gør det muligt for en bruger eller applikation at fortolke, parse og formatere positionsindikatorer. Med andre ord, så er det husnummeret, lejlighedsnummeret, etc. For en adresse såsom "Lejlighed 3, 17 Bridge Street", er positionsindikatoreren "Lejlighed 3, 17"
+    <dt>Defineret af
+    <dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a>
+    <dt>Udfaldsrum:
+    <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
+    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd> </a>
+   </dl>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <div class="note" role="note"> Det skønnes at locn:locatorDesignator dækker flere egenskaber i DAR, fx. husnummertekst, etagebetegnelse og dørbetengelse i DAR, hvorfor både disse og locn:locatorDesignator medtages her. </div> <h4 class="heading settled" data-level="6.8.3" id="husnummertekst"><span class="secno">6.8.3. </span><span class="content">husnummertekst</span><a class="self-link" href="#husnummertekst"></a></h4> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> <dd>https://data.gov.dk/model/profile/dar#husnummertekst </dd> <dt>Foretrukken term</dt> <dd>husnummer</dd> <dt>Definition</dt> <dd>husnummeret til adressen inklusive evt. bogstav </dd> <dt>Defineret af</dt> <dd>https://data.gov.dk/model/profile/dar#</dd> <dt>Udfaldsrum:</dt> </a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a>
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.8.3" id="drbetegnelse"><span class="secno">6.8.3. </span><span class="content">dørbetegnelse</span><a class="self-link" href="#drbetegnelse"></a></h4>
+   <h4 class="heading settled" data-level="6.8.4" id="drbetegnelse"><span class="secno">6.8.4. </span><span class="content">dørbetegnelse</span><a class="self-link" href="#drbetegnelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/profile/dar#dørbetegnelse 
@@ -3520,7 +3546,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.8.4" id="etagebetegnelse"><span class="secno">6.8.4. </span><span class="content">etagebetegnelse</span><a class="self-link" href="#etagebetegnelse"></a></h4>
+   <h4 class="heading settled" data-level="6.8.5" id="etagebetegnelse"><span class="secno">6.8.5. </span><span class="content">etagebetegnelse</span><a class="self-link" href="#etagebetegnelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/profile/dar#etagebetegnelse 
@@ -3535,7 +3561,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dt>Multiplicitet
     <dd>[0..1]
    </dl>
-   <h4 class="heading settled" data-level="6.8.5" id="supplerende-bynavn"><span class="secno">6.8.5. </span><span class="content">supplerende bynavn</span><a class="self-link" href="#supplerende-bynavn"></a></h4>
+   <h4 class="heading settled" data-level="6.8.6" id="supplerende-bynavn"><span class="secno">6.8.6. </span><span class="content">supplerende bynavn</span><a class="self-link" href="#supplerende-bynavn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd><a href="http://www.w3.org/ns/locn#addressArea" title="URI til addressArea">http://www.w3.org/ns/locn#addressArea</a>
@@ -3549,7 +3575,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd> </a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.6" id="postboks"><span class="secno">6.8.6. </span><span class="content">postboks</span><a class="self-link" href="#postboks"></a></h4> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.7" id="postboks"><span class="secno">6.8.7. </span><span class="content">postboks</span><a class="self-link" href="#postboks"></a></h4> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> </a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/locn#poBox" title="URI til poBox">http://www.w3.org/ns/locn#poBox</a>
@@ -3563,7 +3589,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd> </a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.7" id="postnummer"><span class="secno">6.8.7. </span><span class="content">postnummer</span><a class="self-link" href="#postnummer"></a></h4> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.8" id="postnummer"><span class="secno">6.8.8. </span><span class="content">postnummer</span><a class="self-link" href="#postnummer"></a></h4> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> </a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/locn#postCode" title="URI til postCode">http://www.w3.org/ns/locn#postCode</a>
@@ -3577,7 +3603,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd> </a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.8" id="postnummernavn"><span class="secno">6.8.8. </span><span class="content">postnummernavn</span><a class="self-link" href="#postnummernavn"></a></h4> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.9" id="postnummernavn"><span class="secno">6.8.9. </span><span class="content">postnummernavn</span><a class="self-link" href="#postnummernavn"></a></h4> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> </a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/locn#postName" title="URI til postName">http://www.w3.org/ns/locn#postName</a>
@@ -3591,7 +3617,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd> </a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.9" id="fuld-adresse"><span class="secno">6.8.9. </span><span class="content">fuld adresse</span><a class="self-link" href="#fuld-adresse"></a></h4> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.10" id="fuld-adresse"><span class="secno">6.8.10. </span><span class="content">fuld adresse</span><a class="self-link" href="#fuld-adresse"></a></h4> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> </a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/locn#fullAddress" title="URI til fullAddress">http://www.w3.org/ns/locn#fullAddress</a>
@@ -3605,7 +3631,7 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd></a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.10" id="adresse-id"><span class="secno">6.8.10. </span><span class="content">adresse-id</span><a class="self-link" href="#adresse-id"></a></h4> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h4 class="heading settled" data-level="6.8.11" id="adresse-id"><span class="secno">6.8.11. </span><span class="content">adresse-id</span><a class="self-link" href="#adresse-id"></a></h4> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"><dt>URI</dt> </a>
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/locn#addressID" title="URI til addressID">http://www.w3.org/ns/locn#addressID</a>
@@ -3619,18 +3645,52 @@ Hvis værdien for egenskaben ”lukker” er mindre end værdien for ”åbner�
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>Multiplicitet</dt><dd>[0..1]</dd></a>
    </dl>
-   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h3 class="heading settled" data-level="6.9" id="administrativ-geografisk-inddeling"><span class="secno">6.9. </span><span class="content">Administrativ geografisk inddeling</span><a class="self-link" href="#administrativ-geografisk-inddeling"></a></h3> <img alt="administrativ geografisk inddeling" src="img/AdministrativeTerritorialUnits.png"> <h3 class="heading settled" data-level="6.10" id="medlemsskab"><span class="secno">6.10. </span><span class="content">Medlemsskab</span><a class="self-link" href="#medlemsskab"></a></h3> <img alt="medlemsskab" src="img/Membership.png"> </a>
+   <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <h3 class="heading settled" data-level="6.9" id="administrativ-geografisk-inddeling"><span class="secno">6.9. </span><span class="content">Administrativ geografisk inddeling</span><a class="self-link" href="#administrativ-geografisk-inddeling"></a></h3> <img alt="administrativ geografisk inddeling" src="img/AdministrativeTerritorialUnits.png"> </a>
    <dl class="def">
     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"> <dt>URI</dt> </a>
-    <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://www.w3.org/ns/org#Membership" title="URI til Membership">http://www.w3.org/ns/org#Membership</a>
+    <dd><a href="http://www.w3.org/2000/01/rdf-schema#Literal" title="URI til Literal"></a><a href="http://data.europa.eu/m8g/AdministrativeTerritorialUnit" title="URI til AdministrativeTerritorialUnit">http://data.europa.eu/m8g/AdministrativeTerritorialUnit</a>
+    <dt>Foretrukken term
+    <dd>administrativ geografisk inddeling
+    <dt>Anvendelsesnote
+    <dd>Bruges til angive hvilket administrativt geografisk område en offentlig organisation dækker forvaltningsmæssigt.
+    <dt>Definition
+    <dd>
+    <dt>Defineret af
+    <dd><a href="http://data.europa.eu/m8g/" title="URI til CV">http://data.europa.eu/m8g/</a>
+   </dl>
+   <div class="note" role="note"> Denne del af anvendelsesprofilen fastlægges endeligt når et kommende vokabularer til beskrivelse af DAGI er tilgængeligt. Arbejdet forventes at være en del af et kommende arbejde med grunddatakernemodeller.
+Anvendelsesprofilen vil, på sigt, muliggøre en præcis udpegning af hvilket administrativt geografisk område en offentlig organisation dækker. Aktuelt benyttes cv:AdministrativeTerritorialUnit som udpeges med egenskaben dct:spatial. </div>
+   <p>Klassens egenskaber:</p>
+   <h4 class="heading settled" data-level="6.9.1" id="geometri"><span class="secno">6.9.1. </span><span class="content">geometri</span><a class="self-link" href="#geometri"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd><a href="http://www.w3.org/2000/01/rdf-schema#label" title="URI til label">http://www.w3.org/2000/01/rdf-schema#label</a>
+    <dt>Foretrukken term
+    <dd>geometri
+    <dt>Anvendelsesnote
+    <dd>Bruges til 
+    <dt>Definition
+    <dd>
+    <dt>Defineret af
+    <dd><a href="http://www.w3.org/ns/locn#" title="URI til Core Location">http://www.w3.org/ns/locn#</a>
+    <dt>Udfaldsrum:
+    <dd><a href="http://www.w3.org/2001/XMLSchema#string" title="URI til xsd:string">http://www.w3.org/2001/XMLSchema#string</a>
+    <dt>Multiplicitet
+    <dd>[0..1]
+   </dl>
+   <h3 class="heading settled" data-level="6.10" id="medlemsskab"><span class="secno">6.10. </span><span class="content">Medlemsskab</span><a class="self-link" href="#medlemsskab"></a></h3>
+    <img alt="medlemsskab" src="img/Membership.png"> 
+   <dl class="def">
+    <dt>URI
+    <dd><a href="http://www.w3.org/ns/org#Membership" title="URI til Membership">http://www.w3.org/ns/org#Membership</a>
     <dt>Foretrukken term
     <dd>medlemsskab
+    <dt>Anvendelsesnote
     <dd>Bruges til at give en præcis og detaljeret beskrivelse af en medlemsskabsrelation. Klassen, og dermed dens forekomster, har tre faste relationer: 1) til den organisation noget er medlem af, 2) til den aktør der er medlemmet, 3 til den rolle aktøren har i kraft af medlemsskabet. 
     <dt>Definition
     <dd>Repræsenterer en n-aritets-relation mellem en aktør, en organisation og en rolle. 
     <dt>Kommentar
     <dd>Det er muligt direkte at angive medlemskab uafhængigt af den specifikke rolle gennem brug af egenskaben org:memberOf. 
-    <dt>Anvendelsesnote
     <dt>Defineret af
     <dd><a href="http://www.w3.org/ns/org#" title="URI til Organization Ontology">http://www.w3.org/ns/org#</a>
    </dl>
