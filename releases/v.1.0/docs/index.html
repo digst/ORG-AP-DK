@@ -1,4 +1,5 @@
-<!doctype html><html lang="da">
+
+<!doctype html><html lang="en">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>ORG-AP-DK 1.0.0-beta</title>
@@ -1269,7 +1270,7 @@ Possible extra rowspan handling
 	ul.index ul,
 	ul.index dl { font-size: smaller; }
 	@media not print {
-		ul.index li span:not(.dfn-paneled) {
+		ul.index li a + span {
 			white-space: nowrap;
 			color: transparent; }
 		ul.index li a:hover + span,
@@ -1487,7 +1488,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 31a2f03f4, updated Wed Dec 1 15:27:21 2021 -0800" name="generator">
+  <meta content="Bikeshed version cace53f8c, updated Tue Dec 7 12:12:54 2021 -0800" name="generator">
   <link href="https://data.gov.dk/model/profile/ORG-AP-DK/" rel="canonical">
 <style>
 @media print {
@@ -2020,7 +2021,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-02">2. december 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-16">16. december 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Namespace:
@@ -2252,6 +2253,8 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <p><img alt="grundlæggende perspektiver" src="img/illustration-til-ORG-AP-DK.svg"></p>
    <div class="note" role="note"> Det aktuelle udkast omfatter ikke alle ovenstående perspektiver endnu, men vi arbejder løbende på at opdatere modellen. </div>
    <h3 class="heading settled" data-level="2.1" id="organisation"><span class="secno">2.1. </span><span class="content">Organisation</span><a class="self-link" href="#organisation"></a></h3>
+    Kerneelementerne i denne anvendelsesprofil er de fire klasser der vises på nedenstående illustration. Overklassen i Organization Ontology er klassen org:Organization. Klassen er bevist holdt som en bred definition af hvad der kan kaldes ’organisation’ og er derfor anvendelig for en meget bred vifte af organisationsbeskrivelser. I denne anvendelsesprofil defineres tre specialiseringer ti klassen org:Organization: 
+   <p>I ORG defineres tre specialiseringer til klassen org:Organization, hhv. org:FormalOrganization, org:OrganizationalUnit, og org:OrganizationalCollaboration. Vokabularet CPOV udvider antallet af specialiseringer af org:Organization ved at tilføje klassen for offentlige organisationer, cpov:PublicOrganization. Bemærk at klassen cpov:PublicOrganization ikke er defineret som værende disjunkt til nogen af de tre klasser, org:FormalOrganization, org:OrganizationalCollaboration og org:OrganizationalUnit.  Det vil med andre ord sige, at en organisation godt kan være erklæret at være en offentlig organisation og samtidigt også kan erklæres at være, eksempelvis, en formel organisation.</p>
    <ul>
     <li data-md>
      <p>En <strong>organisation</strong> defineres bredt af det grundlæggende vokabular, ORG, som <em>”[…] en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur. Gruppen har et vist fælles formål eller eksistensberettigelse, der rækker ud over det sæt af personer, der tilhører den. En organisation kan i sig selv fungere som aktør.”</em></p>
@@ -2260,12 +2263,13 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>En <strong>organisationsenhed</strong> beskrives af ORG som <em>”en organisation som en afdeling eller en supportenhed, der er del af en større organisation og kun har fuld anerkendelse i forbindelse med den organisation. Det gælder især, at enheden ikke i sig selv kan opfattes som en juridisk enhed.”.</em></p>
     <li data-md>
-     <p>En <strong>organisatorisk samarbejde</strong> beskrives af ORG som <em>”et samarbejde mellem to eller flere organisationer såsom et projekt”. Det opfylder kriterierne for at være en organisation, idet samarbejdet har en identitet og et veldefineret formål ufhængigt af dets medlemmer, men det det anses hverken formelt som en juridisk enhed eller en underordnet enhed i et større organisation.</em></p>
+     <p>En <strong>organisatorisk samarbejde</strong> beskrives af ORG som <em>”et samarbejde mellem to eller flere organisationer såsom et projekt”. Det opfylder kriterierne for at være en organisation, idet samarbejdet har en identitet og et veldefineret formål ufhængigt af dets medlemmer, men det det anses hverken formelt som en juridisk enhed eller en underordnet enhed i en større organisation.</em></p>
     <li data-md>
      <p>En <strong>offentlig organisation</strong> beskrives af CPOV som <em>”enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau”.</em></p>
    </ul>
    <p><img alt="Organisationer" src="img/View-Organisationer.png"></p>
    <h3 class="heading settled" data-level="2.2" id="basisinformation"><span class="secno">2.2. </span><span class="content">Basisinformation</span><a class="self-link" href="#basisinformation"></a></h3>
+   <p>Alle organisationer deler et fælles sæt af egenskaber til beskrivelse af de mest basale informationer om organisationen. Med basale informationer menes her organisationens navn(e) og beskrivelse af organisationen, en eller flere identifikatorer tildelt organisationen samt logo og hjemmeside.</p>
    <ul>
     <li data-md>
      <p>En organisation og en organisationsenhed kan have et eller flere navne. Et af navnene på et givet sprog vil være det <strong>foretrukne navn</strong>, men andre kan angives som <strong>alternative eller skjulte navne</strong>.</p>
@@ -2282,6 +2286,8 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <p><img alt="basisinformation" src="img/View-Basisinformation.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-basisinformation">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.3" id="organisatorisk-struktur"><span class="secno">2.3. </span><span class="content">Organisatorisk struktur</span><a class="self-link" href="#organisatorisk-struktur"></a></h3>
+    Organisationer kan have eller kan indgå i en organisatorisk struktur, oftest en hierarkisk struktur. 
+Organisationer kan eksempelvis være sammensat af andre organisationer i en form for hierarki. Relationerne org:subOrganizationOf og org:hasSubOrganization danner grundlag for disse hierarkiske forbindelser. Bemærk, at dette hierarki er fuldstændigt åbent. Offentlige organisationer er ofte store og komplekse og kan være en samling af mindre organisationer, der hver for sig har en specifik identitet, som kan være givet ved lov. Til at sammenkæde organisationen med dens operationelle afdelinger bruges org:hasUnit og org:unitOf. En organisations interne struktur, det vil sige den måde hvorpå den er opbygget af organisatoriske enheder, kan beskrives ligeledes ved brug af relationerne org:hasSubOrganization og org:subOrganizationOf. Organisationer kan have andre former for relationer end de der udtrykkes i form af under- og overorganisatoriske forhold. Til brug for den slags relationer kan egenskaben org:linkedTo anvendes, som en generel beskrivelse af en relation mellem to organisationer. 
    <ul>
     <li data-md>
      <p>En organisation kan bestå af flere <strong>underorganisationer</strong> der hver for sig har en specifik identitet, fx kan et ministerium bestå af flere underordnede styrelser.</p>
@@ -2296,6 +2302,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <p><img alt="organisatorisk struktur" src="img/View-OrganisationalStructure.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs/#eksempel-p-organisatoriske-strukturer">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.4" id="kontaktoplysninger"><span class="secno">2.4. </span><span class="content">Kontaktoplysninger</span><a class="self-link" href="#kontaktoplysninger"></a></h3>
+   <p>Kontaktinformation for organisationer omfatter i anvendelsesprofilen beskrivelse af kontaktformer, kaldet kontaktpunkter, som e-mail, telefon eller digital post, tidspunkter hvor kontakt er mulig, samt emne for kontaktpunktet.</p>
    <ul>
     <li data-md>
      <p>En organisation eller en organisationsenhed kan give information om hvordan man kommer i kontakt med organisationen eller organisationsenheden.</p>
@@ -2307,21 +2314,28 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
      <p>Det kan angives hvorvidt en given kontaktoplysning er <strong>synlig</strong></p>
    </ul>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.4 Hvordan kontaktes organisationen?"</em></p>
+   <div class="note" role="note"> Anvendelsesprofilen følger CPOVs anbefalinger om brug af henholdsvis egenskaben schema:openingsHours og klassen schema:OpeningHoursSpecification til at angive åbningstider for kontaktpunktet. Dette er gjort på trods af at den løsning vurderes både at være ikke-intuitiv og at rumme udfordringer i tolkningen. </div>
    <p><img alt="kontaktoplysning" src="img/View-ContactPoint.png"></p>
    <p><a href="https://digst.github.io/ORG-AP-DK/releases/v.1.0/docs//#eksempel-p-kontaktinformation">Se eksempel her</a></p>
    <h3 class="heading settled" data-level="2.5" id="sted"><span class="secno">2.5. </span><span class="content">Sted</span><a class="self-link" href="#sted"></a></h3>
+   <p>Med anvendelsesprofilen kan en organisations fysiske placering angives enten direkte med en adresse eller via angivelse af et sted hvor organisationen holder til. Det sted organisationen holder til kan også tilføjes en adresse.
+I vokabularet Organization Ontology bruges klassen org:Site til at repræsentere de steder en organisation har og/eller holder til. Relationerne org:siteOf og org:hasSite danner forbindelser mellem et sted og en organisation. Egenskaben org:hasPrimarySite anvendes til at angive, hvord organisationen primært er beliggende. Dertil kommer egenskaben org:siteAddress, der angiver stedets adresse.
+Fra vokabularet Location Core Vocabulary anvendes egenskaben locn:address til at angive en direkte forbindelse mellem organisationen og en adresse. Fra samme vokabular anvendes også klassen locn:Address, der er defineret for at være kompatibel med INSPIREs krav til adresser.</p>
    <ul>
     <li data-md>
      <p>En organisation og en organisationsenheds <strong>fysiske placering</strong> kan angives. En organisation kan også have flere forskellige fysiske placeringer.</p>
     <li data-md>
      <p>Den placering hvor den formelle organisation <strong>primært er beliggende</strong> - hjemstedet - kan dog også udpeges specifikt.</p>
     <li data-md>
-     <p>Placeringen kan fx angives med en <strong>adresse</strong> - gerne i henhold til Danmarks Adresseregister (DAR)</p>
+     <p>Placeringen kan fx angives med en <strong>adresse</strong></p>
     <li data-md>
      <p>Det kan angives hvilket <strong>administrativt geografisk område</strong> en offentlig organisation dækker forvaltningsmæssigt.</p>
    </ul>
+   <div class="note" role="note"> Resultatet af et kommende arbejde med grunddatakernemodeller forventes at udvide de nuværende klasser og egenskaber, med værdifulde og nødvendige elementer, relateret til ’Danmarks Adresseregister’ (DAR) og til ’Det Centrale Virksomhedsregister’ (CVR). De elementer der er medtaget på nuværende tidspunkt, sikrer at en dansk anvendelseprofil vil være både anvendelig i almindelighed og kompatibel med EUs CPOV-specifikation.
+Vokabularer for DAR- og CVR-data vil yderligere sikre at danske forvaltningsbehov opfyldes helt. </div>
    <p><img alt="Sted og adresse" src="img/View-Site.png"></p>
    <h3 class="heading settled" data-level="2.6" id="medlemsskab-og-aktrer"><span class="secno">2.6. </span><span class="content">Medlemsskab og aktører</span><a class="self-link" href="#medlemsskab-og-aktrer"></a></h3>
+   <p>Beskrivelse af et medlemskab er, i denne sammenhæng, en beskrivelse af et forhold eller en relation mellem enten person eller en organisation til en organisation. En person ansat i en organisation er dermed medlem af organisationen, ligesom en organisation der deltager i et organisatorisk samarbejde er medlem af samarbejdet. Anvendelsesprofilen har et antal måder, hvorpå man kan repræsentere relationer mellem mennesker og organisationer. Erfaringer har vist, at der ikke findes én løsning, der passer til alle. I visse tilfælde foretrækker man en meget enkel og direkte repræsentation. I andre tilfælde er det nødvendigt med en mere kompleks repræsentation for at registrere situationens nuancer. Personers tilhørsforhold til en organisation kan under anvendelsesprofilen beskrives som enten et medlemskab, som en ansættelse eller som værende leder af organisationen.</p>
    <ul>
     <li data-md>
      <p>En persons relation til en organisation og en organisationsenhed kan beskrives som en direkte <strong>medlemskabsrelation</strong>.</p>
@@ -2332,16 +2346,20 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <li data-md>
      <p>En <strong>softwareaktør</strong>, såsom en softwarerobot (RPA), kan også fungere som en medlem af en organisation og varetage en bestemt rolle i den forbindelse</p>
    </ul>
-   <p><img alt="medlemsskab og aktører - kvalificeret" src="img/View-MembershipAndAgents-kvalificeret.png"></p>
+   <p>Medlemsskab og aktører - direkte: <img alt="medlemsskab og aktører - direkte" src="img/View-MembershipAndAgents-direkte.png"></p>
+   <p>Medlemsskab og aktører - kvalificeret: <img alt="medlemsskab og aktører - kvalificeret" src="img/View-MembershipAndAgents-kvalificeret.png"></p>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.3 Hvem er medlemmer af organisationen?"</em></p>
    <div class="note" role="note"> Det aktuelle udkast omfatter endnu ikke beskrivelser af jobfunktioner i organisationen. (Jf. brugsscenariet beskrevet af KL: <em>"3.2 Hvad arbejder organisationen med?"</em> ) </div>
    <h3 class="heading settled" data-level="2.7" id="historik-og-opgaver"><span class="secno">2.7. </span><span class="content">Historik og opgaver</span><a class="self-link" href="#historik-og-opgaver"></a></h3>
+   <p>Ethvert aspekt af en organisationsmæssig struktur kan ændre sig med tiden. Når organisationer ændrer sig grundlæggende (ikke blot ved at udskifte personale eller ændre den indre struktur), f.eks. ved at danne en ny organisation gennem sammenlægning eller opkøb, vil den nye organisation typisk blive betegnet med en ny URI. Til angivelse af organisationens oprettelsesdato eller nedlæggelsesdato benyttes schema:foundingDate og schema:dissolutionDate.
+I anvendelsesprofilen skal alle offentlige organisationer beskrives med et organisatorisk formål. Det organisatoriske formål for en offentlig organisation antages altid at være en forvaltningsopgave.</p>
    <ul>
     <li data-md>
      <p>En organisations eller organisationsenheds <strong>oprettelsesdato</strong> eller <strong>nedlæggelsedato</strong> kan angives, og dermed kan både overordnede organisatoriske ændringer og interne omstruktureringer rummes af modellen.</p>
     <li data-md>
      <p>En offentlig organisation kan tilknyttes de <strong>forvaltningsopgaver</strong> den varetager. Til dette formål anvendes en klassifikation over forvaltningsopgaver, fx. FORM eller KLE. En forvaltningsopgave kan kædes sammen med den <strong>lovgivning, den politik eller anden retskilde</strong>, der ligger til grund for forvaltningsopgaven.</p>
    </ul>
+   <p><img alt="Opgaver" src="img/View-Opgaver.png"></p>
    <p>Svarer på følgende brugsscenarier beskrevet af KL: <em>"3.6.4 Forretningshændelser?"</em></p>
    <h2 class="heading settled" data-level="3" id="uml-diagrammer"><span class="secno">3. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h2>
    <h3 class="heading settled" data-level="3.1" id="fuld-visning-af-uml-diagram"><span class="secno">3.1. </span><span class="content">Fuld visning af UML-Diagram</span><a class="self-link" href="#fuld-visning-af-uml-diagram"></a></h3>
@@ -2475,7 +2493,7 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
     <dt>Defineret af
     <dd><a href="http://www.w3.org/2004/02/skos/core#" title="URI til SKOS">http://www.w3.org/2004/02/skos/core#</a>
     <dt>Udfaldsrum
-    <dd><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral" title="URI til PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a>
+    <dd><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#langString" title="URI til langString">https://www.w3.org/1999/02/22-rdf-syntax-ns#langString</a>
     <dt>Underegenskab af
     <dd><a href="http://www.w3.org/2000/01/rdf-schema#label" title="URI til label">http://www.w3.org/2000/01/rdf-schema#label</a>
    </dl>
@@ -2556,9 +2574,11 @@ Brugsscenarierne er inddelt i en række perspektiver som beskrives nærmere i n�
    <h4 class="heading settled" data-level="6.1.6" id="identifikator"><span class="secno">6.1.6. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd><a href="http://www.w3.org/ns/adms#identifier" title="URI til identifier">http://www.w3.org/ns/adms#identifier</a>http://www.w3.org/ns/adms#identifier
+    <dd><a href="http://www.w3.org/ns/adms#identifier" title="URI til identifier">http://www.w3.org/ns/adms#identifier</a>
     <dt>Foretrukken term
     <dd>identifikator
+    <dt>Alternativ term
+    <dd>id
     <dt>Anvendelsesnote 
     <dd>Bruges til at knytte en organisation til en identifikator. Bemærk at en organisation kan have flere identifikatorer tildelt organisationen af forskellige udstedende myndigheder til forskellige formål.
     <dt>Definition
