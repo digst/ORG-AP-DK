@@ -1,5 +1,4 @@
-
-<!doctype html><html lang="en">
+<!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>ORG-AP-DK 1.0.0-beta</title>
@@ -2021,10 +2020,10 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST TIL ORG-AP-DK 1.0.0-beta: Anvendelseprofil for organisation </h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-16">16. december 2021</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="profile-and-date"><span class="content">Living Document, <time class="dt-updated" datetime="2021-12-22">22. december 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Navneområde:
+     <dt>Namespace:
      <dd><a class="u-url" href="https://data.gov.dk/model/profile/ORG-AP-DK/">https://data.gov.dk/model/profile/ORG-AP-DK/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/ORG-AP-DK/issues/">GitHub</a>
@@ -2209,7 +2208,11 @@ dfn > a.self-link::before      { content: "#"; }
         <li><a href="#udstedelsesdato"><span class="secno">6.14.2</span> <span class="content">udstedelsesdato</span></a>
         <li><a href="#udstedende-myndighed"><span class="secno">6.14.3</span> <span class="content">udstedende myndighed</span></a>
        </ol>
-      <li><a href="#billedobjekt"><span class="secno">6.15</span> <span class="content">Billedobjekt</span></a>
+      <li>
+       <a href="#billedobjekt"><span class="secno">6.15</span> <span class="content">Billedobjekt</span></a>
+       <ol class="toc">
+        <li><a href="#miniature"><span class="secno">6.15.1</span> <span class="content">miniature</span></a>
+       </ol>
       <li><a href="#retskilde"><span class="secno">6.16</span> <span class="content">Retskilde</span></a>
      </ol>
     <li>
@@ -4091,6 +4094,23 @@ Anvendelsesprofilen vil, på sigt, muliggøre en præcis udpegning af hvilket ad
     <dd>En billedfil
     <dt>Defineret af
     <dd><a href="http://schema.org/" title="URI til Schema.org">http://schema.org/</a>
+   </dl>
+   <h4 class="heading settled" data-level="6.15.1" id="miniature"><span class="secno">6.15.1. </span><span class="content">miniature</span><a class="self-link" href="#miniature"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd><a href="https://schema.org/thumbnail" title="URI til thumbnail">https://schema.org/thumbnail</a>
+    <dt>Foretrukken term
+    <dd>miniature
+    <dt>Anvendelsesnote 
+    <dd>Bruges til at angive en miniature af organisationens logo
+    <dt>Definition
+    <dd>Miniature af et billede eller en video
+    <dt>Defineret af
+    <dd><a href="http://schema.org/" title="URI til SCHEMA.ORG">http://schema.org/</a>
+    <dt>Multiplicitet
+    <dd>[0..*]
+    <dt>Udfaldsrum
+    <dd><a href="http://schema.org/ImageObject" title="URI til ImageObject">http://schema.org/ImageObject</a>
    </dl>
    <h3 class="heading settled" data-level="6.16" id="retskilde"><span class="secno">6.16. </span><span class="content">Retskilde</span><a class="self-link" href="#retskilde"></a></h3>
     <img alt="retskilde" src="img/LegalResource.png"> 
