@@ -144,7 +144,7 @@ Abstract: 'ORG-AP-DK 1.0.0-beta' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: ORG-AP-DK
 Revision: 1.0.0-beta 
-Date: 2021-12-16
+Date: 2021-12-22
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/ORG-AP-DK
@@ -2116,6 +2116,23 @@ Klassens egenskaber:
 <dd><a href="http://schema.org/" title="URI til Schema.org">http://schema.org/</a></dd>  
 </dl>
 
+
+### miniature  
+<dl class="def"><dt>URI</dt>  
+<dd><a href="https://schema.org/thumbnail" title="URI til thumbnail">https://schema.org/thumbnail</a></dd> 
+<dt>Foretrukken term</dt>  
+<dd>miniature</dd>  
+<dt>Anvendelsesnote </dt>
+<dd>Bruges til at angive en miniature af organisationens logo</dd>
+<dt>Definition</dt>  
+<dd>Miniature af et billede eller en video</dd> 
+<dt>Defineret af</dt>  
+<dd><a href="http://schema.org/" title="URI til SCHEMA.ORG">http://schema.org/</a></dd>  
+<dt>Multiplicitet</dt><dd>[0..*]</dd>  
+<dt>Udfaldsrum</dt>
+<dd><a href="http://schema.org/ImageObject" title="URI til ImageObject">http://schema.org/ImageObject</a></dd>
+</dl>  
+ 
 
 
 
